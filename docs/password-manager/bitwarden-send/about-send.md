@@ -67,7 +67,7 @@ Send 是为短暂分享而设计的，所以您[创建的每一个 Send](create-
 您可以使用多种灵活的隐私选项来保护您的 Send 的内容：
 
 * 通过[配置密码](send-privacy.md#send-passwords)设置访问权限
-* 特定收件人的电子邮件验证访问
+* 对指定的接收者[电子邮箱验证](send-privacy.md#email-verified-recipients)访问权限
 * [对接收者隐藏您的电子邮箱地址](send-privacy.md#hide-email)
 
 对于文本 Send，您还可以选择要求用户[切换可见性](send-privacy.md#hide-text)，以防止暴露给无意的旁人。
@@ -75,7 +75,7 @@ Send 是为短暂分享而设计的，所以您[创建的每一个 Send](create-
 </details>
 
 {% hint style="info" %}
-个人密码库项目的附件和所有 Send 使用高级订阅或组织授予的个人存储空间。组织拥有的项目上的附件使用共享的组织存储空间。了解如何[添加存储空间](../your-vault/vault-items/file-attachments.md#add-storage-space)。
+个人密码库项目的附件和所有 Send 使用高级版订阅或组织授予的个人存储空间。组织拥有的项目的附件使用共享的组织存储空间。了解如何[添加存储空间](../your-vault/vault-items/file-attachments.md#add-storage-space)。
 {% endhint %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
