@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/create-send/)
 {% endhint %}
 
-任何用户都可以创建文本 Send，但文件 Send 的创建仅适用于[高级用户](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)，或付费组织（家庭、团队或企业）的成员。选择您想要使用 Send 的 Bitwarden App 以开始：
+任何用户都可以创建文本 Send，但文件 Send 的创建仅适用于[高级用户](../../plans-and-pricing/password-manager/about-bitwarden-plans.md)，或付费组织（家庭版、团队版或企业版）的成员。选择您想要使用 Send 的 Bitwarden App 以开始：
 
 {% tabs %}
 {% tab title="网页 App" %}

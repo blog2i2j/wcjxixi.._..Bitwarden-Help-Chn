@@ -9,20 +9,43 @@
 * `https://send.bitwarden.com/#...`，这会自动解析为 `https://vault.bitwarden/com/#/send/...`
 * `https://your.selfhosted.domain.com/#/send/...`，如果是自托管
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/LLnrgZwyr6IAJ0GImXLnj/578559931915e04aeb6f037e2f03490e/2024-12-03_10-21-38.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/LLnrgZwyr6IAJ0GImXLnj/da3e363db0474f4cd6a57a44a6f1bd8f/Receive_a_send.png?w=800&fm=avif" %}
 收到的 Send
 {% endembed %}
 
 根据发送者[所配置的选项](create-a-send.md)，Send 的接收者可能需要：
 
 * 输入密码来访问 Send 的内容。
+* 输入验证码
 * 手动切换隐藏文本 Send 的可见性。
+
+## 电子邮箱验证的 Send <a href="#email-verified-sends" id="email-verified-sends"></a>
+
+高级版 Bitwarden 用户可以创建要求电子邮箱验证才能查看的 Send。如果您收到要求电子邮箱验证的 Send 链接，则在打开 Send 链接后会提示您输入验证码。要打开电子邮箱验证的 Send：
+
+1、打开您从发送者处收到的 Send 链接然后输入您的电子邮箱地址：
+
+{% embed url="https://bitwarden.com/assets/6guff4hS04wXAcGp7DUMDo/5ba4409fd5fcf3171f665896fa17ca9f/2026-02-24_16-06-03.png?w=800&fm=avif" %}
+输入电子邮箱 Send
+{% endembed %}
+
+2、如果输入的电子邮箱与发送者指定的电子邮箱地址匹配，您将在电子邮箱收件箱中收到一个授权码：
+
+{% embed url="https://bitwarden.com/assets/3f6f5IfMdXDqrR3cMwgoWN/65f8d6ffe2b3239049e7f76dfca33253/2026-02-24_16-06-56.png?w=800&fm=avif" %}
+Send 验证码
+{% endembed %}
+
+3、输入授权码即可查看此 Send。
+
+{% embed url="https://bitwarden.com/assets/7qM22jPeoKCnGE6GS03wz7/4f959a8b1b7b9f13674bdda975af9a5d/2026-02-24_17-04-46.png?w=800&fm=avif" %}
+输入 Send 验证码
+{% endembed %}
 
 ## 隐藏了电子邮箱的 Send <a href="#hidden-email-sends" id="hidden-email-sends"></a>
 
 默认情况下，Send 对象将对接收者显示发送者的电子邮箱地址，如上面的屏幕截图所示。发送者可以为 Send 对象选择隐藏其电子邮箱地址，该电子邮箱地址将替换为警告消息：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/47RPmr6xOowzjJbG6JxVG3/98c803df88adcde39c96331cf34ab106/2024-12-03_10-23-03.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/47RPmr6xOowzjJbG6JxVG3/42ba660b4316b57c4857ed7f7fcd58e3/Hidden_email_send.png?w=800&fm=avif" %}
 隐藏了电子邮箱的文件 Send
 {% endembed %}
 
@@ -39,8 +62,8 @@
 
 ## 已删除、已过期和已禁用的 Send <a href="#deleted-expired-and-disabled-sends" id="deleted-expired-and-disabled-sends"></a>
 
-当一个 Send 已[被删除、过期或禁用](send-lifespan.md)时，将为试图使用已生成的 Send 链接的接收者显示一个界面指示该 Send 不存在或不再可用：
+当一个 Send [被删除、已过期或被禁用](send-lifespan.md)时，将为试图使用已生成的 Send 链接的接收者显示一个界面指示该 Send 不存在或不再可用：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6sveEP7CK57cGvSa9zpdwe/896f888bbbc782b8eef633afbd112d68/2024-12-03_10-24-14.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/6sveEP7CK57cGvSa9zpdwe/8da52464833e2dbfab7ef228f38f77e6/A_deleted__expired__or_disabled_Send.png?w=800&fm=avif" %}
 已删除、已过期或已禁用的 Send
 {% endembed %}

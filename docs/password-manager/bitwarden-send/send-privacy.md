@@ -4,15 +4,31 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/send-privacy/)
 {% endhint %}
 
-通过选择性的配置[访问密码](send-privacy.md#send-passwords)来保护您的 Send 内容，以防止无意的接收者看到其包含的信息，和/或[对接收者隐藏您的单子邮件](send-privacy.md#hide-email)。对于文本 Send，您还可以选择性地要求接收者[切换可见性](send-privacy.md#hide-text)，以防止暴露给无意的旁人。
+通过选择性的配置[访问密码](send-privacy.md#send-passwords)来保护您的 Send 内容，以防止无意的接收者看到其包含的信息，和/或[对接收者隐藏您的电子邮箱](send-privacy.md#hide-email)。对于文本 Send，您还可以选择要求接收者[切换可见性](send-privacy.md#hide-text)，以防止暴露给无意的旁人。
 
-**密码**、**隐藏电子邮箱**和**隐藏文本**选项可在[删除](send-lifespan.md#deletion-behavior) Send 之前的任何时候，通过创建新 Send 视图或编辑 Send 视图进行配置。
+**密码**、**隐藏电子邮箱**和**隐藏文本**选项可在[删除](send-lifespan.md#deletion-behavior) Send 之前的任何时候，通过创建新 Send 视图或**编辑 Send** 视图进行配置。
+
+## 电子邮箱验证接收者 <a href="#email-verified-recipients" id="email-verified-recipients"></a>
+
+付费 Bitwarden 方案的用户（高级版、家庭版、团队版、企业版）可以要求电子邮箱验证才能访问 Send。创建 Send 时，指定一个或多个接收者电子邮箱地址。访问 Send 链接后，接收者必须输入其电子邮箱地址。如果它与您指定的地址匹配，验证码将通过电子邮件发送给接收者。要创建电子邮箱验证的 Send：
+
+1、在**谁可以查看**菜单中选择**指定人员**选项。然后，将目标接收者添加到**电子邮箱**字段。完成 [Send 设置](about-send.md#using-send)然后与目标接收者分享 Send 链接。
+
+{% embed url="https://bitwarden.com/assets/9isz2fm2soiJJOau1sq7b/1b9cdff84b482c8698ef6e0a20ebf826/Send_access_list.png?w=800&fm=avif" %}
+验证用户 Send
+{% endembed %}
+
+2、访问 Send 链接的接收者将被要求输入他们的电子邮箱地址。验证码将发送到该用户的电子邮箱地址。输入验证码即可查看 Send 内容。
+
+{% embed url="https://bitwarden.com/assets/7qM22jPeoKCnGE6GS03wz7/4f959a8b1b7b9f13674bdda975af9a5d/2026-02-24_17-04-46.png?w=800&fm=avif" %}
+输入 Send 验证码
+{% endembed %}
 
 ## Send 密码 <a href="#send-passwords" id="send-passwords"></a>
 
 对于任何 Send，您可以配置一个密码，接收者必须输入该密码才能访问其内容。使用密码保护 Send 是一种确保 Send 的内容不会暴露给意外的接收者的好方法：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7DyqQ9YHNrAIvmlyDrOCmr/7969dc096a4612773a8c0a15dc2375dc/2024-12-03_10-43-18.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/7DyqQ9YHNrAIvmlyDrOCmr/fd237c32480dfd1a5d8c8d911e13abff/send-password.png?w=800&fm=avif" %}
 接收受密码保护的 Send
 {% endembed %}
 
@@ -26,32 +42,32 @@
 
 您可以随时使用 **⟲移除密码**菜单选项移除 Send 密码。移除 Send 密码不会要求您输入以前的密码：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6y6TJ0P7YbMza7p90kxu6X/929e10a4eac5d842b4cf283d46a41824/2024-12-03_10-09-52.png?_a=DAJCwlWIZAAB" %}
-Send 选项
+{% embed url="https://bitwarden.com/assets/GIVACRQbGQyj0fLzLUZOc/b7a14b2ef75eea16f9b9376418cca1e7/remove-password_protection.png?w=800&fm=avif" %}
+移除密码保护
 {% endembed %}
 
 ## 隐藏电子邮箱 <a href="#hide-email" id="hide-email"></a>
 
-{% hint style="success" %}
-对于企业组织，可以使用[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-options)设置此选项的可用性。
-{% endhint %}
-
 默认情况下，Send 将对接收者显示发送者的电子邮箱地址。要在创建 Send 时移除您的电子邮箱地址：
 
-1、选择选项。
+1、选择**选项**。
 
 2、勾选**对接收者隐藏我的电子邮箱地址**。
 
 接收者可以通过将 **Send 链接**与其发送者交叉对比，来验证预期 Send 对象的可信度。隐藏了电子邮箱的 Send 对象将向接收者发出警告，鼓励他们这样做：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/47RPmr6xOowzjJbG6JxVG3/98c803df88adcde39c96331cf34ab106/2024-12-03_10-23-03.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/47RPmr6xOowzjJbG6JxVG3/42ba660b4316b57c4857ed7f7fcd58e3/Hidden_email_send.png?w=800&fm=avif" %}
 隐藏了电子邮箱的文本 Send
 {% endembed %}
+
+{% hint style="success" %}
+对于企业组织，可以使用[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md#send-options)设置此选项的可用性。
+{% endhint %}
 
 ## 隐藏文本 <a href="#hide-text" id="hide-text"></a>
 
 对于文本 Send，切换到**当访问 Send 时，默认隐藏文本**选项，以要求接收者 **👁‍🗨切换可见性**才能查看其内容。隐藏文本是一个很好的方法，它可以确保内容不会暴露给无意的旁人：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4KcdIWqSnADnv1TMtsrSIr/09abc9e81ae3bf64e7cd42c2916ef87a/2024-12-03_10-45-49.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/4KcdIWqSnADnv1TMtsrSIr/f9ab606faf3e7395f25b02ed8a11fc14/hidden_text.png?w=800&fm=avif" %}
 接收隐藏了文本的 Send
 {% endembed %}

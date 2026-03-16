@@ -6,9 +6,9 @@
 
 ### 问：为什么我无法创建文件 Send？ <a href="#q-why-cant-i-create-a-file-send" id="q-why-cant-i-create-a-file-send"></a>
 
-**答：**&#x6587;本 Send 适用于所有 Bitwarden 用户，但文件 Send 的创建仅适用于高级用户，包括付费组织的成员（家庭、团队或企业）。
+**答：**&#x6587;本 Send 适用于所有 Bitwarden 用户，但文件 Send 的创建仅适用于高级版用户，包括付费组织的成员（家庭版、团队版或企业版）。
 
-此外，要创建文件 Send，要求您的电子邮箱地址已经过验证。
+此外，创建文件 Send 要求您的电子邮箱地址已经过验证。
 
 ### 问：为什么 Send 从我的 Send 视图中消失了？ <a href="#q-why-are-sends-missing-from-my-send-view" id="q-why-are-sends-missing-from-my-send-view"></a>
 

@@ -53,12 +53,11 @@ Send 是一种安全和短暂的机制，用于向任何人传输敏感信息，
 
 传输 Bitwarden Send 链接时，您可以使用一些可选的步骤来提高其安全性：
 
-1. 为 Send 添加密码并通过单独的通道分享密码。
-2. 发送不包含密钥的链接（最后一个正斜杠之前的所有内容）并通过单独的通道发送密钥。
-3. 同时使用上述两个选项。
+1. 为 Send 添加密码然后通过单独的渠道分享此密码。
+2. 要求对指定的 Send 收件人进行电子邮箱验证。
 
 {% hint style="success" %}
-重新组装 Send URL 时，请确保同时包含 Send ID 和加密密钥。
+您可以发送不包含密钥的链接（即最后一个正斜杠之前的所有内容）并通过单独的通道发送密钥。这种额外的安全措施可以利用上述的两个选项。重新组装 Send URL 时，请确保同时包含 Send ID 和加密密钥。
 
-比如：`https://vault.bitwarden.com/#/send/send_id/encryption_key`
+例如：`https://vault.bitwarden.com/#/send/send_id/encryption_key`
 {% endhint %}

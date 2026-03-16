@@ -12,7 +12,7 @@
 >
 > stdout 和 stderr 默认都是输出到终端（屏幕）。[参考链接](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81)
 
-Bitwarden Send 是一套功能齐全的 CLI 命令。本文介绍了 `bw send` 命令的范围，但是 Send 并**不是一个独立于 Bitwarden 命令行界面 (CLI) b的工具**。因此，[CLI 文档](../developer-tools/cli/password-manager-cli.md)中的许多命令、选项和概念与这里的都是相关联的。
+Bitwarden Send 有一套功能齐全的 CLI 命令。本文介绍了 `bw send` 命令的范围，但是 Send 并**不是一个独立于 Bitwarden 命令行界面 (CLI) 的工具**。因此，[CLI 文档](../developer-tools/cli/password-manager-cli.md)中的许多命令、选项和概念与这里的都是相关联的。
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6hWfoRgu1yoyrXEB6JqN6E/35bc0f96642a57df42f1b2e6fa7c4c19/send-cli.png?fm=webp&h=433&q=50&w=961" %}
 
@@ -41,7 +41,8 @@ bw send -f <path/to/file.ext>
 **选项**：
 
 * `-n <name>` 或 `--name <name>` 用于指定 Send 的名称。如果没有指定名称，对于文本 Send，名称默认为 `id`，对于文件 Send，默认为文件名。对于多个字的名称，使用引号 `"<name>"`。
-* `-d <days>` 或 `--deleteInDays <days>` 用于指定 Send 的删除日期（如果没有指定，默认为 7 天）。
+* `-d <days>` 或 `--deleteInDays <days>` 用于指定 Send 的[删除日期](send-lifespan.md#deletion-date)（如果没有指定，默认为 7 天）。
+* `--maxAccessCount` 或 `-a` 用于指定 Send 的[最大访问计数](send-lifespan.md#limit-views-or-maximum-access-count)。
 * `--hidden` 用于指定文本 Send 要求接收者[切换可见性](send-privacy.md#hide-text)。
 * `--notes <notes>` 用于添加私密备注到 Send 中。对于多个字的备注，使用引号 `"<notes>"`。
 * `--fullObject` 用于将完整的 Send 对象输出为 JSON，而不是只输出 Send 链接（将此选项与 `--pretty` 选项配对使用，以获得格式化的 JSON）。
@@ -117,6 +118,7 @@ bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want
 
 
 * `--password <password>` 用于指定访问[密码保护](send-privacy.md#send-passwords)的密码。
+* `--emails` 用于指定接收者的电子邮箱地址以强制[电子邮箱验证](send-privacy.md#email-verified-recipients)。这是一项高级版功能。
 * `--fullObject` 用于将完整的 Send 对象输出为 JSON，而不是只输出 Send 链接（将此选项与 `--pretty` 选项配对使用，以获得格式化的 JSON）。
 
 ### get&#xD;
@@ -227,3 +229,11 @@ bw send receive [options] <url>
 * `--passwordfile <passwordfile>` 用于指定文件的第一行作为访问受密码保护的 Send 所需的密码。
 * `--obj` 用于将完整的 Send 对象输出为 JSON，而不是只输出 Send 链接（将此选项与 `--pretty` 选项配对使用，以获得格式化的 JSON）。
 * `--ouput <output>` 用于指定文件 Send 内容的输出目录。
+
+要接收要求电子邮箱验证的 Send，系统将提示您输入电子邮箱地址，然后验证码将发送到该电子邮箱地址。例如：
+
+```shellscript
+$ bw send receive <Send URL>
+? Enter your email address:
+? Enter the verification code send to your email: 
+```

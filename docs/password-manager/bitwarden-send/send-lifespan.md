@@ -83,7 +83,7 @@ Send 被禁用后：
 
 要从网页 App 删除 Send，请使用 **≡选项**菜单然后选择 **🗑️删除**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6y6TJ0P7YbMza7p90kxu6X/929e10a4eac5d842b4cf283d46a41824/2024-12-03_10-09-52.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/1PiQrX748LtTFXChfAIbFP/0ff74124a0d215254c532fe79cff9012/2026-02-25_11-08-25.png?w=800&fm=avif" %}
 Send 选项
 {% endembed %}
 {% endtab %}
@@ -93,12 +93,12 @@ Send 选项
 
 要从浏览器扩展删除 Send，请选择在您要删除的 Send 旁边的 🗑️**回收站**图标：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/74CotzsfAWKjUQkXfuu7zq/83dfe90f44893fc674a980d884ddff60/2024-12-03_10-39-04.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/74CotzsfAWKjUQkXfuu7zq/12d90886dbb9e6bd3a26b47efedeef4c/delete_browser.png?w=800&fm=avif" %}
 从浏览器扩展删除 Send
 {% endembed %}
 {% endtab %}
 
-{% tab title="桌面 App" %}
+{% tab title="桌面端" %}
 ### 从桌面 App 禁用 <a href="#disable-from-desktop-apps" id="disable-from-desktop-apps"></a>
 
 要从桌面应 App 禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
@@ -114,14 +114,16 @@ Send 被禁用后：
 
 ### 从桌面 App 删除 <a href="#delete-from-desktop-apps" id="delete-from-desktop-apps"></a>
 
-要从桌面 App 删除 Send，请打开**编辑 Send** 视图并选择 🗑️**删除**图标：
+要从桌面 App 删除 Send，请使用 **≡**&#x9009;项菜单然后选择 🗑️**删除**按钮：
+
+{% embed url="https://bitwarden.com/assets/12eLcz2aoBkcDRGS3U1jzP/66e1b7625ac1290f2d110d0d4e7086c8/delete_send_desktop.png?w=800&fm=avif" %}
 
 {% embed url="https://bitwarden.com/assets/12eLcz2aoBkcDRGS3U1jzP/1fb26cbaf36ce8cf3fa583b550d00dd6/send-lifespan-2.png?w=1100&fm=avif" %}
 从桌面 App 删除 Send
 {% endembed %}
 {% endtab %}
 
-{% tab title="移动 App" %}
+{% tab title="移动端" %}
 ### 从移动 App 删除 <a href="#delete-from-mobile-apps" id="delete-from-mobile-apps"></a>
 
 要从移动 App 删除 Send，点击 **⋯**&#x9009;项菜单然后点击**删除**选项：
