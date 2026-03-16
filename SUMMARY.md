@@ -63,7 +63,7 @@
       * [密码库健康报告](docs/password-manager/your-vault/security-tools/vault-health-reports.md)
       * [更改存在风险的密码](docs/password-manager/your-vault/security-tools/change-at-risk-passwords.md)
       * [主密码重新提示](docs/password-manager/your-vault/security-tools/master-password-re-prompt.md)
-      * [钓鱼拦截器](docs/password-manager/your-vault/security-tools/phishing-blocked.md)
+      * [\*钓鱼拦截器](docs/password-manager/your-vault/security-tools/phishing-blocked.md)
     * [外观](docs/password-manager/your-vault/appearance/README.md)
       * [更改 App 外观](docs/password-manager/your-vault/appearance/change-app-appearance.md)
       * [本地化](docs/password-manager/your-vault/appearance/localization.md)
