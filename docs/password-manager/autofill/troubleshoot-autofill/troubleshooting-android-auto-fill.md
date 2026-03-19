@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-android-troubleshooting/)
 {% endhint %}
 
-根据您设备上所运行的 Android 版本，有几种不同的方式启用 Bitwarden 上的自动填充：
+如果您使用 [Android 自动填充](../autofill-from/autofill-from-android.md)时遇到问题，请首先验证您的 Android 版本是否与您选择的自动填充方法兼容。Bitwarden 支持几种不同的自动填充方法，具体取决于您的 Android 版本：
 
 | 选项            | 要求的版本...       | 要求同时启用...        |
 | ------------- | -------------- | ---------------- |
@@ -13,7 +13,11 @@
 | ~~Draw-Over~~ | ~~Android 6+~~ | ~~无障碍~~          |
 | 无障碍           | 所有 Android 版本  | -                |
 
-有关在 Android 上设置自动填充的说明，请参阅 [Android 上的自动填充登录](../autofill-from/autofill-from-android.md)。
+接下来，确认登录项目保存的 URI 格式是否正确。在 Android 上，Password Manager 使用网站地址（例如 `https://gmail.com`）在网页浏览器中自动填充，以及使用包名称（例如 `com.google.android.gm`）在已安装的应用程序中自动填充。
+
+{% hint style="danger" %}
+对于要安装的应用程序，务必**仅从可信来源（例如 Google Play 商店或 F-Droid）安装应用程序和在应用程序中自动填充**，因为恶意应用程序可能会伪造知名应用程序的软件包名称。[了解更多](forming-uris-for-autofill.md#android)。
+{% endhint %}
 
 ## 自动填充服务故障排除 <a href="#troubleshooting-the-autofill-service" id="troubleshooting-the-autofill-service"></a>
 
