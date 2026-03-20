@@ -401,7 +401,7 @@
     * [Password Manager 方案](docs/plans-and-pricing/password-manager/about-bitwarden-plans.md)
     * [从个人版升级到组织版](docs/plans-and-pricing/password-manager/upgrade-from-individual-to-organization.md)
     * [适用于成员的赞助家庭](docs/plans-and-pricing/password-manager/sponsored-families-for-members.md)
-    * [高级会员续费](docs/plans-and-pricing/password-manager/premium-renewal.md)
+    * [高级版续费](docs/plans-and-pricing/password-manager/premium-renewal.md)
   * [Secrets Manager](docs/plans-and-pricing/secrets-manager/README.md)
     * [Secrets Manager 方案](docs/plans-and-pricing/secrets-manager/secrets-manager-plans.md)
     * [注册 Secrets Manager](docs/plans-and-pricing/secrets-manager/sign-up-for-secrets-manager.md)
