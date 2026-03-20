@@ -92,7 +92,7 @@
 
 ### 更多共享方法 <a href="#more-methods-for-sharing" id="more-methods-for-sharing"></a>
 
-前面介绍的方法是最通用、最简化的方法，不过您还可以使用其他一些共享方法：
+前面介绍的方法是最通用、最简单的方法，不过您还可以使用其他一些共享方法：
 
 * **从管理控制台共享**：如前所述，组织所有者、管理员和某些自定义用户可以直接从管理控制台进行共享，从而简化共享过程：
 
@@ -134,7 +134,7 @@
 {% endembed %}
 {% endtab %}
 
-{% tab title="移动 App" %}
+{% tab title="移动端" %}
 要从移动 App 共享现有项目：
 
 1. 点击要共享的密码库项目，以显示**查看项目**面板。
@@ -151,7 +151,7 @@
 * **直接编辑项目**：如果需要在共享之前对个人项目进行更改，请打开该项目，然后在**编辑**视图中使用**所有者**和**集合**下拉菜单，在进行必要更改时选择与谁共享。
 {% endtab %}
 
-{% tab title="桌面 App" %}
+{% tab title="桌面端" %}
 要从桌面 App共享现有项目：
 
 1、在**密码库**视图中，右键单击要共享的项目，然后从菜单中选择**分配到集合**：
@@ -202,7 +202,7 @@ bw move <itemid> <organizationid> [encodedJson]
 <img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
 {% endhint %}
 
-### 回收共享项目的所有权 <a href="#reclaimed-shared-item-ownership" id="reclaimed-shared-item-ownership"></a>
+### 收回共享项目的所有权 <a href="#reclaimed-shared-item-ownership" id="reclaimed-shared-item-ownership"></a>
 
 拥有项目所存储的集合的[管理集合权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)的用户可以选择停止与组织共享项目：
 
