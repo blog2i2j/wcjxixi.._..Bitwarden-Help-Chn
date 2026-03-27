@@ -70,23 +70,16 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。首先，从设
 {% endtabs %}
 
 {% hint style="success" %}
-当您有新的移动设备时，您可以：
-
-* 从 Bitwarden Authenticator 导出数据，然后将数据导入新设备。[了解方法](import-and-export.md)。
-* 从 Bitwarden Password Manager 中设置同步，以提取所有已保存的登录项目中附加的验证码。[了解方法](totp-sync.md)。
+如果您在 Authenticator 中创建本地代码，稍后想要将其添加到您的密码库，请将该代码复制到 Password Manager。
 {% endhint %}
-
-### 将代码复制到 Password Manager <a href="#copy-codes-to-password-manager" id="copy-codes-to-password-manager"></a>
-
-长按条目并点击**复制到 Bitwarden** 选项，可将本地代码从 Authenticator 复制到 Password Manager。此操作将打开 Password Manager，允许您将代码附加到现有项目或创建新项目。
 
 ## 编辑代码 <a href="#edit-codes" id="edit-codes"></a>
 
-长按**验证码**界面的**本地代码**，或编辑 Bitwarden Password Manager 中的同步项目，以对其进行更改。对于本地代码，您可以：
+要编辑从密码库同步的代码，请[更新 Password Manager 中的登录项目](../password-manager/your-vault/vault-items/vault-items.md#manage-items)。对于仅存储在 Authenticator 中的本地代码，长按该代码然后选择**编辑**以访问以下选项：
 
-* 编辑附加的**名称**或**密钥**。
-* 将项目指定为**收藏**，这样它就会移动到验证码界面的顶部，以方便访问。
-* 将**用户名**添加到项目中。当您在同一网站拥有多个账户并且每个账户需要单独的验证码时，请使用此字段。
+* 编辑**名称**或**密钥**。
+* 添加**用户名**。当您在同一网站拥有多个账户并且每个账户需要单独的验证码时，请使用此字段。
+* 打开**收藏**，可将该代码移动到 App 主界面的顶部，以便于访问。
 * 更改用于生成代码的**算法**。Bitwarden Authenticator 默认使用 SHA-1。
 * 更改代码的**刷新周期**。Bitwarden Authenticator 默认使用 30 秒。
 * 更改代码的**位数**。Bitwarden Authenticator 默认使用 6 位数字。
@@ -97,4 +90,8 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。首先，从设
 
 ## 使用代码 <a href="#use-codes" id="use-codes"></a>
 
-要在该账户的机密存储在 Bitwarden Authenticator 中后使用验证码，请打开 Bitwarden Authenticator 并点击该条目以将其验证码复制到剪贴板。然后，将验证码粘贴到您要登录的网站或 App 的输入框中。
+要使用验证码，请打开 Bitwarden Authenticator 然后点击某条目以复制验证码。然后，将代码粘贴到您登录时的验证提示中。
+
+## 将代码传输到新的移动设备 <a href="#transfer-codes-to-a-new-mobile-device" id="transfer-codes-to-a-new-mobile-device"></a>
+
+## FAQ <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
