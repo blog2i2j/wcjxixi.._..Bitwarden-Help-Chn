@@ -140,7 +140,7 @@
       * [桌面 App 支持的功能](docs/password-manager/more/troubleshooting/desktop-app-feature-support.md)
     * [Password Manager FAQ](docs/password-manager/more/password-manager-faqs.md)
 * [Bitwarden Authenticator](docs/bitwarden-authenticator/README.md)
-  * [Bitwarden Authenticator](docs/bitwarden-authenticator/bitwarden-authenticator.md)
+  * [=Bitwarden Authenticator](docs/bitwarden-authenticator/bitwarden-authenticator.md)
   * [同步验证码](docs/bitwarden-authenticator/totp-sync.md)
   * [导入 & 导出](docs/bitwarden-authenticator/import-and-export.md)
   * [FAQ](docs/bitwarden-authenticator/authenticator-faqs.md)
