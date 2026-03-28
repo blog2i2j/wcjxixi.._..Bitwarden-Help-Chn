@@ -26,7 +26,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。首先，从设
 2. 点击**通用**。
 3. 点击**自动填充与密码**。
 4. 点击**密码选项**。
-5. 在**验证码**部分中，从设**置验证码**下拉菜单中选择一个 App。
+5. 在**验证码**部分中，从**设置验证码**下拉菜单中选择一个 App。
 {% endhint %}
 
 ## 添加代码 <a href="#add-codes" id="add-codes"></a>
@@ -95,3 +95,63 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。首先，从设
 ## 将代码传输到新的移动设备 <a href="#transfer-codes-to-a-new-mobile-device" id="transfer-codes-to-a-new-mobile-device"></a>
 
 ## FAQ <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
+
+<details>
+
+<summary>Bitwarden Authenticator 和 Password Manager 集成身份验证器有什么区别？</summary>
+
+独立的 Bitwarden Authenticator App 和密码管理器集成身份验证器存储并生成 TOTP。根据您的安全偏好，您可以一起、独立、或在它们之间切换使用这些 App。同时使用时，请决定是保持代码连接还是单独管理。主要区别包括：
+
+| 特性       | Authenticator                                                                                               | 密码管理器集成身份验证器                                                   |
+| -------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 谁可以使用它   | 所有人。不要求 Bitwarden 账户                                                                                        | <p>免费账户可以存储密钥。</p><p></p><p>高级用户和付费组织的成员可以存储密钥并生成 TOTP 代码。</p> |
+| 主要用途     | 任何喜欢将 2FA 代码与密码管理器和想要生成 TOTP 代码的免费 Bitwarden 账户分开存储的人                                                       | 便捷的一体化密码和 2FA 管理                                               |
+| 平台       | 仅限移动设备，iOS 和 Android                                                                                        | 所有 Bitwarden 客户端，包括移动 App、浏览器扩展、桌面 App 和网页 App                 |
+| 默认存储     | <p>您的本地设备</p><p></p><p>*如果您的 Password Manager 允许身份验证器同步和/或您主动将本地代码复制到您的密码库，则这些代码也会存储在您的 Bitwarden 密码库中。</p> | 您的 Bitwarden 密码库                                               |
+| App 之间同步 | 可以手动将本地代码复制到 Password Manager 以允许同步，并且可以自动与 Password Manager 中的代码同步                                         | 可以自动与 Authenticator 中的代码同步                                     |
+
+</details>
+
+<details>
+
+<summary>我可以使用 Bitwarden Authenticator 将 2FA 添加到我的 Bitwarden 账户吗？</summary>
+
+可以！因为 Bitwarden Authenticator 允许您在 Bitwarden 账户外存储代码，所以这个 App 可以用来为您的 Bitwarden 账户添加 2FA。
+
+如果执行此操作，请将代码保存为身份验证器中的本地代码，以防止其同步到您的密码库。将代码同步到其要保护的同一个密码库可能会将您锁定。
+
+</details>
+
+<details>
+
+<summary>如何更改 Authenticator App 的外观？</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>我的数据如何存储和保护？</summary>
+
+您的验证密钥（有时称为「安全秘钥」或「TOTP 种子」）和所有相关元数据都存储在您设备上的本地未加密数据库中。这些数据不会同步到 Bitwarden 服务器。您的数据将由您设备的云备份系统（如 iCloud 或 Google One）进行备份。要保护您的 App 中的数据，您还可以设置生物识别登录。
+
+</details>
+
+<details>
+
+<summary>如何备份和恢复我的 TOTP 数据？</summary>
+
+您设备的云备份系统（如 iCloud 或 Google One）会对您的数据进行加密备份。要恢复数据，请恢复您设备的云备份。
+
+您还可以导出身份验证器数据并将其安全地存储为备份。
+
+</details>
+
+<details>
+
+<summary>我使用的是哪个版本的 Bitwarden Authenticator？</summary>
+
+要了解您正在使用的 Bitwarden Authenticator 版本，请转到**设置**然后向下滚动到**关于**部分。
+
+</details>
