@@ -4,22 +4,24 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/export-your-data/)
 {% endhint %}
 
-将您的密码库数据，包括登录和笔记，导出以备份重要信息或[转移到新的 Bitwarden 密码库](import-data.md)。在导出前，数据会在客户端本地解密，因此不会在互联网上传输未加密的数据。
+导出您的密码库数据，包括登录和笔记，以备份重要信息或[转移到新的 Bitwarden 密码库](import-data.md)。在导出前，数据会在客户端本地解密，因此不会在互联网上传输未加密的数据。
 
 {% hint style="success" %}
-如果您在新设备上添加 Bitwarden，并且您的账户托管在我们的云服务器上，您无需创建导出。在新设备上[下载 Bitwarden](https://bitwarden.com/download/)，然后使用您现有的账户登录即可。
+如果您在新设备上添加 Bitwarden，并且您的账户托管在我们的云服务器上，您无需创建导出。否则，在您的新设备上[下载 Bitwarden](https://bitwarden.com/download/)，然后使用您现有的账户登录即可。
 {% endhint %}
 
 {% hint style="danger" %}
 除非您使用[加密导出](encrypted-exports.md)，否则不要通过不安全的渠道（例如电子邮件）来存储或发送导出的文件，用完后请立即将其删除。
 {% endhint %}
 
+## 导出的文件类型 <a href="#export-file-types" id="export-file-types"></a>
+
 导出可以下载为以下几种格式：
 
 * `.json`（明文）
 * `.csv`（明文）
 * [`.json (Encrypted)`](encrypted-exports.md)（加密）
-* `.zip (with attachments)`（包含一个 `.json` 文件和您的附件）（明文）
+* `.zip (with attachments)`（包含 `.json` 文件和您的附件）（明文）
 
 {% hint style="info" %}
 `.zip` 导出目前仅适用于个人密码库数据。
@@ -38,7 +40,7 @@
 * [存储的通行密钥](../autofill/more-autofill-options/autofill-passkeys.md)
 * [SSH 密钥](../developer-tools/ssh/ssh-agent.md)
 
-所有导出格式都不包含回收站项目或 [Send](../bitwarden-send/about-send.md)。有关个人密码库导出中包含的所有项目和字段的完整列表，请查看这个 **⬇️**[.json 示例 ](https://bitwarden.com/assets/3klSoZBBd57skEvwFkcMJc/9dfe5d696c102cd32da88dc325706738/Individual_vault_export.json)。
+所有导出格式都不包含回收站项目或 [Send](../bitwarden-send/about-send.md)。有关个人密码库导出中包含的所有项目和字段的完整列表，请查看这个 **⬇️** [.json 示例](https://bitwarden.com/assets/3klSoZBBd57skEvwFkcMJc/9dfe5d696c102cd32da88dc325706738/Individual_vault_export.json)。
 
 ## 导出个人密码库 <a href="#export-a-personal-vault" id="export-a-personal-vault"></a>
 
@@ -48,7 +50,7 @@
 
 {% tabs %}
 {% tab title="网页 App" %}
-要导出您的密码库数据：
+要导出密码库数据：
 
 1、选择**工具**。
 
@@ -88,7 +90,7 @@
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-要导出您的密码库数据：
+要导出密码库数据：
 
 1、选择 **⚙️设置**图标。
 
@@ -128,7 +130,7 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-要导出您的密码库数据：
+要导出密码库数据：
 
 1、选择**文件**。
 
@@ -166,7 +168,7 @@
 {% endtab %}
 
 {% tab title="移动端" %}
-要导出您的密码库数据：
+要导出密码库数据：
 
 1、点击 ⚙️**设置**图标。
 

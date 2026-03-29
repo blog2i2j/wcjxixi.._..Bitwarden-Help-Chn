@@ -70,15 +70,6 @@
 
 {% tabs %}
 {% tab title="网页 App" %}
-### 从网页 App 禁用 <a href="#disable-from-the-web-vault" id="disable-from-the-web-vault"></a>
-
-要从网页 App 禁用 Send，请打开**编辑 Send** 视图，展开**选项**，然后勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
-
-Send 被禁用后：
-
-* 对于 Send 的接收者（即任何拥有已生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **⚠️已禁用**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
-
 ### 从网页 App 删除 <a href="#delete-from-the-web-vault" id="delete-from-the-web-vault"></a>
 
 要从网页 App 删除 Send，请使用 **≡选项**菜单然后选择 **🗑️删除**按钮：
@@ -99,19 +90,6 @@ Send 选项
 {% endtab %}
 
 {% tab title="桌面端" %}
-### 从桌面 App 禁用 <a href="#disable-from-desktop-apps" id="disable-from-desktop-apps"></a>
-
-要从桌面应 App 禁用 Send，请打开**编辑 Send** 视图并勾选**禁用此 Send 以阻止任何人访问它**复选框。您可以随时取消选中此框以重新启用对此 Send 的访问。
-
-{% embed url="https://bitwarden.com/assets/49ar4y0apFFvUDIksGIr2C/87434a037bba73db72b85f1b21b75dec/sned-lifespan-1.png?w=1100&fm=avif" %}
-从桌面 App 禁用 Send
-{% endembed %}
-
-Send 被禁用后：
-
-* 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **⚠️已禁用**图标将出现在 Send 旁边。在 Send 视图中，发送者仍可访问该 Send，直到达到指定的**删除日期**。
-
 ### 从桌面 App 删除 <a href="#delete-from-desktop-apps" id="delete-from-desktop-apps"></a>
 
 要从桌面 App 删除 Send，请使用 **≡**&#x9009;项菜单然后选择 🗑️**删除**按钮：

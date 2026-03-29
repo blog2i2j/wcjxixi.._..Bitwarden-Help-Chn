@@ -12,9 +12,11 @@
 >
 > stdout 和 stderr 默认都是输出到终端（屏幕）。[参考链接](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81)
 
-Bitwarden Send 有一套功能齐全的 CLI 命令。本文介绍了 `bw send` 命令的范围，但是 Send 并**不是一个独立于 Bitwarden 命令行界面 (CLI) 的工具**。因此，[CLI 文档](../developer-tools/cli/password-manager-cli.md)中的许多命令、选项和概念与这里的都是相关联的。
+Bitwarden Send 有一套功能齐全的 CLI 命令。本文介绍了 `bw send` 命令的范围，但是 Send 并不是一个独立于 Bitwarden 命令行界面 (CLI) 的工具。因此，[CLI 文档](../developer-tools/cli/password-manager-cli.md)中的许多命令、选项和概念与这里的都是相关联的。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6hWfoRgu1yoyrXEB6JqN6E/35bc0f96642a57df42f1b2e6fa7c4c19/send-cli.png?fm=webp&h=433&q=50&w=961" %}
+{% embed url="https://bitwarden.com/assets/6hWfoRgu1yoyrXEB6JqN6E/03d8c4b1f11582f8d9141c3f2e0f4bd2/2026-02-27_11-28-26.png?w=800&fm=avif" %}
+Send 的 --help
+{% endembed %}
 
 ## send
 

@@ -32,14 +32,14 @@ Send 选项
 
 3、使用您喜欢的任何通信渠道分享 Send 链接。
 
-每个 Send 都有一个[已配置生命周期](send-lifespan.md)，以允许您跟踪 Send。每当发生一个生命周期事件（例如，到期）时，Send 将显示[一组状态图标](send-faqs.md#q-what-do-the-icons-next-to-my-sends-indicate)。图标如下：
+每个 Send 都有一个[配置的生命周期](send-lifespan.md)，以允许您跟踪 Send。每当发生一个生命周期事件（例如，到期）时，Send 将显示[一组状态图标](send-faqs.md#q-what-do-the-icons-next-to-my-sends-indicate)。图标如下：
 
 | 图标      | 含义                                                             |
 | ------- | -------------------------------------------------------------- |
-| **🔑**  | 此 Send [受密码保护](send-privacy.md#send-passwords)。                |
+| **🔒**  | 此 Send [受密码保护](send-privacy.md#send-passwords)。                |
 | **⚠️**  | 此 Send 已[被手动禁用](send-lifespan.md#manually-disable-or-delete)。  |
 | **🕘**  | 此 Send 已达到指定的[有效期](send-lifespan.md#expiration-date)。          |
-| **🚫**  | 此 Send 已达到指定的[最大访问次数](send-lifespan.md#maximum-access-count)。  |
+| **⚠️**  | 此 Send 已达到指定的[最大访问次数](send-lifespan.md#maximum-access-count)。  |
 | **🗑️** | 此 Send 已达到指定的[删除日期](send-lifespan.md#deletion-date)，**正等待删除**。 |
 
 ## Send 安全性 <a href="#send-security" id="send-security"></a>
@@ -75,7 +75,7 @@ Send 是为短暂分享而设计的，所以您[创建的每一个 Send](create-
 </details>
 
 {% hint style="info" %}
-个人密码库项目的附件和所有 Send 使用高级版订阅或组织授予的个人存储空间。组织拥有的项目的附件使用共享的组织存储空间。了解如何[添加存储空间](../your-vault/vault-items/file-attachments.md#add-storage-space)。
+个人密码库项目的附件和所有 Send 均使用高级版订阅或组织授予的个人存储空间。组织拥有的项目的附件使用共享的组织存储空间。了解如何[添加存储空间](../your-vault/vault-items/file-attachments.md#add-storage-space)。
 {% endhint %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
