@@ -1,6 +1,6 @@
-# 钓鱼拦截器
+# \*钓鱼拦截器
 
-{% hint style="info" %}
+{% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/phishing-blocked/)
 {% endhint %}
 
