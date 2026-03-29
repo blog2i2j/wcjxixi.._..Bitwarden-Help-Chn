@@ -41,20 +41,20 @@ Send 验证码
 输入 Send 验证码
 {% endembed %}
 
-## 隐藏了电子邮箱的 Send <a href="#hidden-email-sends" id="hidden-email-sends"></a>
+## 隐藏电子邮箱的 Send <a href="#hidden-email-sends" id="hidden-email-sends"></a>
 
 默认情况下，Send 对象将对接收者显示发送者的电子邮箱地址，如上面的屏幕截图所示。发送者可以为 Send 对象选择隐藏其电子邮箱地址，该电子邮箱地址将替换为警告消息：
 
 {% embed url="https://bitwarden.com/assets/47RPmr6xOowzjJbG6JxVG3/42ba660b4316b57c4857ed7f7fcd58e3/Hidden_email_send.png?w=800&fm=avif" %}
-隐藏了电子邮箱的文件 Send
+隐藏电子邮箱的文件 Send
 {% endembed %}
 
-如果您收到一个带有这种警告信息的 Send，您应该这样做：
+如果您收到一个带有这种警告信息的 Send，以下是您应该做的：
 
-* **这条 Send 是预期的吗？**\
-  如果这条 Send 是预期的，请与预期的发送者取得联系。与此人确认收到的此 Send 的链接（`https://vault.bitwarden.com/#/send/xxx/yyy`）与他们创建的一致。
-* **这条 Send 是非预期的吗？**\
-  如果这条 Send 是非预期的，您应该在与之互动之前确定发送者的身份。问问您的同事、经理或拥有 Bitwarden 账户的朋友，他们是否可能给你发送了什么。如果您确定了发送者，请与此人确认收到的 Send 链接（`https://vault.bitwarden.com/#/send/xxx/yyy`）与他们创建的一致。**如果您不能识别发送者**，不要与此 Send 互动。
+* **此 Send 是预期的吗？**\
+  如果此 Send 是预期的，请与预期的发送者取得联系。与此人确认收到的此 Send 的链接（`https://vault.bitwarden.com/#/send/xxx/yyy`）与他们创建的一致。
+* **此 Send 是非预期的吗？**\
+  如果此 Send 是非预期的，您应该在与之互动之前确定发送者的身份。询问您的同事、经理或拥有 Bitwarden 账户的朋友，他们是否可能给你发送了什么。如果您确定了发送者，请与此人确认收到的 Send 链接（`https://vault.bitwarden.com/#/send/xxx/yyy`）与他们创建的一致。**如果您不能识别发送者**，不要与此 Send 互动。
 
 {% hint style="danger" %}
 使用上述措施以确保隐藏了电子邮箱的 Send 的可信度，对于文件 Send 来说尤其重要。**千万不要下载未知的文件**。

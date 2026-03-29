@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/send-lifespan/)
 {% endhint %}
 
-与传统的 Bitwarden 密码库项目和文件附件不同，Send 是短暂的，**默认生命周期为 7 天**，使用[删除日期](send-lifespan.md#deletion-date)选项可设置为最长 31 天。当一个 Send 达到删除日期时，它将从 Bitwarden 系统中被清除，发送者和接收者都无法再次访问。
+与传统的 Bitwarden 密码库项目和文件附件不同，Send 是短暂的，**默认生命周期为 7 天**，使用[删除日期](send-lifespan.md#deletion-date)选项可设置为最长 30 天。当一个 Send 达到删除日期时，它将从 Bitwarden 系统中被清除，发送者和接收者都无法再次访问。
 
 不同的客户端 App 允许您设置访问的额外限制，例如[到期日期](send-lifespan.md#expiration-date)和/或[最大访问次数](send-lifespan.md#maximum-access-count)选项。您也可以在任何时候手动[禁用或删除](send-lifespan.md#manually-disable-or-delete) Send。
 
 ## 删除日期 <a href="#deletion-date" id="deletion-date"></a>
 
-默认情况下，Send 会在创建七天后自动删除。使用**删除日期**选项，您可以将其更改为一系列预先指定的选项（比如，1 小时、1 天、31 天）。
+默认情况下，Send 会在创建七天后自动删除。使用**删除日期**选项，您可以将其更改为一系列预先指定的选项（比如，1 小时、1 天、30 天）。
 
 删除日期的**最大允许值为自创建后 31 天**。
 
@@ -55,7 +55,7 @@
 当一个 Send 达到其指定的最大访问次数（或查看次数）时：
 
 * 对于 Send 的接收者（即任何拥有生成的链接的人），导航到 Send 链接时将显示一个界面，报告该 Send 不存在或不再可用。
-* 对于发送者，一个 **🚫达到最大访问次数**图标将出现在 Send 旁边。发送者仍可访问该 Send，直到达到指定的**删除日期**。
+* 对于发送者，一个 **⚠达到最大访问次数**图标将出现在 Send 旁边。发送者仍可访问该 Send，直到达到指定的**删除日期**。
 
 {% hint style="success" %}
 **当前访问次数**（或**查看**）计数器的含义：
@@ -75,7 +75,7 @@
 要从网页 App 删除 Send，请使用 **≡选项**菜单然后选择 **🗑️删除**按钮：
 
 {% embed url="https://bitwarden.com/assets/1PiQrX748LtTFXChfAIbFP/0ff74124a0d215254c532fe79cff9012/2026-02-25_11-08-25.png?w=800&fm=avif" %}
-Send 选项
+从网页 App 删除 Send
 {% endembed %}
 {% endtab %}
 
@@ -95,8 +95,6 @@ Send 选项
 要从桌面 App 删除 Send，请使用 **≡**&#x9009;项菜单然后选择 🗑️**删除**按钮：
 
 {% embed url="https://bitwarden.com/assets/12eLcz2aoBkcDRGS3U1jzP/66e1b7625ac1290f2d110d0d4e7086c8/delete_send_desktop.png?w=800&fm=avif" %}
-
-{% embed url="https://bitwarden.com/assets/12eLcz2aoBkcDRGS3U1jzP/1fb26cbaf36ce8cf3fa583b550d00dd6/send-lifespan-2.png?w=1100&fm=avif" %}
 从桌面 App 删除 Send
 {% endembed %}
 {% endtab %}

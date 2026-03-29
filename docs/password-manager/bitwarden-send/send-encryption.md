@@ -23,11 +23,7 @@ Send 是一种安全和短暂的机制，用于向任何人传输敏感信息，
 
 这包括几个组件：
 
-| 组件       | 示例                                                                                                        |
-| -------- | --------------------------------------------------------------------------------------------------------- |
-| 协议       | https://                                                                                                  |
-| 域名       | vault.bitwarden.com                                                                                       |
-| 锚点/碎片/哈希 | <p>锚点/碎片/哈希包含 URL 的 Send ID 和 Send 密钥。</p><p></p><p>在示例链接中，表示为 <code>#/send_id/encryption_key</code>。</p> |
+<table><thead><tr><th width="100">组件</th><th>示例</th></tr></thead><tbody><tr><td>协议</td><td>https://</td></tr><tr><td>域名</td><td>vault.bitwarden.com</td></tr><tr><td>锚点/碎片/哈希</td><td><p>锚点/碎片/哈希包含 URL 的 Send ID 和 Send 密钥。</p><p></p><p>在示例链接中，表示为 <code>#/send_id/encryption_key</code>。</p></td></tr></tbody></table>
 
 锚点/碎片/哈希不会发送到服务器。该信息在浏览器本地用于识别和解密 Send 内容。
 
