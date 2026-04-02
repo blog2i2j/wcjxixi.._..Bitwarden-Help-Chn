@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/my-items/)
 {% endhint %}
 
-「**我的项目**」是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。当组织使用[集中化组织所有权](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)策略后，「我的项目」将可供成员使用。
+「**我的项目**」是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。当组织正在使用[集中化组织所有权](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)策略，「我的项目」将可供成员使用。
 
-所有者或管理员启用该策略后，「**我的项目**」将被添加到每一个组织成员的密码库中，并且根据组织策略的设置，用户可能会被提示[将项目从「我的密码库」转移到「我的项目」](transfer-ownership.md)。
+所有者或管理员启用该策略后，「**我的项目**」将被添加到每一位组织成员的密码库中，并且根据组织策略的设置，用户可能会被提示[将项目从「我的密码库」转移到「我的项目」](transfer-ownership.md)。
 
 {% hint style="danger" %}
 目前，Bitwarden 仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)。如果您的组织在 [2025.11.0](../../release-notes.md#id-2025.11.0) 版本之前激活了该策略，将为自该版本以后确认的成员创建「**我的项目**」。现有成员将不会拥有「**我的项目**」，并且可以继续使用他们的「**我的密码库**」。
@@ -21,13 +21,13 @@
 
 ## 定位「我的项目」 <a href="#locating-my-items" id="locating-my-items"></a>
 
-您可以在任何 Bitwarden App 中进行筛选以列出「**我的项目**」，例如在网页 App 中：
+「**我的项目**」可作为密码库筛选器在任何 Bitwarden App 中使用，例如在网页 App 中：
 
 {% embed url="https://bitwarden.com/assets/7f20Jamu35GDGYF4sOmsgn/5e525f384e09aef4b22c0c7f7cf993cb/2026-01-27_09-27-31.png?w=800&fm=avif" %}
 网页 App 中的「我的项目」
 {% endembed %}
 
-注意在这个截图中，**所有者**列指示该项目归企业组织拥有。
+注意在这个截图中，**所有者**列指示了该项目归企业组织拥有。
 
 ## 使用「我的项目」 <a href="#use-my-items" id="use-my-items"></a>
 
@@ -47,7 +47,7 @@
 导入到「我的项目」
 {% endembed %}
 
-组织成员可以通过在任何 Bitwarden 客户端从**集合**下拉菜单中选择「**我的项目**」来[导入项目](../import-and-export/import-data.md)到其中。
+在任何 Bitwarden 客户端上，组织成员可以通过从**集合**下拉菜单中选择「**我的项目**」来[导入项目](../import-and-export/import-data.md)到其中。
 
 {% hint style="info" %}
 将文件导入到「**我的项目**」后，该文件中的任何文件夹引用都不会保留。导入完成后，您可以将导入的数据组织到[文件夹](../your-vault/vault-navigation/folders.md)中。

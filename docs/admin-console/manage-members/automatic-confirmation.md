@@ -19,7 +19,7 @@
 激活后，自动确认是由已解锁的浏览器扩展（属于具有**管理用户**权限的[所有者、管理员和自定义角色成员](member-roles.md)）执行的后台进程。通过下面的章节了解如何激活自动确认。
 
 {% hint style="info" %}
-当为组织启用或停用自动确认、每位管理员启用或停用自动确认，以及某位成员被自动确认时，都会记录[事件](../oversight-visibility/event-logging/event-logs.md)。
+当为组织启用了或停用了自动确认、每一位管理员启用了或停用了自动确认，以及某位成员被自动确认时，都会记录[事件](../oversight-visibility/event-logging/event-logs.md)。
 {% endhint %}
 
 ## 启用自动确认 <a href="#turn-on-automatic-confirmation" id="turn-on-automatic-confirmation"></a>
