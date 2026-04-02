@@ -4,54 +4,55 @@
 对应的[官方文档地址](https://bitwarden.com/help/my-items/)
 {% endhint %}
 
-**我的项目**是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。要启用「我的项目」功能，组织必须启用[强制数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。在用户离职后，项目的控制权将作为继承过程的一部分转移给管理员。启用策略后，将在每个组织成员的密码库中创建「我的项目」，可以在其中存储和维护组织拥有的项目。
+「**我的项目**」是组织成员存储不需要与其他用户共享但仍然属于组织所有权的项目的位置。当组织使用[集中化组织所有权](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)策略后，「我的项目」将可供成员使用。
+
+所有者或管理员启用该策略后，「**我的项目**」将被添加到每一个组织成员的密码库中，并且根据组织策略的设置，用户可能会被提示[将项目从「我的密码库」转移到「我的项目」](transfer-ownership.md)。
 
 {% hint style="danger" %}
-Bitwarden 目前仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。
-
-如果您的组织在 2025.11.0 版本之前激活了该策略，将为自该版本以后确认的成员创建**我的项目**。现有成员将不会拥有**我的项目**，并且可以继续使用他们的**我的密码库**。未来版本将允许已开始成员入职并使用个人密码库的组织，将所有凭据迁移至组织所有权。
+目前，Bitwarden 仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)。如果您的组织在 [2025.11.0](../../release-notes.md#id-2025.11.0) 版本之前激活了该策略，将为自该版本以后确认的成员创建「**我的项目**」。现有成员将不会拥有「**我的项目**」，并且可以继续使用他们的「**我的密码库**」。
 {% endhint %}
 
-管理员激活强制组织数据所有权策略后，**我的项目**将被添加到所有组织成员的密码库中。
+「**我的项目**」是每个组织成员存储项目的主要位置，特别是那些不需要与其他成员共享的项目：
 
-* 「我的项目」是组织成员存储他们的密码库项目的首选位置。
-* 保存在「我的项目」中的项目将始终属于组织所有。
-* 用户无法将「我的项目」分配给其他组织成员，组织内共享的项目也无法移动到用户的「我的项目」中。
-* 在组织成员账户被移除或删除之前，「我的项目」数据（包括用户名和密码）只能由该个人成员直接访问。然而，该数据受[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)和组织[健康报告](../your-vault/security-tools/vault-health-reports.md)的监控与统计。
-* 当组织成员账户被[移除](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)或[删除](../../admin-console/manage-members/revoke-remove/delete-member-accounts.md)后，「我的项目」数据及其管理权将转移给组织管理员。
+* 「**我的项目**」中的项目归组织拥有。这些项目除该成员外，任何人无法直接访问，但会记录[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)和组织[健康报告](../your-vault/security-tools/vault-health-reports.md)。
+* 成员不能在[将项目分配到集合](sharing.md)之前，与其它成员共享「**我的项目**」中的项目。
+* 通过[集合](../../admin-console/manage-shared-items/collections/about-collections.md)共享给成员的项目无法移动或添加到「**我的项目**」。
+* 当成员账户从组织中被[移除](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)或[删除](../../admin-console/manage-members/revoke-remove/delete-member-accounts.md)后，「**我的项目**」中的项目将转移给组织管理员。
+
+## 定位「我的项目」 <a href="#locating-my-items" id="locating-my-items"></a>
+
+您可以在任何 Bitwarden App 中进行筛选以列出「**我的项目**」，例如在网页 App 中：
+
+{% embed url="https://bitwarden.com/assets/7f20Jamu35GDGYF4sOmsgn/5e525f384e09aef4b22c0c7f7cf993cb/2026-01-27_09-27-31.png?w=800&fm=avif" %}
+网页 App 中的「我的项目」
+{% endembed %}
+
+注意在这个截图中，**所有者**列指示该项目归企业组织拥有。
 
 ## 使用「我的项目」 <a href="#use-my-items" id="use-my-items"></a>
 
-「我的项目」与集合一起位于用户的密码库中。「我的项目」存储用户为其个人工作职责而创建的密码库项目，例如不打算与其他组织成员共享的工作必要登录凭据。
+### 保存到「我的项目」 <a href="#save-to-my-items" id="save-to-my-items"></a>
 
-{% embed url="https://bitwarden.com/assets/7f20Jamu35GDGYF4sOmsgn/ea93b8e238fc3345cd6db96e4c824779/2025-10-08_11-18-36.png?w=589&fm=avif" %}
-「我的项目」位置
+对于拥有访问权限的组织成员，「**我的项目**」将是保存新项目的默认集合：
+
+{% embed url="https://bitwarden.com/assets/5Z9lis0vkv5MNSWWIy8XHW/f66a9a878e33a1dc4fc038c3d5bfd3ba/2026-01-27_09-30-50.png?w=800&fm=avif" %}
+保存到「我的项目」
 {% endembed %}
 
-用户无法创建、重命名或删除「我的项目」。
+### 导入到「我的项目」 <a href="#import-to-my-items" id="import-to-my-items"></a>
 
-## 导入到「我的项目」 <a href="#import-to-my-items" id="import-to-my-items"></a>
+对于拥有访问权限的组织成员，「**我的项目**」可以被选择作为集合来[导入数据](../import-and-export/import-data.md)到其中：
 
-组织成员可以在任何 Bitwarden 客户端上通过从集合下拉菜单中选择「我的项目」将项目导入到「我的项目」：
-
-{% embed url="https://bitwarden.com/assets/3PO3iAbypeTCIXsWCu2jQ2/846cb1ceb1c696ae549b2df413ff0801/2025-10-08_15-43-37.png?w=1200&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/3PO3iAbypeTCIXsWCu2jQ2/a75eff626ca0bf19a12fca8b5cd50a1c/2026-01-27_09-38-30.png?w=800&fm=avif" %}
 导入到「我的项目」
 {% endembed %}
 
+组织成员可以通过在任何 Bitwarden 客户端从**集合**下拉菜单中选择「**我的项目**」来[导入项目](../import-and-export/import-data.md)到其中。
+
 {% hint style="info" %}
-将文件导入到**我的项目**时，该文件中的任何文件夹引用都不会保留。导入完成后，您可以将导入的数据组织到[文件夹](../your-vault/vault-navigation/folders.md)中。
+将文件导入到「**我的项目**」后，该文件中的任何文件夹引用都不会保留。导入完成后，您可以将导入的数据组织到[文件夹](../your-vault/vault-navigation/folders.md)中。
 {% endhint %}
 
-## 保存到「我的项目」 <a href="#save-to-my-items" id="save-to-my-items"></a>
+## 离职后 <a href="#after-offboarding" id="after-offboarding"></a>
 
-当强制组织所有权策略处于激活状态时，创建新密码库项目的用户将能够将项目保存到「我的项目」。
-
-在创建项目时，「我的项目」将默认出现在**集合**字段中。
-
-{% embed url="https://bitwarden.com/assets/5Z9lis0vkv5MNSWWIy8XHW/476245dcbeec31c62d6c8881f4eb4586/2025-10-08_11-15-05.png?w=1200&fm=avif" %}
-为「我的项目」创建新项目
-{% endembed %}
-
-## 转移项目 <a href="#transfer-items" id="transfer-items"></a>
-
-启用强制组织所有权策略以允许组织管理员在成员继任期间安全地转移成员凭据。来自已移除或已删除用户的凭据可以转移到其他集合。了解更多有关[员工离职和继任后转移项目](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)的信息。
+当成员从组织中被[移除](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)或[删除](../../admin-console/manage-members/revoke-remove/delete-member-accounts.md)后，「**我的项目**」中的项目将自动转移给组织管理员。此后，管理员可以决定如何处理这些项目，例如将它们转移到其他成员使用的集合中，或从组织中清除。了解更多有关[员工离职和继任后转移项目](../../admin-console/manage-members/revoke-remove/permanently-remove-access.md)的信息。

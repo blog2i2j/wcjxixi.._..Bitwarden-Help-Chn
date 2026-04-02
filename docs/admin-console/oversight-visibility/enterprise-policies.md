@@ -51,9 +51,9 @@
 
 如果您无法停用**单一组织**策略，请验证上述所有策略是否已停用，以及您没有[已声明的域名](claimed-domains/claimed-domains.md)，然后重试。
 
-### 集中组织所有权 <a href="#centralize-organization-ownership" id="centralize-organization-ownership"></a>
+### 集中化组织所有权 <a href="#centralize-organization-ownership" id="centralize-organization-ownership"></a>
 
-启用**集中组织数所有权**策略将阻止个人拥有密码库项目。这将添加「[我的项目](../../password-manager/organization-members/my-items.md)」，这是一个组织拥有的位置，只有该成员才能访问。「**我的项目**」将取代个人的「**我的密码库**」，并将所有权从用户转移到组织。只要该成员在组织中处于活跃状态，管理员就无法编辑或导出该用户的「我的项目」。
+启用**集中化组织数所有权**策略将阻止个人拥有密码库项目。这将添加「[我的项目](../../password-manager/organization-members/my-items.md)」，这是一个组织拥有的位置，只有该成员才能访问。「**我的项目**」将取代个人的「**我的密码库**」，并将所有权从用户转移到组织。只要该成员在组织中处于活跃状态，管理员就无法编辑或导出该用户的「我的项目」。
 
 {% hint style="info" %}
 此策略仅影响非组织所有者或管理员的成员。组织所有者和管理员可以继续使用「**我的密码库**」。
