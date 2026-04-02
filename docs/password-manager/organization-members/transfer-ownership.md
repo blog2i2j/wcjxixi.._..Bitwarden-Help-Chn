@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/transfer-ownership/)
 {% endhint %}
 
-您的组织激活[集中化组织所有权](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)策略后，您可能会在 Bitwarden 浏览器扩展中被要求将您的项目转移到组织。通过此策略，您的组织将要求所有项目都必须归组织拥有，以确保安全性和合规性。
+您的组织激活[集中化组织所有权](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)策略后，您可能会在 Bitwarden 浏览器扩展中被要求将您的项目转移到组织。通过此策略，您的组织要求所有项目都归组织拥有，以确保安全性和合规性。
 
-{% embed url="https://bitwarden.com/assets/1rhoCL30l2gE2FAPxmfbU4/d6c6cb82e7f8b2a163ef90d7219095f3/2026-01-27_12-24-48.png?w=800&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/1rhoCL30l2gE2FAPxmfbU4/d6c6cb82e7f8b2a163ef90d7219095f3/2026-01-27_12-24-48.png?w=901&fm=avif" %}
 将项目转移到组织
 {% endembed %}
 
