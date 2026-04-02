@@ -275,7 +275,7 @@ TOTP 内嵌自动填充单次登录
 
 ### TOTP 自动填充 <a href="#totp-autofill" id="totp-autofill"></a>
 
-如果您使用 [Bitwarden 验证器](../../your-vault/security-tools/totp.md)，浏览器扩展将自动填充您的 TOTP 代码，前提是您使用上下文菜单、键盘快捷键或手动自动填充（对没有保存 URI 的项目使用**填充**按钮）。您也可以使用内嵌自动填充菜单来填写 TOTP 代码。**如果您使用页面加载时自动填充功能，浏览器扩展程序将不会自动填写您的 TOTP 代码**。
+如果您使用[集成的身份验证器](../../your-vault/security-tools/totp.md)，浏览器扩展将自动填充您的 TOTP 代码，前提是您使用上下文菜单、键盘快捷键或手动自动填充（对没有保存 URI 的项目使用**填充**按钮）。您也可以使用内嵌自动填充菜单来填写 TOTP 代码。**如果您使用页面加载时自动填充功能，浏览器扩展程序将不会自动填写您的 TOTP 代码**。
 
 默认情况下，自动填充登录信息后，您的 TOTP 也会被复制到剪贴板。如果您使用页面加载时自动填充功能，这是推荐的工作流程。
 
@@ -285,11 +285,7 @@ TOTP 内嵌自动填充单次登录
 
 ### 使用 Bitwarden 中存储的通行密钥登录 <a href="#log-in-with-passkeys-stored-in-bitwarden" id="log-in-with-passkeys-stored-in-bitwarden"></a>
 
-{% hint style="info" %}
-如果某个域名位于[排除域名](../more-autofill-options/exclude-domains.md)列表中，Bitwarden 浏览器扩展就不会发出通行密钥提示。
-{% endhint %}
-
-您可以使用通行密钥登录网站。保存新通行密钥时，网站 URI 会保存在登录项目中。要使用通行密钥，请打开网站如何开始通行密钥登录流程。相关的通行密钥将显示在 Bitwarden 浏览器扩展对话框中。选择您要使用的通行密钥，然后按**确认**。
+您可以[使用通行密钥登录](../more-autofill-options/autofill-passkeys.md)网站。保存新通行密钥时，网站 URI 会保存在登录项目中。要使用通行密钥，请打开网站如何开始通行密钥登录流程。相关的通行密钥将显示在 Bitwarden 浏览器扩展对话框中。选择您要使用的通行密钥，然后按**确认**。
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5KeuUZox5shd0zDMxPHKXn/1aab35dfceed0ed9cdb17b143be9a890/2024-10-29_11-39-33.png?_a=DAJCwlWIZAAB" %}
 使用通行密钥登录
@@ -298,5 +294,5 @@ TOTP 内嵌自动填充单次登录
 [内嵌自动填充菜单](autofill-from-browser-extensions.md#inline-auto-fill-menu)还可用于轻松使用通行密钥进行身份验证。
 
 {% hint style="info" %}
-当域名位于[**排除域名**](../more-autofill-options/exclude-domains.md)列表中时，Bitwarden 浏览器扩展不会发出通行密钥提示。
+当某个域名位于[**排除域名**](../more-autofill-options/exclude-domains.md)列表中时，Bitwarden 浏览器扩展不会发出通行密钥提示。
 {% endhint %}
