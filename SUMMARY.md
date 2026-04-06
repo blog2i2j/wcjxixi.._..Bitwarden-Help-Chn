@@ -5,7 +5,7 @@
 ## 文档 <a href="#docs" id="docs"></a>
 
 * [首页](docs/home.md)
-* [发行记录](docs/release-notes.md)
+* [发布记录](docs/release-notes.md)
 * [账户访问](docs/account/README.md)
   * [创建 Bitwarden 账户](docs/account/create-bitwarden-account.md)
   * [选择服务器](docs/account/choose-my-server.md)
@@ -386,7 +386,7 @@
     * [加密密钥轮换](docs/security/encryption/encryption-key-rotation.md)
     * [账户指纹短语](docs/security/encryption/account-fingerprint-phrase.md)
   * [软件开发](docs/security/software-development/README.md)
-    * [服务器 & 客户端版本](docs/security/software-development/versioning.md)
+    * [服务器 & 客户端版本控制](docs/security/software-development/versioning.md)
     * [软件发布支持](docs/security/software-development/software-release-support.md)
   * [可信任的通信](docs/security/trusted-communications/README.md)
     * [关于可信任的通信](docs/security/trusted-communications/about-trusted-communications.md)
