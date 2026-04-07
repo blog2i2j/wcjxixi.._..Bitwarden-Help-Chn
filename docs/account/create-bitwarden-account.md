@@ -4,26 +4,25 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/create-bitwarden-account/)
 {% endhint %}
 
-我们很高兴能参与您的安全信息管理之旅。要创建 Bitwarden 账户，请点击我们主页上的 **Get Started** 按钮，或者点击[这里](https://vault.bitwarden.com/#/register)。无论您是从链接页面开始，还是直接从 Bitwarden 网页 App 开始，请输入您的**电子邮箱地址**，然后从**账户创建于**下拉列表中选择一个域名：
+我们很高兴能成为您安全信息管理之旅的一部分！要创建 Bitwarden 账户，请转至我们的[注册页面](https://bitwarden.com/go/start-free/)或在我们的主页上选择 **Get Started Free**。输入您的**电子邮箱**地址并选择您的首选服务器位置：**bitwarden.com**（美国）或 **bitwarden.eu**（欧盟）：
 
-{% hint style="success" %}
-您的 Bitwarden 账户可以创建在我们位于**美国**或**欧盟**的云服务器上，或创建在自托管服务器上。要[选择在哪个服务器上创建账户](choose-my-server.md)，请滚动到页面底部，在提交表格前使用**服务器**或**登录到**下拉菜单进行选择。
-{% endhint %}
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/32lwhyZi7zd0OvjvXZqAnB/291dd7d800b59d95f14655d9ab966d80/2024-12-02_10-18-15.png?_a=DAJCwlWIZAAB" %}
-创建账户
+{% embed url="https://bitwarden.com/assets/4eNMfYMnwsCtN9UsYextW1/a7a8993752b25c8112600b6bccfda06b/Create_account.png?w=1400&fm=avif" %}
+创建账户并选择服务器位置
 {% endembed %}
 
-选择**继续**以继续。Bitwarden 将向您的电子邮箱收件箱发送一封验证电子邮件。当您收到该电子邮件时，选择**验证电子邮箱**按钮，通过设置和确认**主密码**来完成账户的创建：
+选择**注册**或**继续**。Bitwarden 将通过电子邮件向您发送验证链接。要完成新账户的创建：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2pST1WXY0Xk7GQ4GpwzELn/59b88f130a5d65b51c75bbe3a742a702/2024-12-02_10-20-39.png?_a=DAJCwlWIZAAB" %}
+1. 在收到的电子邮件中，选择**验证电子邮件**。
+2. 请输入一个易记且强大的新**主密码** 。
+3. （可选）为确保密码强度，请选择**检查密码的已知数据泄露情况**（[了解更多](../password-manager/your-vault/security-tools/vault-health-reports.md#exposed-passwords-report)）。
+4. 选择**创建账户**：
+
+{% embed url="https://bitwarden.com/assets/2pST1WXY0Xk7GQ4GpwzELn/258a7524e9ecbfe25d2b3a4e455257c0/Set_master_password.png?w=1328&fm=avif" %}
 设置主密码
 {% endembed %}
 
-当您对主密码感到满意后，请选择**创建账户**。在提交主密码之前，您还可以选择**检查密码的已知数据泄露情况**（[了解更多](../password-manager/your-vault/security-tools/vault-health-reports.md#exposed-passwords-report)）。
-
 {% hint style="info" %}
-如上所述，旧账户可能尚未验证其电子邮箱！如果您在创建账户时没有被要求验证电子邮箱，请登录您的[网页密码库](https://vault.bitwarden.com/)然后选择**验证电子邮箱**按钮。
+如果您的账户是旧账户，您可能需要主动验证您的电子邮箱！请登录[网页密码库](https://vault.bitwarden.com/)然后选择**验证电子邮箱**。如果您的账户电子邮箱未验证，则无法创建 [Send](../password-manager/bitwarden-send/about-send.md)。
 {% endhint %}
 
 ## 通过组织邀请创建账户 <a href="#create-an-account-from-an-organization-invite" id="create-an-account-from-an-organization-invite"></a>
@@ -31,7 +30,7 @@
 雇主或家庭成员等组织可以邀请用户注册 Bitwarden。如果您已被邀请加入某个组织，请检查您的电子邮箱是否收到来自 Bitwarden 的加入组织的邀请。在邀请过期之前打开电子邮件，然后选择**立即加入组织**。
 
 {% embed url="https://bitwarden.com/assets/3rZSnNkT3NPYThquuWqpeb/95516ccdedbb99931be5ee4d207fe2d8/image5.png?w=619&fm=avif" %}
-点击通过电子邮件发送的链接后，系统会提示受邀用户接受组织邀请
+点击电子邮件链接后，系统会提示受邀用户接受组织邀请
 {% endembed %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>

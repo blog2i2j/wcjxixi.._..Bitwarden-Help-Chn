@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/forgot-master-password/)
 {% endhint %}
 
-Bitwarden 采用零知识加密技术。这意味着 **Bitwarden 无法访问、获取或重置您的主密码**。但是，您可以采取一些措施来尝试重新获取对您的账户的访问权限：
+Bitwarden 采用零知识加密技术，这意味着 **Bitwarden 无法访问、获取或重置您的主密码**。但是，您可以采取一些措施来尝试重新获取对您的账户的访问权限：
 
 ## 检查服务器地理位置 <a href="#check-server-geography" id="check-server-geography"></a>
 
@@ -20,9 +20,9 @@ Bitwarden 采用零知识加密技术。这意味着 **Bitwarden 无法访问、
 
 接下来，检查您是否登录了另一个 Bitwarden App。如果您在该设备上设置了 [PIN 码](more-unlock-options/unlock-with-pin.md)或[生物识别](more-unlock-options/unlocking-with-biometrics.md)：
 
-* 使用之前设置的 PIN 码或生物识别解锁您的密码库。
-* 将密码库项目复制并粘贴到 [.csv 文件](../../password-manager/import-and-export/condition-bitwarden-import.md#condition-a-csv)中。
-* 创建一个新的 Bitwarden 账户然后[导入复制了数据的 .csv](../../password-manager/import-and-export/import-data.md)。
+1. 使用之前设置的 PIN 码或生物识别解锁您的密码库。
+2. 将密码库项目复制并粘贴到 [.csv 文件](../../password-manager/import-and-export/condition-bitwarden-import.md#condition-a-csv)中。
+3. 创建一个新的 Bitwarden 账户然后[导入复制了数据的 .csv](../../password-manager/import-and-export/import-data.md)。
 
 ## 查看主密码提示 <a href="#review-master-password-hint" id="review-master-password-hint"></a>
 
@@ -48,11 +48,17 @@ Bitwarden 采用零知识加密技术。这意味着 **Bitwarden 无法访问、
 
 如果您的 Bitwarden 账户已经注册了启用加密 (PRF) 的[通行密钥登录](more-log-in-options/log-in-with-passkeys.md)，您可以使用该通行密钥登录。
 
-## 如果这些选项均未授予您对您的账户的访问权限 <a href="#if-none-of-these-options-grant-you-access-to-your-account" id="if-none-of-these-options-grant-you-access-to-your-account"></a>
+## 如果这些选项均无法让您访问您的账户 <a href="#if-none-of-these-options-grant-you-access-to-your-account" id="if-none-of-these-options-grant-you-access-to-your-account"></a>
 
-我们建议您仔细检查所有设备和浏览器，查看是否有任何已登录的 Bitwarden 会话。如果您找到任何会话，这将是您[导出密码库数据](../../password-manager/import-and-export/export-vault-data.md)的最后机会。
+我们建议您仔细检查所有设备和浏览器，查看是否有任何已登录的 Bitwarden 会话。
 
 如果以上方法均无法让您访问您的账户，Bitwarden 将无法恢复该账户及其数据。您需要[删除现有账户](../../plans-and-pricing/delete-an-account-or-organization.md#wu-xu-deng-lu)然后创建一个新账户。如果您删除的 Bitwarden 账户包含高级订阅，请[联系我们](https://bitwarden.com/contact/)，我们将把您现有的订阅应用到新账户中。
+
+{% hint style="danger" %}
+删除您的账户将删除其中存储的所有个人所有的项目，包括所有已保存的附件。
+
+删除您的账户前，请检查您是否已登录任何 Bitwarden 移动 App、浏览器扩展或桌面 App。如果有，请手动整理您的数据，以便将其重新添加回新的账户中。
+{% endhint %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

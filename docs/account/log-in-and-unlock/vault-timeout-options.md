@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/vault-timeout/)
 {% endhint %}
 
-会话超时选项决定了在指定的闲置时间后，Password Manager 密码库是否会自动注销或锁定。配置密码库超时设置时，您可以设置超时时间和超时动作。
+会话超时选项决定了在指定的闲置时间后，Password Manager 密码库是否会自动注销或锁定。配置密码库超时设置时，您可以设置[超时时间](vault-timeout-options.md#session-timeout)和[超时动作](vault-timeout-options.md#session-timeout-action)。
 
 要设置超时行为：
 
 {% tabs %}
 {% tab title="网页 App" %}
-导航至**设置** → **偏好设置**以选择您的会话超时时间和会话超时动作。
+导航至**设置** → **安全**以选择您的会话超时时间和会话超时动作。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -32,12 +32,12 @@
 {% endtabs %}
 
 {% hint style="success" %}
-如果您在 Bitwarden App 中[登录了多个账户](more-log-in-options/account-switching.md)，超时时间和超时动作需根据每个账户分别设置。
+如果您在 Bitwarden App 中[登录了多个账户](more-log-in-options/account-switching.md)，超时时间和超时动作是根据每个账户分别设置的。
 {% endhint %}
 
-## 会话超时 <a href="#session-timeout" id="session-timeout"></a>
+## 会话超时时间 <a href="#session-timeout" id="session-timeout"></a>
 
-会话超时（也称为密码库超时）决定了 Bitwarden 在超时之前的非活动状态的时长。「不活动」是由与 Bitwarden 交互后的时间确定的，而不是系统空闲时间。
+会话超时时间（也称为密码库超时）决定了 Bitwarden 在超时之前的非活动状态的时长。「不活动」是由与 Bitwarden 交互后的时间确定的，而不是系统空闲时间。
 
 超时选项因 App 而异。如果您发现超时选项少于预期，并且您隶属于企业组织，则可能是企业组织启用了[会话超时策略](../../admin-console/oversight-visibility/enterprise-policies.md#session-timeout)。
 
