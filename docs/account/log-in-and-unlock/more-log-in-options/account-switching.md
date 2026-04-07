@@ -23,7 +23,7 @@
 {% hint style="success" %}
 如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
-<img src="https://bitwarden.com/assets/1Bc4QseUed27nuuhbeD7WR/34517cfcc6e47d0bde4da5de99f9fac8/account-switching-2.png?w=250&#x26;fm=avif" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/1Bc4QseUed27nuuhbeD7WR/e5dbca7997cb8efe1ebbff001813354e/2026-01-28_09-16-56.png?w=1001&#x26;fm=avif" alt="" data-size="original">
 
 在此示例中，您的工作账户可能使用诸如 `https://your.company.bitwarden.com`，而您的家庭组织账户可能使用 `https://vault.bitwarden.com`。
 {% endhint %}
@@ -33,7 +33,7 @@
 {% hint style="info" %}
 大多数密码库操作，包括添加新项目或文件夹、同步、自动填充以及[密码库超时](../vault-timeout-options.md)和解锁（[PIN 码](../more-unlock-options/unlock-with-pin.md) 或[生物识别](../more-unlock-options/unlocking-with-biometrics.md)）等设置仅适用于活动账户，您可以通过 App 顶部菜单栏中显示的图标来确定活动账户。
 
-但某些**选项**，例如[主题](../../../password-manager/your-vault/appearance/change-app-appearance.md)，则适用于**所有账户**。
+但某些选项，例如[主题](../../../password-manager/your-vault/appearance/change-app-appearance.md)，则适用于所有账户。
 {% endhint %}
 
 ## 自动填充 <a href="#auto-fill" id="auto-fill"></a>
@@ -44,7 +44,7 @@
 {% tab title="桌面端" %}
 要登录第二个（或第三个、第四个或第五个）账户，请从桌面 App 顶部右上角选择当前已登录的账户，然后选择 **🞤添加账户**。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7fpUmakpNIByzoWQa1cU8L/3673552e2fcc77ea3c0a8cae7fbd2b83/Screen_Shot_2022-05-18_at_3.33.08_PM.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/7fpUmakpNIByzoWQa1cU8L/1062adaaed12e43a9c53e8e182453c96/2026-01-28_09-08-28.png?w=1001&fm=avif" %}
 桌面 App 账户切换
 {% endembed %}
 
@@ -57,7 +57,7 @@
 {% hint style="success" %}
 如果您在多台服务器上拥有账户，例如，如果自托管 Bitwarden 的雇主向您发放了[家庭组织赞助](../../../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)，请使用登录界面上的**服务器选择器下拉菜单**，选择**自托管**菜单，将**服务器 URL** 更改为账户的 URL。
 
-<img src="https://bitwarden.com/assets/1Bc4QseUed27nuuhbeD7WR/34517cfcc6e47d0bde4da5de99f9fac8/account-switching-2.png?w=250&#x26;fm=avif" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/1Bc4QseUed27nuuhbeD7WR/e5dbca7997cb8efe1ebbff001813354e/2026-01-28_09-16-56.png?w=1001&#x26;fm=avif" alt="" data-size="original">
 
 在此示例中，您的工作账户可能使用诸如 `https://your.company.bitwarden.com`，而您的家庭组织账户可能使用 `https://vault.bitwarden.com`。
 {% endhint %}
@@ -69,7 +69,7 @@
 
 但某些**偏好设置**，则适用于**所有账户**：
 
-<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4tZUuuDPHnHQh5RNihx0TB/d82c343ba033d122e0910a6fe7a23f76/Screen_Shot_2022-01-31_at_11.18.49_AM.png?_a=DAJCwlWIZAAB" alt="桌面 App 首选项" data-size="original">
+<img src="https://bitwarden.com/assets/4tZUuuDPHnHQh5RNihx0TB/42bb8417406c45468ddcbb868a0d546f/2026-01-28_09-15-01.png?w=1001&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}
 {% endtab %}
 
@@ -89,7 +89,7 @@
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每个账户的密码库的当前状态（已锁定或已解锁）。如果您注销其中一个账户，它将从列表中移除。
 
 {% hint style="info" %}
-目前 Safari 上不支持通过浏览器扩展进行账户切换。
+~~目前 Safari 上不支持通过浏览器扩展进行账户切换。~~
 {% endhint %}
 
 ## 自动填充 <a href="#auto-fill" id="auto-fill"></a>

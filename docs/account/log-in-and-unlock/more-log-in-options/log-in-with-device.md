@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/log-in-with-device/)
 {% endhint %}
 
-虽然大多数人都使用主密码登录他们的 Bitwarden 密码库，但还有一种更方便的方法，称为无密码身份验证。使用**设备登录**，当您在一台设备上登录 Bitwarden 时，您可以选择使用已登录的其他 Bitwarden App 来批准身份验证请求，而无需输入主密码。
+设置使用设备登录，以便更快、更方便地访问 Bitwarden。这种登录方式称为无密码身份验证，无需在每次登录时输入主密码。使用**设备登录**，每次在一台设备上登录 Bitwarden 时，您都选择使用已登录的其他 Bitwarden App 来批准身份验证请求，而无需输入主密码。
 
 [了解我们的零知识加密实施方案](log-in-with-device.md#how-it-works)。
 
@@ -108,7 +108,7 @@
 
 1、在桌面 App 中，等待接收到设备批准请求：
 
-{% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/abd4d9949f342ff7efb3c289ec1942f5/2026-01-29_10-13-52.png?w=1335&fm=avif" %}
 在桌面 App 上批准
 {% endembed %}
 
