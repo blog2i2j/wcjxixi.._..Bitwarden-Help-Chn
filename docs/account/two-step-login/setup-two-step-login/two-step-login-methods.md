@@ -5,15 +5,15 @@
 {% endhint %}
 
 {% hint style="success" %}
-**2025 年 03 月 04 日**：为提高账户安全性，Bitwarden 将开始要求**未使用两步登录的用户**在[从新设备登录账户或清除浏览器 cookie 后](../../log-in-and-unlock/new-device-protection.md)进行额外的验证。您可能已收到了相关电子邮件和产品通知。
+**2025 年 03 月 04 日**：为提高账户安全性，Bitwarden 将开始要求**未使用两步登录的用户**在[从新设备登录账户或清除浏览器 cookie 后](../../log-in-and-unlock/new-device-protection.md)进行额外的验证。您可能已收到了提示此变化的相关电子邮件和产品通知。
 
-输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码。您也可以：
+输入 Bitwarden 主密码后，系统会提示您输入发送到您账户电子邮箱的一次性验证码。或者，您可以：
 
-* 按照本页面上的任何指南设置两步登录。
-* 从**设置** → **我的账户**页面的**危险区域**部分选择退出该功能（**停用新设备登录保护**）。
+* 按照本页面上的任一指南设置两步登录。
+* 从**设置** → **我的账户**页面的**危险区域**部分，选择退出该功能（**停用新设备登录保护**）。
 {% endhint %}
 
-使用两步登录（也称为双因素验证或 2FA）来保护您的 Bitwarden 密码库，通过在您登录时要求使用辅助设备进行身份验证，防止恶意行为者访问您的数据（即使他们发现了您的主密码）。如果您不熟悉 2FA 的基础知识，请查看我们的[现场指南](../field-guide-for-two-step-login.md)。
+使用两步登录（也称为双重身份验证或 2FA）可以在有人获取了您的主密码时保护你的 Bitwarden 密码库。它的工作原理是在您登录时要求从另一个来源进行身份验证。如果您不熟悉 2FA 的基础知识，请查看我们的[现场指南](../field-guide-for-two-step-login.md)。
 
 {% embed url="https://vimeo.com/1060246387" %}
 
@@ -25,7 +25,7 @@
 
 | 方式                                                                                                | 设置说明                                        | 订阅要求  |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----- |
-| FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件钥匙）                                                 | [设置说明](two-step-login-via-fido.md)          | 所有人免费 |
+| FIDO2 WebAuthn 凭据（如 YubiKey 和 Google Titan 等硬件密钥）                                                 | [设置说明](two-step-login-via-fido.md)          | 所有人免费 |
 | 验证器 App（如 [Bitwarden Authenticator](../../../bitwarden-authenticator/bitwarden-authenticator.md)） | [设置说明](two-step-login-via-authenticator.md) | 所有人免费 |
 | 电子邮箱                                                                                              | [设置说明](two-step-login-via-email.md)         | 所有人免费 |
 | Duo Security 的 Duo Push、短信、电话和安全密钥                                                                | [设置说明](two-step-login-via-duo.md)           | 要求高级版 |
@@ -39,7 +39,7 @@
 | ---------------------------------- | --------------------------------- | --------- |
 | Duo Security 的 Duo Push、短信、电话和安全密钥 | [设置说明](two-step-login-via-duo.md) | 要求团队版或企业版 |
 
-此外，企业组织可以通过[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 之外实现相同的保护。
+此外，企业组织可以通过[策略](../../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)要求两步登录，并且当使用单点登录 (SSO) 时，可以使用您的身份提供程序在 Bitwarden 外部实现相同的保护。
 
 ## 使用多个方式 <a href="#using-multiple-methods" id="using-multiple-methods"></a>
 
@@ -53,10 +53,10 @@
 6. 电子邮箱
 
 {% hint style="danger" %}
-如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多个方式会导致错误。可以考虑改为设置[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
+如果您[使用 SSO 登录](../../log-in-and-unlock/using-single-sign-on/using-login-with-sso.md)，则不建议使用电子邮箱方式的两步登录，因为使用多个方式会导致错误。可以考虑改为使用[免费的验证器方式的两步登录](two-step-login-via-authenticator.md)。
 {% endhint %}
 
-不过，任何方式都可以使用。通过选择**使用其他两步登录方式**按钮，以使用低优先级方式进行验证：
+不过，任何方式都可以使用。通过选择**使用其他两步登录方式**按钮，以使用较低优先级的方式进行验证：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -71,13 +71,13 @@
 {% endembed %}
 {% endtab %}
 
-{% tab title="移动 App" %}
+{% tab title="移动端" %}
 {% embed url="https://bitwarden.com/assets/2iyAQzp5BrmXPbIqKp9aB5/6b7bc9726ade6a5ef79cf4877e5c30ec/2025-03-18_09-30-31.png?w=710&fm=avif" %}
 使用其他两步登录方式
 {% endembed %}
 {% endtab %}
 
-{% tab title="桌面 App" %}
+{% tab title="桌面端" %}
 {% embed url="https://bitwarden.com/assets/36novNT7xJ8ZJSoG66MQXg/774092e3a3361e3a92d3bd84786b260e/setup-two-step-login-1.png?w=850&fm=avif" %}
 使用其他两步登录方式
 {% endembed %}
