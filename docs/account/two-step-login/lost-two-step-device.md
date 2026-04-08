@@ -14,9 +14,9 @@
 [账户恢复](../../admin-console/manage-members/account-recovery/about-account-recovery.md)不会绕过或停用两步身份验证。
 {% endhint %}
 
-### 备用两步登录方法 <a href="#alternate-two-step-login-method" id="alternate-two-step-login-method"></a>
+### 备用两步登录方式 <a href="#alternate-two-step-login-method" id="alternate-two-step-login-method"></a>
 
-如果您设置了多种两步登录方式，请尝试另一种。在登录界面上时，选择使用**其他两步登录方式**。
+如果您设置了多种两步登录方式，请尝试另一种。在登录界面上时，选择**使用其他两步登录方式**。
 
 ### 恢复代码 <a href="#recovery-code" id="recovery-code"></a>
 
@@ -36,7 +36,7 @@
 
 ### 受信任的紧急联系人 <a href="#trusted-emergency-contact" id="trusted-emergency-contact"></a>
 
-如果您指定了具有接管访问权限的[受信任的紧急联系人](../log-in-and-unlock/more-log-in-options/emergency-access.md)，请请求他们[发起紧急访问](../log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)。在为该紧急联系人设置的**等待时间**过后，所有两步登录方式将被关闭，紧急联系人可以更改主密码。
+如果您指定了具有接管访问权限的[已信任的紧急联系人](../log-in-and-unlock/more-log-in-options/emergency-access.md)，请请求他们[发起紧急访问](../log-in-and-unlock/more-log-in-options/emergency-access.md#use-emergency-access)。在为该紧急联系人设置的**等待时间**过后，所有两步登录方式将被停用，并且紧急联系人可以更改主密码。
 
 ### Duo 绕行代码 <a href="#duo-bypass-code" id="duo-bypass-code"></a>
 
@@ -46,8 +46,8 @@
 
 检查您的所有设备，看看您是否已登录到任何 Bitwarden 客户端，例如移动 App、浏览器扩展或桌面 App。
 
-* 如果您已登录网页 App，请获取并[使用您的恢复代码](recovery-codes.md#use-your-recovery-code)来断开所有两步登录方式。
-* 如果您已登录到任何其他 Bitwarden App，请[导出您的密码库](../../password-manager/import-and-export/export-vault-data.md)，创建一个新账户，然后在其中[导入您的数据](../../password-manager/import-and-export/import-data.md)。确认您的数据已正确导入后，请注销旧账户并考虑将其[删除](../../plans-and-pricing/delete-an-account-or-organization.md)。
+* 如果您已登录网页 App，请获取然后[使用您的恢复代码](recovery-codes.md#use-your-recovery-code)来断开所有两步登录方式。
+* 如果您已登录到任何其他 Bitwarden App，请[导出您的密码库](../../password-manager/import-and-export/export-vault-data.md)，创建一个新的账户，然后在其中[导入您的数据](../../password-manager/import-and-export/import-data.md)。确认您的数据已正确导入后，请注销旧账户并考虑将其[删除](../../plans-and-pricing/delete-an-account-or-organization.md)。
 
 ## 当恢复方法不起作用时 <a href="#when-recovery-methods-dont-work" id="when-recovery-methods-dont-work"></a>
 

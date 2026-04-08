@@ -24,10 +24,16 @@ Bitwarden 提供三种通行密钥功能：[使用通行密钥登录和解锁](h
 
 FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用不支持 FIDO2 WebAuthn 的应用程序版本，请确保您开启了其他两步登录方式。支持的应用程序包括：
 
-* 具有[支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器的设备上的**网页密码库**
-* [支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器上的**浏览器扩展**
-* 具有[支持 FIDO2](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/) 的浏览器的 Android 和 iOS 13.3+ 上的**移动 App**
+* 具有[支持 FIDO2 的浏览器](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/)的设备上的**网页密码库**
+* [支持 FIDO2 的浏览器](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/)上的**浏览器扩展**
+* 具有[支持 FIDO2 的浏览器](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/)的 Android 和 iOS 13.3+ 上的**移动 App**
 * macOS、Windows 10+ 和 Liunx 上的**桌面 App**
+
+{% hint style="info" %}
+使用自托管 Bitwarden 服务器的用户可能容易受到针对通行密钥 2FA 的网络钓鱼攻击。如果攻击者获取了用户的电子邮箱地址和主密码，他们可能会在恶意网站上嵌入 Bitwarden 通行密钥提示，诱骗受害者完成验证，从而捕获通行密钥认证响应并重放以获取账户访问权限。
+
+为确保安全，在输入凭证或与通行密钥提示交互之前，请务必确认您访问的是正确的 Bitwarden 域名。如果登录或 2FA 页面有任何异常，请不要继续操作。
+{% endhint %}
 
 ## 设置 FIDO2 WebAuthn <a href="#setup-fido-2-webauthn" id="setup-fido-2-webauthn"></a>
 
@@ -47,21 +53,21 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 两步登录设置
 {% endembed %}
 
-3、定位到**通行密钥**选项然后选择**管理**按钮。将提示您输入您的主密码以继续。
+3、定位到**通行密钥**选项然后选择**管理**。将提示您输入您的主密码以继续。
 
-4、给您的安全密钥起一个友好的**名称**。
+4、给您的安全钥匙起一个友好的**名称**。
 
-5、将安全密钥插入设备的 USB 端口，然后选择**读取密钥**。如果安全密钥具有按钮，请触摸它。
+5、将安全钥匙插入设备的 USB 端口，然后选择**读取钥匙**。如果安全钥匙具有按钮，请触摸它。
 
 {% hint style="info" %}
 某些设备（包括支持通行密钥的 Windows Hello 或 macOS 设备）是原生 FIDO2 身份验证器，它们将默认提供这些选项。如果您想注册安全密钥或其他验证器，您可能需要选择**尝试另一种方式**、**其他选项**或**取消**按钮以打开其他选项。
 {% endhint %}
 
-6、选择**保存**按钮。一个绿色的 `已启用` 消息表明已成功启用了 FIDO2 WebAuthn 方式的两步登录，并且您的密钥旁边将显示绿色的勾号 **✔️**。
+6、选择**保存**。一个绿色的 `已启用` 消息表明 FIDO2 WebAuthn 方式的两步登录已被成功启用，并且您的密钥旁边将显示绿色的勾号 **✔️**。
 
-7、选择**关闭**按钮，并确认 **FIDO2 WebAuthn** 选项现在已启用（通过一个绿色的勾号 **✔️** 指示）。
+7、选择**关闭**按钮，然后确认 **FIDO2 WebAuthn** 选项现在已被启用（通过一个绿色的勾号 **✔️** 指示）。
 
-重复此过程以向您的账户中添加最多 5 个 FIDO2 WebAuthn 安全密钥。Bitwarden 高级版账户最多可以向账户添加 10 个 FIDO2 WebAuthn 安全密钥。了解更多有关 [Password Manager 方案](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)的信息。
+重复此过程以向您的账户中添加最多 5 个 FIDO2 WebAuthn 安全钥匙。Bitwarden 高级版账户最多可以向账户添加 10 个 FIDO2 WebAuthn 安全钥匙。了解更多有关 [Password Manager 方案](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md)的信息。
 
 {% hint style="info" %}
 我们建议在继续测试两步登录之前，将活动的网页密码库选项卡保持为打开状态，以防配置错误。确认其正常工作后，请注销所有的 Bitwarden App，以要求每个 App 使用两步登录。您最终会被自动注销。
@@ -73,22 +79,22 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 1、输入您的电子邮箱地址和主密码登录您的 Bitwarden 密码库。
 
-2、系统会提示您读取安全密钥，例如将安全密钥插入设备的 USB 端口并轻按按钮：
+2、将提示您读取您的安全钥匙，例如，将安全钥匙插入设备的 USB 端口然后轻按按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3RuttlEwwfVX3UJKA8GTFg/ab7e0ba835a7f42ea3f10369cb66c008/2025-03-25_10-28-20.png?_a=DAJCwlWIZAAB" %}
 FIDO2 提示
 {% endembed %}
 
 {% hint style="success" %}
-勾选**记住我**复选框，以记住您的设备，有效期 30 天。选择此选项意味着在此期间您无需完成两步登录步骤。
+勾选**记住我**复选框，以让 Bitwarden 在接下来的 30 天内可以识别您的设备。选择此选项意味着在此期间您不会被要求完成两步登录步骤。
 {% endhint %}
 
-登录后，您将不会被要求完成第二步的两步登录步骤就可以**解锁**您的密码库。有关配置注销和锁定行为的帮助，请参阅[密码库超时选项](../../log-in-and-unlock/vault-timeout-options.md)。
+登录后，您将不会被要求完成第二步的两步登录步骤即可**解锁**您的密码库。有关配置注销和锁定行为的帮助，请参阅[密码库超时选项](../../log-in-and-unlock/vault-timeout-options.md)。
 
 ## NFC 故障排除 <a href="#nfc-troubleshooting" id="nfc-troubleshooting"></a>
 
 {% hint style="success" %}
-硬件安全密钥通常有一个物理插头，在 NFC 识别困难的情况下可以更可靠地工作。
+硬件安全钥匙通常有一个物理插头，在 NFC 识别困难的情况下可以更可靠地工作。
 {% endhint %}
 
 如果您的 YubiKey 的 NFC 功能无法正常使用：
@@ -97,8 +103,8 @@ FIDO2 提示
 
 1. 下载 [Yubico Authenticator](https://www.yubico.com/products/yubico-authenticator/)。
 2. 将 YubiKey 插入设备。
-3. 在 Yubico Authenticator 中打开钥匙然后选择 **Toggle applications**。
-4. 为您的密钥启用可用的所有 NFC 选项。如果没有列出 NFC 选项，则您的密钥可能不支持 NFC。
+3. 在 Yubico Authenticator 中打开钥匙，然后选择 **Toggle applications**。
+4. 为您的钥匙启用所有可用的 NFC 选项。如果没有列出 NFC 选项，则您的密钥可能不支持 NFC。
 
 **检查 NFC 配置是否正确：**
 
@@ -109,11 +115,11 @@ FIDO2 提示
 5. 选择您希望 YubiKey 使用 NFC 功能的配置插槽。
 6. 选择 **Program** 按钮。
 
-（**仅 Android）检查如下项目：**
+**（仅 Android）检查如下项目：**
 
-* 在设置过程中勾选了**我的某个密钥支持 NFC** 复选框。
+* 在设置过程中，确保您勾选了**我的某把钥匙支持 NFC** 复选框。
 * 您的 Android 设备支持 [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices)，并且[已知可以正常与 YubiKey NEO 或 YubiKey 5 NFC 配合使用](https://forum.yubico.com/viewtopic1c5f.html?f=26\&t=1302)。
-* 您已在 Android 设备上启用了 NFC 功能（**设置** → **更多**）。
+* 您已在您的 Android 设备上启用了 NFC 功能（**设置** → **更多**）。
 * 您的键盘布局/格式/模式已设置为 QWERTY。
 
 > **\[译者注]**：QWERTY 是一种键盘布局，指的是键盘左上角第一排字母的排列顺序为 `Q W T R E Y`。绝大多数电脑、手机默认都是 QWERTY。大多数国家使用 QWERTY，法国和比利时使用 AZERTY，德国和部分欧洲国家使用 QWERTZ。

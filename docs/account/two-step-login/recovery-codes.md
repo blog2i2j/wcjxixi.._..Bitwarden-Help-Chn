@@ -58,9 +58,9 @@
 
 ### 企业成员 <a href="#enterprise-members" id="enterprise-members"></a>
 
-当您是企业组织的成员时，提交有效的恢复代码后发生的情况可能会有所不同。
+当您是某个企业组织的成员时，提交有效的恢复代码后发生的情况可能会有所不同。
 
-如果您的组织[要求单点登录身份验证](../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，但不[要求两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)，您将被定向到 SSO 登录页面。使用您的 SSO 凭据登录并访问您的 Bitwarden 密码库。
+如果您的组织[要求单点登录身份验证](../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，但不[要求两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)，您将被定向到 SSO 登录页面。使用您的 SSO 凭据登录然后访问您的 Bitwarden 密码库。
 
 如果您的组织[要求两步登录](../../admin-console/oversight-visibility/enterprise-policies.md#require-two-step-login)，成功使用恢复代码后会将您从组织中移除。登录后要重新加入组织：
 
