@@ -4,44 +4,49 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/emergency-access/)
 {% endhint %}
 
-紧急访问允许用户指定和管理[可信任的紧急联系人](emergency-access.md#trusted-emergency-contacts)，这些联系人可以在紧急情况下请求访问他们的密码库库。
+紧急访问允许您指定和管理可信任的紧急联系人，他们可以在紧急情况下请求访问您的密码库。您可以授予联系人查看或接管用户权限，从而控制他们在需要介入时可以执行的操作：
 
-{% hint style="info" %}
-只有高级版用户，包括付费组织（家庭版、团队版或企业版）的成员才能指定可信任的紧急联系人，但任何拥有 Bitwarden 账户的人都可以被指定为可信任的紧急联系人。
+* **查看**：当紧急访问请求被批准时，此用户将获得对您个人密码库中所有项目的查看/读取权限，包括登录项目的密码和附件。
+* **接管**：当紧急访问请求被批准时，此用户必须创建一个主密码，以获得对您密码库的永久读取/写入权限。这将**替换**您之前的主密码，并移除之前设置的任何[两步登录方式](../../two-step-login/setup-two-step-login/two-step-login-methods.md)。
 
-**如果您的高级版功能因付款方式失败而被取消或失效，**&#x60A8;的可信任紧急联系人仍然可以请求并获得对您的密码库的访问权限。但是，您将无法添加新的可信任紧急联系人或编辑现有的可信任紧急联系人。
-{% endhint %}
+## 添加可信任的紧急联系人 <a href="#add-trusted-emergency-contacts" id="add-trusted-emergency-contacts"></a>
 
-## 设置紧急访问 <a href="#setup-emergency-access" id="setup-emergency-access"></a>
+只有高级版用户，包括付费组织（家庭版、团队版或企业版）的成员才能指定可信任的紧急联系人。在同一 [Bitwarden 服务器](../../../security/server-geographies.md)上的任何免费或高级 Bitwarden 账户都可以被指定为可信任的紧急联系人。您拥有的可信任的紧急联系人的数量没有限制。
 
-设置紧急访问分为 3 个步骤：您必须首先**邀请**用户成为可信任的紧急联系人，然后他们必须**接受**邀请，最后您必须**确认**他们的接受：
+设置紧急访问分为 3 个步骤：
+
+1. 您**邀请**其他用户成为您的可信任的紧急联系人。
+2. 他们**接受**邀请。
+3. 您**确认**他们作为您的可信任的紧急联系人。
 
 {% tabs %}
 {% tab title="邀请" %}
-作为想要对您的密码库授予紧急访问权限的人，请邀请可信任的紧急联系人：
+作为想要对您的密码库授予紧急访问的人，请邀请可信任的紧急联系人：
 
-1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**，然后选择 **✚添加紧急联系人**按钮：
+1、在 Bitwarden 网页 App 中，转到**设置** → **紧急访问**。
+
+2、选择 **✚添加紧急联系人**：
 
 {% embed url="https://bitwarden.com/assets/3gb0Zm4K935RUmzjd62eJq/a3930a8381fe1205b655e7a7bb0eca47/2025-12-31_09-50-39.png?w=966&fm=avif" %}
 紧急访问页面
 {% endembed %}
 
-2、输入您的信任大的紧急联系人的**电子邮箱**地址。可信任的紧急联系人必须拥有他们自己的 Bitwarden 账户，但不需要是高级版账户。
+3、输入您信任的紧急联系人的**电子邮箱**。可信任的紧急联系人必须拥有 Bitwarden 账户（免费版或高级版），以及必须位于同一[服务器地理位置](../../../security/server-geographies.md)：
 
 {% embed url="https://bitwarden.com/assets/2IEldGj87MY2IMDQpty6Vr/f0e9750c278663903be46f4a5d5a4f8c/2025-12-31_09-52-02.png?w=964&fm=avif" %}
 邀请紧急联系人
 {% endembed %}
 
-3、为可信任的紧急联系人设置**用户访问权限**级别（[仅查看或接管](emergency-access.md#user-access)）。
+4、为可信任的紧急联系人设置**用户访问权限**级别：**查看**或**接管**。
 
-4、为密码库访问权限设置**等待时间**。等待时间决定了在发起紧急访问请求后，可信任的紧急联系人必须等待多长时间才能访问您的密码库。
+5、设置**等待时间**。这是您的可信任的紧急联系人请求账户访问权限后，必须等待多长时间才能获得此访问权限，除非您提前[手动批准请求](emergency-access.md#use-emergency-access)。最短等待时间为一天。
 
-5、选择**保存**按钮以发送邀请。
+6、选择**保存**以发送邀请。
 
 您的可信任的紧急联系人**必须现在接受此邀请**。
 
 {% hint style="info" %}
-可信任的紧急联系人邀请的有效期只有 5 天。
+成为可信任的紧急联系人的邀请的有效期只有 5 天。
 {% endhint %}
 {% endtab %}
 
@@ -76,112 +81,111 @@
 
 ## 使用紧急访问 <a href="#use-emergency-access" id="use-emergency-access"></a>
 
-[设置](emergency-access.md#setup-emergency-access)完成后，以下部分将帮助您以受信任的紧急联系人的身份**发起访问**或以被指定为受信任的紧急联系人的身份**管理访问**：
-
-{% hint style="success" %}
-以下**管理访问**选项卡还包含当您不再希望已信任的紧急联系人拥有对您的密码库的「查看」或「接管」访问权限时应采取的操作的信息。
-{% endhint %}
+[设置](emergency-access.md#add-trusted-emergency-contacts)完成后，可信任的紧急联系人可以对您的账户**请求访问权限**。如果您仍然可以登录到您的账户，您可以在指定的等待时间内**批准或拒绝请求**。当您不再希望可信任的联系人能够**访问您的账户**时，您可以**撤销他们的紧急访问权限**。
 
 {% tabs %}
-{% tab title="发起访问" %}
-## 发起紧急访问 <a href="#initiate-emergency-access" id="initiate-emergency-access"></a>
-
-完成以下步骤以发起紧急访问请求：
+{% tab title="请求访问权限" %}
+要对某个账户请求访问权限：
 
 1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**。
 
-2、在**被指定为紧急联系人**部分，选择 ≡菜单图标然后选择**请求访问**：
+2、在**被指定为紧急联系人**部分，选择 **≡菜单图标**：
 
 {% embed url="https://bitwarden.com/assets/6x38VldDaEOAqpuCQ4htRJ/7946735436fd16b660aad5d7969dba8d/2025-12-31_09-54-39.png?w=966&fm=avif" %}
 请求紧急访问
 {% endembed %}
 
-3、在确认窗口中，选择**请求访问**按钮。
+3、从出现的确认信息中，选择**请求访问**。系统将向账户持有人发送一封电子邮件，告知他们有人请求访问其账户。
 
-在配置的等待时间之后，或当授予人手动批准（请参阅**管理访问**选项卡）紧急访问请求时，您将获得对授予人密码库的访问权限。
-
-### 访问授予人的密码库 <a href="#access-grantees-vault" id="access-grantees-vault"></a>
-
-您的请求获得批准后，完成以下步骤以访问授予人的密码库：
-
-1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**。
-
-2、在**被指定为紧急联系人**部分，选择 **≡**&#x83DC;单图标，然后从下拉列表中选择与[分配给您的访问权限](emergency-access.md#user-access)相对应的选项：
-
-* **查看** - 选择此选项将在此界面上显示授予人的密码库项目。
-* **接管** - 选择此选项将允许您输入并确认授予者账户的新主密码。保存后，输入授予人的电子邮箱地址和新的主密码，和往常一样登录 Bitwarden。
+在指定的等待时间之后，**或者**当授予人手动批准您的紧急访问请求时，您将获得对授予人密码库的访问权限。
 {% endtab %}
 
-{% tab title="管理访问" %}
-## 批准或拒绝紧急访问 <a href="#manually-approve-emergency-access" id="manually-approve-emergency-access"></a>
+{% tab title="批准或拒绝请求" %}
+您可以在配置的等待时间到期之前手动批准或拒绝紧急访问请求。要批准或拒绝紧急访问请求：
 
-您可以在配置的等待时间到期之前手动批准或拒绝紧急访问请求。完成以下步骤以批准或拒绝紧急访问：
+1、在 Bitwarden 网页 App 中，前往**设置** → **紧急访问**。
 
-1、在 Bitwarden 网页 App 中，导航至**设置** → **紧急访问**。
+2、在**已信任的紧急联系人**部分，使用 **≡菜单图标**。
 
-2、在**已信任的紧急联系人**部分，使用 **≡**&#x83DC;单图标然后选择**批准**或**拒绝**：
+3、选择**批准**或**拒绝**：
 
 {% embed url="https://bitwarden.com/assets/7iPFwb2NfsjeVywrwlZxSx/8ff35e1f5d8e2febf34089528ecea5ff/2025-12-31_09-55-14.png?w=966&fm=avif" %}
 批准或拒绝紧急访问
 {% endembed %}
+{% endtab %}
 
-## 撤销访问 <a href="#revoking-access" id="revoking-access"></a>
+{% tab title="访问账户" %}
+在您的请求获得批准或等待时间结束后，要访问授予人的密码库：
 
-使用紧急访问后重新获得对您的密码库的独占访问权限的步骤取决于授予的[访问级别](emergency-access.md#user-access)：
+1、在 Bitwarden 网页 App 中，前往**设置** → **紧急访问**。
 
-### 撤销查看权限 <a href="#revoke-view-access" id="revoke-view-access"></a>
+2、在**被指定为紧急联系人**部分，选择 **≡菜单图标**，然后从下拉列表中选择为您分配的访问权限相对应的选项：
 
-他们获得批准后，直到他们的访问权限被手动撤销，获得**查看**访问权限的可信紧急联系人在获得批准后，将能够查看您的密码库项目，直到他们的访问权限被手动撤销。要手动撤销访问，请使用 **≡**&#x83DC;单选择 **✘拒绝**访问：
+* **查看**：选择此选项将显示授予人的密码库项目。
+* **接管**：选择此选项将允许您输入并确认授予人账户新的主密码。选择**保存**，然后使用授予人的电子邮箱地址和新的主密码登录。
+
+{% hint style="info" %}
+当您使用紧急访问**接管组织账户**时，有几点重要的注意事项：
+
+* 如果组织已启用[主密码要求](../../../admin-console/oversight-visibility/enterprise-policies.md#master-password-requirements)策略，在接管时更改主密码将强制执行此策略。
+* 如果该账户不是组织[所有者](../../../admin-console/manage-members/member-roles.md)，他们将自动从任何组织中移除。
+* 如果该账户是组织所有者，他们不会被移除也不会失去其组织中的权限。因此，未对所有者执行的策略在接管后仍然不会被执行。
+{% endhint %}
+{% endtab %}
+
+{% tab title="撤销访问权限" %}
+您可能需要撤销已信任的联系人对您的密码库的访问权限。移除某人先前被授予的对您帐户的紧急访问权限的步骤取决于此用户是被授予查看访问权限还是接管访问权限。
+
+### 查看访问权限 <a href="#view-access" id="view-access"></a>
+
+当有人通过紧急访问被授予**查看**访问权限时，他们可以查看您的密码库项目，直到他们的访问权限被手动撤销。
+
+要撤销通过紧急访问授予的某人的查看访问权限：
+
+1、转到**设置** → **紧急访问**。
+
+2、选择与他们的电子邮箱位于同一行的 **≡菜单图标**。
+
+3、选择 **✘拒绝**：
 
 {% embed url="https://bitwarden.com/assets/7dhQEDLZNKCwwspstJnhj0/543dd12da8a8d64952763027678cf15a/2025-12-31_09-55-33.png?w=966&fm=avif" %}
-撤销紧急访问
+拒绝紧急访问
 {% endembed %}
 
-### 撤销接管 <a href="#revoke-a-takeover" id="revoke-a-takeover"></a>
+### 接管访问权限 <a href="#takeover-access" id="takeover-access"></a>
 
-获得**接管**访问权限的已信任的紧急联系人，在使用接管权限后，将为您的账户创建一个新的主密码。因此，撤销访问权限的唯一方法涉及：
+当信任的紧急联系人被授予并使用**接管**访问权限时，他们会更改您账户的主密码。因此，移除他们的访问权限的唯一方法是：
 
 1. 获取他们为您的账户创建的新主密码并使用它登录[网页密码库](../../../password-manager/getting-started/getting-started-webvault.md)。
 2. [更改您的主密码](../your-master-password.md#change-your-master-password)为一个他们不知道的密码。
 {% endtab %}
 {% endtabs %}
 
-## 更多信息 <a href="#more-information" id="more-information"></a>
+## 管理已信任的紧急联系人 <a href="#manage-trusted-emergency-contacts" id="manage-trusted-emergency-contacts"></a>
 
-### 可信任的紧急联系人 <a href="#trusted-emergency-contacts" id="trusted-emergency-contacts"></a>
+您可以随时更新您的已信任的紧急访问联系人。要更改紧急访问联系人的用户访问权限或等待时间：
 
-紧急访问依赖于 Bitwarden 内的公钥交换，因此可信任的紧急联系人必须是现有的 Bitwarden 用户，或者在接受邀请前会被提示创建一个 Bitwarden 账户。可信任的紧急联系人不需要必须是高级用户。
+1. 转到**设置** → **紧急访问**。
+2. 点击用户的电子邮箱，这将打开他们的详细信息。
+3. 根据需要，更新**用户访问权限**或**等待时间**。
+4. 选择**保存**。
 
-作为可信任的紧急联系人的用户状态，其与唯一的 Bitwarden 账户 ID 相关联，这意味着，如果受让人[更改了他的电子邮箱地址](../../../password-manager/more/password-manager-faqs.md)，则无需重新配置即可维持其紧急访问权限。
+要移除某位已信任的紧急联系人：
 
-如果可信任的紧急联系人创建了一个**新的 Bitwarden 账户**，并[删除](../../../plans-and-pricing/delete-an-account-or-organization.md)了旧账户，他们将自动被移除为可信任的紧急联系人，并必须[被重新邀请](emergency-access.md#setup-emergency-access)。
+1. 转到**设置** → **紧急访问**。
+2. 选择 **≡菜单图标**。
+3. 选择**移除**。
+4. 选择**是**以确认。
 
-一个用户可以拥有的可信任的紧急联系人的数量没有限制。
+将您账户的访问权限授予给某一位可信任的联系人后，，您可以[撤销他们的访问权限](emergency-access.md#use-emergency-access)。
 
-{% hint style="success" %}
-在配置的等待时间到期之前，您可以随时[拒绝](emergency-access.md#use-emergency-access)可信任的紧急联系人的紧急访问请求。
-{% endhint %}
-
-### 用户访问权限 <a href="#user-access" id="user-access"></a>
-
-可以向已信任的紧急联系人授予以下用户访问级别之一：
-
-* **查看**：授予紧急访问请求后，将授予该用户对您的个人密码库中所有项目的查看/读取访问权限。
-* **接管**：授予紧急访问请求后，该用户可以创建一个主密码，用于对您的密码库进行永久读/写访问（这将**取代**您之前的主密码）。接管将禁用该账户已启用的任何[两步登录方式](../../two-step-login/setup-two-step-login/two-step-login-methods.md)。
-
-{% hint style="success" %}
-您可以随时[撤消](emergency-access.md#use-emergency-access)对具有**查看**访问权限的已信任的紧急联系人的访问权限。
-{% endhint %}
-
-**如果授予人是一个组织的成员**，接管时，授予人将自动从其不是[所有者](../../../admin-console/manage-members/member-roles.md)的任何组织中被移除。所有者不会从他们的组织中被移除或失去权限，但是，如果启用了[主密码要求](../../../admin-console/oversight-visibility/enterprise-policies.md#master-password-requirements)策略，将在接管时执行此策略。通常，不对所有者执行的策略将不会在接管时执行。
-
-### 工作原理 <a href="#how-it-works" id="how-it-works"></a>
+## 工作原理 <a href="#how-it-works" id="how-it-works"></a>
 
 {% hint style="info" %}
-以下信息引用了加密密钥名称和过程，这些内容在[散列、密钥派生和加密](../../../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)章节中有介绍。请先阅读该章节。
+以下信息涉及加密密钥名称和过程，这些内容在[散列、密钥派生和加密](../../../security/bitwarden-security-whitepaper.md#hashing-key-derivation-and-encryption)中有介绍。建议先阅读这些内容。
 {% endhint %}
 
-紧急访问使用公共密钥交换和加密/解密来允许用户授予[可信任的紧急联系人](emergency-access.md#trusted-emergency-contacts)在零知识环境下[访问密码库数据](emergency-access.md#user-access)的权限：
+紧急访问使用公钥交换和加密/解密来允许用户授予可信任的紧急联系人在零知识环境下访问密码库数据的权限：
 
 1. 一个 Bitwarden 用户（授予人）邀请另一个 Bitwarden 用户成为其可信任的紧急联系人（受让人）。邀请（有效期只有 5 天）指定了用户访问级别，并包含对受让人 **RSA 公钥**的请求。
 2. 受让人将通过电子邮件收到邀请通知，并接受邀请成为可信任的紧急联系人。接受邀请后，受让人的 **RSA 公钥**将与用户记录一起存储。
@@ -190,5 +194,31 @@
 5. 授予人将通过电子邮件收到请求通知。授予人可以随时手动批准请求，否则请求将受到授予人指定的等待时间的约束。当请求被批准或等待时间结束后，经**公钥加密的用户对称密钥**将交付给受让人，并使用受让人的 **RSA 私钥**进行解密。\
    或者，授予人可以拒绝请求，这将阻止受让人获得下一步所述的访问权限。拒绝请求不会使受让人不再是可信任的紧急联系人，也不会阻止他们在未来提出访问请求。
 6. 根据指定的用户访问级别，受让人可以：
-   * 获得对授予人密码库中的项目的查看/读取权限（**查看**）。
-   * 被要求为授予人的密码库创建一个新的主密码（**接管**）。
+   * **查看**：获得对授予人密码库中的项目的查看/读取访问权限。
+   * **接管**：被要求为授予人的密码库创建一个新的主密码。
+
+## 常见问题 <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
+
+<details>
+
+<summary>当我的已信任的紧急联系人更改他们的账户电子邮箱地址时会发生什么？</summary>
+
+作为已信任的紧急联系人的用户状态与一个唯一的 Bitwarden 账户 ID 相关联，这意味着如果已信任的紧急联系人[更改了他们的电子邮箱地址](../../../password-manager/more/password-manager-faqs.md#q-how-do-i-change-my-email-address)，无需重新配置即可保持其紧急访问权限。同样地，如果紧急访问授予人更改了他们的电子邮箱地址，也无需重新配置。
+
+</details>
+
+<details>
+
+<summary>当我的已信任的紧急联系人删除他们的账户时会发生什么？</summary>
+
+如果一个已信任的紧急联系人创建了新的 Bitwarden 账户并[删除](../../../plans-and-pricing/delete-an-account-or-organization.md)了旧账户，他们将被自动从已信任的紧急联系人中移除，并且必须重新[被邀请](emergency-access.md#add-trusted-emergency-contacts)。
+
+</details>
+
+<details>
+
+<summary>如果我的高级版功能被取消或由于支付失败而失效，紧急访问还能正常使用吗？</summary>
+
+如果您的高级版功能被取消，您已信任的紧急联系人仍然可以请求并获取对您密码库的访问权限。但是，您将无法添加新的或编辑现有的已信任的紧急联系人。
+
+</details>

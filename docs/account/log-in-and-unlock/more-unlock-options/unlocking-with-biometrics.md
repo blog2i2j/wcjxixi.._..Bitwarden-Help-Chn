@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/biometrics/)
 {% endhint %}
 
-使用桌面 App、浏览器扩展和移动 App 中的生物识别，可以快速安全地访问您的密码库。使用标准方式（例如[主密码](../your-master-password.md)或[受信任设备](../using-single-sign-on/add-a-trusted-device.md)）登录后，然后使用生物识别[解锁您的密码库](../understand-log-in-vs-unlock.md)。
+在桌面 App、浏览器扩展和移动 App 中，可以使用生物识别快速安全地访问您的密码库。使用标准方式（例如[主密码](../your-master-password.md)或[受信任设备](../using-single-sign-on/add-a-trusted-device.md)）登录后，然后使用生物识别[解锁您的密码库](../understand-log-in-vs-unlock.md)。
 
 生物识别功能是设备和/或操作系统内置安全性的一部分。Bitwarden 利用本地 API 来执行这种验证，因此 **Bitwarden 永远不会收到您的生物识别数据**。
 
@@ -18,7 +18,7 @@
 
 {% tabs %}
 {% tab title="Windows" %}
-通过使用 PIN、面部识别或[其他符合 Windows Hello 生物识别要求的硬件](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) 的 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) 为 Windows 设置生物识别解锁。从 [Bitwarden 下载](https://bitwarden.com/download/#downloads-desktop)安装的 Windows 桌面 App 支持此选项。如果桌面 App 是从 Microsoft Store 安装的，则生物识别功能将无法使用。
+使用 PIN 码、面部识别或符合 [Windows Hello 生物识别要求](https://docs.microsoft.com/zh-cn/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)的其他硬件，通过 [Windows Hello](https://support.microsoft.com/zh-cn/help/4028017/windows-learn-about-windows-hello-and-set-it-up) 为 Windows 设置生物识别解锁。从 [Bitwarden 下载](https://bitwarden.com/download/#downloads-desktop)安装的 Windows 桌面 App 支持此选项。如果桌面 App 是从 Microsoft Store 安装的，则生物识别功能将无法使用。
 
 要启用生物识别解锁：
 
@@ -38,7 +38,7 @@
 {% endtab %}
 
 {% tab title="macOS" %}
-通过[触控 ID](https://support.apple.com/zh-cn/guide/mac-help/mchl16fbf90a/mac) 为 macOS 设置生物识别解锁。从 [Mac App Store](https://apps.apple.com/us/app/bitwarden/id1352778147?l=zh-Hans-CN\&mt=12) 安装的 macOS 桌面 App 支持此选项。如果是从 [Bitwarden 下载](https://bitwarden.com/download/#downloads-desktop)安装的桌面 App，则生物识别将不起作用。
+通过[触控 ID](https://support.apple.com/zh-cn/guide/mac-help/mchl16fbf90a/mac) 为 macOS 设置生物识别解锁。从 [Mac App Store](https://apps.apple.com/us/app/bitwarden/id1352778147?l=zh-Hans-CN\&mt=12) 安装的 macOS 桌面 App 支持此选项，从 [Bitwarden 下载](https://bitwarden.com/download/#downloads-desktop)安装的则不支持。
 
 要启用生物识别解锁：
 
@@ -60,13 +60,47 @@
 我们建议安装 Bitwarden 桌面 App 的 `Snap` 或 `Flatpak` 版本，因为它们完全支持自动更新。但是，这些版本与 Bitwarden 浏览器扩展中的生物识别不兼容。其他 Linux 软件包类型 `AppImage`、`.deb` 和 `.rpm` 与浏览器扩展中的生物识别兼容，但不会接收自动更新。
 {% endhint %}
 
+### AppImage、Snap、.deb 和 .rpm <a href="#appimage-snap-deb-and-rpm" id="appimage-snap-deb-and-rpm"></a>
+
 要启用生物识别解锁：
 
 1、在您的计算机上启用系统身份验证。
 
 2、打开 Bitwarden 桌面 App 然后转到**文件** → **设置**。
 
-3、在**安全**下，选中**通过系统身份验证解锁**，然后在出现提示时确认更新。
+3、在**安全**下，选中**使用系统身份验证解锁**，然后在出现提示时确认更新。
+
+{% hint style="info" %}
+为 Linux 桌面 App 配置生物识别后，您仍然需要使用主密码或 PIN 码登录。登录后，使用生物识别解锁您的密码库。
+{% endhint %}
+
+### Flatpak
+
+要启用生物识别解锁：
+
+1、将[这个策略](https://github.com/bitwarden/clients/blob/main/apps/desktop/resources/com.bitwarden.desktop.policy)复制到您机器上的 `/usr/share/polkit-1/actions/com.Bitwarden.policy` 中，例如：
+
+```bash
+sudo wget -O /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy https://raw.githubusercontent.com/bitwarden/clients/main/apps/desktop/resources/com.bitwarden.desktop.policy
+```
+
+2、更改已下载文件的所有权：
+
+```bash
+sudo chown root:root /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy
+```
+
+3、更改此文件的安全上下文：
+
+```bash
+sudo chcon system_u:object_r:usr_t:s0
+```
+
+4、在您的机器上启用系统身份验证。
+
+5、打开 Bitwarden 桌面端，转到**文件** → **设置**。
+
+6、在**安全**下，选中**使用系统身份验证解锁**，然后在出现提示时确认更新。
 
 {% hint style="info" %}
 为 Linux 桌面 App 配置生物识别后，您仍然需要使用主密码或 PIN 码登录。登录后，使用生物识别解锁您的密码库。
@@ -76,7 +110,7 @@
 
 ## 为浏览器扩展设置生物识别 <a href="#set-up-biometrics-for-browser-extension" id="set-up-biometrics-for-browser-extension"></a>
 
-这些浏览器支持使用生物识别技术解锁保管库的功能：
+这些浏览器支持使用生物识别解锁密码库的功能：
 
 * 基于 Chromium 的浏览器，包括 Chrome、Edge、Opera 和 Brave
 * Firefox 87+（不支持 Firefox ESR）
@@ -86,15 +120,15 @@
 
 {% tabs %}
 {% tab title="Chromium-based & FireFox" %}
-为浏览器扩展启用生物识别有两个步骤：[激活集成](unlocking-with-biometrics.md#id-1-activate-the-integration)和[激活扩展生物识别](unlocking-with-biometrics.md#id-2-activate-extension-biometrics)。
+为浏览器扩展启用生物识别包含两个步骤：[激活集成](unlocking-with-biometrics.md#id-1-activate-the-integration)和[激活扩展生物识别](unlocking-with-biometrics.md#id-2-activate-extension-biometrics)。
 
 ### 1) 激活集成 <a href="#id-1-activate-the-integration" id="id-1-activate-the-integration"></a>
 
-首先，打开 Bitwarden 桌面 App 并更新设置：
+首先，打开 Bitwarden 桌面 App 并更新此设置：
 
 1、在 Bitwarden 桌面 App 中启用生物识别解锁。
 
-2、打开 Bitwarden 桌面 App 设置（对于 Windows 和 Linux，请转至**文件** → **设置**。对于 macOS，请转至 **Bitwarden** → **设置**。）
+2、打开 Bitwarden 桌面 App 设置（对于 Windows 和 Linux，请转到**文件** → **设置**。对于 macOS，请转到 **Bitwarden** → **设置**。）
 
 3、选中**允许浏览器集成**。
 
@@ -113,9 +147,7 @@
 2. 打开此页面上的 Bitwarden 条目然后打开**允许访问文件 URL**。
 {% endhint %}
 
-接下来，保持登录 Bitwarden 桌面 App 然后打开 Bitwarden 浏览器扩展。
-
-要为浏览器扩展启用生物识别解锁：
+接下来，保持 Bitwarden 桌面 App 登录状态，然后打开 Bitwarden 浏览器扩展。要为浏览器扩展启用生物识别解锁：
 
 1、选择 **⚙️设置**图标。
 
@@ -123,7 +155,7 @@
 
 3、选中**使用生物识别解锁**。
 
-4、您可能会看到一条提示，要求允许Bitwarden「与协作的原生应用程序通信」。选择**允许**。
+4、您可能会看到一条提示，询问是否允许Bitwarden「与协作的原生应用程序通信」。选择**允许**。
 
 {% hint style="info" %}
 浏览器扩展需要此权限才能使用生物识别解锁。如果您拒绝，您可以继续使用浏览器扩展程序，但生物识别解锁将不起作用。
@@ -164,18 +196,18 @@
 生物识别解锁支持 iOS 上的[触控 ID](https://support.apple.com/zh-cn/HT201371) 和[面容 ID](https://support.apple.com/zh-cn/HT208109) 以及 Android（Google Play 或 FDroid）上的[指纹解锁](https://support.google.com/nexus/answer/6285273?hl=zh-Hans)或[面部解锁](https://support.google.com/pixelphone/answer/9517039?hl=zh-Hans)。
 
 {% hint style="info" %}
-在 Android 上，Bitwarden 要求您的生物识别因素为 [3 类](https://source.android.com/docs/security/features/biometric?hl=zh-cn)。指纹阅读器通常为 3 类，但面部识别系统的类别根据设备制造商和型号而有所不同。
+在 Android 上，Bitwarden 要求您的生物识别因素为 [Class 3](https://source.android.com/docs/security/features/biometric?hl=zh-cn)。指纹阅读器通常为 Class 3，但面部识别系统的类别根据设备制造商和型号而有所不同。
 {% endhint %}
 
 要为您的移动设备设置生物识别解锁：
 
-1、在设备的系统设置（例如 iOS 的**设置** App）中，打开生物识别方式。
+1、在设备的系统设置（例如 iOS 的**设置** App）中，启用生物识别方式。
 
-2、点击 Bitwarden App 然后点击 **⚙️设置**图标。
+2、打开 Bitwarden App 然后点击 **⚙️设置**图标。
 
 3、点击**账户安全**。
 
-4、点击**使用面容 ID 解锁**或**使用生物识别解锁**（可用的功能取决于您设备的硬件功能以及您之前在设备的系统设置中打开的功能）。
+4、点击**使用面容 ID 解锁**或**使用生物识别解锁**（可用的功能取决于您设备的硬件功能以及您之前在设备的系统设置中启用的功能）。
 
 5、出现提示时输入您的生物识别信息，例如您的面部或指纹。成功设置生物识别解锁后，切换按钮将被填充。
 
@@ -225,14 +257,23 @@
 
 3、（可选）如果您之前在桌面 App 中启用了**要求浏览器集成验证**，请在出现提示时输入您的指纹。
 
-4、取决于在桌面 App 设置期间是否中选中了**启动时要求生物识别**：
+4、基于在桌面 App 设置期间是否中选中了**启动时要求生物识别**：
 
-* 如果选中此设置，系统会立即提示您输入生物识别信息。
+* 如果选中了此设置，系统会立即提示您输入生物识别信息。
 * 如果**未选中**此设置，请选择**使用生物识别解锁**然后输入您配置的生物识别信息：
 
 {% embed url="https://bitwarden.com/assets/4UeYGO9saN15Jg3xLQmv5y/bfdb5e552b33009d219b1c1b7accd26b/Unlock_with_Biometrics_Browser.png?w=400&fm=avif" %}
 浏览器使用生物识别解锁
 {% endembed %}
+
+{% hint style="info" %}
+如果出现「操作被桌面应用程序取消」错误，请确认：
+
+* 您的桌面 App 是兼容的，例如是从 Mac App Store 安装的。
+* 桌面 App 已打开并且您已登录。
+* 在浏览器扩展中启用生物识别之前，您的桌面 App 已设置了生物识别。
+* 如果您使用的是 macOS，如果您的用户名太长导致目录路径（例如 `/Users/your_username/Library/...` ）超过 104 个字符，请缩短您的用户名。
+{% endhint %}
 {% endtab %}
 
 {% tab title="移动端" %}
@@ -244,6 +285,6 @@
 
 如果出现「生物识别解锁已禁用，等待验证您的主密码」错误：
 
-1. 暂时关闭 Bitwarden 中的自动填充功能。
+1. 在 Bitwarden 中临时停用自动填充功能。
 2. 按照上述步骤在 Bitwarden 中设置生物识别。
-3. 在 Bitwarden 中重新打开自动填充功能。
+3. 在 Bitwarden 中重新启用自动填充功能。
