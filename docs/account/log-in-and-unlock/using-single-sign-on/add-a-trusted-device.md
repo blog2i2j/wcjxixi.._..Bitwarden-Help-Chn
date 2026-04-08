@@ -106,7 +106,7 @@
 
 新设备成为受信任设备后，您只需完成公司既定的单点登录流程，即可登录 Bitwarden 并解密您的密码库数据。
 
-## 添加第一台受信任设备 <a href="#adding-your-first-trusted-device" id="adding-your-first-trusted-device"></a>
+## 添加您的第一台受信任设备 <a href="#adding-your-first-trusted-device" id="adding-your-first-trusted-device"></a>
 
 对于通过[使用 SSO 登录](../../../admin-console/login-with-sso/about-sso.md)即时 (JIT) 配置而被邀请的用户，用于访问 Bitwarden 的初始客户端将成为他们的第一台受信任设备。如果访问的初始客户端是 Bitwarden 桌面 App 或移动 App，则该设备可用于批准其他设备。
 

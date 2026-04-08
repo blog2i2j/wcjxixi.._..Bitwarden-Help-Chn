@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/using-sso/)
 {% endhint %}
 
-如果您是某个企业组织的成员，您可能会被[要求](../../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)或被允许使用单点登录登录到 Bitwarden，类似于登录其他工作相关的应用程序的方式：
+如果您是某个企业版组织的成员，您可能会被[要求](../../../admin-console/oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)或被允许使用单点登录登录到 Bitwarden，类似于登录其他工作相关的应用程序的方式：
 
 1、打开 Bitwarden App，输入您的电子邮箱地址，然后选择**使用单点登录**：
 
@@ -19,9 +19,9 @@ SSO 标识符界面
 {% endembed %}
 
 {% hint style="success" %}
-**组织成员**：请将 URL 中包含标识符的页面（例如 `https://vault.bitwarden.com/#/sso?my-identifier`）添加为书签，这样您就不必在每次登录时输入它。
+**组织成员**：请将 URL 中包含标识符的页面（例如 `https://vault.bitwarden.com/#/sso?my-identifier`）添加为书签，这样您就不必在每次登录时输入它了。
 
-**组织管理员**：如果您的成员拥有与域名匹配的电子邮件地址，设置[声明域名](../../../admin-console/oversight-visibility/claimed-domains/claimed-domains.md)将自动跳过此步骤。
+**组织管理员**：如果您的成员拥有与域名匹配的电子邮箱地址，设置[声明域名](../../../admin-console/oversight-visibility/claimed-domains/claimed-domains.md)将自动跳过此步骤。
 {% endhint %}
 
 3、当您被重定向至 IdP（例如 Microsoft Azure、Duo 或 OneLogin）后，请输入您的 SSO 凭据进行登录，操作方式与其他应用程序相同。通常，在此阶段，您的 IdP 会要求您完成 2FA。
@@ -39,7 +39,7 @@ SSO 标识符界面
 {% hint style="success" %}
 **为什么仍然需要我的主密码？**
 
-所有密码库数据，包括[由您组织共享](../../../password-manager/organization-members/sharing.md)的凭据，Bitwarden **仅**以加密形式保存他们。这意味着为了使用任何这些凭据，**您**需要一种方法来解密该数据（我们不能）。
+所有密码库数据，包括[由您组织共享](../../../password-manager/organization-members/sharing.md)的凭据，Bitwarden **仅**以加密形式保存他们。这意味着为了使用任何这些凭据，**您**需要一种方法来解密该数据。我们不能。
 
 您的主密码是该解密密钥的来源。即使您使用 SSO 向 Bitwarden 进行身份验证（证明您的身份），您仍然必须使用该解密密钥（在这种情况下是您的主密码）来解密密码库数据。
 {% endhint %}
@@ -66,7 +66,7 @@ SSO 标识符界面
 验证组织 Key Connector
 {% endembed %}
 
-如果您的账户是在推出 Key Connector 之前创建的，则可能需要输入主密码。这样做将从您的账户中移除主密码。
+如果您的账户是在实施 Key Connector 之前创建的，则可能需要输入主密码。这样做将从您的账户中移除主密码。
 
 {% hint style="info" %}
 我们鼓励您阅读有关 Key Connector 的信息，以了解从您的账户中[移除主密码的影响](../../../self-hosting/key-connector/about-key-connector.md#impact-on-master-passwords)。

@@ -7,26 +7,26 @@
 Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体验。许多重要功能，例如设置[两步登录](../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)或管理[组织](../../admin-console/organizations-overview.md)，只能从网页 App 完成。
 
 {% hint style="success" %}
-可以从任何流行的网页浏览器访问网页 App：[vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/)。如果您是**自托管** Bitwarden，则为您[已配置的域名](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
+可以从任何流行的网页浏览器从 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/) 访问网页 App。如果您是**自托管** Bitwarden，则为您[已配置的域名](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
 {% endhint %}
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
-Bitwarden 网页 App
+Password Manager 网页 App
 {% endembed %}
 
-当您首次登录网页 App 时，您将进入**密码库**视图。此空间将列出您的所有密码库项目，包括[登录信息、支付卡、身份和安全笔记](../your-vault/vault-items/vault-items.md)。
+当您首次登录网页 App 时，您会进入**所有密码库**视图。此空间将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../your-vault/vault-items/vault-items.md)。
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
-在上面的屏幕截图中，**密码库**视图显示**我的密码库**视图中的 **☷所有项目**。[组织](../../admin-console/organizations-overview.md)的用户将在此处列出其他密码库。使用**筛选器**列可以帮助您使用**收藏**和**文件夹**来组织您的密码库。
+在上面的屏幕截图中，**所有密码库**视图显示**我的密码库**视图中的 **☷所有项目**。[组织](../../admin-console/organizations-overview.md)的成员将在此处列出其他密码库。使用**筛选器**列可以帮助您使用**收藏**和**文件夹**来组织您的密码库。
 
-让我们设置一个新的文件夹并向其添加一个新的登录项目来作为开始：
+让我们设置一个新的文件夹并向其添加一个新的登录来作为开始：
 
 ### 创建文件夹 <a href="#create-a-folder" id="create-a-folder"></a>
 
 要创建文件夹：
 
-1、从下拉菜单中选择 ✚**新增**图标然后选择**文件夹**：
+1、从下拉菜单中选择 ✚**新增**按钮然后选择**文件夹**：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BvTWidqL4xWQvFqBSiJIR/d68bc851d44df1b571eed16366159e0c/2024-12-02_13-50-55.png?_a=DAJCwlWIZAAB" %}
 新增文件夹
@@ -42,9 +42,9 @@ Bitwarden 网页 App
 
 要添加一个新的登录项目：
 
-1、从下拉菜单中选择 ✚**新增**图标然后选择**登录。**
+1、从下拉菜单中选择 ✚**新增**按钮然后选择**登录。**
 
-2、输入**项目名称**。名称用于帮助您轻松识别密码库中的项目，因此请为其指定一个可识别的名称（例如`My Gmail Account`）。
+2、输入**项目名称**。名称用于帮助您轻松识别您的密码库中的项目，因此请为其指定一个可识别的名称（例如 `My Gmail Account`）。
 
 3、从**文件夹**下拉菜单中，选择要添加此项目的文件夹名称（例如，我们之前创建的 `Important Logins` 文件夹）。
 
@@ -56,9 +56,9 @@ Bitwarden 网页 App
 定位 URI
 {% endembed %}
 
-6、选择 **⭐️收藏**图标以将此项目添加到您的收藏夹。标记为收藏时，图标将被填充（**★** → **✰**）。
+6、选择 **⭐️收藏**图标以将此项目添加到您的收藏夹。标记为收藏时，图标将被填充（**✰** → **★**）。
 
-7、干得好！选择**保存**按钮完成添加此项目。
+7、做得好！选择**保存**按钮完成添加此项目。
 
 ### 生成强密码 <a href="#generate-a-strong-password" id="generate-a-strong-password"></a>
 
@@ -131,7 +131,7 @@ Bitwarden 网页 App
 
 5、使用 Bitwarden Authenticator 扫描您的网页 App 中的二维码。扫描完成后，Bitwarden Authenticator 将显示一个 6 位数的验证码。
 
-6、在网页 App 的对话框中输入 6 位验证码，然后选择**启用**按钮。
+6、在网页 App 的对话框中输入 6 位数验证码，然后选择**启用**按钮。
 
 7、选择**关闭**按钮返回两步登录界面，然后选择**查看恢复代码**按钮。
 
@@ -151,20 +151,20 @@ Bitwarden 网页 App
 
 恭喜您掌握了 Bitwarden 的基础知识！我们希望每个人都能安全上网，因此我们很自豪能够免费提供您在这里学到的一切。
 
-对于个人用户，我们提供 **10 美元/年**的高级订阅，可解锁高级密码库功能，包括：
+对于个人用户，我们提供 **1.65 美元/月**~~**（10 美元/年）**~~的高级版订阅，可解锁高级密码库功能，包括：
 
 * 高级两步登录选项，例如 [Duo](../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md) 和 [YubiKey 安全钥匙](../../account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md)
 * [加密文件附件](../your-vault/vault-items/file-attachments.md)的存储空间
 * 集成的[临时一次性密码（TOTP）身份验证器](../your-vault/security-tools/totp.md)
-* 通过受信任的紧急联系人[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)您的密码库
+* 通过已信任的紧急联系人[紧急访问](../../account/log-in-and-unlock/more-log-in-options/emergency-access.md)您的密码库
 * 报告密码和安全卫生的[密码库健康报告](../your-vault/security-tools/vault-health-reports.md)
 
-要开始高级订阅，请从**密码库**视图中选择**成为高级会员**按钮！
+要开始高级版订阅，请从**密码库**视图中选择**升级您的方案**按钮！
 
-### 开始一个组织 <a href="#start-an-organization" id="start-an-organization"></a>
+### 创建一个组织 <a href="#start-an-organization" id="start-an-organization"></a>
 
 您是否需要与朋友、家人、团队或整个企业共享密码或其他密码库项目？
 
-Bitwarden 组织可让您做到这一点。我们建议[通过创建一个免费的 2 人组织](../../admin-console/organizations-quick-start.md)来尝试从组织中共享密码的功能。要了解如何操作，请参阅[组织入门](../../admin-console/organizations-quick-start.md)。
+Bitwarden 组织可让您做到这一点。我们建议[通过创建一个免费的 2 人组织](../../admin-console/organizations-quick-start.md)来尝试从组织中共享密码的功能。
 
 您测试了组织后，请查看我们的 [Bitwarden 定价](https://bitwarden.com/pricing/business/)页面，了解您可能感兴趣的不同付费组织类型。
