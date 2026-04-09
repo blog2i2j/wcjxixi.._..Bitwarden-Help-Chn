@@ -9,16 +9,16 @@
 即使是[组织已与您共享](../../organization-members/sharing.md)的项目也可以被指定为收藏，这只会影响它们在您的个人密码库中的显示方式（即您这样做不会让其他对该组织或集合有访问权限的用户也将该项目设为收藏）。
 
 {% hint style="success" %}
-标记为**收藏**的项目将显示在浏览器扩展和移动 App的 **🔒密码库**视图的顶部，以及网页密码库和桌面 App 的 **⭐️收藏**筛选器内。
+标记为**收藏**的项目将显示在浏览器扩展和移动 App的 **🔒密码库**视图的顶部，以及网页密码库和桌面 App 的 **⭐️收藏**筛选器中。
 {% endhint %}
 
 ## 指定为收藏 <a href="#designating-favorites" id="designating-favorites"></a>
 
-在最初创建项目时，或在任何时候编辑项目，都可将任何密码库项目指定为收藏：
+在最初创建时，或在任何时候编辑时，都可将任何密码库项目指定为收藏：
 
 {% tabs %}
 {% tab title="网页 App" %}
-在添加项目或编辑项目界面，选中右下角的 **⭐️星形**图标然后**保存**该项目：
+在「添加」或「编辑」界面，选中右上角的 **⭐️星形**图标，然后**保存**该项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4XpFH5NFI6Lso21BpGNKsu/e90cd1d0d6c3e4e7296d2e0300ab3ab2/2024-12-02_16-26-17.png?_a=DAJCwlWIZAAB" %}
 收藏项目
@@ -26,7 +26,7 @@
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-在编辑项目界面，选中**收藏**复选框然后**保存**该项目：
+选择一个项目然后打开「编辑」界面，选中**收藏**复选框，然后**保存**该项目：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/36QXVM3xcSN7vALkOWQPYr/fd82e56cb60b38e4ff6a96bfb7b5d54d/2024-10-29_11-53-27.png?_a=DAJCwlWIZAAB" %}
 收藏项目
@@ -34,15 +34,15 @@
 {% endtab %}
 
 {% tab title="桌面端" %}
-在添加项目或编辑项目界面，勾选**收藏**复选框然后**保存**该项目：
+在「添加项目」或「编辑项目」界面，勾选**收藏**复选框，然后**保存**该项目：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BtbpzNSnydUYBu92j1bCH/0021d6daf3e437a86d3236deb36d70e2/desktopfavorite.gif?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/2BtbpzNSnydUYBu92j1bCH/9ad9e283584adb0b67be65b3f30e23eb/2026-01-28_10-24-52.png?w=1001&fm=avif" %}
 收藏项目
 {% endembed %}
 {% endtab %}
 
 {% tab title="移动端" %}
-在添加项目或编辑项目界面，选中**收藏**然后**保存**该项目：
+在「添加项目」或「编辑项目」界面，选中**收藏 ⭐️**，然后**保存**该项目：
 
 {% embed url="https://bitwarden.com/assets/1rvKA8zNjd1RktotXjBEUg/f25cc45f33b29b901ec8e1f3ddc96d7c/2025-01-22_09-46-54.png?w=713&fm=avif" %}
 收藏项目
