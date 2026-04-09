@@ -54,7 +54,7 @@
     * [密码库导航](docs/password-manager/your-vault/vault-navigation/README.md)
       * [检索密码库](docs/password-manager/your-vault/vault-navigation/search-vault.md)
       * [筛选密码库](docs/password-manager/your-vault/vault-navigation/filter-vault.md)
-      * [文件夹](docs/password-manager/your-vault/vault-navigation/folders.md)
+      * [=文件夹](docs/password-manager/your-vault/vault-navigation/folders.md)
       * [收藏](docs/password-manager/your-vault/vault-navigation/favorites.md)
     * [安全工具](docs/password-manager/your-vault/security-tools/README.md)
       * [集成的身份验证器](docs/password-manager/your-vault/security-tools/totp.md)

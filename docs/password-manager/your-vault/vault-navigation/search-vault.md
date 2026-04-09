@@ -35,7 +35,7 @@
 
 ## 全文检索 <a href="#applications-that-use-full-text-search" id="applications-that-use-full-text-search"></a>
 
-网页 App、桌面 App 和浏览器扩展中的检索自动为[全文搜索](https://zh.wikipedia.org/wiki/%E5%85%A8%E6%96%87%E6%AA%A2%E7%B4%A2)，并且与基本检索一样，自动包括前导和后导通配符。当在全文检索中找不到结果时，Bitwarden 将回退到基本检索。
+网页 App、桌面 App 和浏览器扩展中的检索自动为[全文搜索](https://zh.wikipedia.org/wiki/%E5%85%A8%E6%96%87%E6%AA%A2%E7%B4%A2)，并且与基本检索一样，会自动包括前导和后导通配符。当在全文检索中找不到结果时，Bitwarden 将回退到基本检索。
 
 ### 索引字段 <a href="#indexed-fields" id="indexed-fields"></a>
 
@@ -83,5 +83,5 @@
 
 例如，搜索 `>name:email~1` 将返回名称为 `email` 的密码库项目**以及**名称为 `gmail` 的密码库项目。
 
-使用 [Lunr 搜索指南](https://lunrjs.com/guides/searching.html)了解更多关于编写高级检索查询的信息。
+了解更多有关使用 [Lunr 搜索指南](https://lunrjs.com/guides/searching.html)编写高级检索查询的信息。
 {% endhint %}

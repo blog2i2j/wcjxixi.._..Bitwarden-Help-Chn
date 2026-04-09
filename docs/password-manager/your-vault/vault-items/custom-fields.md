@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/custom-fields/)
 {% endhint %}
 
-自定义字段可在任何[项目类型](vault-items.md)上使用，使您可以在密码库项目中存储额外的结构良好的数据字段。自定义字段保存为 `Name:Value` 对，它可以是这三种类型之一：
+自定义字段适用于任何[项目类型](vault-items.md)，它允许您可以在密码库项目中存储额外的结构良好的数据字段。自定义字段保存为 `Name:Value` 对，它可以是这四种类型之一：
 
 * **文本型**：存储自由格式的输入（文本、数字等）的字段值
 * **隐藏型**：存储从视图中隐藏的自由格式输入的字段值（对于使用[隐藏密码访问控制](../../../admin-console/manage-members/member-roles.md)的组织特别有用）
@@ -14,7 +14,7 @@
 {% hint style="success" %}
 **用于密钥的自定义字段**
 
-除了常见的网页服务输入（例如 PIN 和安全问题）外，自定义字段还可用于存储**长度最多 5000 个字符**的值，例如 RSA 4096 位 SSH 密钥。
+除了常见的网页服务输入（例如 PIN 码和安全问题）外，自定义字段还可用于存储**长度最多 5000 个字符**的值，例如 RSA 4096 位 SSH 密钥。
 
 自定义字段值的字符限制是根据**加密后的字符数量**来计算的。例如，一个 3383 个字符的 RSA-4096 私有 SSH 密钥在加密并存储在你的密码库中时将增长到约 4400 个字符。
 {% endhint %}
@@ -83,5 +83,5 @@
 
 在两种情况下，您可以通过使用前缀对[匹配](custom-fields.md#matching)进行更多控制：
 
-* **CSV**：使用 `csv=` 作为自定义字段名称的前缀，允许您指定多个名称来检索和比较以进行自动填充，例如 `csv=pin,mypin,pincode`。
-* **正则表达式**：使用 `regex=` 作为自定义字段名称的前缀，将允许您在执行自动填充时执行[正则表达式](https://regexone.com/)比较。例如，`regex=^first.*name` 将为 `firstName`、`First_name` 和 `First Name` 提供自动填充。
+* **csv**：使用 `csv=` 作为自定义字段名称的前缀，允许您指定多个名称来检索和比较以进行自动填充，例如 `csv=pin,mypin,pincode`。
+* **regex**：使用 `regex=` 作为自定义字段名称的前缀，将允许您在执行自动填充时执行[正则表达式](https://regexone.com/)比较。例如，`regex=^first.*name` 将为 `firstName`、`First_name` 和 `First Name` 提供自动填充。

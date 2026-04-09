@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/filter-your-vault/)
 {% endhint %}
 
-筛选您的密码库将控制哪些项目将显示在密码库中或密码库视图中。要筛选密码库：
+筛选您的密码库将控制哪些项目会显示在密码库中或密码库视图中。要筛选密码库：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -26,7 +26,7 @@
 {% endembed %}
 {% endtab %}
 
-{% tab title="移动 App" %}
+{% tab title="移动端" %}
 通过选择**密码库**选项卡上的**密码库**菜单按钮 (**⋯**) 来选择一个密码库：
 
 {% embed url="https://bitwarden.com/assets/44WqYfqzP9JOJPSZ4Yrzjb/9167f19bc2e27a158be5ed3fc29a5689/2025-01-21_15-38-59.png?w=714&fm=avif" %}
@@ -34,10 +34,10 @@
 {% endembed %}
 {% endtab %}
 
-{% tab title="桌面 App" %}
+{% tab title="桌面端" %}
 从最左边的列中选择一个密码库（在下面d的幕截图中，为**我的密码库**或**我的组织**）：
 
-{% embed url="https://bitwarden.com/assets/2Lng0L2TRQ177CaU8EUQ1m/a2aecda54d121331c9933509474433cf/2025-08-13_14-23-17.png?w=1000&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/2Lng0L2TRQ177CaU8EUQ1m/fc80b9452396db84c9f1abd405275ddb/2026-01-28_10-20-04.png?w=1001&fm=avif" %}
 桌面 App 筛选器
 {% endembed %}
 {% endtab %}
