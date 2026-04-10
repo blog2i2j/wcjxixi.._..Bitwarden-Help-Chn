@@ -115,7 +115,7 @@ LastPass 的共享文件夹可以通过使用[这里](https://bitwarden.com/help
 
 ### 群组 <a href="#groups" id="groups"></a>
 
-使用群组进行共享是提供凭证和安全访问的最有效方式。群组和用户一样，可以使用 SCIM 或目录连接器同步到组织中。
+使用群组进行共享是提供凭证和安全访问的最有效方式。群组和用户一样，可以使用 SCIM 或 Directory Connector 同步到组织中。
 
 ### 权限 <a href="#permissions" id="permissions"></a>
 

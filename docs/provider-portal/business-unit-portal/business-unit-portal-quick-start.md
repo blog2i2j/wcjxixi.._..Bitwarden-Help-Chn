@@ -120,9 +120,9 @@
 
 2、**对于大型单元**，如使用 Azure AD、Okta、OneLogin 或 JumpCloud 等身份提供程序的单元，请使用 [SCIM](../../admin-console/manage-members/scim/about-scim.md) 自动分配用户。
 
-3、**对于大型单元**，如使用目录服务（Active Directory、LDAP、Okta 等）的单元，请使用[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)从源目录同步组织用户并自动发起邀请。
+3、**对于大型单元**，如使用目录服务（Active Directory、LDAP、Okta 等）的单元，请使用 [Directory Connector](../../admin-console/manage-members/directory-connector/about-directory-connector.md) 从源目录同步组织用户并自动发起邀请。
 
-无论您是通过组织密码库、使用 SCIM 还是使用目录连接器邀请用户，您在[注册服务用户](../get-started-with-provider-portal.md#onboard-users)时遵循的相同的三个步骤（邀请 → 接受 → 确认）也适用于这里。
+无论您是通过组织密码库、使用 SCIM 还是使用 Directory Connector 邀请用户，您在[注册服务用户](../get-started-with-provider-portal.md#onboard-users)时遵循的相同的三个步骤（邀请 → 接受 → 确认）也适用于这里。
 
 ## 管理自托管组织 <a href="#managing-self-hosted-organizations" id="managing-self-hosted-organizations"></a>
 

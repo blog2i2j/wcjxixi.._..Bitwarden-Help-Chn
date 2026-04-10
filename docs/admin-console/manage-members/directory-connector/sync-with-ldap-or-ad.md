@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/ldap-directory/)
 {% endhint %}
 
-本文将帮助您使用 Directory Connector 将您的 LDAP 或 Active Directory 服务中的用户和群组同步到您的 Bitwarden 组织。Bitwarden 为最常用的 LDAP Directory Connector 提供了内置连接器，这些目录服务器包括：
+本文将帮助您使用 Directory Connector 将您的 LDAP 或 Active Directory 服务中的用户和群组同步到您的 Bitwarden 组织。Bitwarden 为最常用的 LDAP 目录服务器提供了内置连接器，这些目录服务器包括：
 
 * Microsoft Active Directory
 * Apache Directory Server (ApacheDS)
@@ -18,7 +18,7 @@
 
 ## 连接到您的服务器 <a href="#connect-to-your-server" id="connect-to-your-server"></a>
 
-完成以下步骤，将 Directory Connector  配置为使用 LDAP 或 Active Directory：
+完成以下步骤，将 Directory Connector 配置为使用 LDAP 或 Active Directory：
 
 1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
 2. 导航到 **Setting** 标签页。

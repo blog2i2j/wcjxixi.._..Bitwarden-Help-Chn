@@ -153,9 +153,9 @@
 
 2、**对于大型客户**（使用 Azure AD、Okta、OneLogin 或 JumpCloud 等 IdP 的），请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 自动布建用户。
 
-3、**对于大型客户**（使用活动目录、LDAP、Okta 等目录服务的），请使用[目录连接器](../admin-console/manage-members/directory-connector/)从源目录同步组织用户并自动发出邀请。
+3、**对于大型客户**（使用活动目录、LDAP、Okta 等目录服务的），请使用 [Directory Connector](../self-hosting/key-connector/about-key-connector.md) 从源目录同步组织用户并自动发出邀请。
 
-无论您是从组织密码库邀请用户还是使用目录连接器，在[入职提供商用户](get-started-with-provider-portal.md#onboard-users)时遵循的 3 步过程（邀请 → 接受 → 确认）也适用于这里。
+无论您是从组织密码库邀请用户还是使用 Directory Connector，在[入职提供商用户](get-started-with-provider-portal.md#onboard-users)时遵循的 3 步过程（邀请 → 接受 → 确认）也适用于这里。
 
 ## 管理自托管组织 <a href="#managing-self-hosted-organizations" id="managing-self-hosted-organizations"></a>
 
