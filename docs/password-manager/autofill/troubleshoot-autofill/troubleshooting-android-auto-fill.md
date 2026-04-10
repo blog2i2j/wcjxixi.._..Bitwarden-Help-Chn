@@ -16,25 +16,25 @@
 接下来，确认登录项目保存的 URI 格式是否正确。在 Android 上，Password Manager 使用网站地址（例如 `https://gmail.com`）在网页浏览器中自动填充，以及使用包名称（例如 `com.google.android.gm`）在已安装的应用程序中自动填充。
 
 {% hint style="danger" %}
-对于要安装的应用程序，务必**仅从可信来源（例如 Google Play 商店或 F-Droid）安装应用程序和在应用程序中自动填充**，因为恶意应用程序可能会伪造知名应用程序的软件包名称。[了解更多](forming-uris-for-autofill.md#android)。
+对于要安装的应用程序，请务必**仅安装并自动填充来自受信任来源**（例如 Google Play Store 或 F-Droid）**的应用程序**，因为恶意应用程序可能会伪造知名应用程序的包名称。[了解更多](forming-uris-for-autofill.md#android)。
 {% endhint %}
 
 ## 自动填充服务故障排除 <a href="#troubleshooting-the-autofill-service" id="troubleshooting-the-autofill-service"></a>
 
 如果当您的设备聚焦在用户名或密码输入字段时，Bitwarden 自动填充服务叠加层不可见，您的设备可能需要启用特定于设备的设置：
 
-**对于华为/荣耀设备**，启用 Dropzone：
+**对于华为/荣耀设备**，请启用 Dropzone：
 
-1. 打开华为/荣耀优化器 App（也称为「手机管家」）。
+1. 打开华为/荣耀「优化器」App（也称为「手机管家」）。
 2. 点击底部一行中间的 **Dropzone**。
-3. 向右滑动切换开关以允许使用 Dropzone。
+3. 向右滑动切换开关以允许 Dropzone。
 
-**对于 Oppo 和其他设备**，启用浮动窗口：
+**对于 Oppo 和其他设备**，请启用「浮动窗口」：
 
 1. 打开 Android 设置 App。
 2. 导航到**隐私/安全**。
-3. 找到**浮动窗口**或**应用管理**并点击打开。
-4. 向右滑动切换开关以允许浮动窗口。
+3. 找到**浮动窗口**或**应用管理**，然后点击打开。
+4. 向右滑动切换开关以允许「浮动窗口」。
 
 ## 无障碍服务故障排除 <a href="#troubleshooting-the-accessibility-service" id="troubleshooting-the-accessibility-service"></a>
 
@@ -63,5 +63,5 @@
 | ~~Android 7+~~ | ~~**可选**。如果您只想使用自动填充快速操作磁贴而不使用弹出窗口。~~ |
 
 {% hint style="info" %}
-如果您仍然无法使用 Android 自动填充功能，请[联系我们](https://bitwarden.com/contact)。
+如果您仍然无法正常使用 Android 自动填充功能，请[联系我们](https://bitwarden.com/contact)。
 {% endhint %}

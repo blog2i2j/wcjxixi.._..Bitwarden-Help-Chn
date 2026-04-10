@@ -8,8 +8,8 @@ Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和 
 
 移动端自动填充当前不支持自定义字段和拆分登录工作流程（当用户名和密码字段显示在单独的界面上时）。
 
-{% hint style="info" %}
-对于已安装的应用程序，请务必**仅安装并自动填充来自受信任来源**（例如 Google Play Store 或 F-Droid）**的应用程序**，因为恶意应用程序可能会模仿知名应用程序的包名称。[了解更多](../troubleshoot-autofill/forming-uris-for-autofill.md#obtaining-uris-for-mobile-apps)。
+{% hint style="danger" %}
+对于要安装的应用程序，请务必**仅安装并自动填充来自受信任来源**（例如 Google Play Store 或 F-Droid）**的应用程序**，因为恶意应用程序可能会伪造知名应用程序的包名称。[了解更多](../troubleshoot-autofill/forming-uris-for-autofill.md#android)。
 {% endhint %}
 
 ## 设置自动填充 <a href="#set-up-autofill" id="set-up-autofill"></a>

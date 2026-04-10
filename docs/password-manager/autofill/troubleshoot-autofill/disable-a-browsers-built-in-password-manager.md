@@ -1,10 +1,10 @@
-# 禁用浏览器的内置密码管理器
+# 停用浏览器的内置密码管理器
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/disable-browser-autofill/)
 {% endhint %}
 
-如果您是 Bitwarden 的新手，很可能您使用的网页浏览器一直在保存和自动填充你的密码。大多数网页浏览器默认启用了这一功能，但专家们普遍认为，[内置的密码管理器比 Bitwarden 这样的专业解决方案要脆弱](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)。我们建议停用浏览器的内置密码管理器，以提高您的安全性并防止干扰您的 Bitwarden 体验。
+如果您是 Bitwarden 的新手，很可能您使用的网页浏览器一直在保存和自动填充您的密码。大多数网页浏览器默认启用了这一功能，但专家们普遍认为，[内置的密码管理器比 Bitwarden 这样的专业解决方案要脆弱](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)。我们建议停用浏览器的内置密码管理器，以提高您的安全性并防止干扰您的 Bitwarden 体验。
 
 {% hint style="info" %}
 Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](../../../admin-console/deploy-client-apps/deploy-browser-extensions/)的更多信息。
@@ -22,7 +22,7 @@ Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设
 {% tab title="Chrome/Chromium" %}
 在 Chrome 浏览器或任何基于 Chromium 的浏览器（如 Edge、Opera、Brave）的地址栏中输入  `chrome://password-manager/settings`（将 `chrome` 替换为浏览器名称（例如 `brave://password-manager/settings`））导航到**密码**页面。对于 Edge 用户，导航到 `edge://wallet/settings`。
 
-在这个页面上，切换**提示保存密码**选项和**自动登录**选项开关为关闭状态：
+在此页面上，切换**提示保存密码**选项和**自动登录**选项开关为关闭状态：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6bpi4fkyZhnkhW5RBtugDW/d8e2de4536d6a34f092fd9d5975fd04a/chrome-disable-autofill.png?_a=DAJCwlWIZAAB" %}
 Chrome 密码选项
@@ -37,10 +37,24 @@ Chrme 已保存的密码
 如果您还没有将这些密码保存到 Bitwarden 中，请[将它们导出](../../import-and-export/import-guides/import-data-from-chrome.md#export-from-chrome)，为将来导入 Bitwarden 做准备。导出后，您应该从浏览器的存储中删除这些密码。
 {% endtab %}
 
-{% tab title="Firefox" %}
-在 Firefox 中，导航到**首选项** → **隐私和安全**，然后向下滚动到**密码**和**自动填充**部分。在此部分，取消勾选所有预先勾选的选项：
+{% tab title="Edge" %}
+虽然 Edge 浏览器基于 Chromium 内核，但操作步骤略有不同。请导航到 `edge://wallet/settings`。在此页面上，选择 **Microsoft 密码管理器**：
 
-{% embed url="https://bitwarden.com/assets/72yK5CCMKa9pcfCcdvUZqL/459febc76765636f28465ae4875998bd/2025-08-06_16-51-03.png?w=764&fm=avif" %}
+{% embed url="https://bitwarden.com/assets/6tRRYJbZ2xmQZ0ehL2xbvh/4c9c416b6e52c9bd1b3eaf9b75eaaca7/edge-disable-autosave.png?w=1400&fm=avif" %}
+Edge 禁用密码
+{% endembed %}
+
+然后，将**要求保存密码**和**自动填充密码和通行密钥**的开关设置为**关闭**：
+
+{% embed url="https://bitwarden.com/assets/3minVF9zEGs9SuGDSQ9FAE/4c3e66b91f7905a5f65ff164afbb3e01/edge_disable_all.png?w=1400&fm=avif" %}
+切换保存密码
+{% endembed %}
+{% endtab %}
+
+{% tab title="Firefox" %}
+在 Firefox 中，导航到**首选项** → **隐私和安全**，向下滚动并取消勾选**密码**、**付款方式**和**地址及更多**部分中所有预先勾选的选项：
+
+{% embed url="https://bitwarden.com/assets/72yK5CCMKa9pcfCcdvUZqL/95494d5079e32ae509ea62347ccc9ee8/Firefox_settings.png?w=681&fm=avif" %}
 Firefox 密码选项
 {% endembed %}
 
@@ -48,7 +62,7 @@ Firefox 密码选项
 Bitwarden Password Manager 为高级用户提供各种[报告](../../your-vault/security-tools/vault-health-reports.md)，如「泄露密码」报告和「重复使用的密码」报告，并**为所有用户提供免费的数据泄露报告**。
 {% endhint %}
 
-您还可以通过选择**已保存的密码**按钮来了解 Firefox 已经保存了哪些登录信息：
+您还可以通过选择**已保存的密码**按钮来查看 Firefox 已经保存了哪些登录信息：
 
 {% embed url="https://bitwarden.com/assets/5UrQ6bGCjV0VdHvy6rzece/a2148eaa8dcaaf4f7158e8d806dcb97b/2025-08-06_16-53-15.png?w=550&fm=avif" %}
 Firefox 已保存的登录信息
@@ -92,7 +106,7 @@ Vivaldi 已保存的密码
 {% tab title="Tor" %}
 虽然 Tor 与 Firefox 共享同一来源，但 Tor 是独立的，因为它默认不保存您的登录信息。如果您没有手动配置过 Tor 来保存和自动填充登录信息，那么您已经做好了一切准备。
 
-如果您配置过，请在地址栏中输入 `about:preferences#privacy` 导航到**密码**页面，并向下滚动到登录和密码部分。取消勾选所有您已勾选的选项：
+如果您配置过，请在地址栏中输入 `about:preferences#privacy` 导航到**密码**页面，然后向下滚动到登录和密码部分。取消勾选所有您已勾选的选项：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4FcJnbhCUhDNITJjiy9ciD/d0f83af69188afaf619788c7e60c9a1b/tor-disable.png?_a=DAJCwlWIZAAB" %}
 Tor 密码选项
@@ -116,7 +130,7 @@ Tor 已保存的密码
 
 您可以通过选择**导出密码**来创建现有数据的备份。创建备份文件后，选择**查看自动填充内容...** 并删除已存储的自动填充数据，以移除之前保存的建议。
 
-在密码管理器部分，macOS 用户可以选择使用 Bitwarden。[此处](../../more/more-platforms/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
+在「Password Manager」部分，macOS 用户可以选择使用 Bitwarden。[此处](../../more/more-platforms/duckduckgo-macos-browser-integration.md)了解更多有关 Bitwarden DuckDuckGo macOS 浏览器集成的信息。
 {% endtab %}
 {% endtabs %}
 

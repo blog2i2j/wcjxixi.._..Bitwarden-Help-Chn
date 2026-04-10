@@ -16,4 +16,4 @@ Bitwarden 浏览器扩展可配置为排除指定站点，使其不触发[自动
 排除域名配置
 {% endembed %}
 
-域名排除不会注册「完整」的 URL，只会注册域名组件。例如 `https://github.com/bitwarden/browser` 在保存时将解析为 `github.com`，这意味着浏览器扩展将明确不为 Github 提示保存凭证。
+域名排除不会注册「完整」的 URL，只会注册域名组件。例如 `https://github.com/bitwarden/browser` 保存后将解析为 `github.com`，这意味着浏览器扩展不会明确提示保存 GitHub 凭据。

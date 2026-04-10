@@ -151,6 +151,10 @@ URI 示意图
 
 ### 开始于 <a href="#starts-with" id="starts-with"></a>
 
+{% hint style="danger" %}
+**开始于**是一种高级选项，如果使用不当可能会非常危险。如果您不清楚自己在做什么，请勿使用此选项。
+{% endhint %}
+
 选择**开始于**，当检测到的资源以登录项目的 URI 值开头（无论后面跟什么）时，Bitwarden 将弹出提示以提供自动填充。
 
 例如，URI 为 `https://sub.domain.com/path/`，使用开始于匹配检测：
@@ -166,7 +170,7 @@ URI 示意图
 ### 正则表达式 <a href="#regular-expression" id="regular-expression"></a>
 
 {% hint style="danger" %}
-正则表达式是一个高级选项，如果使用不正确，可能会非常危险。如果您完全不知道自己在做什么，则不应使用此选项。
+**正则表达式**是一种高级选项，如果使用不当可能会非常危险。如果您不清楚自己在做什么，请勿使用此选项。
 {% endhint %}
 
 选择**正则表达式**，当检测到的资源与一个指定的[正则表达式](https://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F)相匹配时，Bitwarden 将弹出提示以提供自动填充。正则表达式始终不区分大小写。

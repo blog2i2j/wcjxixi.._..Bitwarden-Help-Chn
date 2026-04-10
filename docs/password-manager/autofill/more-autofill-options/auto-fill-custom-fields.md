@@ -4,25 +4,25 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/auto-fill-custom-fields/)
 {% endhint %}
 
-Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../your-vault/vault-items/custom-fields.md)，以简化安全问题、PIN 等的填充。
+Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-from-browser-extensions.md)！Bitwarden 浏览器扩展还可以自动填充[自定义字段](../../your-vault/vault-items/custom-fields.md)，以简化安全问题、PIN 码等的填充。
 
 此外，如果您的浏览器扩展在自动填充特定站点的用户名和密码时遇到问题，使用[链接型自定义字段](auto-fill-custom-fields.md#shi-yong-lian-jie-de-zi-ding-yi-zi-duan)可以强制自动填充。
 
 {% hint style="success" %}
-要使自动填充起作用，对自定义字段正确命名很重要。[了解更多](../../your-vault/vault-items/custom-fields.md#custom-field-names)。
+要使自动填充正常工作，正确命名自定义字段很重要。[了解更多](../../your-vault/vault-items/custom-fields.md#custom-field-names)。
 {% endhint %}
 
 要自动填充自定义字段：
 
-1、打开浏览器扩展，或者如果您的浏览器扩展已经打开，请导航到**密码库**视图。此视图会自动检测已打开的标签页中显示的网页的 URI（例如 myverizon.com），并浮现所有具有相应 URI 的密码库项目。
+1、打开浏览器扩展，导航到**密码库**视图。此视图会自动检测已打开的标签页中显示的网页（例如 `myverizon.com`），并浮现所有具有相应 URI 的登录。
 
-2、在包含要自动填充的自定义字段的项目上选择**填充**按钮：
+2、在包含要自动填充的自定义字段的项目上，选择**填充**按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4ExHyb45ZapKssCpRl6Uro/b8e686e8a58e0ed24f8aa58dd746253e/2024-12-03_09-55-22.png?_a=DAJCwlWIZAAB" %}
 带有自定义字段的项目
 {% endembed %}
 
-浏览器扩展将查找与[自定义字段名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)匹配的任何字段并自动填充该字段的值。
+浏览器扩展将查找与[自定义字段名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)匹配的任何字段，并自动填充该字段的值。
 
 ## 使用链接型自定义字段 <a href="#using-linked-custom-fields" id="using-linked-custom-fields"></a>
 
@@ -52,10 +52,10 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 自定义字段通常被填充到 HTML `<form>` 或 `<input>` 元素中，但是 Bitwarden 浏览器扩展也可以将自定义字段值自动填充到 HTML `<span>` 元素的 `innerText` 中。
 
-为了自动填充到 `<span>` 元素中，打开的标签页必须具有 `data-bwautofill` 属性。因此，在以下场景中：
+要自动填充到 `<span>` 元素中，打开的标签页必须具有 `data-bwautofill` 属性。因此，在以下场景中：
 
 ```html
 <span data-bwautofill id="myspan">Bitwarden is great.</span>
 ```
 
-具有**名称**为 `myspan` 的自定义字段将用自定义字段的**值**中保存的任何内容替换 `Bitwarden is great`。
+**名称**为 `myspan` 的自定义字段会将 `Bitwarden is great` 替换为保存在该自定义字段的**值**中的任何内容。
