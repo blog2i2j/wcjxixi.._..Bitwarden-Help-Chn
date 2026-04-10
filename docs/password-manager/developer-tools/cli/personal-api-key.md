@@ -7,7 +7,7 @@
 您的 Bitwarden 个人 API 密钥可用作命令行界面 (CLI) 的验证方法。
 
 {% hint style="info" %}
-个人 API 密钥与[组织 API 密钥](../../../admin-console/bitwarden-public-api.md#authentication)是**不同的，**&#x7EC4;织 API 密钥用于访问 [Bitwarden 公共 API](../../../admin-console/bitwarden-public-api.md) 或[目录连接器](../../../admin-console/manage-members/directory-connector/about-directory-connector.md)。个人 API 密钥的 `client_id` 格式为 `"user.clientId"`，而组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`。
+个人 API 密钥与[组织 API 密钥](../../../admin-console/bitwarden-public-api.md#authentication)是**不同的，**&#x7EC4;织 API 密钥用于访问 [Bitwarden 公共 API](../../../admin-console/bitwarden-public-api.md) 或 [Directory Connector](../../../admin-console/manage-members/directory-connector/about-directory-connector.md)。个人 API 密钥的 `client_id` 格式为 `"user.clientId"`，而组织 API 密钥的 `client_id` 格式为 `"organization.ClientId"`。
 {% endhint %}
 
 ## 获取个人 API 密钥 <a href="#get-your-personal-api-key" id="get-your-personal-api-key"></a>

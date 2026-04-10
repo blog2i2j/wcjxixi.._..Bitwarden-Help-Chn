@@ -43,7 +43,7 @@
 * 事件日志
 * 用户群组
 * API 访问
-* 目录连接器
+* Directory Connector
 
 此外，您的团队版组织的所有成员都将获得其个人密码库的所有高级功能，包括高级 2FA 选项、Bitwarden 验证器 (TOTP)、加密文件附件等。
 
@@ -60,7 +60,7 @@
 | 事件日志                                                                                                                  | -             | **✔︎**        |
 | 用户群组                                                                                                                  | -             | **✔︎**        |
 | API 访问                                                                                                                | -             | **✔︎**        |
-| 目录连接器                                                                                                                 | -             | **✔︎**        |
+| Directory Connector                                                                                                   | -             | **✔︎**        |
 | 价格                                                                                                                    | $2/用户/月（按年计费） | $2/用户/月（按年计费） |
 
 ## 企业版组织 <a href="#enterprise-organizations" id="enterprise-organizations"></a>
@@ -73,14 +73,14 @@
 
 ### 企业版比较表 <a href="#enterprise-comparison-table" id="enterprise-comparison-table"></a>
 
-| 功能                                                                                                      | 经典 2019       | 当前 (2020-)    |
-| ------------------------------------------------------------------------------------------------------- | ------------- | ------------- |
-| <p>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- 目录连接器<br>- 企业策略</p>            | **✔︎**        | **✔︎**        |
-| [企业版家庭](../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)           | **✔︎**        | **✔︎**        |
-| [SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                  | -             | **✔︎**        |
-| <p><a href="../self-hosting/key-connector/about-key-connector.md">Key Connector</a><br>（适用于客户管理的加密）</p> | -             | **✔︎**        |
-| [账户恢复管理](../admin-console/manage-members/account-recovery/about-account-recovery.md)                    | -             | **✔︎**        |
-| 价格                                                                                                      | $3/用户/月（按年计费） | $5/用户/月（按年计费） |
+| 功能                                                                                                         | 经典 2019       | 当前 (2020-)    |
+| ---------------------------------------------------------------------------------------------------------- | ------------- | ------------- |
+| <p>预先存在的企业功能，包括：<br><br>- 所有用户的高级功能<br>- 事件日志<br>- 用户群组<br>- API 访问<br>- Directory Connector<br>- 企业策略</p> | **✔︎**        | **✔︎**        |
+| [企业版家庭](../admin-console/manage-members/sponsored-families/sponsored-families-for-members.md)              | **✔︎**        | **✔︎**        |
+| [SSO 登录](../admin-console/login-with-sso/about-sso.md)                                                     | -             | **✔︎**        |
+| <p><a href="../self-hosting/key-connector/about-key-connector.md">Key Connector</a><br>（适用于客户管理的加密）</p>    | -             | **✔︎**        |
+| [账户恢复管理](../admin-console/manage-members/account-recovery/about-account-recovery.md)                       | -             | **✔︎**        |
+| 价格                                                                                                         | $3/用户/月（按年计费） | $5/用户/月（按年计费） |
 
 {% hint style="info" %}
 额外的仅针对企业的功能仅适用于当前方案，包括扩展的企业策略。

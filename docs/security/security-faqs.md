@@ -95,7 +95,7 @@ Bitwarden 非常重视用户的安全和隐私。Bitwarden 维护安全的端到
 
 
 * [两步登录](../account/two-step-login/setup-two-step-login/two-step-login-methods.md)的**记住我**选项将在 30 天后过期。
-* 目录连接器[同步缓存](../admin-console/manage-members/directory-connector/clear-sync-cache.md)将在 30 天后被清除。
+* Directory Connector [同步缓存](../admin-console/manage-members/directory-connector/clear-sync-cache.md)将在 30 天后被清除。
 * 组织邀请将在 5 天后过期。自托管客户可以[使用环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md#optional-variables)对其进行配置。
 
 ### 问：如何验证 Bitwarden App 的校验和？ <a href="#q-how-do-i-validate-the-checksum-of-a-bitwarden-app" id="q-how-do-i-validate-the-checksum-of-a-bitwarden-app"></a>

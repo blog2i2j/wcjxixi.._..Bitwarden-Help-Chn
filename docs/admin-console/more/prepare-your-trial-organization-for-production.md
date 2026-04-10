@@ -74,7 +74,7 @@
 现在，您的组织已准备好在生产中使用了，接下来请引导其他用户加入。取决于您在试用期间设置组织的方式，您可能需要：
 
 * [使用 SCIM](../manage-members/scim/about-scim.md)
-* [使用目录连接器](../manage-members/directory-connector/about-directory-connector.md)
+* [使用 Directory Connector](../manage-members/directory-connector/about-directory-connector.md)
 * [使用手动邀请](../manage-members/user-management.md#onboard-users)
 
 我们强烈建议您在入职其余用户之前，先查看或重新查看[入职和继任](../manage-members/onboarding-and-succession.md)指南。

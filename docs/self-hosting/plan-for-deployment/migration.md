@@ -83,7 +83,7 @@
 
 1. **（仅企业组织）**&#x91CD;新实施您的[企业策略](../../admin-console/oversight-visibility/enterprise-policies.md)规范和/或配置 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)。
 2. 在云端手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
-3. 手动或使用[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
+3. 手动或使用 [Directory Connector](../../admin-console/manage-members/directory-connector/about-directory-connector.md) 开始[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
 {% endtab %}
 
 {% tab title="主机到主机" %}
@@ -126,7 +126,7 @@
 
 2、在所需区域创建一个新的 Bitwarden 账户，并开始试用组织。Bitwarden 支持人员会将您的订阅迁移到新的区域（见**步骤 4**）。
 
-3、设置您的新组织，配置企业策略、SSO 登录、构建群组收-集合关系以及使用目录连接器或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../../admin-console/more/proof-of-concept-project-checklist.md)。
+3、设置您的新组织，配置企业策略、SSO 登录、构建群组收-集合关系以及使用 Directory Connector 或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../../admin-console/more/proof-of-concept-project-checklist.md)。
 
 4、[联系 Bitwarden 支持](https://bitwarden.com/contact/)，将您的新组织从试用期中移出，并在新区域恢复您的订阅。&#x20;
 
