@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/phishing-blocked/)
 {% endhint %}
 
-Bitwarden 钓鱼拦截器检测已知的钓鱼网站，并将用户重定向到安全的通知页面，帮助确保凭据不会被误录或被泄露。钓鱼拦截器使用定期更新的开源的 [Phishing.Database](https://github.com/Phishing-Database/Phishing.Database) 来识别网络钓鱼网站。
+Bitwarden 钓鱼拦截器用于检测已知的钓鱼网站，并将用户重定向到安全的通知页面，用于确保凭据不会被误输入或被泄露。钓鱼拦截器使用定期更新的开源的 [Phishing.Database](https://github.com/Phishing-Database/Phishing.Database) 来识别网络钓鱼网站。
 
-钓鱼拦截器适用于 `2026.1.0` 及更新版本的浏览器客户端上的 Bitwarden 个人高级版和家庭版方案。
+钓鱼拦截器适用于 `2026.1.1` 及更高版本的浏览器客户端上的 Bitwarden 个人高级版和家庭版方案。
 
 {% hint style="info" %}
 目前，钓鱼拦截器不适用于 Bitwarden Safari 浏览器扩展。

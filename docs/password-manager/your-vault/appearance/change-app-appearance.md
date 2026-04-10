@@ -16,7 +16,7 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 外观页面
 {% endembed %}
 
-2、从**主题**下拉列表中，选择您喜欢的主题然后选择**保存**！
+2、从**主题**下拉菜单中，选择您喜欢的主题然后选择**保存**！
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -34,7 +34,7 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 
 4、使用**扩展宽度**选项以扩大浏览器扩展的尺寸。
 
-5、使用**紧凑模式**以增加浏览器扩展中显示的信息密度。
+5、使用**紧凑模式**以提高浏览器扩展中显示的信息密度。
 {% endtab %}
 
 {% tab title="桌面端" %}
@@ -42,14 +42,14 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 
 1、打开桌面 App 的**偏好设置**面板（Windows 上为**文件** → **设置**；macOS 上为 **Bitwarden** → **偏好设置**）。&#x20;
 
-2、滚动到 **App 设置**部分然后使用**主题**下拉列表选择您喜欢的主题！
+2、滚动到 **App 设置**部分，然后使用**主题**下拉菜单选择您喜欢的主题！
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7dOzSglXr4rlM97zKoqptq/cef7c6abf3657a9694e4fd0cc735a290/Screen_Shot_2022-05-19_at_9.37.03_AM.png?_a=DAJCwlWIZAAB" %}
+{% embed url="https://bitwarden.com/assets/7dOzSglXr4rlM97zKoqptq/5c07e025316518564fd77207944fd546/2026-01-28_11-16-18.png?w=988&fm=avif" %}
 更改主题
 {% endembed %}
 
 {% hint style="success" %}
-桌面 App 中的主题是为所有登录账户全局设置的。[了解更多](../../../account/log-in-and-unlock/more-log-in-options/account-switching.md)。
+桌面 App 中的主题是为所有已登录账户全局设置的。[了解更多](../../../account/log-in-and-unlock/more-log-in-options/account-switching.md)。
 {% endhint %}
 {% endtab %}
 
@@ -60,10 +60,14 @@ Bitwarden 网页密码库、浏览器扩展、桌面 App 和移动 App 都包含
 
 2、点击**外观**。&#x20;
 
-3、点击**主题**选项然后选择您喜欢的主题！
+3、点击**主题**选项选择您喜欢的主题！
 
 {% embed url="https://bitwarden.com/assets/ntCXOl03Oi6zmXx5Z9j5C/1329fb58540811d4b195b638b2628aca/2025-05-20_15-28-44.png?w=720&fm=avif&q=80" %}
 更改移动端主题
 {% endembed %}
+
+{% hint style="success" %}
+在 Android 上，您还可以使用**动态颜色**选项，使 Bitwarden 的配色方案与您的壁纸相匹配。
+{% endhint %}
 {% endtab %}
 {% endtabs %}
