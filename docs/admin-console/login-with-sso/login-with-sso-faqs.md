@@ -16,9 +16,9 @@
 
 **答：**&#x9664;非组织已激活[要求单点登录身份验证](../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)策略，否则具有[用户角色](../manage-members/member-roles.md)的成员仍然可以使用主密码进行身份验证（如果他们有主密码），但某些[解密选项](sso-decryption-options.md)可能会移除或阻止他们拥有的主密码。
 
-### 问：我仍然需要使用 Bitwarden 目录连接器吗？ <a href="#q-do-i-still-need-to-use-bitwarden-directory-connector" id="q-do-i-still-need-to-use-bitwarden-directory-connector"></a>
+### 问：我仍然需要使用 Bitwarden Directory Connector 吗？ <a href="#q-do-i-still-need-to-use-bitwarden-directory-connector" id="q-do-i-still-need-to-use-bitwarden-directory-connector"></a>
 
-**答：**&#x5982;果您直接在 Bitwarden 中管理 Bitwarden 群组和集合分配，则无需使用目录连接器。但是，如果您希望群组和用户能自动与您的组织目录同步，我们建议将 SSO 登录和目录连接器结合使用以获得最完整的解决方案。
+**答：**&#x5982;果您直接在 Bitwarden 中管理 Bitwarden 群组和集合分配，则无需使用 Directory Connector。但是，如果您希望群组和用户能自动与您的组织目录同步，我们建议将 SSO 登录和 Directory Connector 结合使用以获得最完整的解决方案。
 
 ### 问：每次登录时是否都需要输入 SSO 标识符吗？ <a href="#q-do-i-need-to-enter-my-organization-identifier-every-time-i-login" id="q-do-i-need-to-enter-my-organization-identifier-every-time-i-login"></a>
 
@@ -26,7 +26,7 @@
 
 ## 配置 <a href="#configuration" id="configuration"></a>
 
-### 问：SSO 与 SCIM 或目录连接器兼容吗？ <a href="#q-is-sso-compatible-with-scim-or-directory-connector" id="q-is-sso-compatible-with-scim-or-directory-connector"></a>
+### 问：SSO 与 SCIM 或 Directory Connector 兼容吗？ <a href="#q-is-sso-compatible-with-scim-or-directory-connector" id="q-is-sso-compatible-with-scim-or-directory-connector"></a>
 
 **答：**&#x662F;的。组织可以选择利用其中任何一个来同步群组和群组成员资格。
 

@@ -5,7 +5,7 @@
 ## 文档 <a href="#docs" id="docs"></a>
 
 * [首页](docs/home.md)
-* [发布记录](docs/release-notes.md)
+* [发行记录](docs/release-notes.md)
 * [账户访问](docs/account/README.md)
   * [创建 Bitwarden 账户](docs/account/create-bitwarden-account.md)
   * [选择服务器](docs/account/choose-my-server.md)

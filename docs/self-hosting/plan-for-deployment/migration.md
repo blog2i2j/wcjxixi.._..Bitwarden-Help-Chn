@@ -49,7 +49,7 @@
 
 2、在自托管网页密码库中手动[重新创建用户群组](../../admin-console/manage-members/groups.md#create-a-group)，并将它们分配给适当的集合。
 
-3、手动或使用[目录连接器](../../admin-console/manage-members/directory-connector/about-directory-connector.md)[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
+3、手动或使用 [Directory Connector](../../admin-console/manage-members/directory-connector/about-directory-connector.md) 开始[邀请用户加入您的组织](../../admin-console/manage-members/user-management.md#invite)。
 {% endtab %}
 
 {% tab title="自托管到云端" %}

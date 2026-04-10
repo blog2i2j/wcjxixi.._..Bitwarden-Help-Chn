@@ -11,7 +11,7 @@
 * 确定云服务器区域（美国、欧盟）
 * 选择认证策略（电子邮箱或身份提供程序 SSO）
 * 选择加密类型（主密码或受信任设备）
-* 定义用户配置方法（手动、目录连接器、SCIM、即时 SSO）
+* 定义用户配置方法（手动、Directory Connector、SCIM、即时 SSO）
 * 定义密码库所有权策略（个人密码库与仅限组织）
 * 确定分阶段推广的用户群组
 
@@ -39,7 +39,7 @@
 * 确定云服务器区域（美国、欧盟）
 * 选择认证策略（电子邮件或身份提供程序 SSO）
 * 选择加密类型（主密码或可信任设备）
-* 定义用户配置方法（手动、目录连接器、SCIM、即时 SSO）
+* 定义用户配置方法（手动、Directory Connector 、SCIM、即时 SSO）
 * 定义密码库所有权策略（个人密码库与仅限组织）
 * 确定分阶段推广的用户群组
 
@@ -47,7 +47,7 @@
 
 * [SSO 集成](../admin-console/login-with-sso/about-sso.md)
 * [SCIM](../admin-console/manage-members/scim/about-scim.md)
-* [目录连接器](../admin-console/manage-members/directory-connector/directory-connector-cli.md)
+* [Directory Connector](../admin-console/manage-members/directory-connector/directory-connector-cli.md)
 
 ## 组织构建和配置 <a href="#organizational-build-out-and-configuration" id="organizational-build-out-and-configuration"></a>
 
@@ -72,7 +72,7 @@
 * 配置身份提供程序
 * 映射用户属性和群组成员资格
 * 测试 SCIM 同步
-* 下载和安装目录连接器
+* 下载并安装 Directory Connector
 * 配置同步筛选器，用户/群组映射
 
 **支持链接：**

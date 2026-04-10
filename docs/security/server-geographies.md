@@ -64,7 +64,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 2、在所需区域创建新的 Bitwarden 账户并开始试用组织。当您准备好时，Bitwarden 支持会将您的订阅迁移到新的区域（见**步骤 4**）。
 
-3、设置您的新组织，配置企业策略、SSO 登录，构建群组 - 集合关系以及使用目录连接器或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../admin-console/more/proof-of-concept-project-checklist.md)。
+3、设置您的新组织，配置企业策略、SSO 登录，构建群组 - 集合关系以及使用 Directory Connector 或 SCIM 邀请用户等。如需帮助，请参阅[概念验证清单](../admin-console/more/proof-of-concept-project-checklist.md)。
 
 4、[请联系 Bitwarden 支持](https://bitwarden.com/contact/)，让您的新组织停止试用并在新的区域恢复订阅。
 
