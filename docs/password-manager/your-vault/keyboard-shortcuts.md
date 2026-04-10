@@ -8,7 +8,7 @@
 
 ## 浏览器扩展快捷键 <a href="#browser-extension-shortcuts" id="browser-extension-shortcuts"></a>
 
-这些快捷键允许您使用键盘操作 Bitwarden 浏览器扩展。如果快捷键不起作用，您可能需要[更新浏览器的快捷键设置](keyboard-shortcuts.md#customize-browser-extension-shortcuts)。
+这些快捷键允许您使用键盘操作 Bitwarden 浏览器扩展。如果不起作用，您可能需要[更新浏览器的快捷键设置](keyboard-shortcuts.md#customize-browser-extension-shortcuts)。
 
 ### 通用 <a href="#general" id="general"></a>
 

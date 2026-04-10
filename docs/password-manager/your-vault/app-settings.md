@@ -94,7 +94,7 @@
 
 </details>
 
-## 移动 App <a href="#mobile" id="mobile"></a>
+## 移动端 <a href="#mobile" id="mobile"></a>
 
 <details>
 
@@ -181,7 +181,7 @@
 
 </details>
 
-## 桌面 App <a href="#desktop" id="desktop"></a>
+## 桌面端 <a href="#desktop" id="desktop"></a>
 
 <details>
 
@@ -216,7 +216,7 @@
 
 与**安全**和**偏好设置**不同，这些设置适用于使用桌面 App 的所有账户：
 
-{% hint style="info" %}
+{% hint style="success" %}
 在 Linux 上，**系统托盘**是位于屏幕右下角的一排快捷方式。**Dash** 是一排常用的和正在运行的 App，通常位于屏幕左侧。
 {% endhint %}
 
@@ -239,7 +239,7 @@
 
 与**安全**和**偏好设置**不同，这些设置适用于使用桌面 App 的所有账户：
 
-{% hint style="info" %}
+{% hint style="success" %}
 在 macOS 上，**菜单栏**是位于屏幕顶部的一排菜单。**Dock** 是一排常用的和正在运行的 App，可通过将光标移动到屏幕边缘来显示。
 {% endhint %}
 
@@ -266,7 +266,7 @@
 
 与**安全**和**偏好设置**不同，这些设置适用于使用桌面 App 的所有账户：
 
-{% hint style="info" %}
+{% hint style="success" %}
 在 Windows 上，**系统托盘**是位于屏幕右下角的一排快捷方式。**任务栏**是一排常用的和正在运行的 App，通常位于屏幕底部中间。
 {% endhint %}
 
