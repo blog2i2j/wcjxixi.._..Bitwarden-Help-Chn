@@ -4,14 +4,14 @@
 对应的[官方文档地址](https://bitwarden.com/help/import-from-lastpass/)
 {% endhint %}
 
-使用这篇文章帮助您从 LastPass 导出数据并将其导入 Bitwarden 中。
+使用这篇文章帮助您从 LastPass 导出数据并导入到 Bitwarden。
 
 ## 从 LastPass 导出 <a href="#export-from-lastpass" id="export-from-lastpass"></a>
 
 您可以从 LastPass 的网页密码库或从 LastPass 浏览器扩展[导出数据](https://support.lastpass.com/help/export-your-passwords-and-secure-notes-lp040004)：
 
 {% hint style="success" %}
-您可以跳过此步骤并立即开始使用[直接导入选项](import-data-from-lastpass.md#import-to-bitwarden)导入到 Bitwarden。
+您可以跳过此步骤并立即开始使用[直接导入选项](import-data-from-lastpass.md#import-to-bitwarden)导入到 Bitwarden，仅适用于 Bitwarden 浏览器扩展和桌面 App。
 {% endhint %}
 
 {% tabs %}
@@ -37,9 +37,9 @@ LastPass 导出
 4、如果您的密码库数据显示在屏幕上，全选显示的数据，将其复制并粘帖到一个新的 `export.csv` 文件中。
 
 {% hint style="danger" %}
-一些用户报告了一个 bug：密码中的特殊字符（`&`、`<`、`>` 等）在导出时，被更改成了 HTML 编码的值（如，`&amp;`）。
+一些用户报告了一个 bug：密码中的特殊字符（`&`、`<`、`>` 等）在导出时，被更改成了 HTML 编码的值（例如 `&amp;`）。
 
-如果您在导出的数据中发现了这个 bug，请在导入 Bitwarden 之前，使用文本编辑器查找并替换所有被更改的值。
+如果您在导出的数据中发现了这个 bug，请使用文本编辑器查找并替换所有被更改的值，然后再导入到 Bitwarden 中。
 {% endhint %}
 {% endtab %}
 
@@ -66,7 +66,7 @@ LastPass 导出
 
 ## 导入到 Bitwarden <a href="#import-to-bitwarden" id="import-to-bitwarden"></a>
 
-数据可以直接从 LastPass 导入，也可以使用 LastPass [导出的文件](import-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，LastPass 管理员将需要完成一个简短的设置过程，然后您才能使用**直接导入**选项（[了解更多](import-data-from-lastpass.md#direct-import-with-sso)）。在所有情况下，数据在发送到服务器存储之前会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
+可以从 LastPass 直接导入，也可以使用从 LastPass [导出的文件](import-data-from-lastpass.md#export-from-lastpass)导入。如果您是使用 LastPass SSO 的团队成员，在您使用**直接导入**选项导入个人数据之前，LastPass 管理员将需要完成一个简短的设置过程。无论哪种方式，数据在发送到服务器存储之前都会在本地进行[加密](../../../security/encryption/encryption-protocols.md)。
 
 {% hint style="info" %}
 虽然某些项目类型无法导入，但您仍可将其添加到密码库：

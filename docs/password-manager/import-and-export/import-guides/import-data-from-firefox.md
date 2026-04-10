@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/import-from-firefox/)
 {% endhint %}
 
-使用这篇文章帮助您从 Firefox 导出数据并将其导入 Bitwarden 中。
+使用这篇文章帮助您从 Firefox 导出数据并导入到 Bitwarden。
 
 ## 从 Firefox 导出 <a href="#export-from-firefox" id="export-from-firefox"></a>
 

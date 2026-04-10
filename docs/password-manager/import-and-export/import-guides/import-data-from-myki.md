@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/import-data-from-myki/)
 {% endhint %}
 
-使用这篇文章帮助您从 Myki 导出数据并将其导入 Bitwarden 中。Myki 数据支持导出为 `.csv` 文件。
+使用这篇文章帮助您从 Myki 导出数据并导入到 Bitwarden。Myki 数据支持导出为 `.csv` 文件。
 
 ## 从 Myki 导出 <a href="#export-from-myki" id="export-from-myki"></a>
 
