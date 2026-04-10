@@ -78,5 +78,5 @@
 6、**开始邀请用户**。现在，用于安全地和可扩展地共享凭据的基础架构已为您的客户准备就绪，您可以开始邀请用户加入组织了。为确保组织的安全，Bitwarden 对新用户的入职流程采用了 3 步流程，**邀请** → **接受** → **确认**。
 
 {% hint style="success" %}
-如果您的客户使用目录服务（活动目录、LDAP、Okta 等），请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 或[目录连接器](../admin-console/manage-members/directory-connector/about-directory-connector.md)从源目录自动同步组织用户并自动发出邀请。
+如果您的客户使用目录服务（活动目录、LDAP、Okta 等），请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 或 [Directory Connector](../admin-console/manage-members/directory-connector/about-directory-connector.md) 从源目录自动同步组织用户并自动发出邀请。
 {% endhint %}

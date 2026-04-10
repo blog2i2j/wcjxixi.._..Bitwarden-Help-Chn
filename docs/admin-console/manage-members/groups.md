@@ -41,7 +41,7 @@
 访问控制用于指定用户可以访问所有项目（即所有集合）或仅限指定的集合，以及是否[隐藏密码或登录为只读](member-roles.md#granular-access-control)。
 
 {% hint style="success" %}
-**外部 ID** 字段仅在您使用[目录连接器](directory-connector/about-directory-connector.md)时相关。
+**外部 ID** (External Id) 字段只有在使用 [Directory Connector](directory-connector/about-directory-connector.md) 时才相关。
 {% endhint %}
 
 5、选择**保存**以完成群组的创建。

@@ -10,8 +10,8 @@
 
 优化的 JIT 配置策略可以为您的成员提供最简单的注册流程。作为管理员，通过以下方式帮助您的成员快速轻松地加入：
 
-* **务必**通过 [SCIM](../manage-members/scim/about-scim.md)、[目录连接器](../manage-members/directory-connector/about-directory-connector.md)或[手动](../manage-members/user-management.md#confirm)向成员发送电子邮件邀请。
-  * 使用 SCIM 或目录连接器的额外优势是，可将[群组及群组成员资格](../manage-members/groups.md)同步到您的组织（即时配置本身不支持这一功能），自动将成员分配到群组中，以实现高效的[集合分配](../manage-shared-items/collections/assign-users-to-collections.md)。
+* **务必**通过 [SCIM](../manage-members/scim/about-scim.md)、[Directory Connector](../manage-members/directory-connector/about-directory-connector.md) 或[手动](../manage-members/user-management.md#confirm)向成员发送电子邮件邀请。
+  * 使用 SCIM 或 Directory Connector 的额外优势是，可将[群组及群组成员资格](../manage-members/groups.md)同步到您的组织（即时配置本身不支持这一功能），自动将成员分配到群组中，以实现高效的[集合分配](../manage-shared-items/collections/assign-users-to-collections.md)。
 * **不应**允许成员在被邀请加入组织之前预先创建 Bitwarden 账户。
 
 {% hint style="success" %}

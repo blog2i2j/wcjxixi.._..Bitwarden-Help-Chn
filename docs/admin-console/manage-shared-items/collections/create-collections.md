@@ -35,7 +35,7 @@
 4、选择**保存**以完成集合的创建。
 
 {% hint style="success" %}
-**外部标识** (External Id) 字段只有在使用[目录连接器](../../manage-members/directory-connector/about-directory-connector.md) (Directory Connector) 时才相关，使用 [SCIM](../../manage-members/scim/about-scim.md)、目录连接器或 API 进行配置时，该字段将在对话框中显示。
+**外部 ID** (External Id) 字段只有在使用 [Directory Connector](../../manage-members/directory-connector/about-directory-connector.md) 时才相关，使用 [SCIM](../../manage-members/scim/about-scim.md)、Directory Connector 或 API 进行配置时，该字段将在对话框中显示。
 {% endhint %}
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
