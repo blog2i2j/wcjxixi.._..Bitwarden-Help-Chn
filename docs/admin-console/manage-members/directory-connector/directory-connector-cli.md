@@ -1,10 +1,10 @@
-# 目录连接器 CLI
+# Directory Connector CLI
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/directory-sync-cli/)
 {% endhint %}
 
-目录连接器 CLI 适合在无法使用桌面 GUI 的环境中工作，或者如果您想要使用操作系统提供的工具（定时作业、计划任务等）对目录同步操作进行脚本编程时使用。目录连接器 CLI 可以在 Windows、macOS 和 Linux 发行版上跨平台使用。
+Directory Connector CLI 适合在无法使用桌面 GUI 的环境中工作，或者如果您想要使用操作系统提供的工具（定时作业、计划任务等）对目录同步操作进行脚本编程时使用。Directory Connector CLI 可以在 Windows、macOS 和 Linux 发行版上跨平台使用。
 
 ## 入门 <a href="#getting-started" id="getting-started"></a>
 
@@ -12,7 +12,7 @@
 桌面 App 和 CLI [共享数据库和配置](directory-connector-file-storage.md)，因此不建议在一台机器上**同时**使用。建议使用[桌面 App](directory-connector-desktop-app.md) 完成配置和测试，然后使用 [CLI](directory-connector-cli.md) [调度自动同步](schedule-a-sync.md)到生产组织。
 {% endhint %}
 
-要开始使用 Bitwarden 目录连接器 CLI：
+要开始使用 Bitwarden Directory Connector CLI：
 
 1、从以下链接之一下载 CLI：
 
@@ -37,13 +37,13 @@ brew install libsecret
 bwdc --help
 ```
 
-4、使用 `bwdc config <setting> <value>` 命令（参阅[命令参考](directory-connector-cli.md#ming-ling-can-kao)）将目录连接器 CLI 连接到您的目录。
+4、使用 `bwdc config <setting> <value>` 命令（参阅[命令参考](directory-connector-cli.md#ming-ling-can-kao)）将 Directory Connector CLI 连接到您的目录。
 
-5、通过编辑 `data.json` 文件（更多信息请参阅[目录连接器文件存储](directory-connector-file-storage.md)）来配置同步选项。使用 `bwdc data-file` 命令获取 `data.json` 文件的绝对路径。
+5、通过编辑 `data.json` 文件（更多信息请参阅 [Directory Connector 文件存储](directory-connector-file-storage.md)）来配置同步选项。使用 `bwdc data-file` 命令获取 `data.json` 文件的绝对路径。
 
 可用的**同步选项**取决于使用的目录类型，因此请参考以下文章之一，以获取可供您使用的选项列表：
 
-* [使用 AD 或 LDAP 同步](sync-with-active-directory-or-ldap.md)
+* [使用 AD 或 LDAP 同步](sync-with-ldap-or-ad.md)
 * [使用 Microsoft Entra ID 同步](sync-with-microsoft-entra-id.md)
 * [使用 Google Workspace 同步](sync-with-google-workspace.md)
 * [使用 Okta 同步](sync-with-okta.md)
@@ -61,7 +61,7 @@ bwdc --help
 
 ### login
 
-`login` 命令用于使用您的[组织 API 密钥](../../bitwarden-public-api.md#authentication)登录目录连接器。如果您没有 API 密钥，请联系[组织的所有者](../member-roles.md)。有以下几种使用 `login` 命令的方式：
+`login` 命令用于使用您的[组织 API 密钥](../../bitwarden-public-api.md#authentication)登录 Directory Connector。如果您没有 API 密钥，请联系[组织的所有者](../member-roles.md)。有以下几种使用 `login` 命令的方式：
 
 * 自身：
 
@@ -86,13 +86,13 @@ BW_CLIENTSECRET="yUMB4trbqV1bavhEHGqbuGpz4AlHm9"
 bwdc login
 ```
 
-保存环境变量 `BW_CLIENTID` 和 `BW_CLIENTSECRET` 后，允许您仅使用 `bwdc login` 来登录目录连接器，这将检查这些变量，如果存在则使用它们。
+保存环境变量 `BW_CLIENTID` 和 `BW_CLIENTSECRET` 后，允许您仅使用 `bwdc login` 来登录 Directory Connector，这将检查这些变量，如果存在则使用它们。
 
 如果这些环境变量不存在，系统将提示您输入 `client_id` 和 `client_secret`。
 
 ### logout
 
-`logout` 命令用于登出目录连接器 CLI。
+`logout` 命令用于注销 Directory Connector CLI。
 
 ```shell
 bwdc logout
@@ -100,7 +100,7 @@ bwdc logout
 
 ### help <a href="#help" id="help"></a>
 
-Bitwarden 目录连接器 CLI 是自带文档的，每条命令都有 `--help` 内容和示例。使用全局 `--help` 选项列出所有可用命令：
+Bitwarden Directory Connector CLI 是自带文档的，每条命令都有 `--help` 内容和示例。使用全局 `--help` 选项列出所有可用命令：
 
 ```shell
 bwdc --help
@@ -138,7 +138,7 @@ bwdc sync
 同步的用户和群组将立即在您的 Bitwarden 组织中可用。新增加的用户将收到一封邀请加入您组织的电子邮件。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，Directory Connector 将显示错误并停止同步。
 
 **该计划已不再提供购买**。此错误不适用于团队版计划。
 {% endhint %}
@@ -185,13 +185,13 @@ bwdc config <setting> <value>
 
 ### data-file <a href="#data-file" id="data-file"></a>
 
-`data-file` 命令用于返回目录连接器 CLI 所使用的 `data.json` 配置文件的绝对路径：
+`data-file` 命令用于返回 Directory Connector CLI 所使用的 `data.json` 配置文件的绝对路径：
 
 ```shell
 bwdc data-file
 ```
 
-目录连接器 CLI 的某些配置设置可以通过在您喜欢的文本编辑器中直接编辑 `data.json` 配置文件来修改，但 `ldap.password`、`azure.key`、`gsuite.key`、`okta.token` 和 `onelogin.secret` 只能通过 CLI 使用 config 或[桌面 App](directory-connector-desktop-app.md) 来修改。
+Directory Connector CLI 的某些配置设置可以通过在您喜欢的文本编辑器中直接编辑 `data.json` 配置文件来修改，但 `ldap.password`、`azure.key`、`gsuite.key`、`okta.token` 和 `onelogin.secret` 只能通过 CLI 使用 config 或[桌面 App](directory-connector-desktop-app.md) 来修改。
 
 ### clean-cache <a href="#clear-cache" id="clear-cache"></a>
 
@@ -203,18 +203,18 @@ bwdc clear-cache
 
 ### update <a href="#update" id="update"></a>
 
-`update` 命令用于检查目录连接器 CLI 是否是最新版本：
+`update` 命令用于检查 Directory Connector CLI 是否是最新版本：
 
 ```shell
 bwdc update
 ```
 
-如果发现新版本，此命令将返回新版本的下载 URL 地址。**目录连接器 CLI 不会自动更新**。您需要使用此 URL 手动下载新版本。
+如果发现新版本，此命令将返回新版本的下载 URL 地址。**Directory Connector CLI 不会自动更新**。您需要使用此 URL 手动下载新版本。
 
 {% hint style="warning" %}
-如果您同时使用 CLI 和桌面 App，确保它俩的版本是匹配的，这非常重要。运行两个不同版本的目录连接器，可能会导致意外问题。
+如果您同时使用 CLI 和桌面 App，确保它俩的版本是匹配的，这非常重要。运行两个不同版本的 Directory Connector，可能会导致意外问题。
 
-使用全局选项 `--version` 查看目录连接器 CLI 的版本。
+使用全局选项 `--version` 查看 Directory Connector CLI 的版本。
 {% endhint %}
 
 ## 故障排除 <a href="#troubleshooting" id="troubleshooting"></a>
@@ -253,7 +253,7 @@ export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 
 如果您在配置私钥时，收到一条  `Object does not exist at path "/org/freedesktop/secrets/collection/login"` 的错误消息，请参阅以下步骤纠正该问题。
 
-Bitwarden 目录连接器使用 Linux 密钥环，请检查是否已安装以下依赖项：
+Bitwarden Directory Connector 使用 Linux 密钥环，请检查是否已安装以下依赖项：
 
 ```bash
 sudo apt install dbus-x11 gnome-keyring

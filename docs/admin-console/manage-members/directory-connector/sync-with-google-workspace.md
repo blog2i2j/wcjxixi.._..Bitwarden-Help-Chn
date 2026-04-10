@@ -4,22 +4,22 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/gsuite-directory/)
 {% endhint %}
 
-本文将帮助您使用目录连接器将您的 Google Workplace（以前叫 G Suite）中的用户和群组同步到您的 Bitwarden 组织。
+本文将帮助您使用 Directory Connector 将您的 Google Workplace（以前叫 G Suite）中的用户和群组同步到您的 Bitwarden 组织。
 
 ## Google Workspace 设置 <a href="#google-workspace-setup" id="google-workspace-setup"></a>
 
-要设置与 Google Workplace（以前叫 G Suite）的目录同步，您需要访问 **Google Workspace Admin Portal** 和 **Google Cloud Platform Console**。目录连接器需要从这些过程中获得的信息才能正常运行。
+要设置与 Google Workplace（以前叫 G Suite）的目录同步，您需要访问 **Google Workspace Admin Portal** 和 **Google Cloud Platform Console**。Directory Connector 需要从这些过程中获得的信息才能正常运行。
 
 ### 创建 Cloud 项目 <a href="#create-a-cloud-project" id="create-a-cloud-project"></a>
 
-完成以下步骤来创建用于将连目录连接器连接到您的目录的 Google Cloud 项目。如果您已经有可用的 Google Cloud 项目，请跳至[启用Admin SDK](sync-with-google-workspace.md#enable-admin-sdk)：
+完成以下步骤来创建用于将连 Directory Connector 连接到您的目录的 Google Cloud 项目。如果您已经有可用的 Google Cloud 项目，请跳至[启用Admin SDK](sync-with-google-workspace.md#enable-admin-sdk)：
 
 1. 在 [GCP Console](https://console.cloud.google.com/home) 中，选择**创建项目**按钮。
 2. 为此项目输入一个 Bitwarden 专有名称（比如 `bitwarden-dc-project`）并选择**创建**按钮。
 
 ### 启用 Admin SDK <a href="#enable-admin-sdk" id="enable-admin-sdk"></a>
 
-完成以下步骤以启用 Admin SDK API，目录连接器将向其发出请求：
+完成以下步骤以启用 Admin SDK API，Directory Connector 将向其发出请求：
 
 1. 在 [GCP Console](https://console.cloud.google.com/home) 中，选择已创建或已存在的项目。
 2. 从左侧导航中，选择 **API 和服务** → **库**。
@@ -70,9 +70,9 @@ https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.google
 
 ## 连接到您的目录 <a href="#connect-to-your-directory" id="connect-to-your-directory"></a>
 
-完成以下步骤以配置目录连接器使用您的 Google 目录：
+完成以下步骤以配置 Directory Connector 使用您的 Google 目录：
 
-1. 打开目录连接器[桌面 App](directory-connector-desktop-app.md)。
+1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
 2. 导航到 **Setting** 标签页。
 3. 从 **Type** 下拉列表中选择 **G Suite（Google）**。\
    此部分中的可用字段将根据您选择的类型而变化。
@@ -87,22 +87,22 @@ https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.google
 完成配置后，请导航至 **More** 标签页，然后选择 **Clear Sync Cache** 按钮，以防止与先前的同步操作发生潜在冲突。有关更多信息，请参阅[清除同步缓存](clear-sync-cache.md)。
 {% endhint %}
 
-完成以下步骤以配置当使用目录连接器同步时要使用的设置：
+完成以下步骤以配置当使用 Directory Connector 同步时要使用的设置：
 
-1. 打开目录连接器[桌面 App](directory-connector-desktop-app.md)。
+1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
 2. 导航到 **Setting** 标签页。
 3. 在 **Sync** 部分，根据需要配置如下选项：
 
-| 选项                                                                   | 描述                                                                     |
-| -------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Interval                                                             | 自动同步检查的时间间隔（分钟为单位）。                                                    |
-| Remove disabled users during sync                                    | 选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。                                    |
-| Overwrite existing organization users based on current sync settings | 选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。                     |
-| More than 2000 users or groups are expected to sync                  | 如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，目录连接器会将同步限制在 2000 个用户或群组。           |
-| Sync Users                                                           | <p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p> |
-| User Filter                                                          | 参阅[指定同步筛选器](sync-with-google-workspace.md#specify-sync-filters)。       |
-| Sync Groups                                                          | <p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p> |
-| Group Filter                                                         | 参阅[指定同步筛选器](sync-with-google-workspace.md#specify-sync-filters)。       |
+| 选项                                                                   | 描述                                                                          |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Interval                                                             | 自动同步检查的时间间隔（分钟为单位）。                                                         |
+| Remove disabled users during sync                                    | 选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。                                         |
+| Overwrite existing organization users based on current sync settings | 选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。                          |
+| More than 2000 users or groups are expected to sync                  | 如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，Directory Connector 会将同步限制在 2000 个用户或群组。 |
+| Sync Users                                                           | <p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p>      |
+| User Filter                                                          | 参阅[指定同步筛选器](sync-with-google-workspace.md#specify-sync-filters)。            |
+| Sync Groups                                                          | <p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p>      |
+| Group Filter                                                         | 参阅[指定同步筛选器](sync-with-google-workspace.md#specify-sync-filters)。            |
 
 ### 指定同步筛选器 <a href="#specify-sync-filters" id="specify-sync-filters"></a>
 
@@ -188,10 +188,10 @@ exclude:name='Engineering'|email:admin*
 ## 测试同步 <a href="#test-a-sync" id="test-a-sync"></a>
 
 {% hint style="success" %}
-在测试或执行同步之前，请检查目录连接器是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
+在测试或执行同步之前，请检查 Directory Connector 是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
 {% endhint %}
 
-要测试目录连接器是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 标签页并选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-active-directory-or-ldap.md#configure-sync-options)和[筛选器](sync-with-active-directory-or-ldap.md#specify-sync-filters)显示在目录连接器窗口中：
+要测试 Directory Connector 是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 标签页并选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)显示在 Directory Connector 窗口中：
 
 {% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5QYMxvtCPhjbluuoLcCapD/96e9c630ead9ceba5124b55f9d2764a3/dc-okta-test.png?fm=webp&h=439&q=50&w=500" %}
 测试同步的结果
@@ -199,19 +199,19 @@ exclude:name='Engineering'|email:admin*
 
 ## 启动自动同步 <a href="#start-automatic-sync" id="start-automatic-sync"></a>
 
-配置并测试[同步选项](sync-with-active-directory-or-ldap.md#configure-sync-options)和[筛选器](sync-with-active-directory-or-ldap.md#specify-sync-filters)后，就可以开始同步了。完成以下步骤以使用目录连接器启动自动同步：
+配置并测试[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)后，就可以开始同步了。完成以下步骤以使用 Directory Connector 启动自动同步：
 
-1. 打开目录连接器[桌面 App](directory-connector-desktop-app.md)。
+1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
 2. 导航到 **Dashboard** 标签页。
 3. 在 **Sync** 部分选择 **Start Now** 按钮。\
    或者你可以选择 **Sync Now** 按钮以运行一次性手动同步。
 
-目录连接器将根据配置的[同步选项](sync-with-active-directory-or-ldap.md#configure-sync-options)和[筛选器](sync-with-active-directory-or-ldap.md#specify-sync-filters)开始轮询目录。
+Directory Connector 将根据配置的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)开始轮询目录。
 
-如果您退出或关闭了目录连接器，自动同步将停止。最小化或隐藏此程序到系统托盘，以保持后台运行。
+如果您退出或关闭了 Directory Connector，自动同步将停止。最小化或隐藏此程序到系统托盘，以保持后台运行。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，目录连接器将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，Directory Connector 将显示错误并停止同步。
 
 **该计划已不再提供购买**。此错误不适用于团队版计划。
 {% endhint %}

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/schedule-directory-sync/)
 {% endhint %}
 
-对于使用目录连接器 CLI 的组织，可以根据定义的时间间隔安排自动同步，以替代使用桌面 App 的**间隔**设置。这在无头环境或桌面应用程序不能在后台运行的情况下特别有用。
+对于使用 Directory Connector CLI 的组织，可以根据定义的时间间隔安排自动同步，以替代使用桌面 App 的**间隔**设置。这在无头环境或桌面 App 不能在后台运行的情况下特别有用。
 
 要调度同步，请在类 Unix 环境（包括 Linux 和 MacOS）中使用 **Cron**，在 Windows 环境中使用**任务计划程序**：
 
@@ -12,7 +12,7 @@
 {% tab title="Cron" %}
 ### Cron 权限 <a href="#cron-permissions" id="cron-permissions"></a>
 
-运行 cron 作业时，我们建议以一个专用的目录连接器用户的身份执行此操作。创建一个 `bwdc` 用户（如果还没有的话），然后将该用户添加到 `etc/cron.allow` 列表中。这将允许非 root 用户设置和运行 cron 作业。
+运行 cron 作业时，我们建议以一个专用的 Directory Connector 用户的身份执行此操作。创建一个 `bwdc` 用户（如果还没有的话），然后将该用户添加到 `etc/cron.allow` 列表中。这将允许非 root 用户设置和运行 cron 作业。
 
 接下来您还需要组织 [API 密钥](../../bitwarden-public-api.md#authentication)的 `client_id` 和 `client_secret` 值，组织**所有者**可以从网页密码库导航到组织**设置** → **我的组织**获取它们。
 
@@ -72,7 +72,7 @@ BITWARDENCLI_CONNECTOR_APPDATA_DIR="./instance-2" bwdc sync
 {% tab title="任务计划程序" %}
 ### 任务计划程序权限
 
-运行任务时，我们建议以一个专用的目录连接器用户的身份执行此操作。创建一个 `bwdc` 用户（如果还没有的话）。
+运行任务时，我们建议以一个专用的 Directory Connector 用户的身份执行此操作。创建一个 `bwdc` 用户（如果还没有的话）。
 
 接下来您还需要组织 [API 密钥](../../bitwarden-public-api.md#authentication)的 `client_id` 和 `client_secret` 值，组织**所有者**可以从网页密码库导航到组织**设置** → **我的组织**获取它们。
 
