@@ -139,13 +139,13 @@ LastPass 导出
 {% tab title="CLI" %}
 要通过 CLI 将数据导入您的密码库，请使用以下命令：
 
-```batch
+```bash
 bw import <format> <path>
 ```
 
 `bw import` 命令需要格式（使用 `bw import --formats` 获取格式列表）和路径，例如：
 
-```batch
+```bash
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 
@@ -160,7 +160,6 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 * Google Workspace
 * ADFS
-* Microsoft Entra ID
 {% endhint %}
 
 如果您是使用 SSO 的 LastPass 团队管理员，则您需要先完成以下操作，然后您的团队才能使用**直接导入**选项：

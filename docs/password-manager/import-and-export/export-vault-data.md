@@ -4,10 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/export-your-data/)
 {% endhint %}
 
-导出您的密码库数据，包括登录和笔记，以备份重要信息或[转移到新的 Bitwarden 密码库](import-data.md)。在导出前，数据会在客户端本地解密，因此不会在互联网上传输未加密的数据。
+导出您的密码库数据，包括登录和笔记，以备份重要信息或[转移到新的 Bitwarden 密码库](import-data.md)。在导出前，数据会通过客户端本地解密，因此不会在互联网上传输未加密的数据。
 
 {% hint style="success" %}
-如果您在新设备上添加 Bitwarden，并且您的账户托管在我们的云服务器上，您无需创建导出。否则，在您的新设备上[下载 Bitwarden](https://bitwarden.com/download/)，然后使用您现有的账户登录即可。
+如果您将 Bitwarden 添加到新设备，并且您的账户托管在我们的云服务器上，您无需创建导出，只需在您的新设备上[下载 Bitwarden](https://bitwarden.com/download/)，然后使用您现有的账户登录即可。
 {% endhint %}
 
 {% hint style="danger" %}
@@ -18,10 +18,10 @@
 
 导出可以下载为以下几种格式：
 
-* `.json`（明文）
-* `.csv`（明文）
+* `.json`（纯文本）
+* `.csv`（纯文本）
 * [`.json (Encrypted)`](encrypted-exports.md)（加密）
-* `.zip (with attachments)`（包含 `.json` 文件和您的附件）（明文）
+* `.zip (with attachments)`（包含 `.json` 文件和您的附件）
 
 {% hint style="info" %}
 `.zip` 导出目前仅适用于个人密码库数据。
@@ -45,7 +45,7 @@
 ## 导出个人密码库 <a href="#export-a-personal-vault" id="export-a-personal-vault"></a>
 
 {% hint style="info" %}
-个人密码库导出不包括组织拥有的数据。只有管理员、所有者和某些自定义角色可以通过网页 App 或命令行工具[导出组织项目](../../admin-console/manage-shared-items/export-organization-items/export-organization-items.md) 。但是，具有**管理集合**[权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)的成员可以导出他们可以访问的集合中的数据。
+个人密码库导出不包括组织拥有的数据。只有管理员、所有者和某些自定义角色可以通过网页 App 或命令行工具[导出组织项目](../../admin-console/manage-shared-items/export-organization-items/export-organization-items.md)。但是，具有**管理集合**[权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)的成员可以导出他们可以访问的集合中的数据。
 {% endhint %}
 
 {% tabs %}
@@ -60,7 +60,7 @@
 导出项目
 {% endembed %}
 
-3、从**导出自**下拉菜单中选择要下载的数据：
+3、从**导出自**下拉菜单，中选择要下载的数据：
 
 * 选择**我的密码库**以导出您个人密码库中的项目。
 * 选择某个组织密码库的名称，这将导出您具有[**管理集合**](../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合中的数据。
@@ -70,16 +70,22 @@
 5、（可选）如果您选择 `.json (Encrypted)`，请为[加密文件](encrypted-exports.md)选择**导出类型**：
 
 * **账户限制**：该文件只能导入到当前生成加密导出文件的 Bitwarden 账户。
-* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
 
 {% hint style="danger" %}
-**账户限制**导出文件不能导入到其他账户。此外，[轮换您的账户加密密钥](../../security/encryption/encryption-key-rotation.md)将使账户限制导出文件无法解密。 **如果您轮换了账户加密密钥，请使用新加密密钥导出的新文件替换任何旧文件。**
+**账户限制**的导出只能导入到其来源账户，**不能**导入到其他账户。包括：
 
-如果您希望将加密的 `.json` 文件导入到不同的 Bitwarden 账户，在创建导出时请选择**密码保护**导出类型。
+* 使用相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
+* 即使原始账户已被删除，仍可能存在使用相同电子邮箱地址创建的另一个账户。
+
+此外，[轮换您的账户加密密钥](../../security/encryption/encryption-key-rotation.md)将使账户限制导出文件无法解密。 **如果您轮换了账户加密密钥，请使用新加密密钥导出的新文件替换任何旧文件。**
+
+如果您希望将加密的 `.json` 文件导入到不同的 Bitwarden 账户，请改为生成**密码保护**导出。
 {% endhint %}
 
+* **密码保护**：可以使用加密导出过程中设置的密码将此文件导入任何 Bitwarden 账户。
+
 {% hint style="success" %}
-选择 **⟳**&#x4EE5;安全地生成用于导出的唯一密码。如果您这样做，请务必将此密码保存在安全的地方。
+选择 **⟳**&#x4EE5;安全地生成用于导出的唯一密码。如果您选择此操作，请务必将此密码保存在安全的地方。
 {% endhint %}
 
 6、选择**导出**。
@@ -98,7 +104,7 @@
 
 3、选择**导出密码库**。
 
-4、从**导出自**下拉菜单中选择要下载的数据：
+4、从**导出自**下拉菜单中，选择要下载的数据：
 
 * 选择**我的密码库**以导出您个人密码库中的项目。
 * 选择某个组织密码库的名称，这将导出您具有[**管理集合**](../../admin-console/manage-shared-items/collections/collection-permissions.md)权限的集合中的数据。
