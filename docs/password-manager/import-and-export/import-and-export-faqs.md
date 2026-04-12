@@ -10,30 +10,30 @@
 
 **答：**&#x5982;果我们对您使用的服务没有提供官方支持，请手动调整 `.csv` 或 `.json` 来导入 Bitwarden。关于如何操作的更多信息，请参阅[调整 Bitwarden .csv 或 .json](condition-bitwarden-import.md)。
 
-### 问：我可以从 iCloud/Mac 钥匙串/Safari 导入 Bitwarden 吗？ <a href="#q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari" id="q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari"></a>
+### ~~问：我可以从 iCloud/Mac 钥匙串/Safari 导入 Bitwarden 吗？~~ <a href="#q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari" id="q-can-i-import-to-bitwarden-from-icloud-mac-keychain-safari"></a>
 
-**答：**&#x4ECE; Safari 15.0 开始，您可以从 Safari 导出密码到 `.csv` 文件。完成后，[调整您的 .csv](condition-bitwarden-import.md) 以符合 Bitwarden 的格式然后[导入您的数据](import-data.md)。
+~~**答：**&#x4ECE; Safari 15.0 开始，您可以从 Safari 导出密码到 `.csv` 文件。完成后，~~[~~调整您的 .csv~~](condition-bitwarden-import.md) ~~以符合 Bitwarden 的格式然后~~[~~导入您的数据~~](import-data.md)~~。~~
 
-Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙串或 Safari 导出数据的方法。
+~~Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙串或 Safari 导出数据的方法。~~
 
-这里有一些第三方程序可以导出这些数据：
+~~这里有一些第三方程序可以导出这些数据：~~
 
-* [https://gist.github.com/rmondello/b933231b1fcc83a7db0b](https://gist.github.com/rmondello/b933231b1fcc83a7db0b)
-* [https://github.com/lifepillar/CSVKeychain](https://github.com/lifepillar/CSVKeychain)
+* [~~https://gist.github.com/rmondello/b933231b1fcc83a7db0b~~](https://gist.github.com/rmondello/b933231b1fcc83a7db0b)
+* [~~https://github.com/lifepillar/CSVKeychain~~](https://github.com/lifepillar/CSVKeychain)
 
 {% hint style="danger" %}
-**请注意：**&#x8FD9;些第三方脚本/程序不受 Bitwarden 和 Apple 的支持，请自行承担使用风险。
+~~**请注意：**&#x8FD9;些第三方脚本/程序不受 Bitwarden 和 Apple 的支持，请自行承担使用风险。~~
 {% endhint %}
 
 ### 问：如何将项目直接导入到集合中？ <a href="#q-how-can-i-import-items-directly-to-collections" id="q-how-can-i-import-items-directly-to-collections"></a>
 
 **答：**&#x60A8;可以在导入前通过适当调整 `.json` 文件将项目导入现有的集合，也可以在导入文件中定义新的集合，以便在上传文件时创建新的集合。[了解方法](condition-bitwarden-import.md)。
 
-### 问：如何将文件附件导入 Bitwarden？ <a href="#q-how-do-i-import-file-attachments-to-bitwarden" id="q-how-do-i-import-file-attachments-to-bitwarden"></a>
+### ~~问：如何将文件附件导入 Bitwarden？~~ <a href="#q-how-do-i-import-file-attachments-to-bitwarden" id="q-how-do-i-import-file-attachments-to-bitwarden"></a>
 
-**答：**&#x6587;件附件必须手动迁移到您的 Bitwarden 密码库，因为它们目前不包含在批量导入操作中。
+~~**答：**&#x6587;件附件必须手动迁移到您的 Bitwarden 密码库，因为它们目前不包含在批量导入操作中。~~
 
-请注意，文件附件的存储只适用于高级用户，包括付费组织的成员（家庭、团队或企业）。
+~~请注意，文件附件的存储只适用于高级用户，包括付费组织（家庭版、团队版或企业版）的成员。~~
 
 ### 问：为什么导入时会产生重复的密码库项目？ <a href="#q-why-did-importing-create-duplicate-vault-items" id="q-why-did-importing-create-duplicate-vault-items"></a>
 
@@ -57,6 +57,7 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * [1Password (1pif)](import-guides/import-data-from-1password.md)
 * [1Password 6 & 7 Windows (.sv)](import-guides/import-data-from-1password.md)
 * [1Password 6 & 7 Mac (csv)](import-guides/import-data-from-1password.md)
+* 1Password (1pux)
 * Ascendo DataVault (csv)
 * Avast Passwords (csv)
 * Avast Passwords (json)
@@ -69,6 +70,8 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Clipperz (html)
 * Codebook (csv)
 * Dashlane (json)
+* Dashlane (csv)
+* Edge (csv)
 * Encryptr (csv)
 * Enpass (csv)
 * Enpass (json)
@@ -85,8 +88,8 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * mSecure (csv)
 * Myki (csv)
 * [Microsoft Edge (csv)](import-guides/import-data-from-chrome.md)（请选择 **Chrome**）
-* Nordpass (csv)
 * Netwrix Password Secure (csv)
+* Nordpass (csv)
 * [Opera (csv)](import-guides/import-data-from-chrome.md)（请选择 **Chrome**）
 * Padlock (csv)
 * Passbolt (csv)
@@ -100,10 +103,12 @@ Safari 15.0 之前，苹果还没有提供一个官方的从 iCloud、Mac 钥匙
 * Password Depot 17 (xml)
 * Password Safe (xml)
 * PasswordWallet (txt)
+* PasswordXP (csv)
 * ProtonPass (json)
 * Psono (json)
 * RememBear (csv)
 * RoboForm (csv)
+* Safari and macOS (csv)
 * SafeInCloud (xml)
 * SaferPass (csv)
 * SecureSafe (csv)

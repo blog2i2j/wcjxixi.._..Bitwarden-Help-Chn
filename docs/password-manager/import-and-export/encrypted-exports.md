@@ -10,9 +10,14 @@
 * **密码保护**：使用您选择的密码保护导出的加密文件。该文件使用您选择的密码解密，并且可以导入任何 Bitwarden 账户。此指定的密码经过加盐处理，使用 PBKDF2 以 100,000 次迭代派生出加密密钥，最后使用 HDKF 拉伸为一个新的加密密钥，用于加密您的数据以及消息身份验证代码 (MAC)。
 
 {% hint style="danger" %}
-**账户限制**的导出不能导入到其他账户。此外，[轮换您账户的加密密钥](../../security/encryption/encryption-key-rotation.md)将导致已加密的导出无法解密。**如果您轮换了您的加密密钥，请使用新的加密密钥导出新文件以替换所有旧文件。**
+**账户限制**的导出只能导入到其来源的同一账户。账户限制的导出不能导入到其他账户。包括：
 
-如果您希望将加密的 `.json` 文件导入不同的 Bitwarden 账户，请在创建导出时选择**密码保护**的导出类型。
+* 使用相同电子邮箱地址但位于不同[地理位置](../../security/server-geographies.md)或自托管服务器上的账户
+* 具有相同电子邮箱地址的其他账户，即使原始账户已被删除
+
+此外，[轮换您的账户加密密钥](../../security/encryption/encryption-key-rotation.md)将使账户限制的导出无法解密。**如果您轮换了账户加密密钥，请使用新加密密钥导出的新文件替换任何旧文件。**
+
+如果您希望将加密的 `.json` 文件导入到不同的 Bitwarden 账户，请改为生成**密码保护**的导出。
 {% endhint %}
 
 加密导出将包含所有密码库数据，包括登录、支付卡、安全笔记和身份。比如如下明文的登录项目：
@@ -46,4 +51,4 @@
 * [作为个人用户创建加密导出](export-vault-data.md)。
 * [创建您组织数据的加密导出](../../admin-console/manage-shared-items/export-organization-items/export-organization-items.md)。
 * [作为个人用户重新导入加密导出](import-data.md)。
-* [以组织身份重新导入加密导出](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。
+* [作为组织身份重新导入加密导出](../../admin-console/manage-shared-items/import-organization-items/import-to-organization.md)。
