@@ -1,12 +1,12 @@
-# Bitwarden Authenticator
+# =Bitwarden Authenticator
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-authenticator/)
 {% endhint %}
 
-Bitwarden Authenticator 是一款独立的 App，可为支持身份验证 App 双重身份验证 (2FA) 的登录生成基于时间的一次性密码 (TOTP)。Bitwarden Authenticator 生成 5-10 位的代码，默认使用 SHA-1 并每 30 秒轮换一次。
+Bitwarden Authenticator 是一款独立的 App，可为支持身份验证 App 双重身份验证 (2FA) 的登录生成基于时间的一次性密码 (TOTP)。它默认使用 SHA-1 算法生成 5 到 10 位数的代码，并每 30 秒轮换一次。
 
-Bitwarden 提供[两种身份验证器](bitwarden-authenticator.md#bitwarden-authenticator-he-password-manager-ji-cheng-shen-fen-yan-zheng-qi-you-shen-me-qu-bie)：Bitwarden Authenticator App 和 Password Manager [集成的身份验证器](../password-manager/your-vault/security-tools/totp.md)。Bitwarden Authenticator 可供所有人使用，无论是否拥有 Bitwarden Password Manager 账户。如果您使用这两个 App，则可以在 Authenticator 和 Bitwarden 密码库之间[同步代码](totp-sync.md)。同步后，您的代码将标注为**本地代码**或由您的账户电子邮件地址标注：
+Bitwarden 提供[两种身份验证器](bitwarden-authenticator.md#bitwarden-authenticator-he-password-manager-ji-cheng-shen-fen-yan-zheng-qi-you-shen-me-qu-bie)：Bitwarden Authenticator App 和 Password Manager [集成的身份验证器](../password-manager/your-vault/security-tools/totp.md)。Bitwarden Authenticator 可供所有人使用，无论是否拥有 Bitwarden Password Manager 账户。如果您使用这两个 App，则可以在 Authenticator 和 Bitwarden 密码库之间[同步代码](totp-sync.md)。同步后，您的代码将标注为**本地代码**或标注为您的账户电子邮件地址：
 
 {% embed url="https://bitwarden.com/assets/4fMWMI0YBJQybhhyOlV0Zb/2bb912b6e9a6f38818cc37d8a0f982b4/2025-05-21_10-13-39.png?w=780&fm=avif&q=80" %}
 Bitwarden iOS Authenticator App
@@ -14,13 +14,13 @@ Bitwarden iOS Authenticator App
 
 ## 安装 Bitwarden Authenticator <a href="#install-bitwarden-authenticator" id="install-bitwarden-authenticator"></a>
 
-Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。首先，从设备的 App 商店下载该 App：
+Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用，请从您的设备的 App 商店下载该 App：
 
 * iOS：[App Store](https://apps.apple.com/us/app/bitwarden-authenticator/id6497335175) (iOS 15+)
 * Android：[Google Play](https://play.google.com/store/apps/details?id=com.bitwarden.authenticator\&pli=1) (Android 9+)
 
 {% hint style="info" %}
-在 iOS 16+ 上，当直接从相机 App 扫描代码时，您可以将 [Bitwarden Authenticator](bitwarden-authenticator.md) 或 Password Manager [集成的身份验证](../password-manager/your-vault/security-tools/totp.md)设置为默认的验证码 App。要进行此设置：
+在 iOS 16+ 上，您可以将 [Bitwarden Authenticator](bitwarden-authenticator.md) 或 Password Manager [集成的身份验证](../password-manager/your-vault/security-tools/totp.md)设置为默认的验证码 App，以便直接从相机 App 扫描代码。要进行此设置：
 
 1. 打开设备上的 iOS **设置** App。
 2. 点击**通用**。
