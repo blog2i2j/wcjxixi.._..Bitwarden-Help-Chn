@@ -137,7 +137,7 @@
       * [Safari 网页扩展](docs/password-manager/more/more-platforms/safari-web-extension.md)
     * [故障排除](docs/password-manager/more/troubleshooting/README.md)
       * [uMatrix 和 NoScript 访问规则](docs/password-manager/more/troubleshooting/umatrix-and-noscript-access-rules.md)
-      * [通过 Bitwarden 支持排除移动端故障](docs/password-manager/more/troubleshooting/tong-guo-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)
+      * [=通过 Bitwarden 支持排除移动端故障](docs/password-manager/more/troubleshooting/tong-guo-bitwarden-zhi-chi-pai-chu-yi-dong-duan-gu-zhang.md)
       * [桌面 App 支持的功能](docs/password-manager/more/troubleshooting/desktop-app-feature-support.md)
     * [Password Manager FAQ](docs/password-manager/more/password-manager-faqs.md)
 * [Bitwarden Authenticator](docs/bitwarden-authenticator/README.md)
