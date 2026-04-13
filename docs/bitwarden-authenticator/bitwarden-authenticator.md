@@ -1,4 +1,4 @@
-# =Bitwarden Authenticator
+# Bitwarden Authenticator
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-authenticator/)
@@ -31,13 +31,13 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 
 ## 添加代码 <a href="#add-codes" id="add-codes"></a>
 
-您可以通过多种方式向 Authenticator 添加代码。如果您已在 Password Manager 中保存了验证码，请同步 App 以在 Authenticator 中自动显示这些代码。对于新的代码，请扫描二维码或手动输入代码密钥：
+您可以通过多种方式向 Authenticator 添加代码。如果您已在 Password Manager 中保存了验证码，请[同步 App](totp-sync.md#sync-codes-saved-in-your-bitwarden-vault) 以在 Authenticator 中自动显示这些代码。对于新的代码，请扫描二维码或手动输入代码密钥：
 
 {% tabs %}
 {% tab title="扫描二维码" %}
 &#x20;在 Bitwarden Authenticator App 中：
 
-1. 点击 ✚图标。
+1. 点击 ✚添加图标。
 2. 将相机对准二维码。扫描将自动进行。
 3. 选择**保存在这里**（仅在 Authenticator 中）或是**保存到 Bitwarden**（保存为 Password Manager 中的登录项目）。
 {% endtab %}
@@ -45,7 +45,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 {% tab title="手动添加代码" %}
 在 Bitwarden Authenticator App 中：
 
-1. 点击 ✚图标。
+1. 点击 ✚添加图标。
 2. 点击屏幕底部的**手动输入密钥**。
 3. 在**名称**字段中输入网站或 App 的名称。
 4. 输入网站或 App 提供的**验证器密钥**。某些服务将此称为「机密密钥」或「TOTP 种子」。
@@ -63,13 +63,13 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 
 * 编辑**名称**或**密钥**。
 * 添加**用户名**。当您在同一网站拥有多个账户并且每个账户需要单独的验证码时，请使用此字段。
-* 打开**收藏**，可将该代码移动到 App 主界面的顶部，以便于访问。
+* 打开**收藏**，可将该代码移动到 App 主界面的顶部，方便快速访问。
 * 更改用于生成代码的**算法**。Bitwarden Authenticator 默认使用 SHA-1。
 * 更改代码的**刷新周期**。Bitwarden Authenticator 默认使用 30 秒。
 * 更改代码的**位数**。Bitwarden Authenticator 默认使用 6 位数字。
 
 {% hint style="success" %}
-**算法**、**刷新周期**和**位数**由您使用验证码的网站决定。除非该网站要求或允许您自定义验证码行为，否则请勿更改这些设置项目。
+**算法**、**刷新周期**和**位数**由您使用验证码的网站决定。除非该网站要求或允许您自定义验证码行为，否则请勿更改这些设置。
 {% endhint %}
 
 ## 使用代码 <a href="#use-codes" id="use-codes"></a>
@@ -81,7 +81,7 @@ Bitwarden Authenticator 可在 iOS 和 Android 设备上使用。要开始使用
 当您获得新的移动设备时，您需要转移 TOTP，以便它们显示在 Bitwarden Authenticator 中。使用与您的设置相匹配的方法：
 
 * 对于本地代码，在您的旧设备上[导出 Bitwarden Authenticator 数据](import-and-export.md#export-data)。在您的新设备上，[将文件导入到 Authenticator](import-and-export.md#import-data)。
-* 对于旧设备上与 Password Manager 同步的任何代码，请在您的新设备上[设置同步](totp-sync.md)。这将提取附加到已保存的登录项目的所有验证码。或者，将位于密码库中的 TOTP [导出为 .json 文件](../password-manager/import-and-export/export-vault-data.md)，然后在您的新设备上，[将文件导入到 Authenticator](import-and-export.md#import-data)。
+* 对于旧设备上已经与 Password Manager 同步的所有代码，请在您的新设备上[设置同步](totp-sync.md)。这将提取附加到已保存的登录项目的所有验证码。或者，将位于密码库中的 TOTP [导出为 .json 文件](../password-manager/import-and-export/export-vault-data.md)，然后在您的新设备上，[将文件导入到 Authenticator](import-and-export.md#import-data)。
 
 ## FAQ <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
 
