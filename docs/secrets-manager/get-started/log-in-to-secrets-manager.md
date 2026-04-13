@@ -7,7 +7,7 @@
 您用于登录 Password Manager 的端到端零知识加密的 Bitwarden 账户与您用于登录 Secrets Manager 的账户相同。
 
 {% hint style="success" %}
-本文与登录 Secrets Manager 网页密码库相关。[Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 主要用于编写机密注入到您的应用程序和基础设施中的脚本，需要使用[访问令牌](../your-secrets/access-tokens.md)登录。
+本文介绍如何登录 Secrets Manager 网页密码库。[Secrets Manager CLI](../developer-tools/secrets-manager-cli.md) 主要用于编写机密注入到您的应用程序和基础设施中的脚本，需要使用[访问令牌](../your-secrets/access-tokens.md)登录。
 {% endhint %}
 
 ## 主密码 <a href="#master-password" id="master-password"></a>
@@ -36,22 +36,22 @@
 
 Bitwarden 提供多种免费的两步登录方式，包括：
 
-| 方式                                                                                                                                | 设置说明                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| 通过验证器 App（例如 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=zh-Hans)） | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-authenticator.md) |
-| 通过电子邮件                                                                                                                            | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)         |
-| 通过 FIDO2 WebAuthn 验证器                                                                                                             | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)          |
+| 方式                                                                                                                                | 设置说明                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 通过验证器 App（例如 [Authy](https://authy.com/) 或 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=zh-Hans)） | 点击[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-authenticator.md) |
+| 通过电子邮件                                                                                                                            | 点击[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)         |
+| 通过 FIDO2 WebAuthn 验证器                                                                                                             | 点击[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-fido.md)          |
 
 ### 高级方式 <a href="#premium-methods" id="premium-methods"></a>
 
 对于高级用户（包括付费组织的成员），Bitwarden 提供了几种高级的两步登录方式：
 
-| 方式                                        | 设置说明                                                                                   |
-| ----------------------------------------- | -------------------------------------------------------------------------------------- |
-| 通过具有 Duo Push、短信、电话和安全密钥的 Duo Security    | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md)     |
-| 通过 YubiKey（任何 4/5 系列或 YubiKey NEO/NFC 设备） | 点[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md) |
+| 方式                                        | 设置说明                                                                                    |
+| ----------------------------------------- | --------------------------------------------------------------------------------------- |
+| 通过具有 Duo Push、短信、电话和安全密钥的 Duo Security    | 点击[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-duo.md)     |
+| 通过 YubiKey（任何 4/5 系列或 YubiKey NEO/NFC 设备） | 点击[这里](../../account/two-step-login/setup-two-step-login/two-step-login-via-yubikey.md) |
 
-## 设备登录 <a href="#log-in-with-device" id="log-in-with-device"></a>
+## 使用设备登录 <a href="#log-in-with-device" id="log-in-with-device"></a>
 
 您知道吗？您可以使用辅助设备而不是您的主密码登录 Bitwarden 网页 App。设备登录是一种无密码的身份验证方法，通过向您当前登录的任何特定设备发送身份验证请求以供批准，而无需输入您的主密码。[了解更多](../../account/log-in-and-unlock/more-log-in-options/log-in-with-device.md)。
 

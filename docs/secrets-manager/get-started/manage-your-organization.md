@@ -8,7 +8,7 @@
 如需了解完整的 Bitwarden 入职概述，请查看[本指南](../../admin-console/manage-members/onboarding-and-succession.md)以获取更多信息。
 {% endhint %}
 
-作为一个使用 Secrets Manager 的组织，您会分享许多最初由 Password Manager 使用的工具。这篇文章涵盖了这些常见的领域，并在适当的地方链接到共享文档。
+作为一个使用 Secrets Manager 的组织，您将使用许多最初由 Password Manager 使用的工具。本文将介绍这些常用工具，并在适当的地方提供相关文档链接。
 
 {% hint style="info" %}
 如果您是 Bitwarden 组织的新手，我们建议您查看我们关于[组织管理员入门](../../../courses/password-manager/business/enterprise-plan/enterprise-admin.md)的文章。
@@ -55,7 +55,7 @@ Directory Connector 通过从一系列源目录服务中提取，自动在您的
 
 1、打开您组织的**成员**选项卡，然后选中您想要授予 Secrets Manager 访问权限的成员。
 
-2、使用 **≡**&#x83DC;单，选中**启用 Secrets Manager** 以向选定成员授予访问权限：
+2、使用 **≡**&#x83DC;单，选中**激活 Secrets Manager** 以向选定成员授予访问权限：
 
 * 对于自托管组织，也必须在自托管实例中重复此步骤。
 
@@ -69,13 +69,13 @@ Directory Connector 通过从一系列源目录服务中提取，自动在您的
 
 ### 成员角色 <a href="#member-roles" id="member-roles"></a>
 
-下表概述了每个成员角色可以在 Secrets Manager 中执行的操作。在 Beta 期间，用户在 Secrets Manager 的成员角色与他们在 Password Manager 中被分配的成员角色相同：
+下表概述了每个成员角色可以在 Secrets Manager 中执行的操作~~。在 Beta 期间，用户在 Secrets Manager 的成员角色与他们在 Password Manager 中被分配的成员角色相同~~：
 
-| 成员角色 | 描述                                                                                                                                         |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| 用户   | <p>用户可以创建自己的机密、工程、服务账户和访问令牌。创建后，他们就可以编辑这些对象。</p><p>必须将用户分配给工程或服务账户才能与现有对象交互，并且可以授予<strong>可以读取</strong>或<strong>可以读取、写入</strong>访问权限。</p>  |
-| 管理员  | <p>管理员自动拥有对所有机密、项目、服务账户和访问令牌的<strong>读取、写入</strong>权限。</p><p></p><p>管理员可以为自己分配对 Secrets Manager 的访问权限，并为其他成员分配对 Secrets Manager 的访问权限。</p> |
-| 所有者  | <p>所有者自动拥有对所有机密、项目、服务账户和访问令牌的<strong>读取、写入</strong>权限。</p><p></p><p>所有者可以为自己分配对 Secrets Manager 的访问权限，并为其他成员分配对 Secrets Manager 的访问权限。</p> |
+| 成员角色 | 描述                                                                                                                                             |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 用户   | <p>用户可以创建自己的机密、工程、机器账户和访问令牌。创建后，他们就可以编辑这些对象。</p><p>必须将用户分配给工程或机器账户才能与现有对象交互，并且可以授予<strong>可以读取</strong>或<strong>可以读取、写入</strong>访问权限。</p>      |
+| 管理员  | <p>管理员自动拥有对所有机密、项目、机器账户和访问令牌的<strong>可以读取、写入</strong>访问权限。</p><p></p><p>管理员可以为自己分配对 Secrets Manager 的访问权限，并为其他成员分配对 Secrets Manager 的访问权限。</p> |
+| 所有者  | <p>所有者自动拥有对所有机密、项目、机器账户和访问令牌的<strong>可以读取、写入</strong>访问权限。</p><p></p><p>所有者可以为自己分配对 Secrets Manager 的访问权限，并为其他成员分配对 Secrets Manager 的访问权限。</p> |
 
 {% hint style="info" %}
 自定义角色目前不在 Secrets Manager 的选项范围内，但仍可用于分配具体的 Password Manager 或更广泛的组织功能。
@@ -83,21 +83,21 @@ Directory Connector 通过从一系列源目录服务中提取，自动在您的
 
 ### 群组 <a href="#groups" id="groups"></a>
 
-群组将个人成员联系在一起，并提供一种可扩展的方式来访问特定工程的访问权和权限。添加新成员时，将他们添加到一个群组中，让他们自动继承该群组配置的权限。[了解更多](../../admin-console/manage-members/groups.md)。
+群组将个人成员联系在一起，并提供一种可扩展的方式来访问特定工程的访问权限和权限。添加新成员时，将他们添加到一个群组中，以使他们自动继承该群组配置的权限。[了解更多](../../admin-console/manage-members/groups.md)。
 
 在管理控制台中创建群组后，就可以从 Secrets Manager 网页 App 中把它们分配给工程了。
 
 ## 单点登录 <a href="#single-sign-on" id="single-sign-on"></a>
 
-SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，企业组织可以利用其现有的身份提供程序使用 SAML 2.0 或 Open ID Connect (OIDC) 协议对 Bitwarden 用户进行身份验证。[了解如何开始](../../admin-console/login-with-sso/about-sso.md)。
+SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，企业版组织可以利用其现有的身份提供程序使用 SAML 2.0 或 Open ID Connect (OIDC) 协议对 Bitwarden 用户进行身份验证。[了解如何开始](../../admin-console/login-with-sso/about-sso.md)。
 
 ## 账户恢复管理 <a href="#https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration" id="https-bitwarden.com-help-manage-your-secrets-org-account-recovery-administration"></a>
 
-账户恢复允许指定的管理员恢复企业组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用账户恢复管理策略，可以为组织激活账户恢复功能。[了解如何开始](../../admin-console/manage-members/account-recovery/about-account-recovery.md)。
+账户恢复允许指定的管理员恢复企业版组织用户账户以及在员工忘记主密码时恢复访问权限。通过启用账户恢复管理策略，可以为组织激活账户恢复功能。[了解如何开始](../../admin-console/manage-members/account-recovery/about-account-recovery.md)。
 
 ## 事件日志 <a href="#event-logs" id="event-logs"></a>
 
-[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)是团队或企业组织内发生的事件的时间戳记录。Secrets Manager 事件可从组织密码库的**报告** → **事件日志**以及[机器账户事件日志页面](../your-secrets/machine-accounts.md#service-account-events)获取。
+[事件日志](../../admin-console/oversight-visibility/event-logging/event-logs.md)是团队版或企业版组织内发生的事件的时间戳记录。Secrets Manager 事件可从组织密码库的**报告** → **事件日志**以及[机器账户事件日志页面](../your-secrets/machine-accounts.md#service-account-events)获取。
 
 事件日志可以导出并无限期保留。虽然许多事件适用于所有 Bitwarden 产品，有些是特定于 Password Manager 的，但 Secrets Manager 将专门记录以下内容：
 
@@ -105,7 +105,7 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 
 ## 自托管
 
-企业组织可以在 Linux 和 Windows 计算机上使用 Docker 自行托管 Bitwarden Secrets Manager。如果您之前没有自行托管过 Bitwarden，请使用[本指南](../../self-hosting/plan-for-deployment/self-host-an-organization.md)让自己走上正轨。
+企业版组织可以在 Linux 和 Windows 计算机上使用 Docker 自行托管 Bitwarden Secrets Manager。如果您之前没有自行托管过 Bitwarden，请使用[本指南](../../self-hosting/plan-for-deployment/self-host-an-organization.md)让自己走上正轨。
 
 如果您已经自行托管一个 Enterprise Bitwarden 组织，并希望在该服务器上访问 Secrets Manager：
 
@@ -115,5 +115,5 @@ SSO 登录是 Bitwarden 用于单点登录的解决方案。使用 SSO 登录，
 4. 授予个人用户对自托管实例中的 [Secrets Manager 访问权限](manage-your-organization.md#access-to-secrets-manager)。
 
 {% hint style="info" %}
-Bitwarden [统一自托管部署选项](../../self-hosting/deploy-and-configure/docker/lite-deployment.md)不支持自托管 Secrets Manager。团队和企业组织应使用标准的 [Linux](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/deploy-and-configure/docker/windows-standard-deployment.md) 安装。
+Bitwarden [统一自托管部署选项](../../self-hosting/deploy-and-configure/docker/lite-deployment.md)不支持自托管 Secrets Manager。团队版和企业版组织应使用标准的 [Linux](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md) 或 [Windows](../../self-hosting/deploy-and-configure/docker/windows-standard-deployment.md) 安装。
 {% endhint %}

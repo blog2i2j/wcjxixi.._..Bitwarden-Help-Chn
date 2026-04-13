@@ -155,7 +155,7 @@
     * [工程](docs/secrets-manager/your-secrets/projects.md)
     * [机密](docs/secrets-manager/your-secrets/secrets.md)
     * [机器账户](docs/secrets-manager/your-secrets/machine-accounts.md)
-    * [访问令牌](docs/secrets-manager/your-secrets/access-tokens.md)
+    * [=访问令牌](docs/secrets-manager/your-secrets/access-tokens.md)
     * [机密解密](docs/secrets-manager/your-secrets/secret-decryption.md)
   * [导入 & 导出](docs/secrets-manager/import-export/README.md)
     * [导入数据](docs/secrets-manager/import-export/import-data.md)

@@ -6,9 +6,9 @@
 
 Bitwarden Secrets Manager 使开发人员、DevOps 和网络安全团队能够大规模集中存储、管理和部署机密。使用 Secrets Manager 可以：
 
-* **在整个开发生命周期中管理和部署机密**。开发一种安全且系统的方法来为您的所有资源和应用程序创建和自动化机密。
-* **提高工作效率，安全协作**。在您的开发团队中安全地共享、检索和分配秘密 - 不再需要硬编码机密或通过电子邮件、git 或消息系统共享它们。
-* **提升保护水平**。为实现全面的企业安全覆盖，将机密管理功能与密码管理相结合。
+* **在整个开发生命周期中管理和部署机密**。为您的所有资源和应用程序开发安全且系统化的机密创建和自动化方法。
+* **提高工作效率，安全协作**。在您的开发团队中安全地共享、检索和分配机密 - 无需再硬编码机密或通过电子邮件、git 或消息系统共享它们。
+* **提升保护水平**。为实现全面的企业安全覆盖，将机密管理功能与密码管理功能相结合。
 
 ## 关键概念 <a href="#key-concepts" id="key-concepts"></a>
 
@@ -17,7 +17,7 @@ Secrets Manager 使用的核心范例是以下关系：
 * [**机密**](your-secrets/secrets.md)：敏感的键值对，如 API 密钥，您的组织需要安全地存储它们，并且永远不应以明码形式公开或通过未加密的渠道传输。
 * [**工程**](your-secrets/projects.md)：按逻辑组合在一起的机密集合，供您的 DevOps 和网络安全团队进行可管理的访问。
 * [**机器账户**](your-secrets/machine-accounts.md)：非人类机器用户，如应用程序或部署管道，需要对一组谨慎的机密进行编程式访问。
-* [**访问令牌**](your-secrets/access-tokens.md)：一组密钥，有助于服务账户访问和解密存储在您的密码库中的机密。
+* [**访问令牌**](your-secrets/access-tokens.md)：一组密钥，用于方便机器账户访问和解密存储在您的密码库中的机密。
 
 Secrets Manager 旨在保护和管理您在特权开发人员环境中高度敏感的凭据。多向访问层和权限级别将确保只有经过身份验证的机器和具有正确权限的人员才能查看或操作存储在您的密码库中的机密：
 
@@ -47,7 +47,7 @@ Secrets Manager 将提供网页 App、CLI 和 SDK。未来会支持更多的 SDK
 
 ### CLI
 
-[Secrets Manager CLI](developer-tools/secrets-manager-cli.md) 是将机密信息注入应用程序和基础设施的主要工具。您将使用它编写脚本，通过经过身份验证的服务账户将机密注入到您的应用程序中。
+[Secrets Manager CLI](developer-tools/secrets-manager-cli.md) 是将机密信息注入应用程序和基础设施的主要工具。您将使用它编写脚本，通过经过身份验证的机器账户将机密注入到您的应用程序中。
 
 ### SDK
 
@@ -57,7 +57,7 @@ Secrets Manager 将提供网页 App、CLI 和 SDK。未来会支持更多的 SDK
 
 我们很高兴能参与您的机密管理之旅，也很高兴您能加入我们的新冒险之旅。Secrets Manager 目前在公开测试计划中。[立即注册 Secrets Manager](https://bitwarden.com/products/secrets-manager/#secrets-manager-get-started)。
 
-Bitwarden 为免费、团队和企业组织提供 Secrets Manager 订阅服务。如果您有家庭计划并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费组织并按照[这些步骤](get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
+Bitwarden 为免费版、团队版和企业版组织提供 Secrets Manager 订阅服务。如果您有家庭版方案并希望使用 Bitwarden Secrets Manager，只需创建一个新的免费版组织，然后按照[这些步骤](get-started/secrets-manager-quick-start.md)注册 Secrets Manager 即可。
 
 {% hint style="success" %}
 如需深入了解产品，请查看 [Secrets Manager 演示](https://bitwarden.com/resources/videos/bitwarden-secrets-manager-product-demo-replay/)。
