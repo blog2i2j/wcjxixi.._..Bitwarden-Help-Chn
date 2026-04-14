@@ -7,7 +7,7 @@
 您的计费信息仅能通过网页 App 进行更新。
 
 {% hint style="danger" %}
-个人方案的订阅和组织方案的订阅是**分开**的。需要在不同的区域更新计费信息。如果您**同时**拥有高级会员和组织订阅，为其中一个更新计费信息并不会同时更新另一个。
+个人版方案的订阅和组织版方案的订阅是**分开**的，您需要在不同的区域更新计费信息。如果您**同时**拥有高级版和组织版订阅，为其中一个更新计费信息并不会同时更新另一个的。
 {% endhint %}
 
 ## 更新个人计费信息 <a href="#update-billing-information-for-individuals" id="update-billing-information-for-individuals"></a>
@@ -24,9 +24,9 @@
 * **更改付款方式**（信用卡或 PayPal）。
 * **添加付款方式**（信用卡或 PayPal）。
 
-选择**计费历史记录**标签页以：
+选择**计费历史记录**选项卡以：
 
-* 查看并下载**账单**。
+* 查看和下载**账单**。
 * 查看**交易记录**。
 
 ## 更新组织计费信息 <a href="#update-billing-information-for-organizations" id="update-billing-information-for-organizations"></a>
@@ -67,6 +67,6 @@
 产品切换器
 {% endembed %}
 
-2、从导航栏选择**设置** → **组织信息**：
+2、从导航栏选择**设置** → **组织信息**。
 
 3、更新您的**计费电子邮箱**然后选择**保存**。

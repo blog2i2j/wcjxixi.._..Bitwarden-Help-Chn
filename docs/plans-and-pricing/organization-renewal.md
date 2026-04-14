@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/organization-renewal/)
 {% endhint %}
 
-组织订阅按年或按月自动续订。组织所有者可以通过从网页 App 管理控制台导航到组织的**计费** → **订阅**界面，查看续订日期：
+组织订阅按年或按月自动续订。组织所有者可以从网页 App 管理控制台中，导航到组织的**计费** → **订阅**界面来查看续费日期：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7MT9lfZZDTOQOBmnrLGceN/1ac8c615153e35250d15ce3921148cfe/2024-12-04_10-33-12.png?_a=DAJCwlWIZAAB" %}
 组织订阅视图

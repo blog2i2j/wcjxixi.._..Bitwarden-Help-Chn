@@ -6,13 +6,13 @@
 
 ## Bitwarden 新手吗？ <a href="#new-to-bitwarden" id="new-to-bitwarden"></a>
 
-如果您是 Bitwarden 的新手，我们很乐意帮助您通过我们专门的注册页面建立一个账户并开始您的企业版组织 7 天免费试用。[开始企业版免费试用](https://vault.bitwarden.com/#/register?org=enterprise)。
+如果您是 Bitwarden 的新手，我们很乐意帮助您通过我们专属注册页面建立一个账户并开始您的企业版组织 7 天免费试用。[开始企业版免费试用](https://vault.bitwarden.com/#/register?org=enterprise)。
 
-或者，要了解更多有关 [Bitwarden 企业产品](https://bitwarden.com/products/business/)的信息，请参阅 [Bitwarden 方案和定价](https://bitwarden.com/pricing/business/)或 [Password Manager 方案](password-manager/about-bitwarden-plans.md#enterprise-organizations)和 [Secrets Manager 方案](secrets-manager/secrets-manager-plans.md)。
+或者，要了解更多有关 [Bitwarden 企业产品](https://bitwarden.com/products/business/)的信息，请参阅 [Bitwarden 方案和定价](https://bitwarden.com/pricing/business/)或 [Password Manager 方案](password-manager/about-bitwarden-plans.md#enterprise-organizations)以及 [Secrets Manager 方案](secrets-manager/secrets-manager-plans.md)。
 
-## 已是 Bitwardne 用户？ <a href="#already-a-user" id="already-a-user"></a>
+## 已是 Bitwardne 用户了吗？ <a href="#already-a-user" id="already-a-user"></a>
 
-如果您已经有一个 Bitwarden 账户，完成以下步骤以开始您的 Bitwarden 企业版 7 天免费试用：
+如果您已经拥有 Bitwarden 账户，完成以下步骤以开始您的 Bitwarden 企业版 7 天免费试用：
 
 1、登录 Bitwarden 网页 App，然后选择**新增组织**按钮：
 
@@ -26,7 +26,7 @@
 在企业版方案的 7 天免费试用期结束之前，我们不会向您收费。您可以随时在您的组织的**设置**选项卡中取消您的订阅。
 {% endhint %}
 
-3、如果您代表某公司试用企业方案：
+3、如果您代表某公司试用企业版方案：
 
 * 勾选**此账户由公司拥有**复选框。
 * 提供您的**公司名称**。
@@ -43,8 +43,8 @@
 如果您想使用 [Secrets Manager](../secrets-manager/secrets-manager-overview.md)，请完成以下步骤以将其添加到您的方案中：
 
 1. 在**更多来自 Bitwarden 的产品**部分，选中**订阅机密管理器**复选框。
-2. 在**用户席位**字段中，指定要为 Secrets Manager 购买的席位数量。该数字必须小于或等于密码管理器订阅的席位数。
-3. 在**附加服务账户**字段中，指定要添加到 Secrets Manager 的服务账户数量。团队版方案和企业版方案分别预提供了 50 个和 200 个服务账户。
+2. 在**用户席位**字段中，指定要为 Secrets Manager 购买的席位数量。该数字必须小于或等于 Password Manager 订阅指定的席位数。
+3. 在**附加服务账户**字段中，指定要添加到 Secrets Manager 的机器账户数量。团队版方案和企业版方案分别预提供了 20 个和 50 个服务账户。
 {% endhint %}
 
 8、输入您的**付款信息**然后选择**提交**。
@@ -53,7 +53,7 @@
 
 现在，您已经创建好了您的试用版企业版组织。我们建议您：
 
-* [添加用户到您的组织](../admin-console/manage-members/user-management.md)
-* [创建一个集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)
+* [将用户添加到您的组织](../admin-console/manage-members/user-management.md)
+* [创建集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)
 * 设置 [SSO 登录](../admin-console/login-with-sso/about-sso.md)
 * 查看[自托管组织](../self-hosting/plan-for-deployment/self-host-an-organization.md)

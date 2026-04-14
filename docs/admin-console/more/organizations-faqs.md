@@ -70,12 +70,12 @@
 * 对于所有者和管理员，请勿使用**此用户可以访问和修改所有项目**选项。无论如何，这些用户角色都可以通过组织密码库访问所有内容，因此选择此选项只会将其他项目也添加到其密码库视图中，并增加应用程序加载时要解密的项目数量。
 * 如果您管理多个组织，请考虑联系我们成为[提供商](../../provider-portal/provider-portal-overview.md)。从提供商门户访问组织将稍微减少解密所有托管项目所需的数量。
 
-### 问：如何离开组织？ <a href="#q-how-do-i-leave-an-organization" id="q-how-do-i-leave-an-organization"></a>
+### 问：如何退出组织？ <a href="#q-how-do-i-leave-an-organization" id="q-how-do-i-leave-an-organization"></a>
 
-**答：**&#x8981;离开组织，请使用网页 App 选择您要离开的组织的 **≡**&#x9009;项菜单。从下拉列表中选择 **→离开**：
+**答：**&#x8981;退出组织，请使用网页 App 选择您要退出的组织的 **≡**&#x9009;项菜单。从下拉列表中选择 **→退出**：
 
 {% embed url="https://bitwarden.com/assets/2MP5ZWZbCJe6ArraaEMku9/eda75c81ab46706bd8ef373a395bd78b/2025-04-01_14-59-09.png?w=1094&fm=avif" %}
-离开组织
+退出组织
 {% endembed %}
 
 ## 组织共享 <a href="#sharing-with-an-organization" id="sharing-with-an-organization"></a>
@@ -93,9 +93,9 @@
 
 **答：**&#x4E3A;您想要对其隐藏密码的用户分配对相关集合的「**查看项目，隐藏密码**」或「编**辑项目，隐藏密码**」[权限](../manage-members/member-roles.md#permissions)。
 
-### 问：我离开后，移动到组织的项目是否会被保留？ <a href="#q-does-an-item-i-share-with-the-organization-stay-after-i-leave" id="q-does-an-item-i-share-with-the-organization-stay-after-i-leave"></a>
+### 问：我退出后，移动到组织的项目是否会被保留？ <a href="#q-does-an-item-i-share-with-the-organization-stay-after-i-leave" id="q-does-an-item-i-share-with-the-organization-stay-after-i-leave"></a>
 
-**答：**&#x662F;的！当用户与组织共享项目时，组织将获得该项目的所有权。即使用户离开组织或删除其账户，该项目仍将保留在组织密码库中。
+**答：**&#x662F;的！当用户与组织共享项目时，组织将获得该项目的所有权。即使用户退出组织或删除其账户，该项目仍将保留在组织密码库中。
 
 ## 组织安装 <a href="#organization-installations" id="organization-installations"></a>
 
