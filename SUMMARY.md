@@ -379,7 +379,7 @@
     * [管理数据](docs/security/data/administrative-data.md)
     * [数据存储](docs/security/data/data-storage.md)
     * [网站图标的数据隐私](docs/security/data/website-icons.md)
-  * [加密](docs/security/encryption/README.md)
+  * [=加密](docs/security/encryption/README.md)
     * [加密协议](docs/security/encryption/encryption-protocols.md)
     * [加密密钥派生](docs/security/encryption/encryption-key-derivation.md)
     * [调用的加密库](docs/security/encryption/invoked-crypto-libraries.md)
