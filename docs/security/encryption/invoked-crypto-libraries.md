@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/kdf-algorithms/)
 {% endhint %}
 
-Bitwarden 不实现任何密码原语。Bitwarden 仅采用由密码学专家编写并维护的、广受欢迎且信誉良好的密码库中的密码原语。使用了以下加密库：
+Bitwarden 不实现任何密码原语。Bitwarden 仅使用由密码学专家编写并维护的、广受欢迎且信誉良好的加密库中的密码原语。使用了以下加密库：
 
 * JavaScript:
   * [Web crypto](https://www.w3.org/TR/WebCryptoAPI/)
