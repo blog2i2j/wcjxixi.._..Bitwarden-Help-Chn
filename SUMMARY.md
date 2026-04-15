@@ -410,7 +410,7 @@
   * [开始企业版试用](docs/plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)
   * [组织续费](docs/plans-and-pricing/organization-renewal.md)
   * [更新计费信息](docs/plans-and-pricing/update-your-billing-information.md)
-  * [Bitwarden 购买时的税费](docs/plans-and-pricing/tax-calculation.md)
+  * [Bitwarden 购物税](docs/plans-and-pricing/tax-calculation.md)
   * [删除账户或组织](docs/plans-and-pricing/delete-an-account-or-organization.md)
   * [取消订阅](docs/plans-and-pricing/cancel-a-subscription.md)
   * [计费 FAQ](docs/plans-and-pricing/billing-faqs.md)
