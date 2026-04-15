@@ -54,7 +54,9 @@ Bitwarden 企业版方案包含自托管服务，无额外的费用。
 
 #### Linux 离线部署 <a href="#linux-offline-deployment" id="linux-offline-deployment"></a>
 
-通过配置可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到离线或断网的 Linux 服务器环境。适用于集成到现有的自托管 Docker 仓库中，并需要额外的手动步骤进行维护和升级。[立即开始](../deploy-and-configure/docker/linux-offline-deployment.md)。
+通过配置可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到离线或网闸的 Linux 服务器环境。适用于集成到现有的自托管 Docker 仓库中，并需要额外的手动步骤进行维护和升级。[立即开始](../deploy-and-configure/docker/linux-offline-deployment.md)。
+
+> **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，也叫物理隔离的网络。是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 
 | 目标受众                      | 所需技能水平 | 预期知识                                     |
 | ------------------------- | ------ | ---------------------------------------- |
@@ -66,13 +68,15 @@ Bitwarden 企业版方案包含自托管服务，无额外的费用。
 
 使用提供的 Powershell 设置脚本，通过 Docker Desktop 将 Bitwarden 部署到 Windows 服务器上。适合熟悉 Windows 服务器环境的用户。需要了解 Windows 特有的安装和配置流程。[立即开始](../deploy-and-configure/docker/windows-standard-deployment.md)。
 
+> **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，也叫物理隔离的网络。是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
+
 | 目标受众          | 所需技能水平 | 预期知识                         |
 | ------------- | ------ | ---------------------------- |
 | IT 专业人员、系统管理员 | 中级     | Windows Server 管理、PowerShell |
 
 #### Windows 离线部署 <a href="#windows-offline-deployment" id="windows-offline-deployment"></a>
 
-通过配置可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到离线或物理隔离的 Windows 服务器环境。适用于集成到现有的自托管 Docker 仓库中，维护和升级需要额外的手动步骤。[立即开始](../deploy-and-configure/docker/windows-offline-deployment.md)。
+通过配置可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到离线或网闸的 Windows 服务器环境。适用于集成到现有的自托管 Docker 仓库中，维护和升级需要额外的手动步骤。[立即开始](../deploy-and-configure/docker/windows-offline-deployment.md)。
 
 | 目标受众                      | 所需技能水平 | 预期知识                             |
 | ------------------------- | ------ | -------------------------------- |
