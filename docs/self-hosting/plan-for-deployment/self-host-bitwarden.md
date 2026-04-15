@@ -4,28 +4,28 @@
 对应的[官方文档地址](https://bitwarden.com/help/self-host-bitwarden/)
 {% endhint %}
 
-在查看部署方法之前，与自托管 Bitwarden 所需的关键利益相关方保持一致很重要。在继续之前，请与您的团队一起审查并完成以下文档：
+在审查部署方法之前，请务必与自托管 Bitwarden 的关键利益相关者达成一致。在继续之前，请与您的团队一起审查并完成如下的文档：
 
 * [自托管检查清单](self-host-checklist.md)
 
 ## 云端部署 <a href="#cloud-deployment" id="cloud-deployment"></a>
 
-Bitwarden 通过多租户 SaaS 模式提供云端托管服务，提供易于使用和维护的平台，以提高安全性。在考虑托管选项时，下表提供了 Bitwarden 云托管与本文档中后面描述的自托管选项的比较。
+Bitwarden 通过多租户 SaaS 模式提供云托管服务，旨在提供一个易于使用和易于维护的平台，从而提升安全性。在考虑托管选项时，下表提供了 Bitwarden 云托管与本文档中后面描述的自托管选项的比较。
 
 | 目标受众          | 所需技能水平 | 预期知识 |
 | ------------- | ------ | ---- |
-| IT 专业人士，系统管理员 | 最少     | 最少   |
+| IT 专业人员、系统管理员 | 最少     | 最少   |
 
-> **\[译者注]**：[SaaS](https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)：Software as a Service，软件即服务。以云服务的方式对外提供软件功能，软件不装在您自己服务器上，而是由厂商在云端运行，您通过浏览器或客户端直接使用。
+> **\[译者注]**：[SaaS](https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)：Software as a Service，软件即服务。以云服务的方式对外提供软件功能，软件不安装在您自己服务器上，而是由厂商在云端运行，您通过浏览器或客户端直接使用。
 
 ## 自托管部署 <a href="#self-host-deployment" id="self-host-deployment"></a>
 
-对于某些客户而言，出于偏好、监管合规需求或安全策略等原因，需要将 Bitwarden 等平台部署在内网环境，而非使用云端托管模式。
+对于某些客户而言，出于偏好、监管和合规性需求或安全策略等原因，他们需要将 Bitwarden 等平台部署在内网环境，而非使用云端托管模式。
 
-为满足此类需求，Bitwarden 提供基于[源代码](../../security/compliance-audits-and-certifications.md#open-source-codebase)构建的 Docker 容器镜像，并托管于 GitHub Container Registry (GHCR)。用户可以在多种不同的平台上部署和管理此 Docker 容器。本文档概述了在您的环境中自托管 Bitwarden 的支持选项。
+为满足此类需求，Bitwarden 提供基于[源代码](../../security/compliance-audits-and-certifications.md#open-source-codebase)构建的 Docker 容器镜像，并托管在 GitHub Container Registry (GHCR) 上。Docker 容器可以在多种不同的平台上部署和管理。**本文档概述了在您的环境中自托管 Bitwarden 的支持选项。**
 
 {% hint style="info" %}
-Bitwarden 的企业版方案包含无额外费用的自托管服务。
+Bitwarden 企业版方案包含自托管服务，无额外的费用。
 {% endhint %}
 
 希望为组织或个人自托管 Bitwarden 服务器的客户有多种部署选项，包括：
@@ -38,65 +38,65 @@ Bitwarden 的企业版方案包含无额外费用的自托管服务。
 
 #### Linux 标准部署 <a href="#linux-standard-deployment" id="linux-standard-deployment"></a>
 
-使用提供的 Bash 设置脚本将 Bitwarden 部署到 Linux 服务器上，以自动化 Bitwarden 容器部署和维护。适合有 Linux 系统及命令行操作经验的人员。提供对部署环境的灵活性和控制。[立即开始](../deploy-and-configure/docker/linux-standard-deployment.md)。
+使用提供的 Bash 设置脚本将 Bitwarden 部署到 Linux 服务器上，以自动化执行 Bitwarden 容器部署和维护。适合具备 Linux 系统及命令行操作经验的人员。提供对部署环境的灵活性和控制力。[立即开始](../deploy-and-configure/docker/linux-standard-deployment.md)。
 
-| 目标受众          | 所需技能水平 | 预期知识            |
-| ------------- | ------ | --------------- |
-| IT 专业人士，系统管理员 | 中级到高级  | Linux 命令行、服务器管理 |
+| 目标受众          | 所需技能水平 | 预期知识                     |
+| ------------- | ------ | ------------------------ |
+| IT 专业人员、系统管理员 | 中级到高级  | Linux 命令行、服务器管理、SQL 运维管理 |
 
 #### Linux 手动部署 <a href="#linux-manual-deployment" id="linux-manual-deployment"></a>
 
-通过手动配置和构建可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到 Linux 服务器上。适合集成到现有的 Docker 容器管理和流程中，但维护和升级需要额外的手动步骤。[立即开始](../deploy-and-configure/docker/linux-standard-deployment-1.md)。
+通过手动配置和构建可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到 Linux 服务器上。适用于集成到现有的 Docker 容器管理和流程中，但维护和升级需要额外的手动步骤。[立即开始](../deploy-and-configure/docker/linux-standard-deployment-1.md)。
 
-| 目标受众                   | 所需技能水平 | 预期知识                            |
-| ---------------------- | ------ | ------------------------------- |
-| 具有现有 Docker 管理经验的系统管理员 | 高级     | Linux 命令行、服务器维护、使用 Docker 的容器管理 |
+| 目标受众                   | 所需技能水平 | 预期知识                             |
+| ---------------------- | ------ | -------------------------------- |
+| 具备现有 Docker 管理经验的系统管理员 | 高级     | Linux 命令行、服务器维护、使用 Docker 进行容器管理 |
 
 #### Linux 离线部署 <a href="#linux-offline-deployment" id="linux-offline-deployment"></a>
 
 通过配置可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到离线或断网的 Linux 服务器环境。适用于集成到现有的自托管 Docker 仓库中，并需要额外的手动步骤进行维护和升级。[立即开始](../deploy-and-configure/docker/linux-offline-deployment.md)。
 
-| 目标受众                      | 所需技能水平 | 预期知识                                    |
-| ------------------------- | ------ | --------------------------------------- |
-| 具有现有 Docker 管理经验的网络和系统管理员 | 高级     | Linux 命令行、服务器维护、使用 Docker 的容器管理、网络设计与设置 |
+| 目标受众                      | 所需技能水平 | 预期知识                                     |
+| ------------------------- | ------ | ---------------------------------------- |
+| 具备现有 Docker 管理经验的网络和系统管理员 | 高级     | Linux 命令行、服务器维护、使用 Docker 进行容器管理、网络设计与搭建 |
 
 ### Windows 部署 <a href="#windows-deployment" id="windows-deployment"></a>
 
 #### Windows 标准部署 <a href="#windows-standard-deployment" id="windows-standard-deployment"></a>
 
-使用提供的 Powershell 设置脚本，通过 Docker Desktop 将 Bitwarden 部署到 Windows 服务器上。适合熟悉 Windows 服务器环境的用户。需要了解 Windows 特定的安装和配置流程。[立即开始](../deploy-and-configure/docker/windows-standard-deployment.md)。
+使用提供的 Powershell 设置脚本，通过 Docker Desktop 将 Bitwarden 部署到 Windows 服务器上。适合熟悉 Windows 服务器环境的用户。需要了解 Windows 特有的安装和配置流程。[立即开始](../deploy-and-configure/docker/windows-standard-deployment.md)。
 
 | 目标受众          | 所需技能水平 | 预期知识                         |
 | ------------- | ------ | ---------------------------- |
-| IT 专业人士，系统管理员 | 中级     | Windows Server 管理、PowerShell |
+| IT 专业人员、系统管理员 | 中级     | Windows Server 管理、PowerShell |
 
 #### Windows 离线部署 <a href="#windows-offline-deployment" id="windows-offline-deployment"></a>
 
-通过配置可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到离线或断网的 Windows 服务器环境。适用于集成到现有的自托管 Docker 仓库中，维护和升级需要额外的手动步骤。[立即开始](../deploy-and-configure/docker/windows-offline-deployment.md)。
+通过配置可下载的安装工件中的容器和运行时环境，将 Bitwarden 部署到离线或物理隔离的 Windows 服务器环境。适用于集成到现有的自托管 Docker 仓库中，维护和升级需要额外的手动步骤。[立即开始](../deploy-and-configure/docker/windows-offline-deployment.md)。
 
 | 目标受众                      | 所需技能水平 | 预期知识                             |
 | ------------------------- | ------ | -------------------------------- |
-| 具有现有 Docker 管理经验的网络和系统管理员 | 高级     | Windows 服务器管理、Powershell、网络设计和配置 |
+| 具备现有 Docker 管理经验的网络和系统管理员 | 高级     | Windows 服务器管理、Powershell、网络设计和配置 |
 
 ### Bitwarden Lite <a href="#bitwarden-unified-deployment" id="bitwarden-unified-deployment"></a>
 
-将 Bitwarden 部署为单个 Docker 容器。适合个人用户、家庭实验室或轻量级共享。[立即开始](../deploy-and-configure/docker/lite-deployment.md)。
+将 Bitwarden 部署为单个 Docker 容器。适用于个人用户、家庭实验室或轻量级共享。[立即开始](../deploy-and-configure/docker/lite-deployment.md)。
 
-| 目标受众 | 所需技能水平 | 预期知识                      |
-| ---- | ------ | ------------------------- |
-| 产消者  | 中级     | Linux 命令行、使用 Docker 的容器管理 |
+| 目标受众 | 所需技能水平 | 预期知识                       |
+| ---- | ------ | -------------------------- |
+| 产消者  | 中级     | Linux 命令行、使用 Docker 进行容器管理 |
 
 {% hint style="info" %}
-2025 年 12 月，Bitwarden Unified 退出测试版并更名为 Bitwarden lite。如果您参与了测试版，请确保在更新到最新版本时使用新的映像名称 (`ghcr.io/bitwarden/lite`)。
+2025 年 12 月，Bitwarden Unified 结束了测试版，并更名为 Bitwarden lite。如果您参与了测试版，请确保在更新到最新版本时使用新的映像名称 (`ghcr.io/bitwarden/lite`)。
 {% endhint %}
 
 ### Kubernetes & Helm 部署 <a href="#kubernetes-and-helm-deployments" id="kubernetes-and-helm-deployments"></a>
 
-使用 Helm 图表在不同 Kubernetes 环境中部署 Bitwarden。专为高可用性和容器化部署设计，适用于云原生和大规模的共享或专用集群部署。兼容多种 Kubernetes 基础组件（如存储和 Ingress 配置），但需要相关设置知识。
+使用 Helm 图表在不同的 Kubernetes 环境中部署 Bitwarden。专为高可用性和容器化部署设计，适用于云原生和大规模的共享或专用集群部署。兼容多种 Kubernetes 原语（例如存储和 Ingress 配置），但需要具备相关的设置知识。
 
 | 目标受众            | 所需技能水平 | 预期知识                  |
 | --------------- | ------ | --------------------- |
-| DevOps 工程师，云管理员 | 高级     | Kubernetes 编排、Helm 图表 |
+| DevOps 工程师、云管理员 | 高级     | Kubernetes 编排、Helm 图表 |
 
 开始使用：
 
@@ -108,7 +108,7 @@ Bitwarden 的企业版方案包含无额外费用的自托管服务。
 
 ### 数据库选项 <a href="#database-options" id="database-options"></a>
 
-所有 Bitwarden 自托管服务器部署，除 [Lite](../deploy-and-configure/docker/lite-deployment.md) 部署外，默认使用 MSSQL Express 镜像，但客户可以连接到 2019 版本或更高版本的 MSSQL 外部服务器或集群。[了解更多](../deploy-and-configure/configuration-options/database-options.md)。
+除 [Lite](../deploy-and-configure/docker/lite-deployment.md) 部署外，所有其他 Bitwarden 自托管服务器部署，默认带有 MSSQL Express 镜像，但客户也可以连接到 2019 版本或更高版本的 MSSQL 外部服务器或集群。[了解更多](../deploy-and-configure/configuration-options/database-options.md)。
 
 ### 证书选项 <a href="#certificate-options" id="certificate-options"></a>
 
@@ -116,6 +116,6 @@ Bitwarden 的企业版方案包含无额外费用的自托管服务。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-* 使用上面链接的**安装和部署指南**之一来部署 Bitwarden。
-* 如果您为组织托管 Bitwarden，请使用[此指南](self-host-an-organization.md)来为推广到用户做好准备。
-* 与您的团队一起完成 [Bitwarden 自托管检查清单](self-host-checklist.md)。此文档将帮助确保您在部署过程中涉及的各方保持一致，并且可以下载为 PDF 格式。
+* 使用上面链接的**安装和部署指南**之一部署 Bitwarden。
+* 如果您为组织托管 Bitwarden，使用[此指南](self-host-an-organization.md)为推广到用户做好准备。
+* 与您的团队一起完成 [Bitwarden 自托管检查清单](self-host-checklist.md)。此文档将帮助确保参与部署的各利益相关方达成共识，并且可以下载为 PDF 格式。

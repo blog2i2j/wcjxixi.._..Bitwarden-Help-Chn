@@ -51,7 +51,7 @@
 * **SOC 2 Type 2**，在[这里](https://bitwarden.com/blog/post/bitwarden-achieves-soc-2-certification/)了解更多。
 * **SOC 3**，在[这里](https://bitwarden.com/blog/post/bitwarden-achieves-soc-2-certification/)了解更多。
 
-有关更多信息，请访问我们的[安全与合规](https://bitwarden.com/compliance)页面。
+更多信息，请访问我们的[安全与合规](https://bitwarden.com/compliance)页面。
 
 ### 问：Bitwarden 如何满足欧洲合规要求？ <a href="#q-how-does-bitwarden-meet-european-compliance-requirements" id="q-how-does-bitwarden-meet-european-compliance-requirements"></a>
 
@@ -145,13 +145,13 @@ sha256sum dist-chrome-2025.6.1.zip
 
 此外，**Bitwarden 生成的**特定于设备的 GUID（有时称为**设备 ID**）将分配给您的设备。当新设备登录到您的密码库时，此 GUID 用于提醒您。
 
-### 问：可以解释一下电子 App 序安全吗？ <a href="#q-can-you-explain-electron-app-security" id="q-can-you-explain-electron-app-security"></a>
+### 问：可以解释一下电子 App 的安全性吗？ <a href="#q-can-you-explain-electron-app-security" id="q-can-you-explain-electron-app-security"></a>
 
-**答：**&#x4E00;篇经常被分享的文章表明，电子应用程序存在缺陷，然而所提到的攻击需要用户拥有一台已被入侵的机器，这当然会让恶意攻击者入侵该机器上的数据。只要您没有理由相信您所使用的设备已经被入侵，您的数据就是安全的。
+**答：**&#x4E00;篇广为流传的文章指出电子 App 存在漏洞，然而所提到的攻击需要用户拥有一台已被入侵的机器，这当然会让恶意攻击者入侵该机器上的数据。只要您没有理由怀疑您所使用的设备已经被入侵，您的数据就是安全的。
 
 ### 问：Bitwarden 如何保护浏览器扩展？ <a href="#q-how-does-bitwarden-secure-browser-extensions" id="q-how-does-bitwarden-secure-browser-extensions"></a>
 
-**答：**&#x5982;果开发得当，扩展程序是可以安全使用的。由于浏览器扩展的工作原理，总是可能会出现错误。我们在开发我们的扩展程序和附加组件时，会非常小心谨慎。我们会密切关注行业内发生的任何事情，并对所有事物进行更多的安全审计。
+**答：**&#x5982;果开发得当，扩展程序是可以安全使用的。由于浏览器扩展的运行机制，总会有出现漏洞的可能。我们在开发我们的扩展程序和附加组件时，会非常小心谨慎。我们会密切关注行业动态，并定期进行安全审计，以确保万无一失。
 
 ### 问：浏览器扩展要求哪些权限？ <a href="#q-what-is-the-browser-extension-asking-permission-for" id="q-what-is-the-browser-extension-asking-permission-for"></a>
 
@@ -184,7 +184,7 @@ Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https:
 
 ### 问：我可以限制某些设备对 Bitwarden 的访问吗？ <a href="#q-can-i-restrict-access-to-bitwarden-to-certain-devices" id="q-can-i-restrict-access-to-bitwarden-to-certain-devices"></a>
 
-**答：**&#x4F7F;用自助托管，您可以使用自定义防火墙和 NGINX 配置以及 VPN/VLAN 访问控制来确定访问 Bitwarden 实例的设备类型和/或网络层。您也可以使用其他工具，比如设备级证书来控制特定设备对 Bitwarden 实例的访问。
+**答：**&#x4F7F;用自托管，您可以使用自定义防火墙和 NGINX 配置以及 VPN/VLAN 访问控制来确定访问 Bitwarden 实例的设备类型和/或网络层。您也可以使用其他工具，比如设备级证书来控制指定的设备对 Bitwarden 实例的访问。
 
 ### 问：Bitwarden 有便携版应用程序吗？ <a href="#q-does-bitwarden-have-a-portable-application" id="q-does-bitwarden-have-a-portable-application"></a>
 
@@ -208,4 +208,4 @@ Bitwarden 所需的其他基本权限已[在 Google Play 商店中列出](https:
 
 ### 问：第三方网站可以知道我安装了 Bitwarden 吗？ <a href="#q-can-third-party-sites-know-that-i-have-bitwarden-installed" id="q-can-third-party-sites-know-that-i-have-bitwarden-installed"></a>
 
-**答：**&#x867D;然 Bitwarden 确实采用了多种技术来帮助防止浏览器指纹识别，但不可能完全阻止对浏览器扩展程序使用的检测。对指纹识别敏感的用户可以选择不使用浏览器扩展，而选择桌面 App。
+**答：**&#x867D;然 Bitwarden 确实采用了多种技术来帮助防止浏览器指纹识别，但不可能完全阻止对浏览器扩展使用的检测。对指纹识别敏感的用户可以选择不使用浏览器扩展，而选择桌面 App。

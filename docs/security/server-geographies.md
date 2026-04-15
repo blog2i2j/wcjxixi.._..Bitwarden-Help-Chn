@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/server-geographies/)
 {% endhint %}
 
-Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟**地区。无论您使用哪个区域的服务器，Bitwarden 用于保护您的敏感数据采取的措施都是相同的。详细了解 [Bitwarden 如何保护您的数据](data/data-storage.md)。
+Bitwarden 云服务可在全球范围内使用，数据存储在**美国**和**欧盟**地区。无论您使用哪个区域的服务器，Bitwarden 用于保护您的敏感数据采取的措施都是相同的。详细了解 [Bitwarden 如何保护您的数据](data/data-storage.md)。
 
 ## 选择您的云服务器 <a href="#choose-your-cloud-server" id="choose-your-cloud-server"></a>
 
-要选择在哪个 Bitwarden 服务器地理位置上创建您的账户或组织，请在登录或注册页面上选择**服务器**或**登录到：**&#x4E0B;拉菜单：
+要选择在哪个 Bitwarden 服务器地理位置上创建您的账户或组织，请在登录或注册页面上选择**服务器**或**登录到：**&#x4E0B;拉菜单，然后选择所需的区域：
 
 {% tabs %}
 {% tab title="网页 App" %}
@@ -36,11 +36,11 @@ Bitwarden 云可在全球范围内使用，数据存储在**美国**和**欧盟*
 {% endtab %}
 {% endtabs %}
 
-Bitwarden 数据区域是独立的，您的账户或组织只存在于其最初创建的区域上。
+Bitwarden 数据区域是独立的，您的账户或组织只存在于其最初创建的区域中。
 
 ### 连接您的自托管服务器 <a href="#connect-your-self-hosted-server" id="connect-your-self-hosted-server"></a>
 
-自托管 Bitwarden 组织或个人高级方案需要首先在云服务器上启动订阅，然后[上传许可证文件](../self-hosting/licensing-on-premise.md)到您的自托管实例。如果您在 EU 服务器上创建订阅，请将以下[环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)添加到服务器的 `./bwdata/env/global.override.env` 文件中，以确保与正确的服务器通信：
+自托管 Bitwarden 组织或个人高级方案需要首先在云服务器上启动订阅，然后[上传许可证文件](../self-hosting/licensing-on-premise.md)到您的自托管实例。如果您是在 EU 服务器上创建的订阅，请将以下[环境变量](../self-hosting/deploy-and-configure/configuration-options/environment-variables.md)添加到服务器的 `./bwdata/env/global.override.env` 文件中，以确保与正确的服务器通信：
 
 ```systemd
 globalSettings__installation__identityUri=https://identity.bitwarden.eu
@@ -49,17 +49,17 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 ```
 
 {% hint style="info" %}
-在继续之前，请确保您的配置与您获取[安装 ID 和密钥](https://bitwarden.com/host/)时选择的数据区域正确关联，如上所述。
+在继续之前，请确保您的配置与您获取[安装 ID 和密钥](https://bitwarden.com/host/)时选择的数据区域正确对应，如上所述。
 {% endhint %}
 
 ## 迁移到另一个云 <a href="#migrate-to-another-cloud" id="migrate-to-another-cloud"></a>
 
 要从一个 Bitwarden 云服务器迁移到另一个，例如从 US 服务器迁移到 EU 服务器：
 
-1、[导出您的组织密码库](../password-manager/import-and-export/export-vault-data.md#export-an-organization-vault)并指导所有组织成员[导出其个人密码库](../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。
+1、[导出您的组织密码库](../password-manager/import-and-export/export-vault-data.md#export-an-organization-vault)，然后指导所有组织成员[导出其个人密码库](../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。
 
 {% hint style="success" %}
-单独下载密码库项目的所有文件附件并记下它们属于哪些项目。
+单独下载密码库项目的所有文件附件，并记下它们属于哪些项目。
 {% endhint %}
 
 2、在所需区域创建新的 Bitwarden 账户并开始试用组织。当您准备好时，Bitwarden 支持会将您的订阅迁移到新的区域（见**步骤 4**）。
@@ -82,7 +82,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 #### 问：在某个服务器位置创建的账户能否加入另一个服务器位置的组织？ <a href="#q-can-an-account-created-in-one-server-geography-join-an-organization-in-another-server-geography" id="q-can-an-account-created-in-one-server-geography-join-an-organization-in-another-server-geography"></a>
 
-**答**：不能，密码库数据和用户数据在服务器地理位置之间是完全独立的。如果用户与组织位于不同的服务器，则用户无法访问该组织或与之交互。 这种分离包括已迁移且不再与组织成员位于同一云服务器上的组织。
+**答**：不能。密码库数据和用户数据在服务器地理位置之间是完全独立的。如果用户与组织位于不同的服务器，则用户无法访问该组织或与之交互。 这种分离包括已迁移且不再与组织成员位于同一云服务器上的组织。
 
 #### 问：迁移脚本有什么作用？ <a href="#q-what-does-the-migration-script-do" id="q-what-does-the-migration-script-do"></a>
 
