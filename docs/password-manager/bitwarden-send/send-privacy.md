@@ -6,19 +6,19 @@
 
 通过选择性的配置[访问密码](send-privacy.md#send-passwords)来保护您的 Send 内容，以防止无意的接收者看到其包含的信息，和/或[对接收者隐藏您的电子邮箱](send-privacy.md#hide-email)。对于文本 Send，您还可以选择要求接收者[切换可见性](send-privacy.md#hide-text)，以防止暴露给无意的旁人。
 
-**密码**、**隐藏电子邮箱**和**隐藏文本**选项可在[删除](send-lifespan.md#deletion-behavior) Send 之前的任何时候，通过创建新 Send 视图或**编辑 Send** 视图进行配置。
+**密码**、**隐藏电子邮箱**和**隐藏文本**选项可以在达到 Send [删除日期](send-lifespan.md#deletion-behavior)之前的任何时候，从创建新 Send 视图或**编辑 Send** 视图进行配置。
 
-## 电子邮箱验证接收者 <a href="#email-verified-recipients" id="email-verified-recipients"></a>
+## 验证接收者的电子邮箱 <a href="#email-verified-recipients" id="email-verified-recipients"></a>
 
-付费 Bitwarden 方案的用户（高级版、家庭版、团队版、企业版）可以要求电子邮箱验证才能访问 Send。创建 Send 时，指定一个或多个接收者电子邮箱地址。访问 Send 链接后，接收者必须输入其电子邮箱地址。如果它与您指定的地址匹配，验证码将通过电子邮件发送给接收者。要创建电子邮箱验证的 Send：
+付费 Bitwarden 方案的用户（高级版、家庭版、团队版、企业版）可以要求验证电子邮箱后才能访问 Send。创建 Send 时，指定一个或多个接收者电子邮箱地址。接收者访问 Send 链接后，必须输入其电子邮箱地址。如果它与您指定的地址匹配，验证码将通过电子邮件发送给接收者。要创建电子邮箱验证的 Send：
 
-1、在**谁可以查看**菜单中选择**指定人员**选项。然后，将目标接收者添加到**电子邮箱**字段。完成 [Send 设置](about-send.md#using-send)然后与目标接收者分享 Send 链接。
+1、在**谁可以查看**菜单中选择**指定人员**选项。然后，将目标接收者添加到**电子邮箱**字段。完成 [Send 设置](about-send.md#using-send)，然后将 Send 链接分享给目标接收者。
 
 {% embed url="https://bitwarden.com/assets/9isz2fm2soiJJOau1sq7b/1b9cdff84b482c8698ef6e0a20ebf826/Send_access_list.png?w=800&fm=avif" %}
 验证用户 Send
 {% endembed %}
 
-2、访问 Send 链接的接收者将被要求输入他们的电子邮箱地址。验证码将发送到该用户的电子邮箱地址。输入验证码即可查看 Send 内容。
+2、接收者访问 Send 链接后，将被要求输入他们的电子邮箱地址。验证码将发送到该用户的电子邮箱地址。输入验证码即可查看 Send 内容。
 
 {% embed url="https://bitwarden.com/assets/7qM22jPeoKCnGE6GS03wz7/4f959a8b1b7b9f13674bdda975af9a5d/2026-02-24_17-04-46.png?w=800&fm=avif" %}
 输入 Send 验证码

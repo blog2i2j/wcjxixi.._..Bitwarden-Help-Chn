@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/trusted-communications/)
 {% endhint %}
 
-本章节可以帮助您验证声称来自 Bitwarden 的通信是否合法。作为一家注重安全的公司，Bitwarden 希望确保您能够自信地识别来自该公司的真实电子邮件、网站和其他通信。
+本章节可以帮助您验证声称来自 Bitwarden 的通信是否合法。作为一家专注于安全的公司，Bitwarden 希望确保您能够自信地识别来自该公司的真实电子邮件、网站和其他通信。
 
 在这个类别中的文章涵盖三个关键领域：
 

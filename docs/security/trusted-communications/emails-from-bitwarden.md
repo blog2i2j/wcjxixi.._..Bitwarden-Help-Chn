@@ -4,23 +4,23 @@
 对应的[官方文档地址](https://bitwarden.com/help/emails-from-bitwarden/)
 {% endhint %}
 
-与使用强密码一样，避免可疑电子邮件也是您在线安全工具包中的一个重要工具。我们建议您熟悉 [FTC 指南](https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams)，以识别和避免网络钓鱼。
+与使用强密码一样，避免可疑电子邮件也是您在线安全工具包中的重要一环。我们建议您熟悉 [FTC 指南](https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams)，以识别和避免网络钓鱼。
 
-以下是一些指导原则，可帮助您确定一封看似来自 Bitwarden 的电子邮件是否合法：
+以下是一些指导原则，可帮助您判断一封看似来自 Bitwarden 的电子邮件是否合法：
 
 ## 自动电子邮件 <a href="#automated-emails" id="automated-emails"></a>
 
 ### 产品交互电子邮件 <a href="#product-interaction-emails" id="product-interaction-emails"></a>
 
-诸如新设备警报、[加入组织](../../admin-console/manage-members/user-management.md)的邀请、请求访问机密管理器，以及[两步登录代码](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)之类的电子邮件将来自 `no-reply@bitwarden.com` 或 `no-reply@bitwarden.eu`，或者，如果您是自托管，则来自[已配置的域名](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，例如 `no-reply@my.domain.com`。
+诸如新设备警报、[加入组织](../../admin-console/manage-members/user-management.md)的邀请、[请求对 Secrets Manager 的访问权限](../../secrets-manager/get-started/secrets-manager-quick-start.md#access-secrets-manager)，以及[两步登录代码](../../account/two-step-login/setup-two-step-login/two-step-login-via-email.md)或 [Send 验证码](../../password-manager/bitwarden-send/send-privacy.md#email-verified-recipients)之类的电子邮件将来自 `no-reply@bitwarden.com` 或 `no-reply@bitwarden.eu`，或者，如果您是自托管，则来自[已配置的域名](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#install-bitwarden)，例如 `no-reply@my.domain.com`。
 
 {% hint style="info" %}
-自版本 2024.9.2 起，电子邮件验证请求在创建账户时发送给云端用户，也是从 `no-reply@bitwarden.com` 发出的：
+自版本 2024.9.2 起，在创建账户时发送给云端用户的电子邮件验证请求，也是从 `no-reply@bitwarden.com` 发出的：
 
 <img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2QR4MYirRuYyMJnkx5ce6e/858d2d1fc23440e31ce87a8ff6efa4f5/2024-09-26_10-01-00.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
 {% endhint %}
 
-这些电子邮件**永远不会包含附件**。如果系统提示您下载文件，请向我们报告该电子邮件。
+这些电子邮件**永远不会包含附件**。如果提示您下载文件，请向我们报告该电子邮件。
 
 其中一些电子邮件（例如组织邀请）将包含按钮。在**单击超链接之前**，请务必总是检查此超链接的合法性，确认它指向 `https://vault.bitwarden.com` 或您组织的自托管域名。如果您不知道您组织的域名，请询问您的 IT 团队成员或管理员。
 
@@ -30,9 +30,7 @@
 
 ### 付款电子邮件 <a href="#payments-emails" id="payments-emails"></a>
 
-个人高级版订阅和付费组织版订阅的自动付款电子邮件将来自 `invoice+statements@bitwarden.com` 地址。
-
-这些电子邮件**将包含**附件，具体是 PDF 发票和收据。
+个人高级版订阅和付费组织版订阅的自动付款电子邮件将来自 `invoice+statements@bitwarden.com` 地址。这些电子邮件**将包含**附件，具体来说是 PDF 格式的账单和收据。如果付款失败，您将收到一封来自 `failed-payments@bitwarden.com` 地址的通知电子邮件。
 
 ### 续费电子邮件 <a href="#renewals-emails" id="renewals-emails"></a>
 
@@ -40,7 +38,7 @@
 
 ## 交互式电子邮件 <a href="#opt-in-emails" id="opt-in-emails"></a>
 
-虽然您会在日常使用 Bitwarden 过程中收到[自动电子邮件](emails-from-bitwarden.md#automated-emails)，但如果您与 Bitwarden 生态系统的各个部分进行了交互，您也可能会收到来自以下地址的电子邮件：
+在日常使用 Bitwarden 过程中，您会收到[自动电子邮件](emails-from-bitwarden.md#automated-emails)，如果您与 Bitwarden 生态系统的各个部分进行过交互，您也可能会收到来自以下地址的电子邮件：
 
 * 支持请求：`support@bitwarden.com`
 * 产品公告：`productupdates@bitwarden.com`
@@ -50,7 +48,7 @@
 
 ## 警告电子邮件 <a href="#alert-emails" id="alert-emails"></a>
 
-Bitwarden 会对可疑活动（如从未知设备登录和从未知设备尝试登录失败）发送电子邮件提醒。
+Bitwarden 会在出现可疑活动（例如从未知设备登录和从未知设备尝试登录失败）时发送电子邮件警告。
 
 这些电子邮件**永远不会包含附件**。如果提示您下载文件或点击未知链接，请联系我们。
 

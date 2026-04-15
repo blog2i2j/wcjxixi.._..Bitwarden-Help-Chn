@@ -1,4 +1,4 @@
-# 服务器 & 客户端版本
+# 服务器 & 客户端版本控制
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/versioning/)
@@ -8,10 +8,10 @@
 
 月度最初的版本（以 `.0` 结尾的版本）由所有客户端和服务器端共用，（后续）当某些客户端和服务器端获得了修补程序（`.1`、`.2` 等），而其他还未获得时，版本号会有所偏差。
 
-不过，情况并非总是如此。在 2022 年 05 月之前，客户端和服务器端各自具有不同的版本控制系统。如果您使用的是版本为 `1.xx.x` 或 `2.xx.x` 的客户端或服务器端，则表示您使用的是旧版本。
+但情况并非总是如此。在 2022 年 05 月之前，客户端和服务器端各自具有不同的版本控制系统。如果您使用的是版本为 `1.xx.x` 或 `2.xx.x` 的客户端或服务器端，则说明您使用的是旧版本。
 
 {% hint style="info" %}
-当 Bitwarden 放弃对某个版本的支持时，整个发行版和所有以前的版本也将不再受到支持。
+当 Bitwarden 放弃对某个版本的支持时，此整个发行版和所有以前的版本也将不再受到支持。
 {% endhint %}
 
 ## 自托管服务器版本 <a href="#self-hosted-server-version" id="self-hosted-server-version"></a>
@@ -30,7 +30,7 @@
 
 {% tabs %}
 {% tab title="浏览器扩展" %}
-导航到 **⚙️设置**选项卡然后选择**关于** → **关于 Bitwarden**：
+导航到 **⚙️设置**选项卡，然后选择**关于** → **关于 Bitwarden**：
 
 {% embed url="https://bitwarden.com/assets/4EkEPm8QGo6KCPTCnn4Pg5/090ff5cd26b2fddeedcbddf9edf49e7a/2024-12-04_10-10-53.png?w=990&fm=avif" %}
 浏览器扩展版本
@@ -46,7 +46,7 @@
 {% endtab %}
 
 {% tab title="移动 App" %}
-导航到 **⚙️设置**选项卡然后选择**关于**选项：
+导航到 **⚙️设置**选项卡，然后选择**关于**选项：
 
 {% embed url="https://bitwarden.com/assets/3zYXLGYrfsJZuGwlT7Vq3v/9db9b271b977e94468cdf04b8cab70f2/2025-01-22_10-19-54.png?w=713&fm=avif" %}
 移动 App 版本

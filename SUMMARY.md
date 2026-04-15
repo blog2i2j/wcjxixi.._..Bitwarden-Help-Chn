@@ -385,7 +385,7 @@
     * [调用的加密库](docs/security/encryption/invoked-crypto-libraries.md)
     * [加密密钥轮换](docs/security/encryption/encryption-key-rotation.md)
     * [账户指纹短语](docs/security/encryption/account-fingerprint-phrase.md)
-  * [=软件开发](docs/security/software-development/README.md)
+  * [软件开发](docs/security/software-development/README.md)
     * [服务器 & 客户端版本控制](docs/security/software-development/versioning.md)
     * [软件发布支持](docs/security/software-development/software-release-support.md)
   * [可信任的通信](docs/security/trusted-communications/README.md)
