@@ -10,7 +10,7 @@
 SCIM 集成适用于**团队组织和企业组织**。未使用与 SCIM 兼容的身份提供程序的客户可以考虑使用 [Directory Connector](../directory-connector/directory-connector-cli.md) 作为替代的配置方式。
 {% endhint %}
 
-本文将帮助您配置 Ping Identity SCIM 集成。配置涉及同时使用 Bitwarden 网页密码库和 Ping Identity 管理员控制面板。在进行配置时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
+本文将帮助您配置 Ping Identity SCIM 集成。配置涉及同时使用 Bitwarden 网页密码库和 Ping Identity 管理员仪表板。在进行配置时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
 
 ## 启用 SCIM <a href="#enable-scim" id="enable-scim"></a>
 
