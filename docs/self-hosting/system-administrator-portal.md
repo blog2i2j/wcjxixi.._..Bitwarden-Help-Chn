@@ -17,7 +17,7 @@ Bitwarden 系统管理员门户可以用于：
 
 ## 配置用户访问权限 <a href="#configure-user-access" id="configure-user-access"></a>
 
-用户将使用发送到其电子邮箱收件箱的安全魔术链接登录系统管理员门户。要配置谁有权访问权限，请添加授权的电子邮箱地址：
+用户将使用发送到其电子邮箱收件箱的安全魔术链接登录系统管理员门户。要配置访问权限，请添加授权的电子邮箱地址：
 
 {% hint style="success" %}
 由于系统管理员门户使用电子邮箱来授权用户的访问权限，因此您需要在任何用户尝试登录门户之前设置 SMTP 邮件服务器。
@@ -33,7 +33,7 @@ Bitwarden 系统管理员门户可以用于：
 adminSettings__admins=john@example.com,bill@example.com,tom@example.com
 ```
 
-**每当您对 `global.override.env` 进行更改时，请执行 `./bitwarden.sh restart` 以应用您的配置更改。**
+**每当您对 `global.override.env` 进行更改后，请执行 `./bitwarden.sh restart` 以应用您的配置更改。**
 {% endtab %}
 
 {% tab title="Helm" %}
@@ -46,7 +46,7 @@ adminSettings__admins=john@example.com,bill@example.com,tom@example.com
 ...
 ```
 
-**每当您对 `my-values.yaml` 进行更改时，请执行 `helm upgrade` 以应用您的配置更改。**
+**每当您对 `my-values.yaml` 进行更改后，请执行 `helm upgrade` 以应用您的配置更改。**
 {% endtab %}
 {% endtabs %}
 

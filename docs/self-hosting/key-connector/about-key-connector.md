@@ -8,11 +8,11 @@
 Bitwarden 建议将[信任设备解密](../../admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)作为 Key Connector 的替代选项，这样可以方便成员在无需主密码的情况下登录，并且不需要部署或管理密钥服务器。
 {% endhint %}
 
-Key Connector 是一个用于促进客户管理的加密 (CMS) 的自托管应用程序，其允许企业组织向 Bitwarden 客户端提供加密密钥。
+Key Connector 是一个用于实现客户管理的加密 (CMS) 的自托管应用程序，其允许企业组织向 Bitwarden 客户端提供加密密钥。
 
 > **\[译者注]**：CMS：Customer-Managed Encryption，客户管理的加密。客户完全控制加密密钥，而不是由服务提供商管理。
 
-Key Connector 在与现有服务相同的网络上作为 docker 容器运行，并且可以与 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)一起使用为组织提供加密密钥，以作为使用主密码进行密码库解密的一种替代方式（[了解更多](about-key-connector.md#why-use-key-connector)）。Bitwarden 支持部署 Key Connector，以供组织在自托管实例中使用。
+Key Connector 在与现有服务相同的网络上作为 docker 容器运行，并且可以与 [SSO 登录](../../admin-console/login-with-sso/about-sso.md)一起使用为组织提供加密密钥，以作为使用主密码进行密码库解密的一种替代方式（[了解更多](about-key-connector.md#why-use-key-connector)）。Bitwarden 支持在自托管实例中部署 Key Connector，以供组织使用。
 
 Key Connector 需要连接到**存储了已加密用户密钥的数据库**和**用于加密和解密已存储的用户密钥的 RSA 密钥对**。Key Connector 可以使用各类数据库提供程序（例如 MSSQL、PostgreSQL、MySQL）和密钥对存储提供程序（例如 Hashicorp Vault、Cloud KMS 提供程序、本地 HSM 设备）来进行[配置](deploy-key-connector.md)，以满足您公司的基础架构要求。
 
@@ -35,18 +35,18 @@ Key Connector 架构
 {% hint style="danger" %}
 目前，无法为已移除了主密码的账户重新创建主密码。
 
-因此，组织所有者和管理员无法移除他们的主密码，并且即使使用 SSO 也必须继续使用他们的主密码。可以将已移除主密码的用户提升为所有者或管理员，但我们**强烈建议**您的组织始终至少有一个拥有主密码的所有者。
+因此，组织所有者和管理员无法移除他们的主密码，并且即使使用 SSO 也必须继续使用他们的主密码。可以将已移除主密码的用户提升为所有者或管理员，但我们**强烈建议**您的组织始终至少有一位拥有主密码的所有者。
 {% endhint %}
 
-### 对组织成员的影响 <a href="#impact-on-organization-membership" id="impact-on-organization-membership"></a>
+### 对组织成员资格的影响 <a href="#impact-on-organization-membership" id="impact-on-organization-membership"></a>
 
-Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impact-on-master-passwords)，改用使用公司拥有的加密密钥数据库来解密用户的密码库。由于无法为已移除主密码的账户重新创建主密码，这意味着，一旦账户使用 Key Connector 解密，就所有的意图和目的而言，都**属于组织所有**。
+Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impact-on-master-passwords)，改用使用公司拥有的加密密钥数据库来解密用户的密码库。由于无法为已移除主密码的账户重新创建主密码，这意味着，一旦账户使用 Key Connector 解密，就所有的意图和目的而言，该账户都**属于组织所有**。
 
 这些账户**不得退出组织**，因为这样做他们将失去任何解密密码库数据的方法。同样，如果组织管理员从组织中移除账户，该账户将失去任何解密密码库数据的方法。
 
 ### 使用 Key Connector 登录 <a href="#log-in-using-key-connector" id="log-in-using-key-connector"></a>
 
-首次登录启用了 Key Connector 的组织的用户将收到一个对话框，提示用户确认此组织：
+首次登录启用了 Key Connector 的组织的用户将收到一个对话框，提示用户确认组织：
 
 {% embed url="https://bitwarden.com/assets/fTrb2sTLVMdjtlpf2yNGD/59e7c37be145ef6525128f73864e3aee/2025-12-17_13-45-48.png?w=424&fm=avif" %}
 
@@ -77,8 +77,8 @@ Key Connector 要求用户[移除他们的主密码](about-key-connector.md#impa
 要使用 Key Connector，您必须：
 
 * [拥有一个企业组织](../../plans-and-pricing/password-manager/about-bitwarden-plans.md#enterprise-organizations)
-* [拥有一个自托管的 Bitwarden 服务器](../)
+* [拥有一个使用 Docker 部署的自托管 Bitwarden 服务器](../deploy-and-configure/docker/linux-standard-deployment.md)
 * [拥有一个活跃的 SSO 实施](../../admin-console/login-with-sso/about-sso.md)
-* [激活单一组织和单点登录策略](../../admin-console/oversight-visibility/enterprise-policies.md)
+* [激活单一组织策略和要求单点登录策略](../../admin-console/oversight-visibility/enterprise-policies.md)
 
 如果您的组织满足或能够满足这些要求，包括拥有可以支持密钥服务器管理的团队和基础设施，请[联系我们](https://bitwarden.com/contact)，我们将为您激活 Key Connector。

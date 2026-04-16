@@ -4,23 +4,23 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/licensing-on-premise/)
 {% endhint %}
 
-自托管 Bitwarden 是免费的，但是有些功能必须在您的自托管实例中通过注册的许可证文件才能解锁。许可证文件可以由高级个人订阅账户或组织的所有者从 Bitwarden 托管的[网页密码库](https://vault.bitwarden.com/)中获取。
+自托管 Bitwarden 是免费的，但是有些功能必须在您的自托管实例中使用已注册的许可证文件才能解锁。高级版个人订阅账户或组织的所有者可以从 Bitwarden 托管的[网页密码库](https://vault.bitwarden.com/)中获取许可证文件。
 
-使用[个人许可证](licensing-on-premise.md#individual-license)与使用[组织许可证](licensing-on-premise.md#organization-license)时的步骤不同。
+使用[个人许可证](licensing-on-premise.md#individual-license)与使用[组织许可证](licensing-on-premise.md#organization-license)时，步骤有所不同。
 
 {% hint style="info" %}
-本文中的过程假定您已经开始了一个 Bitwarden 付费订阅。如果还没有，请参阅[关于 Bitwarden 计划](../plans-and-pricing/password-manager/about-bitwarden-plans.md)以及[哪种计划适合我？](../plans-and-pricing/what-plan-is-right-for-me.md)。
+本文中的步骤假定您已经开始了一个 Bitwarden 付费订阅。如果还没有，请参阅[关于 Bitwarden 方案](../plans-and-pricing/password-manager/about-bitwarden-plans.md)以及[哪种方案适合我？](../plans-and-pricing/what-plan-is-right-for-me.md)。
 {% endhint %}
 
 ## 个人许可证 <a href="#individual-license" id="individual-license"></a>
 
-使用高级订阅的个人许可证时，请遵循以下步骤。您将需要同时访问云端网页密码库和自托管网页密码库，并且您的账户电子邮箱地址需一致。
+使用高级版订阅的个人许可证时，请遵循以下步骤。您需要同时操作访问云端网页密码库和自托管网页密码库，并且您的账户电子邮箱地址必须一致。
 
 ### 获取个人许可证 <a href="#retrieve-individual-license" id="retrieve-individual-license"></a>
 
 在自托管服务器上创建账户后，从云端网页 App 获取您的个人许可证：
 
-1. 登录然后从导航中选择**设置** → **订阅**。
+1. 登录，然后从导航中选择**设置** → **订阅**。
 2. 选择**下载许可证**按钮：
 
 {% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/bXoVGOMEI1d8iCVoy5fmI/af545e3c083aeebaf12c751fc38a59ea/2024-12-04_10-02-56.png?_a=DAJCwlWIZAAB" %}
