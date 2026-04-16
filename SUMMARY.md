@@ -368,6 +368,7 @@
   * [组织或高级版许可证](docs/self-hosting/licensing-on-premise.md)
   * [更新服务器](docs/self-hosting/update-a-server.md)
   * [备份服务器数据](docs/self-hosting/backup-server-data.md)
+  * [=网络要求](docs/self-hosting/networking-requirements.md)
   * [服务器日志](docs/self-hosting/server-logs.md)
   * [\*作为 MSP 部署 Bitwarden](docs/self-hosting/deploying-bitwarden-as-an-msp.md)
   * [\*云端设置清单](docs/self-hosting/cloud-setup-checklist.md)

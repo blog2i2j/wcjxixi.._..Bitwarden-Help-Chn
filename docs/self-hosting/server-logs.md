@@ -21,7 +21,7 @@ docker compose logs -f
 
 自托管 Bitwarden 服务器生成的日志默认存储在 `bwdata/logs/` 。
 
-要更改默认的日志存储位置，请访问您的 `global.override.env` 文件并将环境变量 `globalSettings__logDirectory=` 设置为所需位置。
+要更改默认的日志存储位置，请访问您的 `global.override.env` 文件然后将环境变量 `globalSettings__logDirectory=` 设置为所需位置。
 
 更改环境变量后，您需要重启服务器以应用新的配置：
 
@@ -45,7 +45,7 @@ docker compose -f ./docker/docker-compose.yml down && docker compose -f ./docker
 {% tab title="Helm" %}
 ## 实时日志 <a href="#logs-in-real-time" id="logs-in-real-time"></a>
 
-默认情况下，Helm 部署的日志是临时的，不会存储在中央位置。服务器运行时，可以通过容器的 stdout 实时访问日志，例如运行以下命令：
+默认情况下，Helm 部署的日志是临时的，不会存储在中心位置。服务器运行时，可以通过容器的 stdout 实时访问日志，例如运行以下命令：
 
 ```bash
 kubectl logs pod api

@@ -4,20 +4,20 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/backup-on-premise/)
 {% endhint %}
 
-自托管 Bitwarden 时，您有责任实施自己的备份过程，以确保数据安全。尽管执行此操作所需的步骤取决于您的部署方式，但在所有情况下都建议您：
+自托管 Bitwarden 时，您需要自行负责实施备份流程以确保数据安全。虽然具体步骤取决于您的部署方式，但无论如何，我们都建议您：
 
 * 手动定期备份重要数据，包括配置数据、证书数据等。
 * 确保执行自动重复的数据库备份。
 
 {% hint style="success" %}
-在使用内置数据库的 **Docker** 部署中，只要 `mssql` 容器正在运行，夜间备份就会运行。在 **Helm** 部署中，您需要在集群外部安排作业或在集群内创建 CronJob 对象，Bitwarden 提供了示例来帮助指导您的方法。
+在使用内置数据库的 **Docker** 部署中，只要 `mssql` 容器正在运行，夜间备份就会运行。在 **Helm** 部署中，您需要在集群外部安排作业或在集群内创建 CronJob 对象，Bitwarden 提供了一些示例来帮助指导您的操作。
 {% endhint %}
 
 {% tabs %}
 {% tab title="Docker" %}
 ## 手动备份 <a href="#manual-backups" id="manual-backups"></a>
 
-Bitwarden 将在夜间自动备份 `mssql` 数据库容器（见下文），但是对于最完整的灾难恢复 (DR) 计划，您应该手动备份并确保整个 `./bwdata` 目录的安全。
+Bitwarden 会在夜间自动备份 `mssql` 数据库容器（见下文），但是对于最完整的灾难恢复 (DR) 计划，您应该手动备份并确保整个 `./bwdata` 目录的安全。
 
 需要定期备份的 `./bwdata` 中特别重要的部分包括：
 
