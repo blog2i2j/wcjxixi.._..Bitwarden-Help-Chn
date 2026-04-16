@@ -85,6 +85,14 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 {% endtab %}
 {% endtabs %}
 
+## 查看附件 <a href="#view-an-attachment" id="view-an-attachment"></a>
+
+在 **Android** 设备上，通过点击**查看项目**界面上的附件，图像文件（ `.jpeg` 、 `.png` 、 `.gif` 、 `.WebP` 、 `.heic` ）可以直接在 Bitwarden 中预览，而无需将其下载到您的设备：
+
+{% embed url="https://bitwarden.com/assets/8CANFNTEL2gsoDy0zvQPG/65b328d7d01be571b66596c51f78d07d/2026-04-10_09-10-55.png?w=877&fm=avif" %}
+查看附件
+{% endembed %}
+
 ## 下载文件 <a href="#download-a-file" id="download-a-file"></a>
 
 要在大多数 Bitwarden App 中下载附件，请打开项目。在**附件**部分中，选择文件旁边的 **⬇️下载**图标。

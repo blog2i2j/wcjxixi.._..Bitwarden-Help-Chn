@@ -22,8 +22,8 @@
 
 4、选择您要更改的策略的名称：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2flohk6BsRKvazjztwvzsJ/4258307d845b33cd9f765388ca6bfea6/2024-12-03_14-24-58.png?_a=DAJCwlWIZAAB" %}
-设置策略
+{% embed url="https://bitwarden.com/assets/2flohk6BsRKvazjztwvzsJ/66bdf4f937a1d37646207c79e6ec24be/Set_Enterprise_policies.png?w=1370&fm=avif" %}
+设置企业策略
 {% endembed %}
 
 5、选中或取消选中**启用**。
@@ -32,14 +32,16 @@
 
 7、选择**保存**。
 
-## 可用的策略 <a href="#available-policies" id="available-policies"></a>
+## 数据控制 <a href="#data-control" id="data-control"></a>
+
+**数据控制**部分中的策略为数据共享方式添加了保护措施，并规定了谁拥有密码库数据。
 
 ### 单一组织 <a href="#single-organization" id="single-organization"></a>
 
 启用**单一组织**策略将限制组织内的非所有者/非管理员成员加入其他组织或创建其他组织。即使对于仅[接受](../manage-members/user-management.md#accept)组织邀请的用户，也会强制执行此策略，但所有者和管理员不受此策略的约束。
 
 {% hint style="danger" %}
-**当您激活此策略时，非所有者或管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
+**当您激活此策略时，非所有者或非管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
 {% endhint %}
 
 在激活以下策略之前，必须启用**单一组织**策略：
@@ -75,6 +77,31 @@
 
 成员可以**接受**或**拒绝**该提示。接受将把所有个人拥有的项目转移到组织所有权，拒绝将立即撤销该成员对组织的访问权限，以便他们有时间筛选应转移和不应转移的项目。任一场景都会[记录事件](event-logging/event-logs.md#organization-events)。
 
+### Send 控制 <a href="#send-controls" id="send-controls"></a>
+
+启用 **Send 控制**策略将指定用于创建和编辑 Send 的选项。所有者和管理员不受此策略的约束。启用此策略时，必须选中以下选项之一：
+
+* **禁用 Send**：将阻止成员创建或编辑 Send。如果之前创建了 Send，他们仍然可以在除网页 App 之外的所有 Bitwarden 客户端的 **Send** 页面查看和删除这些 Send。受此策略约束的成员仍然可以打开[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md)。
+* **创建或编辑 Send 时始终向接收者显示成员的电子邮件地址**：将禁用[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，从而为接收 Send 的人提供透明度。
+
+{% hint style="info" %}
+请确保只选择一项设置。如果两项都勾选，成员将受到**禁用 Send** 选项的约束。
+{% endhint %}
+
+### 禁用导出 <a href="#remove-export" id="remove-export"></a>
+
+启用**禁用导出**策略将禁止您组织的非所有者/非管理员成员[导出其个人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
+
+在网页 App 和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用：
+
+{% embed url="https://bitwarden.com/assets/5E2871D2vZBzveBmVyv9lO/b89f979980566dda40928db1ce450507/2024-10-14_08-50-45.png?w=1015&fm=avif" %}
+密码库导出已禁用
+{% endembed %}
+
+## 身份验证 <a href="#authentication" id="authentication"></a>
+
+**身份验证**部分中的策略通过强制成员拥有健全的身份验证标准来访问其 Bitwarden 密码库，从而帮助您强化组织的安全性。
+
 ### 主密码要求 <a href="#master-password-requirements" id="master-password-requirements"></a>
 
 启用**主密码要求**策略，将对用户的主密码强度执行一套可配置的最低要求。组织可以强制执行：
@@ -109,34 +136,12 @@
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
-### 使用 SSO 自动登录 <a href="#automatic-login-with-sso" id="automatic-login-with-sso"></a>
-
-启用**使用 SSO 自动登录**策略，将允许在访问身份提供程序提供的非 SSO App 时自动填充并提交登录表单。要启用此设置：
-
-1、要启用**使用 SSO 自动登录**策略，请选中**启用**复选框，并输入**身份提供程序主机** URL。此 URL 应包含 `protocol://domain`。
-
-{% embed url="https://bitwarden.com/assets/2qHW4T4CDwpQJmPK6oDDn8/e25f021aa609e6072ffa664ae757ea7f/2025-11-19_09-34-16.png?w=543&fm=avif" %}
-为允许的应用程序自动登录用户
-{% endembed %}
-
-2、作为 IdP 的管理员，在终端用户控制面板上添加一个应用程序或 App 快捷方式，其中包含具有附加参数 `?autofill=1` 的目标 URL。
-
-{% embed url="https://bitwarden.com/assets/33zjaF3nEYtBB3JaVjBGmS/ab61ee2d6551d5d5bab70319ca64951e/2024-09-24_10-39-55.png?w=538&fm=avif" %}
-Microsoft App 示例
-{% endembed %}
-
-3、保存应用程序后，用户可以从 IdP 面板上选择应用程序，然后 Bitwarden 将自动填充并登录应用程序。
-
-{% hint style="info" %}
-使用 SSO 自动登录将根据用户当前在 Bitwarden 浏览器扩展上的活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭据。
-{% endhint %}
-
 ### 要求两步登录 <a href="#require-two-step-login" id="require-two-step-login"></a>
 
 启用**要求两步登录**策略将要求成员使用任何两步登录方法访问其密码库。如果使用的是 SSO 或身份提供程序的 2FA 功能，则无需启用此策略。即使对于仅[接受](../manage-members/user-management.md#accept)组织邀请的用户，也会强制执行此策略。
 
 {% hint style="danger" %}
-**当您激活此策略时，非所有者或管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
+**当您激活此策略时，非所有者或非管理员且不遵守此策略的组织成员的访问权限将被撤销**。由于此策略而被撤销访问权限的用户将收到电子邮件通知，并且必须采取措施使其合规，然后才能恢复其访问权限。
 {% endhint %}
 
 ### 阻止使用已声明的域名创建账户 <a href="#block-account-creation-for-claimed-domains" id="block-account-creation-for-claimed-domains"></a>
@@ -188,6 +193,10 @@ Microsoft App 示例
 
 在该策略实施前使用 PIN 码解锁的成员将在下次登录时执行该策略，也就是说，如果他们已经登录了会话，他们仍将在用户界面中看到该选项，并能使用 PIN 码解锁，直到他们注销或关闭客户端中的 PIN 码解锁选项。
 
+## 密码库管理 <a href="#vault-management" id="vault-management"></a>
+
+**密码库管理**部分的策略允许您为成员的项目设置默认标准和最低标准。
+
 ### 密码生成器 <a href="#password-generator" id="password-generator"></a>
 
 启用**密码生成器**策略将对任何用户生成的密码强制执行一套可配置的最低要求。组织可以强制执行：
@@ -234,23 +243,27 @@ Microsoft App 示例
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
+### 使用 SSO 自动登录 <a href="#automatic-login-with-sso" id="automatic-login-with-sso"></a>
+
+启用**使用 SSO 自动登录**策略，将允许在访问身份提供程序提供的非 SSO App 时自动填充并提交登录表单。要启用此设置：
+
+1、要启用**使用 SSO 自动登录**策略，请选中**启用**复选框，并输入**身份提供程序主机** URL。此 URL 应包含 `protocol://domain`。
+
+{% embed url="https://bitwarden.com/assets/2qHW4T4CDwpQJmPK6oDDn8/e25f021aa609e6072ffa664ae757ea7f/2025-11-19_09-34-16.png?w=543&fm=avif" %}
+为允许的应用程序自动登录用户
+{% endembed %}
+
+2、作为 IdP 的管理员，请在终端用户控制面板上添加一个应用程序或 App 快捷方式，其中包含具有附加参数 `?autofill=1` 的目标 URL。
+
+3、保存应用程序后，用户可以从 IdP 面板上选择应用程序，然后 Bitwarden 将自动填充并登录应用程序。
+
+{% hint style="info" %}
+SSO 自动登录将基于 Bitwarden 浏览器扩展上的当前活动账户自动填充数据。此外，自动填充的数据将是用户最近使用的与目标应用程序 URL 相关联的凭据。
+{% endhint %}
+
 ### 激活自动填充 <a href="#activate-auto-fill" id="activate-auto-fill"></a>
 
 启用**激活自动填充**策略将自动为组织的所有现有和新成员打开浏览器扩展上的[页面加载时自动填充](../../password-manager/autofill/autofill-from/autofill-from-browser-extensions.md#on-page-load)功能。如果激活，成员将无法禁用页面加载时自动填充功能。
-
-### Send 选项 <a href="#send-options" id="send-options"></a>
-
-启用 **Send 选项**策略将允许所有者和管理员指定用于创建和编辑 Send 的选项。所有者和管理员不受此策略的约束。选项包括：
-
-| 选项             | 描述                                                                                                                                                                           |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 不允许用户隐藏其电子邮箱地址 | 启用该选项可以禁用[隐藏电子邮箱](../../password-manager/bitwarden-send/send-privacy.md#hide-email)选项，这意味着所有[接收到的 Send](../../password-manager/bitwarden-send/receive-a-send.md) 都将包含其发送者信息。 |
-
-### 禁用 Send <a href="#disable-send" id="disable-send"></a>
-
-启用**禁用 Send** 策略将阻止非所有者/非管理员用户使用 [Bitwarden Send](../../password-manager/bitwarden-send/about-send.md) 创建或编辑 Send。受此策略约束的成员将无法再在其 Bitwarden 客户端上访问 Send。所有者和管理员不受此策略的约束。
-
-在 **Send** 视图中和打开任何现有的 Send 时，会向用户显示一个横幅，以表明某个策略限制他们只能删除 Send。
 
 ### 禁用支付卡项目类型 <a href="#remove-card-item-type" id="remove-card-item-type"></a>
 
@@ -266,20 +279,15 @@ Microsoft App 示例
 
 在该策略激活前已兑换赞助家庭组织的用户将继续获得其组织的赞助，直至当前账单周期结束。在下一个账单周期开始时，将通过该组织存储的付款方式收取费用。
 
-### 禁用导出 <a href="#remove-export" id="remove-export"></a>
-
-启用**禁用导出**策略将禁止您组织的非所有者/非管理员成员[导出其私人密码库数据](../../password-manager/import-and-export/export-vault-data.md#export-a-personal-vault)。所有者和管理员不受此策略的约束。
-
-在网页密码库和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用：
-
-{% embed url="https://bitwarden.com/assets/5E2871D2vZBzveBmVyv9lO/b89f979980566dda40928db1ce450507/2024-10-14_08-50-45.png?w=1015&fm=avif" %}
-密码库导出已禁用
-{% endembed %}
-
 ### 自动用户确认 <a href="#automatic-user-confirmation" id="automatic-user-confirmation"></a>
 
 {% hint style="info" %}
 要获得此策略的访问权限，Bitwarden 支持人员需要为您将其打开。请首先[联系我们](https://bitwarden.com/contact/)。
 {% endhint %}
 
-启用**自动用户确认**策略以自动确认接受了加入组织邀请的成员。在使用自动确认之前，请[检查您的组织的资格并了解设置过程](../manage-members/automatic-confirmation.md)。
+启用**自动用户确认**策略将自动确认已接受加入组织邀请的成员，而无需采用标准的手动确认流程。要使用此策略：
+
+1. 确认您的组织的[资格](../manage-members/automatic-confirmation.md)。特别是，在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略，并且所有成员（包括所有者和管理员）都必须遵守该策略。
+2. [联系我们](https://bitwarden.com/contact/)请求将**自动用户确认**策略添加到您的企业策略设置中。
+3. 前往**设置** → **策略**，然后启用现在已经可用的**自动用户确认**策略。
+4. 至少需要一位所有者、管理员或相关的自定义角色成员必须[激活自动确认设置](../manage-members/automatic-confirmation.md#for-each-administrator)。
