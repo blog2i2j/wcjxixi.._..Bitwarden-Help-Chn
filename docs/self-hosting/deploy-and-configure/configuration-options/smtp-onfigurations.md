@@ -4,10 +4,10 @@
 对应的[官方文档地址](https://bitwarden.com/help/smtp-configurations/)
 {% endhint %}
 
-本指南涵盖 Bitwarden 自托管服务器的 SMTP（简单邮件传输协议）设置和常见配置问题。SMTP 通过 `api`、`identity`、`admin` 和 `notifications` 容器进行处理。所有设置均在 `global.override.env` 中配置。
+本指南涵盖 Bitwarden 自托管服务器的 SMTP（简单邮件传输协议）设置和常见配置问题。SMTP 通过 `api`、`identity`、`admin` 和 `notifications` 容器协同处理。所有设置均在 `global.override.env` 中配置。
 
 {% hint style="info" %}
-在自托管部署中，SMTP 是必需的，因为它是发送[来自 Bitwarden 的电子邮件](../../../security/trusted-communications/emails-from-bitwarden-servers.md)和便于[系统管理员门户](../../system-administrator-portal.md)访问所必需的。
+自托管部署中必须配置 SMTP，因为它是发送[来自 Bitwarden 的电子邮件](../../../security/trusted-communications/emails-from-bitwarden-servers.md)和便于[系统管理员门户](../../system-administrator-portal.md)访问所必需的。
 {% endhint %}
 
 ## 配置位置 <a href="#configuration-location" id="configuration-location"></a>
@@ -51,7 +51,7 @@ globalSettings__mail__smtp__trustServer=true
 ```
 
 {% hint style="danger" %}
-仅在受控的开发环境中使用 `trustServer=true` 。对于生产系统，务必使用经过正确验证的证书，以防止中间人攻击。
+仅在受控的开发环境中使用 `trustServer=true` 。对于生产系统，请始终使用经过正确验证的证书，以防止中间人 (MitM) 攻击。
 {% endhint %}
 
 ### 验证服务器证书 <a href="#validate-a-server-certificate" id="validate-a-server-certificate"></a>

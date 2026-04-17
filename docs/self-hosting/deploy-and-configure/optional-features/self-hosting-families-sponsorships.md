@@ -1,16 +1,16 @@
-# 自托管家庭赞助
+# 自托管家庭版赞助
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/families-for-enterprise-self-hosted/)
 {% endhint %}
 
-[企业组织](../../../admin-console/organizations-overview.md#types-of-organizations)成员可获得**免费的家庭组织**赞助，适用于新的或现有的家庭组织，可直接从网页密码库兑换。&#x20;
+[企业版组织](../../../admin-console/organizations-overview.md#types-of-organizations)成员可获得**免费的家庭版组织**赞助，适用于新的或现有的家庭版组织，可直接从网页密码库兑换。&#x20;
 
 {% hint style="info" %}
-如果您想了解有关如何为非赞助自托管家庭组织更新许可证的信息，请参阅[此处](../../licensing-on-premise.md#update-organization-license)。
+如果您想了解有关如何为非赞助自托管家庭版组织更新许可证的信息，请参阅[此处](../../licensing-on-premise.md#update-organization-license)。
 {% endhint %}
 
-您需要启用自动计费同步，以允许您的自托管企业组织为云端家庭组织发放赞助。要设置自动同步：
+您需要启用自动计费同步，以允许您的自托管企业组织为云端家庭版组织发放赞助。要设置自动同步：
 
 ## 第 1 步：启用云端通信 <a href="#step-1-enable-cloud-communication" id="step-1-enable-cloud-communication"></a>
 
@@ -59,7 +59,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 3、向下滚动到「自托管」部分，选择**设置计费同步**按钮。
 
-4、输入主密码然后选择**生成令牌**。
+4、输入主密码，然后选择**生成令牌**。
 
 5、复制生成的令牌。
 
@@ -77,7 +77,7 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 3、选择**管理计费同步**按钮。
 
-4、粘贴您生成的**计费同步令牌**然后选择**保存**。
+4、粘贴您生成的**计费同步令牌**，然后选择**保存**。
 
 {% hint style="info" %}
 触发第一次同步后，[企业版家庭](self-hosting-families-sponsorships.md)将每天同步一次。在您触发第一次同步之前，本部分中的**上次同步**字段将报告为**从不**。
@@ -89,11 +89,11 @@ globalSettings__pushRelayBaseUri=https://push.bitwarden.eu
 
 完成设置后请触发同步。计费同步将**每天**进行一次，但您也可以随时手动触发同步。要触发同步：
 
-1. 打开自托管[系统管理员门户](../../system-administrator-portal.md)，导航到**组织**然后选择您的企业组织。
+1. 打开自托管[系统管理员门户](../../system-administrator-portal.md)，导航到**组织**，然后选择您的企业版组织。
 2. 找到「连接」部分然后选择**手动同步**按钮。
 
 {% hint style="info" %}
 如果您收到一条 `version not supported`（版本不支持）的错误消息，请更新您的服务器并尝试再次上传您的许可证文件。要更新您的服务器，请备份 `bwdata` 目录，然后按照[这些说明](../../update-a-server.md)进行操作。
 {% endhint %}
 
-在两次同步之间，兑换或更改赞助后，用户可能会看到一条 `Awaiting Sync`（等待同步）状态。这表示您的自托管 Bitwarden 服务器正在等待与 Bitwarden 云进行同步，然后赞助才能完全兑换或完全更改。
+在两次同步之间，兑换或更改赞助后，用户可能会看到一条 `Awaiting Sync`（等待同步）状态。这表示您的自托管 Bitwarden 服务器正在等待与 Bitwarden 云端进行同步，然后赞助才能完全兑换或完全更改。

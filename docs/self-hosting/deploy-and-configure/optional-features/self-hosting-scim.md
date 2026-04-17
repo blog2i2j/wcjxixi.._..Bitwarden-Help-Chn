@@ -10,7 +10,7 @@
 
 要在您的自托管 Bitwarden 组织中使用 [SCIM](../../../admin-console/manage-members/scim/about-scim.md) 自动配置和取消配置成员和群组，您需要在 `config.yml` 文件中开启一个标志。要为您的 Bitwarden 服务器启用 SCIM：
 
-1、至少保存一个 `.bwdata/mssql` 的[备份](../../backup-server-data.md)。一旦 SCIM 投入使用，建议您拥有访问备份映像的权限以防出现问题。
+1、至少保存一个 `.bwdata/mssql` 的[备份](../../backup-server-data.md)。一旦 SCIM 投入使用，建议您拥有对备份映像的访问权限以防出现问题。
 
 {% hint style="info" %}
 如果您使用的是[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，请以适合您的实施的任何方式备份您的数据库。
