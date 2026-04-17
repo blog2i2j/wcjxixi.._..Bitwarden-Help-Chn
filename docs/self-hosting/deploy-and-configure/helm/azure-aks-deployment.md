@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/azure-aks-deployment/)
 {% endhint %}
 
-本文将指导您使用 Azure 和 AKS 的特定功能来修改您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
+本文深入探讨了如何根据 Azure 和 AKS 的具体特性来调整您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
 
 ## 要求 <a href="#requirements" id="requirements"></a>
 
@@ -12,34 +12,34 @@
 
 * 已安装 [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)。
 * 已安装 [Helm 3](https://helm.sh/docs/intro/install/)。
-* 您拥有 SSL 证书和密钥，或者可以通过证书提供商创建 SSL 证书和密钥。
-* 您拥有 SMTP 服务器或可以访问云 SMTP 提供商。
+* 您拥有 SSL 证书和密钥，或者可以通过证书提供程序创建 SSL 证书和密钥。
+* 您拥有 SMTP 服务器或可以访问云端 SMTP 提供程序。
 * 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
-* 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
+* 您已从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取了安装 ID 和密钥。
 
 ### 无根模式要求 <a href="#rootless-requirements" id="rootless-requirements"></a>
 
 Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
 
 * 部署[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，而不是 Helm 图表中默认包含的 SQL 容器。
-* 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配高级权限。
+* 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[Pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配升的权限。
 
 {% hint style="info" %}
-虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。
+虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但容器启动后会在执行应用程序代码前逐步降级为非 root 用户。
 {% endhint %}
 
 ## 入口控制器 <a href="#ingress-controllers" id="ingress-controllers"></a>
 
 本部分介绍了可在 Azure AKS 部署中使用的入口控制器的 2 个选项：
 
-* 使用 **Azure nginx** 入口控制器可选择与 Azure DNS 集成以进行区域管理，并与 Azure Key Vault 集成以进行证书颁发。
-* 使用 **Azure 应用程序网关**入口控制器 (AGIC) 在应用程序负载均衡器后面部署 Bitwarden。
+* 使用 **Azure nginx** 入口控制器，可选择与 Azure DNS 集成以进行区域管理，并与 Azure Key Vault 集成以进行证书颁发。
+* 使用 **Azure 应用程序网关**入口控制器 (AGIC)，在应用程序负载均衡器后面部署 Bitwarden。
 
 ### Azure nginx <a href="#azure-nginx" id="azure-nginx"></a>
 
-Azure 提供了一个 nginx 入口控制器选项，该选项支持应用程序路由插件，并且可以选择与 Azure DNS 集成以进行区域管理，以及与 Azure Key Vault 集成以进行证书颁发。如果您使用此选项：
+Azure 提供了一个 nginx 入口控制器选项，该选项支持应用程序路由附加组件，并且可以选择与 Azure DNS 集成以进行区域管理，以及与 Azure Key Vault 集成以进行证书颁发。如果您使用此选项：
 
-1、[创建一个「托管」 nginx 入口控制器](https://learn.microsoft.com/zh-cn/azure/aks/app-routing#create-the-ingress-object)。
+1、[创建一个「托管」的 nginx 入口控制器](https://learn.microsoft.com/zh-cn/azure/aks/app-routing#create-the-ingress-object)。
 
 2、在 `my-values.yaml` 文件中，将 `generic.ingress.className:` 设置为 `webapprouting.kubernetes.azure.com`。
 
@@ -50,15 +50,15 @@ nginx.ingress.kubernetes.io/use-regex: "true"
 nginx.ingress.kubernetes.io/rewrite-target: /$1
 ```
 
-完成后，您可以使用命令 `kubectl get ingress -n bitwarden` 获取分配给 Azure nginx 入口控制器的 IP 地址。部署后可能需要几分钟时间才能填充您的 IP 地址。
+完成后，您可以使用命令 `kubectl get ingress -n bitwarden` 获取分配给 Azure nginx 入口控制器的 IP 地址。部署后可能需要几分钟时间，您的 IP 地址才会显示。
 
 ### Azure 应用程序网关 <a href="#azure-application-gateway" id="azure-application-gateway"></a>
 
-Azure 客户可能更倾向于使用 Azure 应用程序网关作为他们 AKS 集群的入口控制器。
+然而，Azure 客户可能更倾向于使用 Azure 应用程序网关作为他们 AKS 集群的入口控制器，以便将 Bitwarden 部署在应用程序负载均衡器之后。
 
-#### 安装图表前 <a href="#before-installing-the-chart" id="before-installing-the-chart"></a>
+#### 安装图表之前 <a href="#before-installing-the-chart" id="before-installing-the-chart"></a>
 
-如果您喜欢这个选项，在[安装图表](self-host-with-helm.md#install-the-chart)**之前**，您必须：
+如果您倾向于使用此选项，在[安装图表](self-host-with-helm.md#install-the-chart)**之前**，您必须：
 
 1、[为您的群集启用 Azure 应用程序网关入口控制器](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ingress-controller-add-on-existing)。
 
@@ -118,17 +118,17 @@ general:
         pathType: ImplementationSpecific
 ```
 
-3、如果您要使用提供的 Let's Encrypt 示例来生成 TLS 证书，请将[此处链接](self-host-with-helm.md#example-certificate-setup)的脚本中的 `spec.acme.solvers.ingress.class:` 的值更新为 `"azure/application-gateway"` 。
+3、如果您打算使用提供的 Let's Encrypt 示例作为 TLS 证书，请将[此处链接](self-host-with-helm.md#example-certificate-setup)的脚本中的 `spec.acme.solvers.ingress.class:` 更新为 `"azure/application-gateway"` 。
 
-4、在 Azure 门户中为应用程序网关创建一个空的重写集：
+4、在 Azure 门户中，为应用程序网关创建一个空的重写集：
 
 1. 转到 Azure 门户中的**负载均衡** → **应用程序网关**，选择您的应用程序网关。
 2. 选择**重写**选项卡。
-3. 选择**重写集**按钮。
-4. 在此示例中，将名称设置为 `my-values.yaml` 中 `appgw.ingress.kubernetes.io/rewrite-rule-set:` 指定的值，即 `bitwarden-ingress` 。
+3. 选择 ✚**重写集**按钮。
+4. 将名称设置为 `my-values.yaml` 中 `appgw.ingress.kubernetes.io/rewrite-rule-set:` 指定的值，在此示例中为 `bitwarden-ingress` 。
 5. 选择**下一步**然后选择**创建**。
 
-#### 安装图表后 <a href="#after-installing-the-chart" id="after-installing-the-chart"></a>
+#### 安装图表之后 <a href="#after-installing-the-chart" id="after-installing-the-chart"></a>
 
 [安装图表](self-host-with-helm.md#install-the-chart)**之后**，您还需要为重写集创建规则：
 
@@ -136,14 +136,14 @@ general:
 
 2、选择所有以 `pr-bitwarden-self-host-ingress...` 开头的路由路径，取消选择任何不以该前缀开头的路径，然后选择**下一步**。
 
-3、选择**添加重写规则**按钮。您可以为重写规则指定任何名称和任何顺序。
+3、选择 ✚**添加重写规则**按钮。您可以为重写规则指定任意名称和任意顺序。
 
 4、添加以下条件：
 
 * **要检查的变量类型**：服务器变量
 * **服务器变量**：uri\_path
 * **区分大小写**：否
-* **操作符**：等于 (=)
+* **运算符**：等于 (=)
 * **Pattern to match**：`^(\/(?!admin)(?!identity)(?!sso)[^\/]*)\/(.*)`
 
 5、添加以下操作：
@@ -295,7 +295,7 @@ EOF
 3、使用下列命令在密钥库中设置所需的机密值：
 
 {% hint style="danger" %}
-此示例将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
+此示例会将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
 {% endhint %}
 
 ```shellscript

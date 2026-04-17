@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/aws-eks-deployment/)
 {% endhint %}
 
-本文探讨了如何根据特定于 AWS 和弹性 Kubernetes 服务 (Elastic Kubernetes Service - EKS) 调整您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
+本文深入探讨了如何根据 AWS 和弹性 Kubernetes 服务 (EKS - Elastic Kubernetes Service) 的具体特性来调整您的 [Bitwarden 自托管 Helm Chart 部署](self-host-with-helm.md)。
 
 请注意，本文中记录的某些附加组件要求您的 EKS 集群至少已启动一个节点。
 
@@ -14,25 +14,25 @@
 
 * 已安装 [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)。
 * 已安装 [Helm 3](https://helm.sh/docs/intro/install/)。
-* 您拥有 SSL 证书和密钥，或者可以通过证书提供商创建 SSL 证书和密钥。
-* 您拥有 SMTP 服务器或可以访问云 SMTP 提供商。
+* 您拥有 SSL 证书和密钥，或者可以通过证书提供程序创建 SSL 证书和密钥。
+* 您拥有 SMTP 服务器或可以访问云端 SMTP 提供程序。
 * 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
-* 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
+* 您已从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取了安装 ID 和密钥。
 
 ### 无根模式要求 <a href="#rootless-requirements" id="rootless-requirements"></a>
 
 Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
 
 * 部署[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，而不是 Helm 图表中默认包含的 SQL 容器。
-* 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配高级权限。
+* 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[Pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配升的权限。
 
 {% hint style="info" %}
-虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。
+虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但容器启动后会在执行应用程序代码前逐步降级为非 root 用户。
 {% endhint %}
 
 ## 入口控制器 <a href="#ingress-controller" id="ingress-controller"></a>
 
-默认情况下， `my-values.yaml` 中定义了一个 nginx 控制器，并且需要一个 AWS 网络负载均衡器。目前不推荐使用 AWS 应用负载均衡器 (Application Load Balancer - ALB)，因为它们不支持路径重写和基于路径的路由。
+默认情况下， `my-values.yaml` 中定义了一个 nginx 控制器，并且需要一个 AWS 网络负载均衡器。目前不推荐使用 AWS 应用程序负载均衡器 (ALB - Application Load Balancer)，因为它们不支持路径重写和基于路径的路由。
 
 {% hint style="info" %}
 以下假设您在 AWS 证书管理器中保存有一个 SSL 证书，因为您将需要证书 Amazon 资源名称 (ARN)。
@@ -164,20 +164,20 @@ sharedStorageClassName: "shared-storage"
 
 ## 使用 AWS Secrets Manager <a href="#using-aws-secrets-manager" id="using-aws-secrets-manager"></a>
 
-部署需要使用 Kubernetes secrets 对象来设置敏感值。虽然可以使用 `kubectl create secret` 命令来设置 secrets，但 AWS 客户可能倾向于使用 AWS Secrets Manager 和适用于 Kubernetes Secrets Store CSI 驱动程序的 AWS Secrets 和 Configuration Provider (ACSP)。
+部署需要使用 Kubernetes 机密对象来设置敏感值。虽然可以使用 `kubectl create secret` 命令来设置机密，但 AWS 客户可能倾向于使用 AWS Secrets Manager 和适用于 Kubernetes Secrets Store CSI 驱动程序的 AWS Secrets and Configuration Provider (ACSP)。
 
 您需要将以下机密存储在 AWS Secrets Manager 中。请注意，您可以更改此处使用的**密钥**，但如果您这样做，还必须对后续步骤进行更改：
 
 | 密钥                                                                                                                    | 值                                                                                                                                                                                                                                        |
 | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `installationid`                                                                                                      | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID  。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                           |
-| `installationkey`                                                                                                     | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥 。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                             |
+| `installationid`                                                                                                      | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID。更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                               |
+| `installationkey`                                                                                                     | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥。更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                                |
 | `smtpusername`                                                                                                        | 您的 SMTP 服务器的有效用户名。                                                                                                                                                                                                                       |
 | `smtppassword`                                                                                                        | 输入的 SMTP 服务器用户名的有效密码。                                                                                                                                                                                                                    |
 | `yubicoclientid`                                                                                                      | YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                      |
 | `yubicokey`                                                                                                           | YubiCloud 验证服务或自托管 Yubico 验证服务器的机密密钥。如果使用 YubiCloud，请[在此处](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥 。                                                                                                                        |
 | globalSettings\_\_hibpApiKey                                                                                          | 您的 HaveIBeenPwned (HIBP) API 密钥，可[在此处](https://haveibeenpwned.com/API/Key)获取。此密钥允许用户在创账户时运行[数据泄露报告](../../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)并检查其主密码是否存在泄露。 |
-| <p>如果您使用 Bitwarden SQL pod ：<code>sapassword</code></p><p></p><p>如果您使用自己的 SQL 服务器：<code>dbconnectionString</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL pod 还是外部 SQL 服务器。                                                                                                                                                                            |
+| <p>如果您使用 Bitwarden SQL pod ：<code>sapassword</code></p><p></p><p>如果您使用自己的 SQL 服务器：<code>dbconnectionString</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL Pod 还是外部 SQL 服务器。                                                                                                                                                                            |
 
 1、安全存储您的机密后，[安装 ACSP](https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating_csi_driver.html#integrating_csi_driver_install)。在 ACSP 安装过程中，您将：
 
@@ -285,18 +285,18 @@ EOF
 
 5、在您的 `my-values.yaml` 文件中，设置以下值：
 
-* `secrets.secretName` ：设置为 SecretProviderClass 中定义的 `secretName` （步骤 4）。
-* `secrets.secretProviderClass` ：设置为 SecretProviderClass 中定义的 `metedata.name` （步骤 4）。
-* `component.admin.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.api.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.attachments.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.events.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.icons.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.identity.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.notifications.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.scim.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.sso.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `component.web.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `database.podServiceAccount` ：设置为为您的服务账户定义的名称（步骤 3）。
-* `serviceAccount.name` ：设置为为您的服务账户定义的名称（步骤 3）。
+* `secrets.secretName` ：设置为 SecretProviderClass 中定义的 `secretName`（**步骤 4**）。
+* `secrets.secretProviderClass` ：设置为 SecretProviderClass 中定义的 `metedata.name`（**步骤 4**）。
+* `component.admin.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.api.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.attachments.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.events.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.icons.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.identity.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.notifications.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.scim.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.sso.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `component.web.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `database.podServiceAccount` ：设置为为您的服务账户定义的名称（**步骤 3**）。
+* `serviceAccount.name` ：设置为为您的服务账户定义的名称（**步骤 3**）。
 * `serviceAccount.deployRolesOnly` ：设置为 `true` 。

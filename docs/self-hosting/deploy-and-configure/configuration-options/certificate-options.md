@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/certificates/)
 {% endhint %}
 
-本文定义了 Bitwarden 自托管实例可用的证书选项。您可以在安装过程中选择证书选项。**设置或更改证书配置总是需要**您在启动 Bitwarden 之前运行 `./bitwarden.sh rebuild` 或 `.\bitwarden.ps1 -rebuild` 命令来应用对 config.yml 文件的更改。
+本文定义了 Bitwarden 自托管实例可用的证书选项。您可以在安装过程中选择证书选项。**设置或更改证书配置总是需要**您在启动 Bitwarden 之前运行 `./bitwarden.sh rebuild` 或 `.\bitwarden.ps1 -rebuild` 命令，以便将更改应用到 config.yml 文件。
 
 {% hint style="info" %}
 本文中的信息可能不适用于 Bitwarden Lite 自托管部署。
@@ -12,12 +12,12 @@
 
 ## 使用 Let’s Encrypt 生成证书 <a href="#generate-a-certificate-with-lets-encrypt" id="generate-a-certificate-with-lets-encrypt"></a>
 
-[Let's Encrypt](https://letsencrypt.org/how-it-works/) 是一个证书颁发机构（CA - Certificate Authority），可以为任何域名颁发免费的可信的 SSL 证书。Bitwarden 安装脚本提供了使用 Let's Encrypt 和 [Certbot](https://certbot.eff.org/) 为你的域名生成可信 SSL 证书的选项。
+[Let's Encrypt](https://letsencrypt.org/how-it-works/) 是一个证书颁发机构 (CA - Certificate Authority)，可以为任何域名颁发免费的可信任的 SSL 证书。Bitwarden 安装脚本提供了使用 Let's Encrypt 和 [Certbot](https://certbot.eff.org/) 为您的域名生成可信任 SSL 证书的选项。
 
-每次重新启动 Bitwarden 时，都会进行证书更新检查。使用 Let's Encyrpt 会要求你输入一个电子邮箱地址来获取证书到期提醒。
+每次重新启动 Bitwarden 时，都会进行证书续期检查。使用 Let's Encyrpt 将要求您输入一个电子邮箱地址来获取证书的到期提醒。
 
 {% hint style="danger" %}
-Let's Encrypt 是一个第三方证书颁发机构，它要求 80 和 443 端口可以从互联网访问，以便验证你的域名并颁发证书。如果您没有或不想设置互联网入站访问，您可以使用本文档中的其他证书选项。
+Let's Encrypt 是一个第三方证书颁发机构，它要求可以从互联网访问入站端口 80 和 443，以验证你的域名并颁发证书。如果您没有或不想设置互联网入站访问，可以使用本文档中的其他证书选项。
 {% endhint %}
 
 ### 手动更新 Let's Encrypt 证书 <a href="#manually-update-a-lets-encrypt-certificate" id="manually-update-a-lets-encrypt-certificate"></a>
@@ -71,13 +71,13 @@ Select 1, then follow instructions
 
 ## 使用现有的 SSL 证书 <a href="#use-an-existing-ssl-certificate" id="use-an-existing-ssl-certificate"></a>
 
-您也可以选择使用现有的 SSL 证书，这要求您已经拥有如下的文件：
+您也可以选择使用现有的 SSL 证书，这要求您准备以下文件：
 
 * 服务器证书 (`certificate.crt`)
 * 私钥 (`private.key`)
 * CA 证书 (`ca.crt`)
 
-您可能需要将主证书与中间 CA 证书捆绑在一起，以防止 SSL 信任错误。当使用根 CA 和中间 CA 证书时，所有证书都应该包含在服务器证书文件中。
+您可能需要将主证书与中间 CA 证书捆绑在一起，以防止 SSL 信任错误。使用 CA 证书时，所有证书都应包含在服务器证书文件中。文件中的第一个证书应为您的服务器证书，然后是任何中间 CA 证书，最后是根 CA。
 
 在默认配置下，将您的文件放在 `./bwdata/ssl/your.domain` 中。您可以通过编辑 `./bwdata/config.yml` 中的以下值来指定证书文件的不同位置：
 
@@ -88,7 +88,7 @@ ssl_ca_path: <path>
 ```
 
 {% hint style="info" %}
-`config.yml` 中定义的值代表了 NGINX 容器内的位置，主机上的目录被映射到 NGINX 容器内的目录。在默认配置下，映射如下：
+`config.yml` 中定义的值代表了 NGINX 容器内的位置，主机上的目录被映射到 NGINX 容器内的目录。在默认配置下，映射关系如下：
 
 `config.yml` 中的以下值：
 
@@ -115,7 +115,7 @@ ssl_ca_path: /etc/ssl/your.domain/ca.crt
 
 ### 使用 Diffie-Hellman 密钥交换 <a href="#using-diffie-hellman-key-exchange" id="using-diffie-hellman-key-exchange"></a>
 
-（_可选_）如果使用 Diffie Hellman 密钥交换生成临时参数：
+可选地，如果使用 Diffie Hellman 密钥交换生成临时参数：
 
 * 在同一目录中包含 `dhparam.pem` 文件。
 * 在 `config.yml` 中设置 `ssl_diffie_hellman_path:` 值。
@@ -142,7 +142,7 @@ openssl req -x509 -newkey rsa:4096 -sha256 -nodes -days 365 \
   -subj "/C=US/ST=New York/L=New York/O=Company Name/OU=Bitwarden/CN=bitwarden.example.com"
 ```
 
-您的自签名证书（`.crt`）和私钥（`private.key`）文件可以放置于 `./bwdata/ssl/self/your.domain` 目录并将其配置到 `./bwdata/config.yml` 中：
+您的自签名证书 (`.crt`) 和私钥 (`private.key`) 文件可以放置在 `./bwdata/ssl/self/your.domain` 目录中，并在 `./bwdata/config.yml` 中配置：
 
 ```yaml
 ssl_certificate_path: /etc/ssl/bitwarden.example.com/certificate.crt
@@ -157,7 +157,7 @@ ssl_key_path: /etc/ssl/bitwarden.example.com/private.key
 
 #### Linux
 
-要在 Linux 上信任自签名证书，请将证书添加到以下目录中：
+要在 Linux 上信任自签名证书，请将证书添加到以下目录：
 
 ```yaml
 /usr/local/share/ca-certificates/
@@ -171,9 +171,9 @@ sudo dpkg-reconfigure ca-certificates
 sudo update-ca-certificates
 ```
 
-对于 Bitwarden Linux 桌面 App，请使用基于 Chromium 的浏览器和 Directory Connector 桌面 App 访问网页密码库，您还需要完成[此 Linux 证书管理过程](https://chromium.googlesource.com/chromium/src/+/refs/heads/master/docs/linux/cert_management.md)。
+对于 Bitwarden Linux 桌面 App，请使用基于 Chromium 的浏览器和 Directory Connector 桌面 App 访问网页密码库，您还需要完成[此 Linux 证书管理流程](https://chromium.googlesource.com/chromium/src/+/refs/heads/master/docs/linux/cert_management.md)。
 
-对于 [Bitwarden CLI](../../../password-manager/developer-tools/cli/password-manager-cli.md) 和 [Directory Connector CLI](../../../admin-console/manage-members/directory-connector/directory-connector-cli.md)，您的自签名证书必须存储在本地文件中并由 `NODE_EXTRA_CA_CERTS=` 环境变量引用，例如：
+对于 [Bitwarden CLI](../../../password-manager/developer-tools/cli/password-manager-cli.md) 和 [Directory Connector CLI](../../../admin-console/manage-members/directory-connector/directory-connector-cli.md)，您的自签名证书必须存储在本地文件中，并由 `NODE_EXTRA_CA_CERTS=` 环境变量引用，例如：
 
 ```shell
 export NODE_EXTRA_CA_CERTS=~/.config/Bitwarden/certificate.crt
@@ -181,10 +181,10 @@ export NODE_EXTRA_CA_CERTS=~/.config/Bitwarden/certificate.crt
 
 #### Android
 
-要信任 Android 设备上的自签名证书，请参阅 Google 文档：[添加和移除证书](https://support.google.com/pixelphone/answer/2844832?hl=zh-Hans)。
+要信任 Android 设备上的自签名证书，请参阅 Google的[添加和移除证书](https://support.google.com/pixelphone/answer/2844832?hl=zh-Hans)文档：
 
 {% hint style="info" %}
-如果您不是自托管并且在您的 Android 设备上遇到以下证书错误：
+如果您不是自托管，并且在您的 Android 设备上遇到以下证书错误：
 
 ```yaml
 Exception message: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.

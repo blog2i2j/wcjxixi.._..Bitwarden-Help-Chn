@@ -6,7 +6,7 @@
 
 本文将指导您使用 Helm 图表在不同的 Kubernetes 部署中安装和部署 Bitwarden。
 
-本文将描述在 Kubernetes 上托管 Bitwarden 的通用步骤。提供了特定于提供商的指南，可帮助您深入了解如何根据每个提供商的特定产品来更改部署：
+本文将介绍在 Kubernetes 上托管 Bitwarden 的通用步骤。提供了特定于提供商的指南，可帮助您深入了解如何根据每个提供商的特定产品来调整部署：
 
 * [Azure AKS 部署](azure-aks-deployment.md)
 * [OpenShift 部署](openshift-deployment.md)
@@ -19,19 +19,19 @@
 * 已安装 [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)。
 * 已安装 [Helm 3](https://helm.sh/docs/intro/install/)。
 * 您拥有 SSL 证书和密钥，或者可以通过证书提供程序创建 SSL 证书和密钥。
-* 您拥有 SMTP 服务器或可以访问云 SMTP 提供程序。
+* 您拥有 SMTP 服务器或可以访问云端 SMTP 提供程序。
 * 一个支持 ReadWriteMany 的[存储类](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)。
-* 您有一个从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取到的安装 ID 和密钥。
+* 您已从 [https://bitwarden.com/host](https://bitwarden.com/host) 获取了安装 ID 和密钥。
 
-### 无根模式要求&#xD; <a href="#rootless-requirements" id="rootless-requirements"></a>
+### 无根模式要求 <a href="#rootless-requirements" id="rootless-requirements"></a>
 
 Bitwarden 会在启动时检测您的环境是否限制了用户容器的运行身份，并在检测到限制时自动以无根模式启动部署。要成功以无根模式部署，需满足以下两个选项之一：
 
-*  部署[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，而不是 Helm 图表中默认包含的 SQL 容器。
-* 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配高级权限。
+* 部署[外部 MSSQL 数据库](../configuration-options/connect-to-an-external-mssql-database.md)，而不是 Helm 图表中默认包含的 SQL 容器。
+* 使用[服务账户](../configuration-options/kubernetes-service-accounts.md)、[Pod 安全上下文](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)或其他方法为包含的 SQL 容器分配升的权限。
 
 {% hint style="info" %}
-虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但在执行应用程序代码之前，容器启动将逐步降级至非 root 用户。
+虽然 Microsoft 要求 SQL 容器必须以 root 身份运行，但容器启动后会在执行应用程序代码前逐步降级为非 root 用户。
 {% endhint %}
 
 ## 准备图表 <a href="#prepare-the-chart" id="prepare-the-chart"></a>
@@ -72,7 +72,7 @@ helm show values bitwarden/self-host --devel > my-values.yaml
 | `general.ingress.paths:`                  | 如果您使用默认的 nginx 控制器，则提供了默认值，您可以根据需要进行自定义。                                                                                                                                                                       |
 | `general.ingress.cert.tls.name:`          | 您的 TLS 证书的名称。我们将通过[一个示例](self-host-with-helm.md#example-certificate-setup)进行演示，如果您已经有，请现在输入，或者稍后再回来修改。                                                                                                         |
 | `general.ingress.cert.tls.clusterIssuer:` | 您的 TLS 证书颁发者的名称。稍后我们将通过[一个示例](self-host-with-helm.md#example-certificate-setup)进行演示，如果您已经有，请现在输入，或者稍后再回来修改。                                                                                                    |
-| `general.email.replyToEmail:`             | 用于邀请的电子邮件地址，通常为 `no_reply@smtp_host`。                                                                                                                                                                          |
+| `general.email.replyToEmail:`             | 用于发送邀请的电子邮箱地址，通常为 `no_reply@smtp_host`。                                                                                                                                                                        |
 | `general.email.smtpHost:`                 | 您的 SMTP 服务器主机名或 IP 地址。                                                                                                                                                                                         |
 | `general.email.smtpPort:`                 | SMTP 服务器使用的 SMTP 端口。                                                                                                                                                                                           |
 | `general.email.smtpSsl:`                  | 您的 SMTP 服务器是否使用加密协议（`true` = SSL、`false` = TLS）。                                                                                                                                                               |
@@ -80,9 +80,9 @@ helm show values bitwarden/self-host --devel > my-values.yaml
 | `cloudRegion:`                            | 默认为 `US` 。如果您的组织是通过[欧盟云服务器](../../../security/server-geographies.md)启动的，请设置为 `EU` 。                                                                                                                            |
 | `sharedStorageClassName:`                 | 您需要提供的共享存储类的名称，并且必须支持 [ReadWriteMany](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)（[请参阅使用 Azure 文件存储的示例](azure-aks-deployment.md#creating-a-storage-class)），除非它是单节点集群。        |
 | `secrets.secretName:`                     | 您的 [Kubernetes 机密对象](https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#define-container-environment-variables-using-secret-data)的名称。您将在下一步创建此对象，因此现在确定一个名称，或者稍后再回来修改这个值。 |
-| `database.enabled:`                       | 是否使用图表中包含的 SQL pod。如果使用外部 SQL 服务器，则只需设置为 `false` 。                                                                                                                                                             |
-| `component.scim.enabled`                  | SCIM Pod 默认是禁用的。要启用 SCIM Pod，请设置值 `= true` 。                                                                                                                                                                   |
-| `component.volume.logs.enabled:`          | 虽然不是必需的，但我们建议出于故障排除的目的将其设置为 `true` 。                                                                                                                                                                           |
+| `database.enabled:`                       | 是否使用图表中包含的 SQL Pod。如果使用外部 SQL 服务器，则只需设置为 `false` 。                                                                                                                                                             |
+| `component.scim.enabled`                  | SCIM Pod 默认是禁用的。要启用 SCIM Pod，请将值设置为 `= true` 。                                                                                                                                                                 |
+| `component.volume.logs.enabled:`          | 虽然不是必需的，但出于故障排除目的，我们建议设置为 `true` 。                                                                                                                                                                             |
 
 ### 创建机密对象 <a href="#create-a-secret-object" id="create-a-secret-object"></a>
 
@@ -90,19 +90,19 @@ helm show values bitwarden/self-host --devel > my-values.yaml
 
 | 值                                                                                                                                         | 描述                                                                                                                                                                                                                                      |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `globalSettings__installation__id`                                                                                                        | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID  。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                          |
-| `globalSettings__installation__key`                                                                                                       | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥  。有关更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                           |
+| `globalSettings__installation__id`                                                                                                        | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装 ID。更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                              |
+| `globalSettings__installation__key`                                                                                                       | 从 [https://bitwarden.com/host](https://bitwarden.com/host/) 获取到的有效安装密钥。更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)                                               |
 | `globalSettings__mail__smtp__username`                                                                                                    | 您的 SMTP 服务器的有效用户名。                                                                                                                                                                                                                      |
 | `globalSettings__mail__smtp__password`                                                                                                    | 输入的 SMTP 服务器用户名的有效密码。                                                                                                                                                                                                                   |
 | `globalSettings__yubico__clientId`                                                                                                        | YubiCloud 验证服务或自托管 Yubico 验证服务器的客户端 ID。如果是 YubiCloud，请在[这里](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥。                                                                                                                       |
 | `globalSettings__yubico__key`                                                                                                             | YubiCloud 验证服务或自托管 Yubico 验证服务器的密钥。如果是 YubiCloud，请在[这里](https://upgrade.yubico.com/getapikey/)获取您的客户端 ID 和密钥。                                                                                                                           |
 | `globalSettings__hibpApiKey`                                                                                                              | 的 HaveIBeenPwned (HIBP) API 密钥，可[在此处](https://haveibeenpwned.com/API/Key)获取。此密钥允许用户在创账户时运行[数据泄露报告](../../../password-manager/your-vault/security-tools/vault-health-reports.md#data-breach-report-individual-vaults-only)并检查其主密码是否存在泄露。 |
-| <p>如果您使用的是 Bitwarden SQL pod，<code>SA_PASSWORD</code></p><p>如果您使用自己的 SQL 服务器，<code>globalSettings__sqlServer__connectionString</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL pod 还是外部 SQL 服务器。                                                                                                                                                                           |
+| <p>如果您使用的是 Bitwarden SQL pod，<code>SA_PASSWORD</code></p><p>如果您使用自己的 SQL 服务器，<code>globalSettings__sqlServer__connectionString</code></p> | 连接到 Bitwarden 实例的数据库的凭据。所需内容取决于您使用的是附带的 SQL Pod 还是外部 SQL 服务器。                                                                                                                                                                           |
 
-使用 `kubectl create secret` 命令设置这些值的示例将如下所示：
+使用 `kubectl create secret` 命令设置这些值的示例如下所示：
 
-{% hint style="warning" %}
-此示例将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
+{% hint style="danger" %}
+此示例会将命令记录到您的 shell 历史记录中。可以考虑使用其他方法来安全地设置机密。
 {% endhint %}
 
 ```bash
@@ -129,7 +129,7 @@ kubectl create secret generic custom-secret -n bitwarden \
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
 ```
 
-2、定义证书颁发者。在您的 DNS 记录指向您的集群之前，Bitwarden 建议在此示例中使用暂存配置。请务必将占位符 `email:` 替换为有效值：
+2、定义证书颁发者。在您的 DNS 记录指向您的集群之前，Bitwarden 建议在此示例中使用 **Staging** 配置。请务必将占位符 `email:` 替换为有效值：
 
 {% tabs %}
 {% tab title="Staging" %}
@@ -175,7 +175,7 @@ EOF
 {% endtab %}
 {% endtabs %}
 
-3、如果还没有的话，请确保在 `my-values.yaml` 中设置 `general.ingress.cert.tls.name:` 和 `general.ingress.cert.tls.clusterIssuer:` 的值。在这个例子中，您需要设置为：
+3、如果尚未设置，请确保在 `my-values.yaml` 中设置 `general.ingress.cert.tls.name:` 和 `general.ingress.cert.tls.clusterIssuer:` 的值。在这个例子中，您需要设置为：
 
 * `general.ingress.cert.tls.name: tls-secret`
 * `general.ingress.cert.tls.clusterIssuer: letsencrypt-staging`
@@ -204,4 +204,4 @@ helm upgrade bitwarden bitwarden/self-host --install --namespace bitwarden --val
 
 数据库备份和备份策略最终由实施者决定。备份可以在集群之外按照一定的时间间隔进行调度，也可以修改为在 Kubernetes 中创建 CronJob 对象进行调度。
 
-备份工作将为以前的备份创建带有时间戳的版本。当前备份简单地称为 `vault.bak` 。这些文件放在 MS SQL 备份持久卷中。还原任务将在同一持久卷中查找 `vault.bak` 。
+备份作业将为以前的备份创建带有时间戳的版本。当前备份简单地称为 `vault.bak` 。这些文件放在 MS SQL 备份持久卷中。恢复作业将在同一持久卷中查找 `vault.bak` 。

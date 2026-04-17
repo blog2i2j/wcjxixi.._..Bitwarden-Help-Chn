@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/add-rawmanifest-files/)
 {% endhint %}
 
-Bitwarden 自托管 Helm Chart 允许您在安装之前或安装之后包含其他 Kubernetes 清单文件。为此，请更新图表中的 `rawManifests` 部分。本文包含一些有关如何使用 rawManifests 的示例：
+Bitwarden 自托管 Helm Chart 允许您在安装之前或安装之后包含其他 Kubernetes 清单文件。为此，请更新图表中的 `rawManifests` 部分。本文包含一些关于如何使用 rawManifests 的示例：
 
 ## 验证服务器证书 <a href="#validate-server-certificate" id="validate-server-certificate"></a>
 
@@ -31,7 +31,7 @@ rawManifests:
 
 ## Traefik IngressRoute <a href="#traefik-ingressroute" id="traefik-ingressroute"></a>
 
-例如，要安装 Traefik 的 IngressRoute 作为 Kubernetes 的 Ingress 控制器的替代，请添加以下内容：
+例如，要安装 Traefik 的 IngressRoute 作为 Kubernetes Ingress 控制器的替代，请添加以下内容：
 
 {% hint style="info" %}
 在此示例中，您还需要在您的 `my-values.yaml` 文件中的 `general.ingress.enabled` 处禁用入口控制器。
