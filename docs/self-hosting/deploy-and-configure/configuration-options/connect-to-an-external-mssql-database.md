@@ -7,9 +7,9 @@
 默认情况下，Bitwarden 的自托管实例将使用作为[安装设置](../docker/linux-standard-deployment.md)的正常部分而创建的 Microsoft SQL Server (MSSQL) 数据库，但您也可以将 Bi​​twarden 配置为使用外部 MSSQL 数据库。
 
 {% hint style="info" %}
-Bitwarden **仅支持并推荐 SQL Server 2022**。了解 [Windows](https://learn.microsoft.com/zh-cn/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2022?view=sql-server-ver17) 和 [Linux](https://learn.microsoft.com/zh-cn/sql/linux/sql-server-linux-setup?view=sql-server-ver16#supported-platforms) 上 SQL Server 的系统要求。
+Bitwarden **仅支持并推荐使用 SQL Server 2022**。了解 [Windows](https://learn.microsoft.com/zh-cn/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2022?view=sql-server-ver17) 和 [Linux](https://learn.microsoft.com/zh-cn/sql/linux/sql-server-linux-setup?view=sql-server-ver16#supported-platforms) 上 SQL Server 的系统要求。
 
-目前，Bitwarden 不支持 SQL Server 2025，并且对 Server 2017 和 Server 2019 的主流支持结束。如果 Bitwarden 实现了特定 SQL Server 版本上不可用的功能，则此处以及给定版本的[发行记录](../../../release-notes.md)中将注明不再支持特定 SQL Server 版本。
+目前，Bitwarden 不支持 SQL Server 2025，并且对 Server 2017 和 Server 2019 的主流支持已经结束。如果 Bitwarden 实现了特定 SQL Server 版本上不可用的功能，将在此处及相应版本的[发行记录](../../../release-notes.md)中注明对该特定 SQL Server 版本支持的弃用。
 {% endhint %}
 
 ## 设置外部数据库 <a href="#setup-external-database" id="setup-external-database"></a>
@@ -43,10 +43,10 @@ Bitwarden **仅支持并推荐 SQL Server 2022**。了解 [Windows](https://lear
 
 3、在 `my-values.yaml` 配置文件中，设置值 `database.enabled: false` 以停止部署包含的 SQL pod。
 
-4、在用于部署的 Kubernetes Secrets 对象中，使用以下信息设置 `globalSettings__sqlServer__connectionString=` 值：
+4、在用于部署的 Kubernetes 机密对象中，使用以下信息设置 `globalSettings__sqlServer__connectionString=` 值：
 
 {% hint style="info" %}
-用于配置机密对象的方法可能取决于您的部署，例如 [AWS 部署](../helm/aws-eks-deployment.md)和 [Azure 部署](../helm/azure-aks-deployment.md)可能使用 CSI SecretProviderClass 来执行此操作。
+您用于配置机密对象的方法可能取决于您的部署，例如 [AWS 部署](../helm/aws-eks-deployment.md)和 [Azure 部署](../helm/azure-aks-deployment.md)可能使用 CSI SecretProviderClass 来执行此操作。
 {% endhint %}
 
 * `Data Source=tcp:<SERVERNAME>,1433`，其中 `<SERVERNAME>` 是您的 MSSQL 服务器的名称。

@@ -4,14 +4,14 @@
 对应的[官方文档地址](https://bitwarden.com/help/configure-push-relay/)
 {% endhint %}
 
-默认情况下，您的自托管 Bitwarden 服务器配置为与 Bitwarden 的推送中继服务（`https://push.bitwarden.com`）进行通信。您可以选择使用自己的推送中继服务来配置服务器，如果使用 [EU 云](../../../security/server-geographies.md)，可以连接到 EU 推送中继服务 (`https://push.bitwarden.eu`)，或完全禁用推送中继。
+默认情况下，您的自托管 Bitwarden 服务器配置为与 Bitwarden 的推送中继服务 (`https://push.bitwarden.com`) 进行通信。您可以选择使用自己的推送中继服务来配置服务器，如果您使用 [EU 云](../../../security/server-geographies.md)，则可以连接到 EU 推送中继服务 (`https://push.bitwarden.eu`)，或完全禁用推送中继。
 
 {% hint style="danger" %}
 禁用推送中继将阻止**移动 App** 接收推送通知，这可能会影响：
 
-* App [自动同步](../../../password-manager/your-vault/syncing-your-vault.md#automatic-sync)的能力。用户仍然可以[手动同步](../../../password-manager/your-vault/syncing-your-vault.md#manual-sync)。
+* App [自动同步](../../../password-manager/your-vault/syncing-your-vault.md#automatic-sync)的能力。但用户仍然可以[手动同步](../../../password-manager/your-vault/syncing-your-vault.md#manual-sync)。
 * App 自动注销用户的能力，这在轮换加密密钥或注销期间可能相关。
-* App 自动注册已被撤销或从组织中删除的用户的能力，这可能会导致对组织项目的访问持续时间比预期更长。
+* App 自动注册组织中被撤销或被移除的用户的能力，这可能会导致对组织项目的访问持续时间比预期更长。
 {% endhint %}
 
 对于每个使用 Bitwarden 推送中继服务的自托管服务器，Bitwarden 都会收集一条记录，其中包括最近一次连接到服务的时间戳和发起服务器的安装 ID。
@@ -35,5 +35,5 @@
 要为离线和手动服务器安装禁用推送中继：
 
 1. 打开 `./bwdata/env/global.override.env`。
-2. 添加一行 `globalSettings__pushRelayBaseUri=`（它的值应为 **blank**）。
+2. 添加一行 `globalSettings__pushRelayBaseUri=`（它的值应为**空**）。
 3. 重启 Bitwarden 以应用更改。

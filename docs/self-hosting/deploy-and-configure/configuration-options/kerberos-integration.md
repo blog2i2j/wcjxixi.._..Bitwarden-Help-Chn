@@ -4,17 +4,17 @@
 对应的[官方文档地址](https://bitwarden.com/help/kerberos-integration/)
 {% endhint %}
 
-Kerberos 集成身份验证允许 Bitwarden 用户在外部 MSSQL 数据库中使用集成的 AD 身份验证。
+Kerberos 集成身份验证允许 Bitwarden 用户使用外部 MSSQL 数据库的集成 AD 身份验证。
 
 {% hint style="info" %}
-本指南假定您已经导出了所需的 keytab 文件，该文件将用于 Bitwarden 服务器上的域身份验证。
+本指南假定您已经导出了所需的 keytab 文件，该文件将用于在 Bitwarden 服务器上对域进行身份验证。
 {% endhint %}
 
 ## keytab 文件 <a href="#keytab-file" id="keytab-file"></a>
 
-Bitwarden 服务器使用导出的 `keytab` 文件来验证域名。
+导出的 `keytab` 文件用于在 Bitwarden 服务器上对域进行身份验证。
 
-1、从 Windows 域控制器中输入以下代码示例（根据需要可能会有所不同）：
+1、从 Windows 域控制器中，输入以下代码示例（可能因您的需求而异）：
 
 ```
 ktpass /princ bitwarden@<EXAMPLE.DOMAIN> /mapuser "bitwarden" /pass super_secure_password_here /out bitwarden.keytab /crypto all /ptype KRB5_NT_PRINCIPAL /mapop set
@@ -32,7 +32,7 @@ ktpass /princ bitwarden@<EXAMPLE.DOMAIN> /mapuser "bitwarden" /pass super_secure
 mkdir /opt/bitwarden/bwdata/kerberos
 ```
 
-2、将两个文件放入该目录：
+2、将以下两个文件放入该目录中
 
 1. 上一章节生成的 `keytab` 文件
 2. `krb5.conf` 文件（示例如下）
@@ -47,10 +47,10 @@ nano /opt/bitwarden/bwdata/kerberos/krb5.conf
 
 [这里](https://bitwarden.com/assets/6TdaNaNKfcxcmIc0PfBipR/74364f58e11b12f59e4aff49c3899db4/TEST/)是一个示例 TEST 文件。
 
-检查这些值是否与您自己的值一致，以及是否可以从 Bitwarden 服务器访问 `kdc` 和 `admin_server`。
+检查这些值是否与您自己的值一致，并且 Bitwarden 服务器能够访问 `kdc` 和 `admin_server`。
 
 {% hint style="info" %}
-在 `krb5.config` 文件中使用 `ticket_lifetime` 和 `renew_lifetime` 变量设置票据的有效期和续期值。如果票据有效期和票据续期都已过期，则无法重新验证票据。有关其他信息，请参阅 [Kerberos 文档](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/conf_files/krb5_conf.html)。
+在 `krb5.config` 文件中使用 `ticket_lifetime` 和 `renew_lifetime` 变量设置票据的生命周期和续期值。如果票据生命周期和票据续期都已过期，您将无法重新验证票据。其他信息，请参阅 [Kerberos 文档](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/conf_files/krb5_conf.html)。
 {% endhint %}
 
 ## 更新 Bitwarden <a href="#update-bitwarden" id="update-bitwarden"></a>
@@ -77,7 +77,7 @@ globalSettings__kerberosUser=bitwarden
 
 ### SQL 连接字符串 <a href="#sql-connection-string" id="sql-connection-string"></a>
 
-替换 SQL 连接字符串，指向外部数据库并使用集成身份验证。更改 SQL 服务器 `hostname` 和 `database` 名称：
+将 SQL 连接字符串替换为指向外部数据库并使用集成身份验证。更改您的 SQL 服务器 `hostname` 和 `database` 名称：
 
 ```systemd
 globalSettings__sqlServer__connectionString="Data Source=tcp:example-sql-server.example.domain,1433;Initial Catalog=vault;Persist Security Info=False;Integrated Security=true;Multiple Active Result Sets=False;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True"
@@ -85,7 +85,7 @@ globalSettings__sqlServer__connectionString="Data Source=tcp:example-sql-server.
 
 ### Docker 更新 <a href="#docker-updates" id="docker-updates"></a>
 
-完成前面的设置步骤后，主机操作系统上就应该存在此配置文件了。接下来，修改 Bitwarden 的 Docker Compose 配置，为相关容器添加额外的卷挂载。这将确保在更新和更改主 docker-compose 文件后，配置仍能保留。Compose 提供了一个 `override` 文件，可以将你的本地变更合并到标准的 Bitwarden 配置中。
+完成前面的设置步骤后，主机操作系统上就应该存在此配置文件了。接下来，修改 Bitwarden 的 Docker Compose 配置，为相关容器添加额外的卷挂载。这将确保在主 docker-compose 文件更新和更改后，配置仍能保留。Compose 提供了一个 `override` 文件，可以将您的本地变更合并到标准的 Bitwarden 配置中。
 
 1、创建 override 文件：
 
@@ -93,7 +93,7 @@ globalSettings__sqlServer__connectionString="Data Source=tcp:example-sql-server.
 nano /opt/bitwarden/bwdata/docker/docker-compose.override.yml
 ```
 
-2、标准配置包括以下内容：
+2、标准配置包含以下内容：
 
 ```yml
 services:
@@ -115,7 +115,7 @@ services:
 	
 ```
 
-3、如果使用 SCIM，还必须包括：
+3、如果使用 SCIM，还必须包含：
 
 ```yml
 	scim:
@@ -133,4 +133,4 @@ services:
 ./bitwarden restart
 ```
 
-`admin` 容器将填充新的外部 MSSQL 数据库。如果您在内置的 `mssql` 容器中存储了任何信息，则需要通过数据库备份和还原或导出/导入将其迁移到新的外部数据库。
+`admin` 容器将填充您的新的外部 MSSQL 数据库。如果您在内置的 `mssql` 容器中存储了任何信息，则需要通过数据库备份和还原或导出/导入方式，将其迁移到新的外部数据库。

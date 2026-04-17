@@ -166,7 +166,7 @@ telnet <smtp_server> 587
 
 ### 监控电子邮件日志 <a href="#monitor-email-logs" id="monitor-email-logs"></a>
 
-定期查看以下位置的电子邮件相关日志，以便及早发现问题：
+定期审查以下位置的电子邮件相关日志，以便及早发现问题：
 
 * `./bwdata/logs/admin/`
 * `./bwdata/logs/api/`
@@ -177,7 +177,7 @@ telnet <smtp_server> 587
 
 ## 其他配置选项 <a href="#additional-configuration-options" id="additional-configuration-options"></a>
 
-Bitwarden 支持额外的 [SMTP 环境](environment-variables.md#optional-variables)变量。请查看这些选项，根据您组织的需求自定义电子邮件行为。
+Bitwarden 支持额外的 [SMTP 环境](environment-variables.md#optional-variables)变量。请根据您组织的需求审查这些选项以自定义电子邮件行为。
 
 ## 摘要检查清单 <a href="#summary-checklist" id="summary-checklist"></a>
 
@@ -188,8 +188,8 @@ Bitwarden 支持额外的 [SMTP 环境](environment-variables.md#optional-variab
 * 已配置强大且唯一的 SMTP 凭据
 * 已设置专门的回复地址
 * 通过 API 容器测试了连接性
-* 所有容器均显示健康
-* 通过服务器完全重启应用了配置。
+* 所有容器均显示为健康
+* 通过服务器完全重启应用了配置
 * 已实施日志监控
 * 正在使用有效的 SSL/TLS 证书（生产环境）
-* 文档已更新为包含配置详细信息
+* 文档已使用配置详细信息更新
