@@ -349,7 +349,7 @@
       * [证书选项](docs/self-hosting/deploy-and-configure/configuration-options/certificate-options.md)
       * [数据库选项](docs/self-hosting/deploy-and-configure/configuration-options/database-options.md)
       * [连接到外部 MSSQL 数据库](docs/self-hosting/deploy-and-configure/configuration-options/connect-to-an-external-mssql-database.md)
-      * [从默认迁移到外部 MSSQL](docs/self-hosting/deploy-and-configure/configuration-options/migrate-from-default-to-external-mssql.md)
+      * [迁移到外部 MSSQL](docs/self-hosting/deploy-and-configure/configuration-options/migrate-from-default-to-external-mssql.md)
       * [配置推送中继](docs/self-hosting/deploy-and-configure/configuration-options/configure-push-relay.md)
       * [Kerberos 集成](docs/self-hosting/deploy-and-configure/configuration-options/kerberos-integration.md)
       * [Kubernetes 服务账户](docs/self-hosting/deploy-and-configure/configuration-options/kubernetes-service-accounts.md)
