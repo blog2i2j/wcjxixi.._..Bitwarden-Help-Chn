@@ -24,7 +24,7 @@
 
 1、[**配置您的域名**](linux-standard-deployment.md#configure-your-domain)。设置您的域名 DNS 记录指向您的主机，并打开主机上的 80 和 443 端口。
 
-2、在您的主机上[**安装 Docker 和 Docker Compose**](linux-standard-deployment.md#install-docker-and-docker-compose)。
+2、在您的机器上[**安装 Docker 和 Docker Compose**](linux-standard-deployment.md#install-docker-and-docker-compose)。
 
 3、[**创建 Bitwarden 用户和目录**](linux-standard-deployment.md#create-bitwarden-local-user-and-directory)以完成安装。
 

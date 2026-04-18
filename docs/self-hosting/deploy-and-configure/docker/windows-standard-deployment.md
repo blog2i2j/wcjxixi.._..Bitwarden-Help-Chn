@@ -70,15 +70,15 @@
 
 Bitwarden 将使用一系列 [Docker 容器](https://docs.docker.com/get-started/)部署并运行在您的机器上。Bitwarden 可以使用任何 Docker 版本或计划运行。评估哪个版本最适合您的安装。
 
-容器部署使用 Docker Compose 进行编排。Docker Compose 可通过 Docker Desktop 安装，其包含 Engine 和 Compose。[安装 Docker Desktop 以获取 Engine 和 Compose](https://docs.docker.com/desktop/install/windows-install/)。
+容器部署使用 [Docker Compose](https://docs.docker.com/compose/) 进行编排。Docker Compose 可通过 Docker Desktop 安装，其包含 Engine 和 Compose。[安装 Docker Desktop 以获取 Engine 和 Compose](https://docs.docker.com/desktop/install/windows-install/)。
 
 在此次设置过程中，您必须**取消选择** **Use WSL2 instead of Hyper-V (recommended)** 选项。安装后，打开 Docker Desktop 然后选择 **⚙️Settings**，然后选择 **Resources**。Bitwarden 至少需要分配 4GB RAM 给 Docker Desktop。此设置将 Windows 的 RAM 专用于 Docker。因此，设置此值过高可能会导致 Windows 不稳定。
 
 ### 创建 Bitwarden 本地用户和目录 <a href="#create-bitwarden-local-user-and-directory" id="create-bitwarden-local-user-and-directory"></a>
 
-打开 PowerShell 并通过运行以下命令创建一个 Bitwarden 本地用户：
+打开 PowerShell，然后通过运行以下命令创建一个 Bitwarden 本地用户：
 
-```powershell
+```bash
 PS C:\> $Password = Read-Host -AsSecureString
 ```
 
@@ -90,24 +90,30 @@ New-LocalUser "Bitwarden" -Password $Password -Description "Bitwarden Local Admi
 
 作为新创建的用户，在 `C:\` 下创建一个 Bitwarden 文件夹：
 
-```powershell
+```bash
 PS C:\> mkdir Bitwarden
 ```
 
-在 Docker Desktop中，导航到 **Settings** → **Resources** → **File Sharing** 并将创建的目录（`C:\Bitwarden`）添加到 Resources 列表中。选择 **Apply & Restart** 以使您的更改生效。
+接下来，将该用户添加至本地管理员组：
+
+```bash
+net localgroup Administrators Bitwarden /add
+```
+
+在 Docker Desktop中，导航到 **Settings** → **Resources** → **File Sharing**，将创建的目录（`C:\Bitwarden`）添加到资源列表中。选择 **Apply & Restart** 以使您的更改生效。
 
 {% hint style="info" %}
 Bitwarden 用户必须添加到 docker-users 组中。请参阅 [Docker 文档](https://docs.docker.com/desktop/install/windows-install/#install-docker-desktop-on-windows)了解如何操作。
 {% endhint %}
 
-我们建议在完成本文件中所有后续步骤之前，以新创建的用户登录。
+我们建议在完成本文件中所有后续步骤之前，以新创建的用户身份登录。
 
 ### 安装 Bitwarden <a href="#install-bitwarden" id="install-bitwarden"></a>
 
 Bitwarden 提供了一个 Powershell Cmdlet 文件 (`.ps1`)，以便在 Windows 机器上轻松安装。完成以下步骤以使用 Cmdlet 安装 Bitwarden：
 
 {% hint style="success" %}
-如果您[已经创建 Bitwarden 用户和目录](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)，请以 `Bitwarden` 用户身份完成以下操作。
+您[已经创建 Bitwarden 用户和目录](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)后，请以 `Bitwarden` 用户身份完成以下操作。
 {% endhint %}
 
 1、导航到[已创建](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)的目录：
@@ -133,24 +139,24 @@ Invoke-RestMethod -OutFile bitwarden.ps1 -Uri "https://func.bitwarden.com/api/dl
 * **Enter the domain name for your Bitwarden instance（输入您的 Bitwarden 实例的域名）:**\
   通常，此值应该是已配置的 DNS 记录。
 *   **Do you want to use Let's Encrypt to generate a free SSL certificate? (y/n)（您想使用 Let's Encrypt 生成免费的 SSL 证书吗？）:**\
-    指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。你会被提示输入一个电子邮件地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
+    指定 `y` 来使用 Let's Encrypt 生成一个可信的 SSL 证书。你会被提示输入一个电子邮箱地址，以便从 Let's Encrypt 获取到期提醒。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
 
     或者，指定 `n` 并使用 **Do you have a SSL certificate to use?** 选项。
 * **Enter your installation id（输入您的安装 ID）:**\
-  通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装 ID。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+  通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮箱地址来获取安装 ID。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 *   **Enter your installation key（输入您的安装密钥）:**
 
-    通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮件地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
+    通过 [https://bitwarden.com/host](https://bitwarden.com/host) 使用一个有效的电子邮箱地址来获取安装密钥。更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)
 * **Enter your region (US/EU)（输入您的区域 (US/EU)）：**\
   输入 US 或 EU，具体取决于您将用于许可付费功能的[云端服务器](../../../security/server-geographies.md)，仅适用于您将自托管账户或组织连接到付费订阅的情况。
 *   **Do you have a SSL certificate to use? (y/n)（您拥有自己的 SSL 证书吗？）:**\
-    如果你已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `C:\Bitwarden\bwdata\ssl\<your_domain>` 目录下。你会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
+    如果您已经有自己的 SSL 证书，请指定 `y`，并将必要的文件放在 `C:\Bitwarden\bwdata\ssl\<your_domain>` 目录下。您会被问到是否使用受信任的 SSL 证书（y/n）。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
 
     或者，指定 `n` 并使用 **self-signed SSL certificate?** 选项，这只是为了测试目的而推荐的。
 *   **Do you want to generate a self-signed SSL certificate? (y/n)（您想生成一个自签名证书吗？）:**\
-    指定 `y` 让 Bitwarden 为你生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
+    指定 `y` 让 Bitwarden 为您生成一个自签名证书。这个选项只推荐用于测试。更多信息，请参阅[证书选项](../configuration-options/certificate-options.md)。
 
-    如果你指定 `n`，你的实例将不使用 SSL 证书，你需要使用前置 HTTPS 代理来安装，否则 Bitwarden 应用程序将无法正常运行。
+    如果您指定 `n`，您的实例将不使用 SSL 证书，您需要使用前置 HTTPS 代理来安装，否则 Bitwarden 应用程序将无法正常运行。
 
 ### 安装后配置 <a href="#post-install-configuration" id="post-install-configuration"></a>
 
@@ -212,9 +218,9 @@ docker ps
 显示健康容器的列表
 {% endembed %}
 
-恭喜你！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
+恭喜！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 
-现在，您可以注册一个新账户并登录了。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
+您现在可以注册新账户并登录。您需要配置 `smtp` 环境变量（请参阅[环境变量](linux-standard-deployment.md#environment-variables)）以验证新账户的电子邮箱地址。
 
 {% hint style="success" %}
 部署完成后，我们建议定期[备份您的服务器](../../backup-server-data.md)并[检查系统更新](../../update-a-server.md)。
@@ -223,7 +229,7 @@ docker ps
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
 * 如果您打算自托管一个 Bitwarden 组织，请参阅[自托管组织](../../plan-for-deployment/self-host-an-organization.md)以开始。
-* 如需了解更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
+* 更多信息，请参阅[自托管 FAQ](../../hosting-faqs.md)。
 
 ## 在启动时启动 Docker <a href="#start-docker-on-boot" id="start-docker-on-boot"></a>
 
