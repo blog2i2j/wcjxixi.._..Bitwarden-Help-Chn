@@ -11,7 +11,7 @@
 {% hint style="danger" %}
 **手动安装仅适合高级用户使用。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
 
-手动安装缺乏自动更新 Bitwarden 安装所需的某些依赖项的能力。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责修改所需的环境变量，修改 nginx 的 `default.conf`，修改 `docker-compose.yml` 等等。
+手动安装无法自动更新 Bitwarden 安装的某些依赖项。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责处理所需环境变量的更改、nginx `default.conf` 的更改、`docker-compose.yml` 的更改等等。
 
 我们会尽量在 [GitHub 上的发行说明](https://github.com/bitwarden/server/releases)中强调这些。您也可以在 GitHub 上监控 Bitwarden 安装脚本所使用的[依赖模板](https://github.com/bitwarden/server/tree/master/util/Setup/Templates)的更改。
 {% endhint %}
@@ -20,13 +20,13 @@
 
 <table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
-<mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。[为 Engine 和 Compose 安装 Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)。
+<mark style="color:red;">**ª**</mark> - Docker Compose 可通过 Docker Desktop 安装，其包含 Engine 和 Compose。[为 Engine 和 Compose 安装 Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)。
 
 在此设置过程中，您必须**取消选择** **Use WSL2 instead of Hyper-V (recommended)** 选项。
 
 另外，请确保满足以下要求：
 
-* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub-US.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
+* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub-US.zip` 或 `docker-stub-EU.zip` 文件，然后已将该文件传输到您的服务器。
 * 离线 SMTP 服务器已在您的环境中设置并处于活动状态。
 * （**可选**）OpenSSL Windows 二进制文件已安装并可以在您的服务器上使用。如果您愿意，可以使用自签名证书代替 OpenSSL。
 
