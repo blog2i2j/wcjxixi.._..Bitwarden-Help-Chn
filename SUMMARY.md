@@ -330,7 +330,7 @@
     * [自托管组织](docs/self-hosting/plan-for-deployment/self-host-an-organization.md)
     * [迁移到新服务器](docs/self-hosting/plan-for-deployment/migration.md)
   * [部署 & 配置](docs/self-hosting/deploy-and-configure/README.md)
-    * [=使用 Docker 部署](docs/self-hosting/deploy-and-configure/docker/README.md)
+    * [使用 Docker 部署](docs/self-hosting/deploy-and-configure/docker/README.md)
       * [Linux 标准部署](docs/self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)
       * [Linux 手动部署](docs/self-hosting/deploy-and-configure/docker/linux-standard-deployment-1.md)
       * [Linux 离线部署](docs/self-hosting/deploy-and-configure/docker/linux-offline-deployment.md)

@@ -10,7 +10,7 @@
 
 <table><thead><tr><th></th><th width="249.33333333333331">最低</th><th>推荐</th></tr></thead><tbody><tr><td>处理器</td><td>x64, 1.4GHz</td><td>x64, 2GHz 双核</td></tr><tr><td>内存</td><td>2 GB RAM</td><td>4 GB RAM</td></tr><tr><td>存储</td><td>12 GB</td><td>25 GB</td></tr><tr><td>Docker 版本</td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td><td>Engine 26+ 以及 Compose<mark style="color:red;"><strong>ª</strong></mark></td></tr></tbody></table>
 
-<mark style="color:red;">**ª**</mark> - 下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
+<mark style="color:red;">**ª**</mark> - 当您下载 Docker Engine 时，Docker Compose 会作为插件自动安装。
 
 标准自托管服务器部署默认附带 **MSSQL Express** 镜像，但您可以选择使用[外部数据库](../configuration-options/connect-to-an-external-mssql-database.md)。默认数据库的[最大关系数据库大小](https://learn.microsoft.com/zh-cn/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17#scale-limits)为 10GB，不需要额外的许可。
 

@@ -70,7 +70,7 @@
 
 Bitwarden 将使用一系列 [Docker 容器](https://docs.docker.com/get-started/)部署并运行在您的机器上。Bitwarden 可以使用任何 Docker 版本或计划运行。评估哪个版本最适合您的安装。
 
-容器部署使用 Docker Compose 进行编排。Docker Compose 可以通过 Docker Desktop 安装，其中包含 Engine 和 Compose。
+容器部署使用 Docker Compose 进行编排。Docker Compose 可通过 Docker Desktop 安装，其包含 Engine 和 Compose。[安装 Docker Desktop 以获取 Engine 和 Compose](https://docs.docker.com/desktop/install/windows-install/)。
 
 在此次设置过程中，您必须**取消选择** **Use WSL2 instead of Hyper-V (recommended)** 选项。安装后，打开 Docker Desktop 然后选择 **⚙️Settings**，然后选择 **Resources**。Bitwarden 至少需要分配 4GB RAM 给 Docker Desktop。此设置将 Windows 的 RAM 专用于 Docker。因此，设置此值过高可能会导致 Windows 不稳定。
 
