@@ -26,22 +26,22 @@
 
 以下是本文中[安装步骤](windows-standard-deployment.md#installation-procedure)的摘要。本节中的链接将跳转至详细的**安装步骤**部分：
 
-1、[**配置您的域名**](windows-standard-deployment.md#configure-your-domain)。设置你的域名 DNS 记录指向你的主机，并打开主机上的 80 和 443 端口。
+1、[**配置您的域名**](windows-standard-deployment.md#configure-your-domain)。设置您的域名 DNS 记录指向你的主机，并打开主机上的 80 和 443 端口。
 
 2、在您的机器上[**安装和设置桌面版 Docker**](windows-standard-deployment.md#setup-docker-desktop)。
 
-3、[**创建 Bitwarden 用户和目录**](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)。
+3、[**创建 Bitwarden 用户和目录**](windows-standard-deployment.md#create-bitwarden-local-user-and-directory)以完成安装。
 
-4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和密钥用于安装过程。
+4、从 [**https://bitwarden.com/host**](https://bitwarden.com/host) 获取安装 ID 和安装密钥用于安装过程。
 
-更多详细信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
+更多信息，请参阅[我的安装 ID 和安装密钥是用来干什么的？](../../hosting-faqs.md#q-what-are-my-installation-id-and-installation-key-used-for)。
 
 5、在您机器上[**安装 Bitwarden**](windows-standard-deployment.md#install-bitwarden)。
 
 6、在 `./bwdata/env/global.override.env` 中调整设置以[**配置您的环境**](windows-standard-deployment.md#configure-your-environment)。
 
 {% hint style="success" %}
-至少要配置 `globalSettings__mail__smtp...` 变量以设置用于邀请和验证用户的电子邮件服务器。
+至少要配置 `globalSettings__mail__smtp...` 变量以设置用于邀请和验证用户的电子邮箱服务器。
 {% endhint %}
 
 7、[**启动您的实例**](windows-standard-deployment.md#start-bitwarden)。
@@ -58,7 +58,7 @@
 
 ### 配置您的域名 <a href="#configure-your-domain" id="configure-your-domain"></a>
 
-默认情况下，Bitwarden 通过本地主机上的 80 (`http`) 和 443 (`https`) 端口提供服务。您应该打开这些端口，以便可以从网络内部和/或外部访问 Bitwarden。如果你愿意，也可以在安装过程中选择使用其他端口。
+默认情况下，Bitwarden 通过本地主机上的 80 (`http`) 和 443 (`https`) 端口提供服务。您应该打开这些端口，以便可以从网络内部和/或网络外部访问 Bitwarden。您也可以在安装过程中选择使用其他端口。
 
 {% hint style="success" %}
 **如果您使用的是 Windows 防火墙**，Windows 版 Docker Desktop 不会自动在 Windows 防火墙中为自己添加例外。为 TCP 端口 80 和 443（或选择的替代端口）添加例外以防止出现一些错误。

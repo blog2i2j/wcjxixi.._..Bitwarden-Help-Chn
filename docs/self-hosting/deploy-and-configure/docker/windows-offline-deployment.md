@@ -9,7 +9,7 @@
 > **\[译者注]**：[网闸](https://zh.wikipedia.org/wiki/%E7%BD%91%E9%97%B8) (air-gapped) 网络，也叫物理隔离的网络。是指与外部网络（如互联网或其他外部系统）完全隔离的计算机网络。这种隔离通过物理或逻辑手段实现，确保网络无法与外部环境进行数据交换，从而增强安全性。
 
 {% hint style="danger" %}
-**手动安装仅适合高级用户使用。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
+**手动安装仅适用于高级用户。**&#x4EC5;当您非常熟悉 Docker 技术，并且希望对您的 Bitwarden 安装进行更多控制时才可以进行此操作。
 
 手动安装无法自动更新 Bitwarden 安装的某些依赖项。当您将 Bitwarden 从一个版本升级到下一个版本时，您将负责处理所需环境变量的更改、nginx `default.conf` 的更改、`docker-compose.yml` 的更改等等。
 
@@ -26,19 +26,9 @@
 
 另外，请确保满足以下要求：
 
-* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub-US.zip` 或 `docker-stub-EU.zip` 文件，然后已将该文件传输到您的服务器。
+* 使用具有 Internet 访问权限的机器，您已经从 Bitwarden 服务器存储库的[发行页面](https://github.com/bitwarden/server/releases)下载了最新的 `docker-stub-US.zip` 或 `docker-stub-EU.zip` 文件，并已将该文件传输到您的服务器。
 * 离线 SMTP 服务器已在您的环境中设置并处于活动状态。
 * （**可选**）OpenSSL Windows 二进制文件已安装并可以在您的服务器上使用。如果您愿意，可以使用自签名证书代替 OpenSSL。
-
-运行您的 Bitwarden 部署的服务器不需要允许出站流量访问网络外部的任何地址，但客户端应用程序必须配置为访问服务器的完全限定域名 (FQDN)，默认情况下使用端口 80 和 443。在安装过程中，您可以选择使用不同的端口，但无论选择哪个端口，都必须开放这些端口以供客户端访问。
-
-> **\[译者注]**：[FQDN](https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1)：即完全限定域名 (Fully Qualified Domain Name)，是互联网上用于标识特定主机或服务器的完整域名。它由主机名和域名组成，确保在全球范围内唯一地定位到一个网络资源。FQDN 从最具体的部分（主机名）到最一般的部分（顶级域名）依次排列，各部分之间用点（.）分隔。
->
-> 例如，一个典型的 FQDN `mail.example.com` ：
->
-> * `mail` 是主机名，指定了特定的服务器或服务。
-> * `example.com` 是域名，指定了该主机所属的组织或实体。
-> * `.com` 是顶级域名 (TLD)，表示这是一个商业实体。
 
 ### 嵌套虚拟化 <a href="#nested-virtualization" id="nested-virtualization"></a>
 
