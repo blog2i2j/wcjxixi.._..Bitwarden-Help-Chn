@@ -8,9 +8,7 @@
 
 1、在网页 App 中，打开集合然后选择 **⮟**&#x6309;钮以查看您的选项：
 
-{% embed url="https://bitwarden.com/assets/m7O6TwNqNzsOCJNp1caor/914bfbf2192a2cccbe6c3fb58c11a73d/2024-12-02_15-40-10.png?w=1040&fm=avif&q=80" %}
-管理集合
-{% endembed %}
+<div align="center" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/m7O6TwNqNzsOCJNp1caor/914bfbf2192a2cccbe6c3fb58c11a73d/2024-12-02_15-40-10.png?w=1040&#x26;fm=avif" alt="管理集合"><figcaption><p>管理集合</p></figcaption></figure></div>
 
 2、选择**访问权限**。
 
@@ -24,7 +22,7 @@
 {% hint style="success" %}
 **批量管理**：具有管理控制台访问权限的用户可以通过集合视图中的 **≡**&#x83DC;单选项批量管理集合的访问权限：
 
-<img src="https://bitwarden.com/assets/42edJRnvap8xiBpURskIVI/7ff8006517e9bce50dffa4372fcc2911/2024-12-02_15-41-46.png?w=1039&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/42edJRnvap8xiBpURskIVI/7ff8006517e9bce50dffa4372fcc2911/2024-12-02_15-41-46.png?w=1039&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}
 
 ## 为非管理的集合分配访问权限 <a href="#assign-access-to-un-managed-collections" id="assign-access-to-un-managed-collections"></a>
@@ -40,9 +38,7 @@
 
 当发生这种情况时，所有者和管理员将通过**集合**视图的**添加访问权限**选项卡暂时获得这些集合的管理能力：
 
-{% embed url="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&fm=avif&q=80" %}
-为未管理的集合添加访问权限
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>为未管理的集合添加访问权限</p></figcaption></figure></div>
 
 按照本文前面描述的步骤，所有者和管理员应将新成员分配为具有[管理集合权限](collection-permissions.md)。完成后，所有者和管理员将失去对该集合的管理能力，并且**添加访问权限**标签将被移除。
 
