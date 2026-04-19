@@ -23,17 +23,13 @@
 
 可以在任何 Bitwarden 客户端中使用**编辑项目**面板中的**自定义字段**部分将自定义字段添加到密码库项目：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/NoGCwyAZcnzss1EeYXKD1/23a7e619dfdcb4baa023f54923335050/2024-12-02_14-52-43.png?_a=DAJCwlWIZAAB" %}
-网页 App 中的自定义字段
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/NoGCwyAZcnzss1EeYXKD1/23a7e619dfdcb4baa023f54923335050/2024-12-02_14-52-43.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>网页 App 中的自定义字段</p></figcaption></figure></div>
 
 ### 自定义字段名称 <a href="#custom-field-names" id="custom-field-names"></a>
 
 指定的**名称**对于成功[自动填充自定义字段](../../autofill/more-autofill-options/auto-fill-custom-fields.md)很重要。对于浏览器扩展，您可以使用上下文菜单中的**复制自定义字段名称**选项快速获取正确的字段名称（在大多数情况下，通过右键单击表单元素）：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5nnPLqyzgAhDCinQNB0uUC/a721194f39f0a8fa919066d73ff9e2c8/2024-10-29_10-50-34.png?_a=DAJCwlWIZAAB" %}
-复制自定义字段名称
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5nnPLqyzgAhDCinQNB0uUC/a721194f39f0a8fa919066d73ff9e2c8/2024-10-29_10-50-34.png?w=980&#x26;fm=avif" alt=""><figcaption><p>复制自定义字段名称</p></figcaption></figure></div>
 
 选择此上下文菜单选项将复制表单元素的 `id`、`name`、`aria-label` 或 `placeholder` 的值（按优先顺序）。
 
@@ -43,7 +39,7 @@
 
 如果您不使用浏览器扩展，查找字段名称的最佳方法是使用网页浏览器的开发人员工具，如下面的示例所示：
 
-{% embed url="https://vimeo.com/1139125687?fl=pl&fe=sh" %}
+{% embed url="https://vimeo.com/1139125687?fe=cm&fl=pl" %}
 
 要定位自定义字段名称：
 

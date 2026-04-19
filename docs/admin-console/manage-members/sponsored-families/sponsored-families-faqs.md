@@ -22,7 +22,7 @@
 
 ### 问：我可以添加额外的存储空间吗？ <a href="#can-i-add-additional-storage" id="can-i-add-additional-storage"></a>
 
-**答：**&#x53EF;以。您的赞助中只包含 1 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
+**答：**&#x53EF;以。但您的赞助中已包含 5 GB。可以随时添加更多存储空间，这样做会通过您已存档的付款方式收取费用。
 
 ### 问：如果我离开赞助我的组织会怎样？ <a href="#what-happens-if-i-leave-the-organization-sponsoring-me" id="what-happens-if-i-leave-the-organization-sponsoring-me"></a>
 

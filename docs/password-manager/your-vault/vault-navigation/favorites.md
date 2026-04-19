@@ -20,32 +20,24 @@
 {% tab title="网页 App" %}
 在「添加」或「编辑」界面，选中右上角的 **⭐️星形**图标，然后**保存**该项目：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4XpFH5NFI6Lso21BpGNKsu/e90cd1d0d6c3e4e7296d2e0300ab3ab2/2024-12-02_16-26-17.png?_a=DAJCwlWIZAAB" %}
-收藏项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4XpFH5NFI6Lso21BpGNKsu/e90cd1d0d6c3e4e7296d2e0300ab3ab2/2024-12-02_16-26-17.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
 选择一个项目然后打开「编辑」界面，选中**收藏**复选框，然后**保存**该项目：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/36QXVM3xcSN7vALkOWQPYr/fd82e56cb60b38e4ff6a96bfb7b5d54d/2024-10-29_11-53-27.png?_a=DAJCwlWIZAAB" %}
-收藏项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/36QXVM3xcSN7vALkOWQPYr/fd82e56cb60b38e4ff6a96bfb7b5d54d/2024-10-29_11-53-27.png?w=961&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="桌面端" %}
 在「添加项目」或「编辑项目」界面，勾选**收藏**复选框，然后**保存**该项目：
 
-{% embed url="https://bitwarden.com/assets/2BtbpzNSnydUYBu92j1bCH/9ad9e283584adb0b67be65b3f30e23eb/2026-01-28_10-24-52.png?w=1001&fm=avif" %}
-收藏项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2BtbpzNSnydUYBu92j1bCH/9ad9e283584adb0b67be65b3f30e23eb/2026-01-28_10-24-52.png?w=1001&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
 在「添加项目」或「编辑项目」界面，选中**收藏 ⭐️**，然后**保存**该项目：
 
-{% embed url="https://bitwarden.com/assets/1rvKA8zNjd1RktotXjBEUg/f25cc45f33b29b901ec8e1f3ddc96d7c/2025-01-22_09-46-54.png?w=713&fm=avif" %}
-收藏项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1rvKA8zNjd1RktotXjBEUg/f25cc45f33b29b901ec8e1f3ddc96d7c/2025-01-22_09-46-54.png?w=713&#x26;fm=avif" alt=""><figcaption><p>收藏项目</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}

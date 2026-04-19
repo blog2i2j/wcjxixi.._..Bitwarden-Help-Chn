@@ -89,9 +89,7 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 
 在 **Android** 设备上，通过点击**查看项目**界面上的附件，图像文件（ `.jpeg` 、 `.png` 、 `.gif` 、 `.WebP` 、 `.heic` ）可以直接在 Bitwarden 中预览，而无需将其下载到您的设备：
 
-{% embed url="https://bitwarden.com/assets/8CANFNTEL2gsoDy0zvQPG/65b328d7d01be571b66596c51f78d07d/2026-04-10_09-10-55.png?w=877&fm=avif" %}
-查看附件
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/8CANFNTEL2gsoDy0zvQPG/65b328d7d01be571b66596c51f78d07d/2026-04-10_09-10-55.png?w=877&#x26;fm=avif" alt=""><figcaption><p>查看附件</p></figcaption></figure></div>
 
 ## 下载文件 <a href="#download-a-file" id="download-a-file"></a>
 
@@ -115,9 +113,7 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 
 1、从导航中选择**工具** → **导出**：
 
-{% embed url="https://bitwarden.com/assets/5PUGzasNsQnABG9gtso4o3/4e4880193ff45c22f0474c129e68e4e3/2025-12-17_11-43-59.png?w=1156&fm=avif" %}
-导出项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5PUGzasNsQnABG9gtso4o3/4e4880193ff45c22f0474c129e68e4e3/2025-12-17_11-43-59.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导出项目</p></figcaption></figure></div>
 
 2、从**文件格式**下拉菜单中，选择 `.zip (with attachments)`。目前，只能从个人密码库中导出附件。
 
@@ -222,7 +218,7 @@ bw delete attachment 7063feab-4b10-472e-b64c-785e2b870b92
 
 ## 添加存储空间 <a href="#add-storage-space" id="add-storage-space"></a>
 
-付费用户和付费组织的成员拥有 5 GB 加密存储空间用于存储文件附件。个人和组织可以通过完成以下步骤购买额外的存储空间：
+付费用户和付费[组织](../../../admin-console/organizations-overview.md)的成员拥有 5 GB 加密存储空间用于存储文件附件。个人和组织可以通过完成以下步骤购买额外的存储空间：
 
 {% hint style="info" %}
 添加存储空间将调整您的计费总金额并立即通过您的付款方式收取费用。首次扣款将按照当前计费周期的剩余时间内按比例计算。
@@ -234,13 +230,11 @@ bw delete attachment 7063feab-4b10-472e-b64c-785e2b870b92
 
 1、在 Bitwarden 网页 App 中，导航到**设置** → **订阅**。
 
-2、在「存储」部分，选择**添加存储**按钮：
+2、在「存储」部分，选择**添加存储空间**按钮：
 
-{% embed url="https://bitwarden.com/assets/113yhHwt2fIgkjWjmPgCa4/f3df4d33206d35873c92266a546a9ed6/Add_storage_to_individual_vault.png?w=1200&fm=avif" %}
-为个人密码库添加存储空间
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/113yhHwt2fIgkjWjmPgCa4/f3df4d33206d35873c92266a546a9ed6/Add_storage_to_individual_vault.png?w=1264&#x26;fm=avif" alt=""><figcaption><p>为个人密码库添加存储空间</p></figcaption></figure></div>
 
-3、使用计数器，选择 **GB 存储空间将添加**的数量，然后选择**提交**。
+3、使用计数器，选择**要添加的存储空间 (GB)** 的数量，然后选择**提交**。
 {% endtab %}
 
 {% tab title="组织" %}
@@ -248,19 +242,15 @@ bw delete attachment 7063feab-4b10-472e-b64c-785e2b870b92
 
 1、打开 Bitwarden 网页 App，使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 2、从导航选择**计费** → **订阅**。
 
-3、在「管理订阅」部分，选择**添加存储**按钮：
+3、在「管理订阅」部分，选择**添加存储空间**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6tMMQEzEKXIRSa9fIUXuoh/3d9f81b717d3cee9681f1feda97d1b91/2024-12-02_15-28-55.png?_a=DAJCwlWIZAAB" %}
-为组织密码库添加存储空间
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6tMMQEzEKXIRSa9fIUXuoh/3d9f81b717d3cee9681f1feda97d1b91/2024-12-02_15-28-55.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>为组织密码库添加存储空间</p></figcaption></figure></div>
 
-4、使用计数器，选择 **GB 存储空间将添加**的数量，然后选择**提交**。
+4、使用计数器，选择**要添加的存储空间 (GB)** 的数量，然后选择**提交**。
 {% endtab %}
 
 {% tab title="自托管" %}
@@ -270,10 +260,10 @@ bw delete attachment 7063feab-4b10-472e-b64c-785e2b870b92
 
 ## 修复旧附件 <a href="#fixing-old-attachments" id="fixing-old-attachments"></a>
 
-在 2018 年 12月 之前，文件附件使用另外一种方式加密其数据。从那以后，我们已经转向一种更新更好的加密文件附件的方式。使用旧加密方式的所有附件在密码库清单中都将标识一个 **⚠️**警告图标。您应该将这些旧附件升级为新的加密方式，以便其他与账户相关的功能可以正常运行：
+在 2018 年 12月 之前，文件附件使用另外一种方式加密其数据。从那以后，我们已经转向一种更新更好的加密文件附件的方式。使用旧加密方式的所有附件在密码库清单中都将标识一个 **⚠**&#x8B66;告图标。您应该将这些旧附件升级为新的加密方式，以便其他与账户相关的功能可以正常运行：
 
 1. 打开包含旧附件的密码库项目，然后选择**编辑**。
 2. 滚动到「编辑」表单底部然后选择**附件**。
 3. 点击旧附件旁边的**修复**按钮。此过程将下载附件、使用新的加密方法对其进行重新加密、将附件重新上传回您的密码库、然后删除该附件的旧版本。
 
-附件成功升级后，**⚠️**警告图标和修复按钮会消失。
+附件成功升级后，**⚠**&#x8B66;告图标和修复按钮会消失。

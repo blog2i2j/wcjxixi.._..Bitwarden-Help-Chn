@@ -6,9 +6,7 @@
 
 Bitwarden 的移动 App 让您可以随身携带您的密码管理器。在任何设备上，从 App Store 或 Google Play Store，或访问 [get.bitwarden.com](https://get.bitwarden.com/) 以下载 Bitwarden。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?_a=DAJCwlWIZAAB" %}
-Android 和 iOS 上的 Bitwarden
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/53OzJZ4klYWemxUepHMtq4/5ab47331f033259bd2e82817a99e992f/2025-01-21_15-22-10.png?w=714&#x26;fm=avif" alt=""><figcaption><p>Android 和 iOS 上的 Bitwarden</p></figcaption></figure></div>
 
 ## 第一步 <a href="#first-steps" id="first-steps"></a>
 
@@ -22,9 +20,7 @@ Android 和 iOS 上的 Bitwarden
 
 2、选择**密码库**，然后从设置列表中点击**文件夹**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6IwzXSJHGmSeU7oIy4z8kZ/95620b58758e50fa0e8e22a65f2bfa15/2025-01-21_15-26-07.png?_a=DAJCwlWIZAAB" %}
-移动端文件夹
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6IwzXSJHGmSeU7oIy4z8kZ/95620b58758e50fa0e8e22a65f2bfa15/2025-01-21_15-26-07.png?w=713&#x26;fm=avif" alt=""><figcaption><p>移动端上的文件夹</p></figcaption></figure></div>
 
 3、选择 ✚**添加**图标。
 
@@ -38,9 +34,7 @@ Android 和 iOS 上的 Bitwarden
 
 2、选择要添加的项目的类型（这里我们选择**登录**）：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4QMufMJAsQn5qN9XY3syyL/decdef6cfc89e8af57c30e17ddeae864/2025-01-21_15-27-28.png?_a=DAJCwlWIZAAB" %}
-移动端添加登录
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4QMufMJAsQn5qN9XY3syyL/decdef6cfc89e8af57c30e17ddeae864/2025-01-21_15-27-28.png?w=714&#x26;fm=avif" alt=""><figcaption><p>移动端添加登录</p></figcaption></figure></div>
 
 3、为这个项目输入基本信息：
 
@@ -80,9 +74,7 @@ Android 和 iOS 上的 Bitwarden
 
 要登录第二个账户，请从移动 App 的顶部菜单栏选择当前已登录的账户，然后选择 ✚**添加账户**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/56xAZhiS6wZqKktMlFwbVn/9af5d0ce782af44fc48ebfd8057ddc4c/2025-01-21_14-58-15.png?_a=DAJCwlWIZAAB" %}
-移动端账户切换
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/56xAZhiS6wZqKktMlFwbVn/9af5d0ce782af44fc48ebfd8057ddc4c/2025-01-21_14-58-15.png?w=713&#x26;fm=avif" alt=""><figcaption><p>移动端账户切换</p></figcaption></figure></div>
 
 登录第二个账户后，您可以从同一菜单中快速切换它们，该菜单还将显示每一个账户的密码库的当前状态（_已锁&#x5B9A;_&#x6216;_已解锁_）。如果您注销其中一个账户，它将从此列表中移除。
 
@@ -98,11 +90,9 @@ Android 和 iOS 上的 Bitwarden
 
 1、在您的 Android Bitwarden App 中，点击 **⚙️设置**选项卡。
 
-2、点击**自动填充**选项:
+2、点击**自动填充**选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5Othw4YuSWmQbV1pmkvVxd/1d8fcf282bee1d729abe88570e7e650f/2025-01-21_15-29-52.png?_a=DAJCwlWIZAAB" %}
-Android 自动填充选项
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5Othw4YuSWmQbV1pmkvVxd/1d8fcf282bee1d729abe88570e7e650f/2025-01-21_15-29-52.png?w=346&#x26;fm=avif" alt=""><figcaption><p>Android 自动填充选项</p></figcaption></figure></div>
 
 3、切换自动填写服务选项。您将自动跳转到 Android 设置界面。
 
@@ -113,13 +103,11 @@ Android 自动填充选项
 并将其开启。绿色的`已启用`信息表明自动填充处于活动状态。\
 切换后，您可能需要根据您可用的或已启用的自动填充选项来更改某些 Android 本地设置。有关更多信息，请参阅 [Android 上的自动填充登录](../autofill/autofill-from/autofill-from-android.md)。
 
-### 从移动应用程序启动 <a href="#launch-from-mobile-apps" id="launch-from-mobile-apps"></a>
+### 从移动 App 启动 <a href="#launch-from-mobile-apps" id="launch-from-mobile-apps"></a>
 
 您可以在任何具有有效 URI 的密码库项目中选择 **⮫启动**按钮，以直接从 Bitwarden 启动网站。如果你不熟悉 URI 的使用，请参阅 [URI 的使用](../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2PsCaLjOAe6WEfnwMkYG0P/be1fde317404835cba1e600244922d98/2025-01-21_15-32-37.png?_a=DAJCwlWIZAAB" %}
-从移动端启动
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2PsCaLjOAe6WEfnwMkYG0P/be1fde317404835cba1e600244922d98/2025-01-21_15-32-37.png?w=713&#x26;fm=avif" alt=""><figcaption><p>从移动端启动</p></figcaption></figure></div>
 
 ### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
 
@@ -131,9 +119,7 @@ Android 自动填充选项
 
 3、点击**使用生物识别解锁**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7FDRtrf7LkC22dzf3ErsR4/3c176fd1ddb2a3d188817d7e1f795adf/2025-01-21_15-16-44.png?_a=DAJCwlWIZAAB" %}
-移动端生物识别解锁
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7FDRtrf7LkC22dzf3ErsR4/3c176fd1ddb2a3d188817d7e1f795adf/2025-01-21_15-16-44.png?w=714&#x26;fm=avif" alt=""><figcaption><p>移动端生物识别解锁</p></figcaption></figure></div>
 
 **4、**&#x6839;据您的选择，系统将要求您使用指纹或面部进行验证。&#x20;
 
@@ -147,9 +133,7 @@ Android 自动填充选项
 
 2、根据您的设备使用的自动填充选项，点击可用的叠加层：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/3xbRUA76m4qpEyQ1b7msLo/b294ddfaae21f0e24d5e923266092df0/autofill-android-2.png?fm=webp&h=412&q=50&w=555" %}
-Android 自动填充种类
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3xbRUA76m4qpEyQ1b7msLo/b294ddfaae21f0e24d5e923266092df0/autofill-android-2.png?w=555&#x26;fm=avif" alt=""><figcaption><p>Android 自动填充种类</p></figcaption></figure></div>
 
 3、将提示验证您的面部或指纹。如果您未使用[生物识别](getting-started-mobile.md#unlock-with-biometrics)，请输入您的主密码。
 
@@ -171,13 +155,11 @@ Android 自动填充种类
 
 创建新的登录时，请确保在 [URI 字段](getting-started-mobile.md#add-a-login)中输入网站地址以将其用于自动填充。
 
-### 从移动应用程序启动 <a href="#launch-from-mobile-apps" id="launch-from-mobile-apps"></a>
+### 从移动 App 启动 <a href="#launch-from-mobile-apps" id="launch-from-mobile-apps"></a>
 
 您可以直接从 Bitwarden 移动 App 启动一个网站，方法是在任何具有有效 URI 的密码库项目中选择 **⮫启动**按钮。如果您还不熟悉 URI 的使用，请参阅 [URI 的使用](../autofill/troubleshoot-autofill/forming-uris-for-autofill.md)。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2PsCaLjOAe6WEfnwMkYG0P/be1fde317404835cba1e600244922d98/2025-01-21_15-32-37.png?_a=DAJCwlWIZAAB" %}
-从移动端启动
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2PsCaLjOAe6WEfnwMkYG0P/be1fde317404835cba1e600244922d98/2025-01-21_15-32-37.png?w=713&#x26;fm=avif" alt=""><figcaption><p>从移动端启动</p></figcaption></figure></div>
 
 ### 使用生物识别解锁 <a href="#unlock-with-biometrics" id="unlock-with-biometrics"></a>
 
@@ -187,9 +169,7 @@ Android 自动填充种类
 
 2、点击**账户安全**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7FDRtrf7LkC22dzf3ErsR4/3c176fd1ddb2a3d188817d7e1f795adf/2025-01-21_15-16-44.png?_a=DAJCwlWIZAAB" %}
-移动端生物识别解锁
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7FDRtrf7LkC22dzf3ErsR4/3c176fd1ddb2a3d188817d7e1f795adf/2025-01-21_15-16-44.png?w=714&#x26;fm=avif" alt=""><figcaption><p>移动端生物识别解锁</p></figcaption></figure></div>
 
 3、根据您的设备的可用功能，点击：
 
@@ -206,11 +186,9 @@ Android 自动填充种类
 
 1、点击 App 或网站中的电子邮箱/用户名或密码输入框。
 
-2、在您的键盘上方，点击**密码**： &#x20;
+2、在您的键盘上方，点击**密码**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4DNAawWIUOKKVUN0cMdqLI/6fd8e01e004fdefcb72b60380ff8ee64/autofill-ios.png?_a=DAJCwlWIZAAB" %}
-iOS 中点击密码
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4DNAawWIUOKKVUN0cMdqLI/6fd8e01e004fdefcb72b60380ff8ee64/autofill-ios.png?w=300&#x26;fm=avif" alt=""><figcaption><p>iOS 中点击密码</p></figcaption></figure></div>
 
 3、将提示验证您的面容 ID 或触控 ID。如果您未使用[生物识别](https://help.bitwarden.in/getting-started/get-started-with-mobile-apps#unlock-with-biometrics-1)，请输入您的主密码。
 

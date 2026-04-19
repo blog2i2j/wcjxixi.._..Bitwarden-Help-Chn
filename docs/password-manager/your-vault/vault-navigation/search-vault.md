@@ -15,9 +15,7 @@
 
 检索框中的占位符文本将转换为指示当前检索的位置：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Mdb392zQHEfC44zhwLmGl/9d208498c67672f81c47b66a3084853e/2024-12-02_16-28-17.png?_a=DAJCwlWIZAAB" %}
-检索文件夹
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Mdb392zQHEfC44zhwLmGl/9d208498c67672f81c47b66a3084853e/2024-12-02_16-28-17.png?w=1204&#x26;fm=avif" alt=""><figcaption><p>检索文件夹</p></figcaption></figure></div>
 
 ## 基本检索 <a href="#applications-that-use-full-text-search" id="applications-that-use-full-text-search"></a>
 

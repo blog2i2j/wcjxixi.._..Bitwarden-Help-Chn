@@ -10,9 +10,7 @@ Bitwarden 网页 App 为个人用户和组织提供了最丰富的 Bitwarden 体
 可以从任何流行的网页浏览器从 [vault.bitwarden.com](https://vault.bitwarden.com) 和 [vault.bitwarden.eu](https://vault.bitwarden.eu/) 访问网页 App。如果您是**自托管** Bitwarden，则为您[已配置的域名](../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md)，例如 `https://my.bitwarden.server.com`。
 {% endhint %}
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?_a=DAJCwlWIZAAB" %}
-Password Manager 网页 App
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2xTpSA11EOCzx8VIuVffcF/d3bc18e7fc3c3cb0bf1779fad9262cd3/2024-12-02_13-42-14.png?w=1162&#x26;fm=avif" alt=""><figcaption><p>Password Manager 网页 App</p></figcaption></figure></div>
 
 当您首次登录网页 App 时，您会进入**所有密码库**视图。此空间将列出您的所有密码库项目，包括[登录、支付卡、身份和安全笔记](../your-vault/vault-items/vault-items.md)。
 
@@ -28,9 +26,7 @@ Password Manager 网页 App
 
 1、从下拉菜单中选择 ✚**新增**按钮然后选择**文件夹**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3BvTWidqL4xWQvFqBSiJIR/d68bc851d44df1b571eed16366159e0c/2024-12-02_13-50-55.png?_a=DAJCwlWIZAAB" %}
-新增文件夹
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3BvTWidqL4xWQvFqBSiJIR/d68bc851d44df1b571eed16366159e0c/2024-12-02_13-50-55.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>新增文件夹</p></figcaption></figure></div>
 
 2、为您的文件夹输入一个名称（例如 `Important Logins`），然后选择**保存**。
 
@@ -52,9 +48,7 @@ Password Manager 网页 App
 
 5、在**网站 (URI)** 字段中，输入网站的 URL（例如 `https://accounts.google.com`）。如果您不知道要使用哪个 URL，请导航到网站的登录界面并从地址栏中复制它。
 
-{% embed url="https://bitwarden.com/assets/62IycEwbVrumSyPjB9n5XS/0df14e819c0881be3d813e235271acaf/2025-06-02_14-31-28.png?w=956&fm=avif&q=80" %}
-定位 URI
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/62IycEwbVrumSyPjB9n5XS/0df14e819c0881be3d813e235271acaf/2025-06-02_14-31-28.png?w=956&#x26;fm=avif" alt=""><figcaption><p>定位 URI</p></figcaption></figure></div>
 
 6、选择 **⭐️收藏**图标以将此项目添加到您的收藏夹。标记为收藏时，图标将被填充（**✰** → **★**）。
 
@@ -115,15 +109,11 @@ Password Manager 网页 App
 
 2、在您的 Bitwarden 网页 App 中，从导航中选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
-两步登录
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?w=1014&#x26;fm=avif" alt=""><figcaption><p>两步登录</p></figcaption></figure></div>
 
 3、定位到**验证器 App** 选项然后选择**管理**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?_a=DAJCwlWIZAAB" %}
-两步登录提供程序
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5GqQynIX94PhzJQ0tVW1aE/5dcea8d04c8a543daa7f96989f220756/2024-12-02_10-55-22.png?w=772&#x26;fm=avif" alt=""><figcaption><p>两步登录提供程序</p></figcaption></figure></div>
 
 将提示您输入您的主密码以继续。
 
@@ -139,9 +129,7 @@ Password Manager 网页 App
 
 8、输入您的主密码并选择**继续**按钮以获取您的恢复代码。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?_a=DAJCwlWIZAAB" %}
-示例恢复代码
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?w=529&#x26;fm=avif" alt=""><figcaption><p>示例恢复代码</p></figcaption></figure></div>
 
 以最适合您的方式保存您的恢复代码。信不信由你，将您的恢复代码打印出来并将其保存在安全的地方，是使代码不易被盗或无意被删除的最佳方法之一。
 
