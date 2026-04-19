@@ -59,7 +59,7 @@
     * [安全工具](docs/password-manager/your-vault/security-tools/README.md)
       * [集成的身份验证器](docs/password-manager/your-vault/security-tools/totp.md)
       * [用户名 & 密码生成器](docs/password-manager/your-vault/security-tools/generator.md)
-      * [密码 & 生成器历史记录](docs/password-manager/your-vault/security-tools/password-and-generator-history.md)
+      * [=密码 & 生成器历史记录](docs/password-manager/your-vault/security-tools/password-and-generator-history.md)
       * [密码库健康报告](docs/password-manager/your-vault/security-tools/vault-health-reports.md)
       * [更改存在风险的密码](docs/password-manager/your-vault/security-tools/change-at-risk-passwords.md)
       * [主密码重新提示](docs/password-manager/your-vault/security-tools/master-password-re-prompt.md)
