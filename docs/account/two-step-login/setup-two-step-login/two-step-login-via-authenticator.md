@@ -26,9 +26,7 @@
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1200&fm=avif" %}
-两步登录设置
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1259&#x26;fm=avif" alt=""><figcaption><p>两步登录设置</p></figcaption></figure></div>
 
 3、定位到**验证器 App** 方式然后选择同一行的**管理**。将提示您输入您的主密码以继续。
 

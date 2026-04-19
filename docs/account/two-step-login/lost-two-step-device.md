@@ -24,9 +24,7 @@
 
 当您从账户的安全设置中获取恢复代码时，恢复代码如下所示：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?_a=DAJCwlWIZAAB" %}
-示例恢复代码
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?w=529&#x26;fm=avif" alt=""><figcaption><p>示例恢复代码</p></figcaption></figure></div>
 
 {% hint style="info" %}
 恢复代码不会禁用用于组织的 Duo。如果您被组织 Duo 提示锁定在密码库之外，请联系您公司的 Duo 管理员，以获得绕过此提示的帮助。

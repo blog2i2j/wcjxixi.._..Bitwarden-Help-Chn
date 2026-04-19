@@ -15,7 +15,7 @@
 
 使用两步登录（也称为双重身份验证或 2FA）可以在有人获取了您的主密码时保护你的 Bitwarden 密码库。它的工作原理是在您登录时要求从另一个来源进行身份验证。如果您不熟悉 2FA 的基础知识，请查看我们的[现场指南](../field-guide-for-two-step-login.md)。
 
-{% embed url="https://vimeo.com/1060246387" %}
+{% embed url="https://vimeo.com/1060246387?fe=cm&fl=pl" %}
 
 有许多不同的方式可用于两步登录。您可以根据自己的喜好使用多种方式。重要的是，任何形式的两步登录都需要激活，才能确保您的账户受到保护。
 
@@ -60,26 +60,18 @@
 
 {% tabs %}
 {% tab title="网页 App" %}
-{% embed url="https://bitwarden.com/assets/6pZaDONKwdhsCVDxz4fEoP/16a2053bf3a08a0449a0db1410fa752d/2025-02-28_08-56-53.png?w=654&fm=avif" %}
-使用其他两步登录方式
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6pZaDONKwdhsCVDxz4fEoP/16a2053bf3a08a0449a0db1410fa752d/2025-02-28_08-56-53.png?w=654&#x26;fm=avif" alt=""><figcaption><p>使用其他两步登录方式</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
-{% embed url="https://bitwarden.com/assets/X0JAzFLcwRr4smlsMYCf7/0aa1f3c0cf56dd8e062e1e89fd99e43d/2025-03-17_10-55-29.png?w=999&fm=avif" %}
-使用其他两步登录方式
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/X0JAzFLcwRr4smlsMYCf7/0aa1f3c0cf56dd8e062e1e89fd99e43d/2025-03-17_10-55-29.png?w=999&#x26;fm=avif" alt=""><figcaption><p>使用其他两步登录方式</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
-{% embed url="https://bitwarden.com/assets/2iyAQzp5BrmXPbIqKp9aB5/6b7bc9726ade6a5ef79cf4877e5c30ec/2025-03-18_09-30-31.png?w=710&fm=avif" %}
-使用其他两步登录方式
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2iyAQzp5BrmXPbIqKp9aB5/6b7bc9726ade6a5ef79cf4877e5c30ec/2025-03-18_09-30-31.png?w=710&#x26;fm=avif" alt=""><figcaption><p>使用其他两步登录方式</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="桌面端" %}
-{% embed url="https://bitwarden.com/assets/36novNT7xJ8ZJSoG66MQXg/774092e3a3361e3a92d3bd84786b260e/setup-two-step-login-1.png?w=850&fm=avif" %}
-使用其他两步登录方式
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/36novNT7xJ8ZJSoG66MQXg/774092e3a3361e3a92d3bd84786b260e/setup-two-step-login-1.png?w=850&#x26;fm=avif" alt=""><figcaption><p>使用其他两步登录方式</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}

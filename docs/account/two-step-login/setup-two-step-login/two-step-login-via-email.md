@@ -24,9 +24,7 @@
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1200&fm=avif" %}
-两步登录设置
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1259&#x26;fm=avif" alt=""><figcaption><p>两步登录设置</p></figcaption></figure></div>
 
 3、定位到**电子邮箱**方式然后选择**管理**。将提示您输入您的主密码以继续。
 
@@ -53,11 +51,9 @@
 1、在任一个 Bitwarden App 上输入您的电子邮箱地址和主密码以登录您的密码库。\
 将提示您输入发送到您配置的电子邮箱的 6 位数验证码。
 
-2、检查您的收件箱接收到的 6 位数验证码。在**验证您的身份**界面上输入此代码：：
+2、检查您的收件箱接收到的 6 位数验证码。在**验证您的身份**界面上输入此代码：
 
-{% embed url="https://bitwarden.com/assets/ewFBMVRtmfZ3fsEC7LZmG/fcda3ce63380357797c2d41987854318/2026-01-12_15-08-12.png?w=754&fm=avif" %}
-验证您的身份
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/ewFBMVRtmfZ3fsEC7LZmG/fcda3ce63380357797c2d41987854318/2026-01-12_15-08-12.png?w=754&#x26;fm=avif" alt=""><figcaption><p>验证您的身份</p></figcaption></figure></div>
 
 {% hint style="success" %}
 勾选**记住我**复选框，以让 Bitwarden 在接下来的 30 天内可以识别您的设备。选择此选项意味着在此期间您不会被要求完成两步登录步骤。

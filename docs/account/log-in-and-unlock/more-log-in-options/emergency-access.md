@@ -27,15 +27,11 @@
 
 2、选择 **✚添加紧急联系人**：
 
-{% embed url="https://bitwarden.com/assets/3gb0Zm4K935RUmzjd62eJq/a3930a8381fe1205b655e7a7bb0eca47/2025-12-31_09-50-39.png?w=966&fm=avif" %}
-紧急访问页面
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3gb0Zm4K935RUmzjd62eJq/a3930a8381fe1205b655e7a7bb0eca47/2025-12-31_09-50-39.png?w=966&#x26;fm=avif" alt=""><figcaption><p>紧急访问页面</p></figcaption></figure></div>
 
 3、输入您信任的紧急联系人的**电子邮箱**。可信任的紧急联系人必须拥有 Bitwarden 账户（免费版或高级版），以及必须位于同一[服务器地理位置](../../../security/server-geographies.md)：
 
-{% embed url="https://bitwarden.com/assets/2IEldGj87MY2IMDQpty6Vr/f0e9750c278663903be46f4a5d5a4f8c/2025-12-31_09-52-02.png?w=964&fm=avif" %}
-邀请紧急联系人
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2IEldGj87MY2IMDQpty6Vr/f0e9750c278663903be46f4a5d5a4f8c/2025-12-31_09-52-02.png?w=964&#x26;fm=avif" alt=""><figcaption><p>邀请紧急联系人</p></figcaption></figure></div>
 
 4、为可信任的紧急联系人设置**用户访问权限**级别：**查看**或**接管**。
 
@@ -55,9 +51,7 @@
 
 1、在收到的电子邮件邀请中，选择电子邮件中的**成为紧急联系人**按钮，以在浏览器中打开紧急访问页面：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1S7YBbeECgEdl1v9r4E5BU/37c6c4207cb8c6df7f69a63ea12751fd/Screenshot_2024-02-27_at_9.23.46_AM.png?_a=DAJAUVWIZAAB" %}
-紧急访问邀请
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1S7YBbeECgEdl1v9r4E5BU/37c6c4207cb8c6df7f69a63ea12751fd/Screenshot_2024-02-27_at_9.23.46_AM.png?w=590&#x26;fm=avif" alt=""><figcaption><p>紧急访问邀请</p></figcaption></figure></div>
 
 2、登录您的 Bitwarden 账户以接受邀请。如果您还没有 Bitwarden 账户，则需要创建一个。
 
@@ -71,9 +65,7 @@
 
 2、在**可信任的紧急联系人**部分，已邀请的用户应该显示了一个 `需要确认` 状态卡。使用 **≡**&#x83DC;单，从下拉菜单中选择**确认**：
 
-{% embed url="https://bitwarden.com/assets/jEvLxG2nmFJRnlTbcpwRO/891f14df501abae6c1e93ce57a527ec4/2025-12-31_09-53-35.png?w=966&fm=avif" %}
-确认紧急联系人
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/jEvLxG2nmFJRnlTbcpwRO/891f14df501abae6c1e93ce57a527ec4/2025-12-31_09-53-35.png?w=966&#x26;fm=avif" alt=""><figcaption><p>确认紧急联系人</p></figcaption></figure></div>
 
 为确保加密密钥的完整性，在完成确认前，请与受让人核实显示的指纹短语。
 {% endtab %}
@@ -91,9 +83,7 @@
 
 2、在**被指定为紧急联系人**部分，选择 **≡菜单图标**：
 
-{% embed url="https://bitwarden.com/assets/6x38VldDaEOAqpuCQ4htRJ/7946735436fd16b660aad5d7969dba8d/2025-12-31_09-54-39.png?w=966&fm=avif" %}
-请求紧急访问
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6x38VldDaEOAqpuCQ4htRJ/7946735436fd16b660aad5d7969dba8d/2025-12-31_09-54-39.png?w=966&#x26;fm=avif" alt=""><figcaption><p>请求紧急访问</p></figcaption></figure></div>
 
 3、从出现的确认信息中，选择**请求访问**。系统将向账户持有人发送一封电子邮件，告知他们有人请求访问其账户。
 
@@ -109,9 +99,7 @@
 
 3、选择**批准**或**拒绝**：
 
-{% embed url="https://bitwarden.com/assets/7iPFwb2NfsjeVywrwlZxSx/8ff35e1f5d8e2febf34089528ecea5ff/2025-12-31_09-55-14.png?w=966&fm=avif" %}
-批准或拒绝紧急访问
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7iPFwb2NfsjeVywrwlZxSx/8ff35e1f5d8e2febf34089528ecea5ff/2025-12-31_09-55-14.png?w=966&#x26;fm=avif" alt=""><figcaption><p>批准或拒绝紧急访问</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="访问账户" %}
@@ -148,9 +136,7 @@
 
 3、选择 **✘拒绝**：
 
-{% embed url="https://bitwarden.com/assets/7dhQEDLZNKCwwspstJnhj0/543dd12da8a8d64952763027678cf15a/2025-12-31_09-55-33.png?w=966&fm=avif" %}
-拒绝紧急访问
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7dhQEDLZNKCwwspstJnhj0/543dd12da8a8d64952763027678cf15a/2025-12-31_09-55-33.png?w=966&#x26;fm=avif" alt=""><figcaption><p>拒绝紧急访问</p></figcaption></figure></div>
 
 ### 接管访问权限 <a href="#takeover-access" id="takeover-access"></a>
 

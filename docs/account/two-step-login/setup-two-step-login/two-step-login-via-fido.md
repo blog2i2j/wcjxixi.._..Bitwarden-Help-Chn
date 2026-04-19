@@ -49,9 +49,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 2、从导航选择**设置** → **安全** → **两步登录**：
 
-{% embed url="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1200&fm=avif" %}
-两步登录设置
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2IjxRoQwl1powHRhah6Bq/39067a5fe6c53732054f323e4afb431b/Screenshot_2025-12-31_at_1.52.00%C3%A2__PM.png?w=1259&#x26;fm=avif" alt=""><figcaption><p>两步登录设置</p></figcaption></figure></div>
 
 3、定位到**通行密钥**选项然后选择**管理**。将提示您输入您的主密码以继续。
 
@@ -81,9 +79,7 @@ FIDO2 WebAuthn 与大多数 Bitwarden 应用程序兼容。如果您想要使用
 
 2、将提示您读取您的安全钥匙，例如，将安全钥匙插入设备的 USB 端口然后轻按按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3RuttlEwwfVX3UJKA8GTFg/ab7e0ba835a7f42ea3f10369cb66c008/2025-03-25_10-28-20.png?_a=DAJCwlWIZAAB" %}
-FIDO2 提示
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3RuttlEwwfVX3UJKA8GTFg/ab7e0ba835a7f42ea3f10369cb66c008/2025-03-25_10-28-20.png?w=629&#x26;fm=avif" alt=""><figcaption><p>FIDO2 提示</p></figcaption></figure></div>
 
 {% hint style="success" %}
 勾选**记住我**复选框，以让 Bitwarden 在接下来的 30 天内可以识别您的设备。选择此选项意味着在此期间您不会被要求完成两步登录步骤。

@@ -26,9 +26,7 @@
 
 2、在使用两步登录访问您的密码库时，您可能已经在设备上勾选了**记住我**复选框。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6ZKXQZRh1riGuGy44rlebh/7985d990f64c1ee20556aa88b63b591a/2024-12-02_11-26-14.png?_a=DAJCwlWIZAAB" %}
-记住我选项
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6ZKXQZRh1riGuGy44rlebh/7985d990f64c1ee20556aa88b63b591a/2024-12-02_11-26-14.png?w=497&#x26;fm=avif" alt=""><figcaption><p>记住我选项</p></figcaption></figure></div>
 
 如果您使用了**记住我**选项，需要从您的网页密码库（**设置** → **我的账户**）中**取消会话授权**，以便该设备继续询问您的两步登录方式。
 

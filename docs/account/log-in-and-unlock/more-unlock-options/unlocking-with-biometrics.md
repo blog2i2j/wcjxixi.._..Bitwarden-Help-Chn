@@ -221,9 +221,7 @@ sudo chcon system_u:object_r:usr_t:s0
 
 2、选择**使用 Windows Hello 解锁**或**使用系统身份验证解锁**：
 
-{% embed url="https://bitwarden.com/assets/7n73BtZuBKI2lrmTMGJUqk/cf42eacad0651a4cf1b12ba786a2f362/Windows_Hello.png?w=400&fm=avif" %}
-使用 Windows Hello 解锁
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7n73BtZuBKI2lrmTMGJUqk/cf42eacad0651a4cf1b12ba786a2f362/Windows_Hello.png?w=400&#x26;fm=avif" alt=""><figcaption><p>使用 Windows Hello 解锁</p></figcaption></figure></div>
 
 3、输入您配置的生物识别信息。
 
@@ -241,9 +239,7 @@ sudo chcon system_u:object_r:usr_t:s0
 
 2、选择**使用触控 ID 解锁**：
 
-{% embed url="https://bitwarden.com/assets/2c5pB6gzPsvqDA46W2cODn/46c5bad230d8a5deb7f31e2861bdae0d/Unlock_with_Touch_ID.png?w=400&fm=avif" %}
-使用触控 ID 解锁
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2c5pB6gzPsvqDA46W2cODn/46c5bad230d8a5deb7f31e2861bdae0d/Unlock_with_Touch_ID.png?w=400&#x26;fm=avif" alt=""><figcaption><p>使用触控 ID 解锁</p></figcaption></figure></div>
 
 3、输入您的触控 ID。
 {% endtab %}
@@ -262,9 +258,7 @@ sudo chcon system_u:object_r:usr_t:s0
 * 如果选中了此设置，系统会立即提示您输入生物识别信息。
 * 如果**未选中**此设置，请选择**使用生物识别解锁**然后输入您配置的生物识别信息：
 
-{% embed url="https://bitwarden.com/assets/4UeYGO9saN15Jg3xLQmv5y/bfdb5e552b33009d219b1c1b7accd26b/Unlock_with_Biometrics_Browser.png?w=400&fm=avif" %}
-浏览器使用生物识别解锁
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4UeYGO9saN15Jg3xLQmv5y/bfdb5e552b33009d219b1c1b7accd26b/Unlock_with_Biometrics_Browser.png?w=400&#x26;fm=avif" alt=""><figcaption><p>浏览器使用生物识别解锁</p></figcaption></figure></div>
 
 {% hint style="info" %}
 如果出现「操作被桌面应用程序取消」错误，请确认：

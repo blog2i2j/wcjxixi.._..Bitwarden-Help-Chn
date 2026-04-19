@@ -22,15 +22,11 @@
 
 3、选择**查看恢复代码**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?_a=DAJCwlWIZAAB" %}
-两步登录
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2BsKs83g4cmiCUwxf2ad83/b2a90e85355f3d937aeb46139203737e/2024-12-02_10-54-31.png?w=1014&#x26;fm=avif" alt=""><figcaption><p>两步登录</p></figcaption></figure></div>
 
 4、输入您的主密码然后选择**继续**。您的恢复代码将出现：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?_a=DAJCwlWIZAAB" %}
-示例恢复代码
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/64piqJsX7vN25To16iRFIp/09e977fae9485c0764f832c6bb4b4b04/2024-12-02_11-24-35.png?w=529&#x26;fm=avif" alt=""><figcaption><p>示例恢复代码</p></figcaption></figure></div>
 
 ## 使用您的恢复代码 <a href="#use-your-recovery-code" id="use-your-recovery-code"></a>
 
