@@ -10,9 +10,7 @@
 
 2、从下拉菜单中，选择 **🔗链接 SSO**。
 
-{% embed url="https://bitwarden.com/assets/cv0DGhcgyEbQEn4MvdJp5/fefb4158c09be8cf9804ed5579c2d7dc/Screenshot_2024-02-26_at_2.07.03_PM.png?w=1200&fm=avif" %}
-连接 SSO
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/cv0DGhcgyEbQEn4MvdJp5/fefb4158c09be8cf9804ed5579c2d7dc/Screenshot_2024-02-26_at_2.07.03_PM.png?w=1331&#x26;fm=avif" alt=""><figcaption><p>连接 SSO</p></figcaption></figure></div>
 
 链接完成后，您即可以[使用 SSO 登录到账户](using-login-with-sso.md)了。
 

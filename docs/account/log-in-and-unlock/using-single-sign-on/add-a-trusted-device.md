@@ -20,17 +20,13 @@
 
 1、在移动 App 中，导航至**设置** → **账户安全** → **待处理的登录请求**：
 
-{% embed url="https://bitwarden.com/assets/1ZB3Pc8T0mlP96W3IZefrR/a22c8efe63a88941bad11a278b1d113d/2025-09-09_09-39-13.png?w=1193&fm=avif" %}
-移动端上待处理的登录请求
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1ZB3Pc8T0mlP96W3IZefrR/a22c8efe63a88941bad11a278b1d113d/2025-09-09_09-39-13.png?w=1193&#x26;fm=avif" alt=""><figcaption><p>移动端上待处理的登录请求</p></figcaption></figure></div>
 
 2、定位并点击待处理的设备请求。
 
 3、验证指纹短语然后选择**确认访问**：
 
-{% embed url="https://bitwarden.com/assets/6xeP36n7g2dbwLI9YWjNg4/2aa9fdc96e765e963ee07f38ad0b6c06/2025-09-09_09-39-44.png?w=1192&fm=avif" %}
-在移动端上批准登录
-{% endembed %}
+<div align="center" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6xeP36n7g2dbwLI9YWjNg4/2aa9fdc96e765e963ee07f38ad0b6c06/2025-09-09_09-39-44.png?w=1192&#x26;fm=avif" alt=""><figcaption><p>在移动端上批准登录</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -38,21 +34,15 @@
 
 1、在浏览器扩展中，等待接收到设备批准请求或导航至**设置** → **账户安全** → **设备**：
 
-{% embed url="https://bitwarden.com/assets/6OZfQt2jDDqa9F0MaUdBUq/1460f0ec04c63ab55da1f5eaf37ca469/2025-09-09_09-49-23.png?w=1190&fm=avif" %}
-浏览器扩展上的设备视图
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6OZfQt2jDDqa9F0MaUdBUq/1460f0ec04c63ab55da1f5eaf37ca469/2025-09-09_09-49-23.png?w=1190&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展上的设备视图</p></figcaption></figure></div>
 
 2、在**设备**选项卡上，定位并选择待处理的设备请求：
 
-{% embed url="https://bitwarden.com/assets/64f1jZ30In2BbWDEUZVtxO/9de965d59fedca2bad4e325f4181f69a/2025-09-09_09-49-42.png?w=1187&fm=avif" %}
-浏览器扩展上的列表
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/64f1jZ30In2BbWDEUZVtxO/9de965d59fedca2bad4e325f4181f69a/2025-09-09_09-49-42.png?w=1187&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展上的设备列表</p></figcaption></figure></div>
 
 3、验证指纹短语然后选择**确认访问**：
 
-{% embed url="https://bitwarden.com/assets/2LFY10MMpI9G0ZcojcXveg/0a891ec5fa8f6052e5804841e7ec7724/2025-09-09_09-48-55.png?w=1193&fm=avif" %}
-在浏览器扩展上批准设备
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2LFY10MMpI9G0ZcojcXveg/0a891ec5fa8f6052e5804841e7ec7724/2025-09-09_09-48-55.png?w=1193&#x26;fm=avif" alt=""><figcaption><p>在浏览器扩展上批准设备</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="网页 App" %}
@@ -64,21 +54,15 @@
 
 1、在网页 App 中，选择横幅通知中的**审查登录请求**链接或导航至**设置** → **安全** → **设备**：
 
-{% embed url="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/cc88b5f47f0f243f5a655e77086871c9/2025-12-31_11-10-23.png?w=1200&fm=avif" %}
-在网页 App 上批准请求
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1K9FeC1OVOwyu0T8DMiwOp/cc88b5f47f0f243f5a655e77086871c9/2025-12-31_11-10-23.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>在网页 App 上批准请求</p></figcaption></figure></div>
 
 2、在**设备**选项卡上，定位并选择待处理的设备请求：
 
-{% embed url="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/ed5dbce83b2c428b9c2369270be1d959/2025-12-31_11-08-26.png?w=1200&fm=avif" %}
-网页 App 上的设备列表
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7GLmOwtReFuUD3uxPQ0LB8/ed5dbce83b2c428b9c2369270be1d959/2025-12-31_11-08-26.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>网页 App 上的设备列表</p></figcaption></figure></div>
 
 3、验证指纹短语然后选择**确认访问**：
 
-{% embed url="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/f6a13a34fdc59f815f7e4d51e981af47/2025-12-31_11-08-37.png?w=1200&fm=avif" %}
-使用网页 App 确认访问
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6s6Hdn9L1EyeRfBsmOcfgX/f6a13a34fdc59f815f7e4d51e981af47/2025-12-31_11-08-37.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>使用网页 App 确认访问</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="桌面 App" %}
@@ -86,9 +70,7 @@
 
 1、在桌面 App 中，等待接收到设备批准请求：
 
-{% embed url="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/7d19d6377dbba8d4c6abee37b96a5037/2025-09-09_09-07-05.png?w=1200&fm=avif" %}
-在桌面 App 上批准
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5cpkevhyuiSg82yfopvmc1/abd4d9949f342ff7efb3c289ec1942f5/2026-01-29_10-13-52.png?w=1335&#x26;fm=avif" alt=""><figcaption><p>在桌面 App 上批准</p></figcaption></figure></div>
 
 2、验证指纹短语然后选择**确认访问**。
 {% endtab %}
@@ -96,7 +78,7 @@
 
 * **使用主密码批准**：如果您是管理员或所有者，或者在受信任设备 SSO 实施之前加入了您的组织，因此仍然拥有与您的账户关联的主密码，则可以输入主密码来批准设备。
 
-{% embed url="https://bitwarden.com/assets/5IMJBQOrklcOuLVEpaR6gX/60ead8f10e34f7acd2467eaaa34ff93d/2025-06-16_15-22-15.png?w=642&fm=avif" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5IMJBQOrklcOuLVEpaR6gX/60ead8f10e34f7acd2467eaaa34ff93d/2025-06-16_15-22-15.png?w=642&#x26;fm=avif" alt=""><figcaption><p>请求管理员批准</p></figcaption></figure></div>
 
 * **请求管理员批准**：您可以向组织内的管理员和所有者发送设备批准请求以供批准。您必须[注册账户恢复](../../../admin-console/manage-members/account-recovery/account-recovery-enrollment.md#self-enroll-in-account-recovery)才能请求管理员批准，不过您在加入组织时可能已[自动注册](../../../admin-console/manage-members/account-recovery/account-recovery-enrollment.md#automatic-enrollment)。在许多情况下，这将是您唯一可用的选择（[了解更多](../../../admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)）。
 
@@ -112,7 +94,7 @@
 
 要使桌面 App 或移动 App 成为第一个受信任设备，用户不应使用组织邀请链接，而是打开桌面 App 或移动 App，选择**企业单点登录**选项，以开始 JIT 流程。
 
-> **\[译者注]**：JIT：Just-In-Time，指的是「即时配置」或「按需配置」，是一种用户管理和资源配置的方式。Bitwarden 使用这种方式简化了管理流程并提升了安全性。
+> **\[译者注]**：**JIT**：Just-In-Time，指的是「即时配置」或「按需配置」，是一种用户管理和资源配置的方式。Bitwarden 使用这种方式简化了管理流程并提升了安全性。
 
 ## 移除受信任设备 <a href="#remove-a-trusted-device" id="remove-a-trusted-device"></a>
 

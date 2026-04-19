@@ -15,7 +15,7 @@
 3. （可选）为确保密码强度，请选择**检查密码的已知数据泄露情况**（[了解更多](../password-manager/your-vault/security-tools/vault-health-reports.md#exposed-passwords-report)）。
 4. 选择**创建账户**：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2pST1WXY0Xk7GQ4GpwzELn/258a7524e9ecbfe25d2b3a4e455257c0/Set_master_password.png?w=1328&#x26;fm=avif" alt="设置主密码"><figcaption><p>设置主密码</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2pST1WXY0Xk7GQ4GpwzELn/258a7524e9ecbfe25d2b3a4e455257c0/Set_master_password.png?w=1328&#x26;fm=avif" alt="设置主密码"><figcaption><p>设置主密码</p></figcaption></figure></div>
 
 {% hint style="info" %}
 如果您的账户是旧账户，您可能需要主动验证您的电子邮箱！请登录[网页密码库](https://vault.bitwarden.com/)然后选择**验证电子邮箱**。如果您的账户电子邮箱未验证，则无法创建 [Send](../password-manager/bitwarden-send/about-send.md)。
@@ -25,7 +25,7 @@
 
 雇主或家庭成员等组织可以邀请用户注册 Bitwarden。如果您已被邀请加入某个组织，请检查您的电子邮箱是否收到来自 Bitwarden 的加入组织的邀请。在邀请过期之前打开电子邮件，然后选择**立即加入组织**。
 
-<div align="center" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3rZSnNkT3NPYThquuWqpeb/95516ccdedbb99931be5ee4d207fe2d8/image5.png?w=619&#x26;fm=avif" alt=""><figcaption><p>点击电子邮件链接后，系统会提示受邀用户接受组织邀请</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3rZSnNkT3NPYThquuWqpeb/95516ccdedbb99931be5ee4d207fe2d8/image5.png?w=619&#x26;fm=avif" alt=""><figcaption><p>点击电子邮件链接后，系统会提示受邀用户接受组织邀请</p></figcaption></figure></div>
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 

@@ -30,9 +30,7 @@
 
 2、选择**主密码**选项卡：
 
-{% embed url="https://bitwarden.com/assets/2Svv0PwlH9i7SSK73dlv9A/e451afb190346e492110a7bf1bd3a518/Master_password_settings.png?w=1200&fm=avif" %}
-主密码设置
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Svv0PwlH9i7SSK73dlv9A/e451afb190346e492110a7bf1bd3a518/Master_password_settings.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>主密码设置</p></figcaption></figure></div>
 
 3、输入您的**当前主密码**。
 
