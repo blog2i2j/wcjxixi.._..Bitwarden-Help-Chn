@@ -6,7 +6,7 @@
 
 使用 Bitwarden 生成器工具可以轻松创建强大的密码和唯一的用户名。密码生成器可在所有 Bitwarden 客户端中使用，用户名生成器可在网页 App、浏览器扩展、桌面 App 和移动 App 中使用。
 
-如果您目前还不是 Bitwarden 用户，您也可以访问 [https://bitwarden.com/password-generator/](https://bitwarden.com/password-generator/) 测试我们的免费密码生成器。
+如果您目前还不是 Bitwarden 用户，您也可以访问 [https://bitwarden.com/password-generator/](https://bitwarden.com/password-generator/) 测试我们的免费的密码生成器。
 
 ## 生成密码 <a href="#generate-a-password" id="generate-a-password"></a>
 
@@ -16,17 +16,11 @@
 {% tab title="网页 App" %}
 从导航栏中选择**工具** → **生成器**：
 
-{% embed url="https://bitwarden.com/assets/70bx0hWvxAvkz5RJdIj04n/63febc4043e13292461c768d910cd450/2025-02-14_11-00-10.png?w=1122&fm=avif" %}
-网页 App 密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/70bx0hWvxAvkz5RJdIj04n/63febc4043e13292461c768d910cd450/2025-02-14_11-00-10.png?w=1122&#x26;fm=avif" alt=""><figcaption><p>网页 App 密码生成器</p></figcaption></figure></div>
 
 您在此页面上[指定的选项](generator.md#password-types)将保存，即使您注销网页 App。您也可以使用相同的选项直接从「添加项目」或「编辑项目」界面使用 **⟳生成**按钮快速生成强密码：
 
-
-
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5ZVBOSK13MaXJ2S8iJTOMX/1324db87fd867667cbb6e8c1c1f4539a/2024-12-02_14-44-30.png?_a=DAJCwlWIZAAB" %}
-网页 App 密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5ZVBOSK13MaXJ2S8iJTOMX/1324db87fd867667cbb6e8c1c1f4539a/2024-12-02_14-44-30.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>网页 App 密码生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -36,21 +30,15 @@
 {% tab title="浏览器扩展" %}
 选择 **⟳生成器**选项卡：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6eOmI3kZOdnfw9i5JinfUD/f1a7129244f49c7d904664632e329076/2024-10-29_10-34-01.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6eOmI3kZOdnfw9i5JinfUD/f1a7129244f49c7d904664632e329076/2024-10-29_10-34-01.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展密码生成器</p></figcaption></figure></div>
 
 您也可以从「编辑」界面使用 **⟳生成**按钮生成强密码：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Cbja6OBxW2S6GVxLOqlYh/b71de03b37f5a4f4960e344a5b17cc01/2024-10-29_10-35-25.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Cbja6OBxW2S6GVxLOqlYh/b71de03b37f5a4f4960e344a5b17cc01/2024-10-29_10-35-25.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展密码生成器</p></figcaption></figure></div>
 
 如果您创建的账户没有存储在 Bitwarden 中，您也可以使用内嵌自动填充菜单，在**填充已生成的密码**提示下生成并自动填写密码：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2JcceqWgFbk4ViLCMe6qm5/ce116e8ff337f90fbbd57b52aa15fdcd/2024-11-05_10-07-08.png?_a=DAJCwlWIZAAB" %}
-填充已生成的密码
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2JcceqWgFbk4ViLCMe6qm5/ce116e8ff337f90fbbd57b52aa15fdcd/2024-11-05_10-07-08.png?w=952&#x26;fm=avif" alt=""><figcaption><p>填充已生成的密码</p></figcaption></figure></div>
 
 使用内嵌功能时，请使用 **⟳生成**按钮生成新的密码，直到您满意为止。确保在提示时选择**新增登录**，以便将登录信息保存到 Bitwarden。[了解更多](../../autofill/autofill-from/autofill-from-browser-extensions.md#inline-auto-fill-menu)。
 
@@ -62,15 +50,11 @@
 {% tab title="桌面端" %}
 从导航菜单中选择**生成器**：
 
-{% embed url="https://bitwarden.com/assets/6cFQ3iojZXLy1ZIdIXp6Zr/cfff50e193c533ef1bbc09c489693e9e/2026-01-28_10-59-21.png?w=988&fm=avif" %}
-桌面 App 密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6cFQ3iojZXLy1ZIdIXp6Zr/cfff50e193c533ef1bbc09c489693e9e/2026-01-28_10-59-21.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
 
 您也可以从「添加」/「编辑」项目界面使用 **⟳生成**按钮生成强密码：
 
-{% embed url="https://bitwarden.com/assets/6VInVRr9tZBOndfe4VrpXf/b57e2bd43fad800bc010ebf767d26784/2026-01-28_11-06-53.png?w=988&fm=avif" %}
-桌面 App 密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6VInVRr9tZBOndfe4VrpXf/b57e2bd43fad800bc010ebf767d26784/2026-01-28_11-06-53.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 密码生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -80,15 +64,11 @@
 {% tab title="移动端" %}
 选择 **⟳生成器**选项卡：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/Cqrt6OGquQLRJvZDuqtCk/5b42dad11498bc5c62a749c4fc096fc9/2025-01-21_15-49-19.png?_a=DAJCwlWIZAAB" %}
-移动 App 密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/Cqrt6OGquQLRJvZDuqtCk/5b42dad11498bc5c62a749c4fc096fc9/2025-01-21_15-49-19.png?w=712&#x26;fm=avif" alt=""><figcaption><p>移动 App 密码生成器</p></figcaption></figure></div>
 
 您也可以从「添加」/「编辑」项目界面，以及通过点按「共享」图标访问 iOS App 扩展，使用 **⟳生成**按钮生成强密码：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4NeVmiRcKfedg6Fzwp0N1Y/f91ad1097dcd379925cedee724dc7592/2025-01-21_15-51-01.png?_a=DAJCwlWIZAAB" %}
-移动 App 密码生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4NeVmiRcKfedg6Fzwp0N1Y/f91ad1097dcd379925cedee724dc7592/2025-01-21_15-51-01.png?w=715&#x26;fm=avif" alt=""><figcaption><p>移动 App 密码生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -125,10 +105,10 @@ bw generate -uln --length 14
 * **a-z**：在密码中包含小写字母。
 * **0-9**：在密码中包含数字。
 * **!@#$%^&\***：在密码中包含特殊字符。
-* **避免模棱两可的字符**：防止您的密码同时包含 `1` 和 `l` 或同时包含 `0` 和 `o`。
+* **避免模棱两可的字符**：避免您的密码同时包含 `1` 和 `l` 或同时包含 `0` 和 `o`。
 
 {% hint style="danger" %}
-除非您需要满足网站的特定密码要求，否则我们建议将**最少数字**和**最少特殊字符**保持尽可能低 (0-1)，因为过度约束会限制生成密码的强度。
+除非您需要满足网站的特定密码要求，否则我们建议将**最少数字**和**最少特殊字符**保持尽可能低 (0-1)，因为过度约束会限制生成的密码的强度。
 {% endhint %}
 
 #### 密码短语 <a href="#passphrase" id="passphrase"></a>
@@ -148,15 +128,11 @@ bw generate -uln --length 14
 {% tab title="网页 App" %}
 从导航栏中选择**工具** → **生成器**：
 
-{% embed url="https://bitwarden.com/assets/2862v5xPV5qQM7XfdUvNlI/0f8fe47b6d9efb0a6d77b245a1f63cdf/2025-02-14_11-02-02.png?w=1122&fm=avif" %}
-网页 App 用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2862v5xPV5qQM7XfdUvNlI/0f8fe47b6d9efb0a6d77b245a1f63cdf/2025-02-14_11-02-02.png?w=1122&#x26;fm=avif" alt=""><figcaption><p>网页 App 用户名生成器</p></figcaption></figure></div>
 
 您也可以从「编辑」界面使用 **⟳生成**按钮生成用户名：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1zpNFR8fu9DBo2krqln5hr/e893f1f3e8d85d58d20c8e316f247666/2024-12-02_14-44-30.png?_a=DAJCwlWIZAAB" %}
-网页 App 用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1zpNFR8fu9DBo2krqln5hr/e893f1f3e8d85d58d20c8e316f247666/2024-12-02_14-44-30.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>网页 App 用户名生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -166,15 +142,11 @@ bw generate -uln --length 14
 {% tab title="浏览器扩展" %}
 选择 **⟳生成器器**选项卡，然后选择**用户名**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3WEaJYUplgEdjgoSxlQ842/40d3eed8347cb6b0a600d06f42cc1941/2024-10-29_10-39-00.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3WEaJYUplgEdjgoSxlQ842/40d3eed8347cb6b0a600d06f42cc1941/2024-10-29_10-39-00.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展用户名生成器</p></figcaption></figure></div>
 
 您还可以从「编辑」界面使用 **⟳生成**按钮生成用户名：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/23CDvd3ErFQIZNYwgh000F/c19c373ecb6ca2d6aad2587a1b16dd12/2024-10-29_10-39-56.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/23CDvd3ErFQIZNYwgh000F/c19c373ecb6ca2d6aad2587a1b16dd12/2024-10-29_10-39-56.png?w=966&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展用户名生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -184,15 +156,11 @@ bw generate -uln --length 14
 {% tab title="桌面端" %}
 从菜单栏中选择**查看** → **生成器**：
 
-{% embed url="https://bitwarden.com/assets/2VGPd4WOwydbovDJdyVT51/3f27f0390d85b8622e6b1baae611d3fc/2026-01-28_11-10-11.png?w=988&fm=avif" %}
-桌面 App 用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2VGPd4WOwydbovDJdyVT51/3f27f0390d85b8622e6b1baae611d3fc/2026-01-28_11-10-11.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
 
 您还可以从「添加」/「编辑」项目界面使用 **⟳生成**按钮生成用户名：
 
-{% embed url="https://bitwarden.com/assets/7xTg7VVE7CgTZhBl5LlYui/b40a5255fcef08a3d17c3bad13c34f16/2026-01-28_11-13-24.png?w=988&fm=avif" %}
-桌面 App 用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7xTg7VVE7CgTZhBl5LlYui/b40a5255fcef08a3d17c3bad13c34f16/2026-01-28_11-13-24.png?w=988&#x26;fm=avif" alt=""><figcaption><p>桌面 App 用户名生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -202,15 +170,11 @@ bw generate -uln --length 14
 {% tab title="移动端" %}
 选择 **⟳生成器器**选项卡：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6nfsTiHypQvXrfz7qI7AKI/6e41b1fedea81895497268b0fd825215/2025-01-21_15-56-24.png?_a=DAJCwlWIZAAB" %}
-移动 App 用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6nfsTiHypQvXrfz7qI7AKI/6e41b1fedea81895497268b0fd825215/2025-01-21_15-56-24.png?w=714&#x26;fm=avif" alt=""><figcaption><p>移动 App 用户名生成器</p></figcaption></figure></div>
 
 您也可以从「添加」/「编辑」项目界面，以及通过点按「共享」图标访问 iOS App 扩展，使用 **⟳生成**按钮生成用户名：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2Obfpm7UdBizkwASepMS6j/998c1448556484b867160f7412aa984c/2025-01-21_15-51-01.png?_a=DAJCwlWIZAAB" %}
-移动 App 用户名生成器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2Obfpm7UdBizkwASepMS6j/998c1448556484b867160f7412aa984c/2025-01-21_15-51-01.png?w=715&#x26;fm=avif" alt=""><figcaption><p>移动 App 用户名生成器</p></figcaption></figure></div>
 
 {% hint style="info" %}
 选择[**生成器历史记录**](password-and-generator-history.md#generator-history)即可访问该特定客户端在任一位置创建的密码和用户名 - 即使您没有将它们保存到项目中。当您注销时，历史记录将被清除。
@@ -264,11 +228,9 @@ bw generate -uln --length 14
 
 2、从导航中选择 **API Keys**。SimpleLogin 会要求您输入密码以创建 API 密钥。
 
-3、在「New API Key」部分中，输入表明将由 Bitwarden 使用的新密钥的名称，然后选择 **Create**。
+3、在「New API Key」部分中，输入表示将由 Bitwarden 使用的新密钥的名称，然后选择 **Create**。
 
-{% embed url="https://bitwarden.com/assets/6ie1Qpk8LYapG6JRX3X1dD/06c1083c6e146c2822f0e4a47b507785/Screen_Shot_2022-06-30_at_3.17.59_PM.png?w=1200&fm=avif" %}
-SimpleLogin API 密钥
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6ie1Qpk8LYapG6JRX3X1dD/06c1083c6e146c2822f0e4a47b507785/Screen_Shot_2022-06-30_at_3.17.59_PM.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>SimpleLogin API 密钥</p></figcaption></figure></div>
 
 4、**Copy** 此 API 密钥然后将其粘贴到 Bitwarden 用户名生成器的 **API 密钥**字段中。
 
@@ -282,7 +244,7 @@ SimpleLogin API 密钥
 
 2、在 Addy.io 中，从导航菜单选择 **Setting**。
 
-{% embed url="https://bitwarden.com/assets/18PUguJXkABllufHgtNEJi/564febbfe28d3f0cd491c3216d62db9e/addy_settings.png?w=1100&fm=avif" %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/18PUguJXkABllufHgtNEJi/564febbfe28d3f0cd491c3216d62db9e/addy_settings.png?w=1100&#x26;fm=avif" alt=""><figcaption><p>AnonAddy 设置</p></figcaption></figure></div>
 
 3、在「Setting」界面的 **General** 选项卡上，向下滚动到 **Update Default Alias Domain**。选择您希望用作别名的默认域名。
 
@@ -292,9 +254,9 @@ SimpleLogin API 密钥
 
 4、选择 **API Keys** 选项卡然后点击 **Create New API Key** 按钮。
 
-5、在「Create New API Key」对话框中，输入指示 Bitwarden 将使用的新令牌的 **Name**、**Expiration**，然后确认您的 Addy.io 账户密码。完成必填字段后，选择 **Create API Key**。
+5、在「Create New API Key」对话框中，输入表示 Bitwarden 将使用的新令牌的 **Name**、**Expiration**，然后确认您的 Addy.io 账户密码。完成必填字段后，选择 **Create API Key**。
 
-{% embed url="https://bitwarden.com/assets/6o8021KYChu6jzEGvUbXDH/b56977c26a44b431486796cb4965f23d/create_new_api_key.png?w=1084&fm=avif" %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6o8021KYChu6jzEGvUbXDH/b56977c26a44b431486796cb4965f23d/create_new_api_key.png?w=1084&#x26;fm=avif" alt=""><figcaption><p>AnonAddy 生成令牌</p></figcaption></figure></div>
 
 6、复制「Personal Access Key」然后将其粘贴到 Bitwarden 用户名生成器的 **API 访问令牌**字段中。
 
@@ -312,9 +274,9 @@ SimpleLogin API 密钥
 {% tab title="Firefox Relay" %}
 1、登录到您的 Firefox Relay 账户。
 
-2、选择配置文件图标并从下拉列表中选择 **Setting**：
+2、选择配置文件图标然后从下拉列表中选择 **Setting**：
 
-{% embed url="https://bitwarden.com/assets/3jK0OhlASgzDZo1Xu2c97O/f24ae0b64e7fe7736e757b33a89510c6/Screen_Shot_2022-06-01_at_3.38.56_PM.png?w=1200&fm=avif" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3jK0OhlASgzDZo1Xu2c97O/f24ae0b64e7fe7736e757b33a89510c6/Screen_Shot_2022-06-01_at_3.38.56_PM.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Firefox Relay 设置菜单</p></figcaption></figure></div>
 
 3、将 **API Key** 复制到 Bitwarden 用户名生成器的 **API 访问令牌**字段中。
 
@@ -324,15 +286,15 @@ SimpleLogin API 密钥
 {% tab title="Fastmail" %}
 1、登录到您的 Fastmail 账户。
 
-2、选择配置文件图标并从下拉列表中选择 **Setting**。
+2、选择配置文件图标然后从下拉列表中选择 **Setting**。
 
 3、从导航菜单中，选择 **Password & Security**，然后选择 **Manage API tokens**：
 
-{% embed url="https://bitwarden.com/assets/J1fPSFIIO7FgPyAyBgpbh/d4dd85f7f7201731936de872ff4a5134/2024-12-23_15-17-17.png?w=1200&fm=avif" %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/J1fPSFIIO7FgPyAyBgpbh/d4dd85f7f7201731936de872ff4a5134/2024-12-23_15-17-17.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Fastmail API 令牌</p></figcaption></figure></div>
 
 4、选择 **New API token** 然后生成 API 令牌：
 
-{% embed url="https://bitwarden.com/assets/1FieLCzKTItKNqDIhWBrbH/2816de1ec7580e2e90cf80e38d311993/2024-12-23_15-18-50.png?w=750&fm=avif" %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1FieLCzKTItKNqDIhWBrbH/2816de1ec7580e2e90cf80e38d311993/2024-12-23_15-18-50.png?w=750&#x26;fm=avif" alt=""><figcaption><p>新增 API 令牌</p></figcaption></figure></div>
 
 包含以下信息：
 
@@ -349,25 +311,25 @@ SimpleLogin API 密钥
 
 2、Forward Email 使用默认域名 `hideaddress.net`，但是如果您有已注册的域名，则可以将其连接到该服务。详细信息，请参阅 [Forward Email 设置指南](https://forwardemail.net/zh/guides)。
 
-3、在 Forward Email 中，导航至**我的账户** → **安全**页面然后复制「**开发人员访问 API 令牌**」：
+3、在 Forward Email 中，导航至**我的账户** → **安全**页面，然后复制「开发人员访问 API 令牌」：
 
-{% embed url="https://bitwarden.com/assets/0bYzljpbdqH7AdFqDh7sr/f43a225e5614a00b1dd391f17fbd916d/Screen_Shot_2023-06-30_at_1.06.04_PM.png?w=988&fm=avif" %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/0bYzljpbdqH7AdFqDh7sr/f43a225e5614a00b1dd391f17fbd916d/Screen_Shot_2023-06-30_at_1.06.04_PM.png?w=988&#x26;fm=avif" alt=""><figcaption><p>复制转发的电子邮箱 API 令牌</p></figcaption></figure></div>
 
-4、在 Bitwarden 用户名生成器中，将复制的令牌粘贴到 **API 访问令牌**中，然后输入 `hideaddress.net` 或您的**已注册的域名**。
+4、在 Bitwarden 用户名生成器中，将复制的令牌粘贴到 **API 访问令牌**中，然后输入 `hideaddress.net` 或您已注册的**域名**。
 
 5、选择**重新生成用户名**以生成用户名并在 Forward Email 中自动创建相应的别名。
 {% endtab %}
 
 {% tab title="DuckDuckGo " %}
-1、遵循 [DuckDuckGo 说明](https://duckduckgo.com/email/)设置您的 Duck 地址。
+1、按照 [DuckDuckGo 说明](https://duckduckgo.com/email/)设置您的 Duck 地址。
 
-2、设置好 Duck 地址后，选择 DuckDuckGo 电子邮件保护页面上的**自动填充**选项卡，然后打开 Web 浏览器的开发人员工具。
+2、设置好 Duck 地址后，选择 DuckDuckGo 电子邮件保护页面上的 **Autofill** 选项卡，然后打开网页浏览器的开发人员工具。
 
-3、单击 **Generate Private Duck Address** 按钮并查看开发人员工具窗口中的 **Network** 选项卡。选择 API POST 请求的「地址」调用，并定位到 API 授权项目。该项目看起来像这样：`authorization: Bearer <API token value>.`&#x20;
+3、单击 **Generate Private Duck Address** 按钮并查看开发人员工具窗口中的 **Network** 选项卡。选择「地址」请求调用的 API POST，然后定位到 API 授权项目。该项目看起来像这样：`authorization: Bearer <API token value>.`
 
-{% embed url="https://bitwarden.com/assets/5Rj9xrPrgp13Pl9KGuap7Z/855fa2f0defc41a68b512b92027bf540/DDG_generate_private_address.png?w=1200&fm=avif" %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5Rj9xrPrgp13Pl9KGuap7Z/855fa2f0defc41a68b512b92027bf540/DDG_generate_private_address.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>生成 DuckDuckGo 电子邮箱别名</p></figcaption></figure></div>
 
-4、复制 API 授权令牌的值然后将其粘贴到 Bitwarden 生成器的 API 密钥字段中。
+4、复制 API 授权令牌的值然后将其粘贴到 Bitwarden 生成器的 **API 密钥**字段中。
 
 5、选择**重新生成用户名**以生成一个用户名并在 DuckDuckGo 中自动创建对应的别名。
 {% endtab %}
