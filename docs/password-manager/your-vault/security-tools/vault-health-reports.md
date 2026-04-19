@@ -16,9 +16,7 @@
 
 1、登录到网页 App 然后从导航栏选择**报告：**
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/JcoKvP7eLrZHUEKmjTqgc/0213680bf5546cfc7df498d9931c8d2f/2024-12-02_16-29-59.png?_a=DAJCwlWIZAAB" %}
-报告页面
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/JcoKvP7eLrZHUEKmjTqgc/0213680bf5546cfc7df498d9931c8d2f/2024-12-02_16-29-59.png?w=1204&#x26;fm=avif" alt=""><figcaption><p>报告页面</p></figcaption></figure></div>
 
 2、选择要运行的报告。
 
@@ -28,15 +26,11 @@
 
 2、使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 3、在您的组织中，从导航栏选择**报告** → **报告**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5POQmt3TrEgfFzRNwHancg/9a67882a07d8894747ebb5bc3bbdcaae/2024-12-02_16-31-14.png?_a=DAJCwlWIZAAB" %}
-组织报告
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5POQmt3TrEgfFzRNwHancg/9a67882a07d8894747ebb5bc3bbdcaae/2024-12-02_16-31-14.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>组织报告</p></figcaption></figure></div>
 
 4、选择要运行的报告。
 
@@ -85,17 +79,15 @@
 
 被识别后，使用 `Instructions` （说明）超链接来为每个违规项目设置 2FA。
 
-<figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3USpBf7beuGcdJvMhDrwNI/570672e3220f09e0398ced33a154b1ea/inactive-2fa.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>报告说明</p></figcaption></figure>
+<div align="left" data-with-frame="true"><figure><img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3USpBf7beuGcdJvMhDrwNI/570672e3220f09e0398ced33a154b1ea/inactive-2fa.png?_a=DAJAUVWIZAAB" alt=""><figcaption><p>报告 Instructions</p></figcaption></figure></div>
 
 ### 成员访问权限 <a href="#member-access" id="member-access"></a>
 
 「成员访问权限」报告显示每个用户有权访问的**群组**、**集合**和**项目**的总数：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4oNfzpIcDwn2XjUgG0lPG3/a51bac815082055fdd6f47a40937b72d/2024-09-10_16-13-31.png?_a=DAJAUVWIZAAB" %}
-成员访问权限报告
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4oNfzpIcDwn2XjUgG0lPG3/a51bac815082055fdd6f47a40937b72d/2024-09-10_16-13-31.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>成员访问权限报告</p></figcaption></figure></div>
 
-要定位特定人员，请在**搜索成员**字段中输入他们的电子邮箱。选择相邻的 **→导出图标**以下载包含每个成员详细信息的 `.csv`：
+要定位特定人员，请在**搜索成员**字段中输入他们的电子邮箱。选择相邻的 **→导出图标**以下载包含每个成员详细信息的 `.csv` 文件，其中包含：
 
 * 基本账户详细信息，包括其**名称**以及是否启用了**两步登录**或**账户恢复**
 * 他们的**群组**分配情况

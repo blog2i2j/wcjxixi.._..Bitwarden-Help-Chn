@@ -105,7 +105,7 @@ bw generate -uln --length 14
 * **a-z**：在密码中包含小写字母。
 * **0-9**：在密码中包含数字。
 * **!@#$%^&\***：在密码中包含特殊字符。
-* **避免模棱两可的字符**：避免您的密码同时包含 `1` 和 `l` 或同时包含 `0` 和 `o`。
+* **避免模棱两可的字符**：防止您的密码同时包含 `1` 和 `l` 或同时包含 `0` 和 `o`。
 
 {% hint style="danger" %}
 除非您需要满足网站的特定密码要求，否则我们建议将**最少数字**和**最少特殊字符**保持尽可能低 (0-1)，因为过度约束会限制生成的密码的强度。
@@ -258,7 +258,7 @@ bw generate -uln --length 14
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6o8021KYChu6jzEGvUbXDH/b56977c26a44b431486796cb4965f23d/create_new_api_key.png?w=1084&#x26;fm=avif" alt=""><figcaption><p>AnonAddy 生成令牌</p></figcaption></figure></div>
 
-6、复制「Personal Access Key」然后将其粘贴到 Bitwarden 用户名生成器的 **API 访问令牌**字段中。
+6、复制「Personal Access Key」然后将其粘贴到 Bitwarden 用户名生成器的 **API 密钥**字段中。
 
 {% hint style="success" %}
 我们建议将此个人访问令牌添加到您的 Bitwarden 中的 Addy.io 密码库项目中，因为该令牌只会在 Addy.io 中显示一次。
@@ -278,7 +278,7 @@ bw generate -uln --length 14
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3jK0OhlASgzDZo1Xu2c97O/f24ae0b64e7fe7736e757b33a89510c6/Screen_Shot_2022-06-01_at_3.38.56_PM.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Firefox Relay 设置菜单</p></figcaption></figure></div>
 
-3、将 **API Key** 复制到 Bitwarden 用户名生成器的 **API 访问令牌**字段中。
+3、复制 **API Key** 然后将其粘贴到 Bitwarden 用户名生成器的 **API 密钥**字段中。
 
 4、选择**重新生成用户名**以生成一个用户名并同时自动在 Firefox Relay 中自动创建相应的掩码。
 {% endtab %}
@@ -296,12 +296,12 @@ bw generate -uln --length 14
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1FieLCzKTItKNqDIhWBrbH/2816de1ec7580e2e90cf80e38d311993/2024-12-23_15-18-50.png?w=750&#x26;fm=avif" alt=""><figcaption><p>新增 API 令牌</p></figcaption></figure></div>
 
-包含以下信息：
+包含以下设置：
 
 * **Read-only access** **disabled**
 * **Masked Email enabled**
 
-5、将 **API Key** 复制到 Bitwarden 用户名生成器的 **API 访问令牌**字段中。
+5、复制 **API Key** 然后将其粘贴到 Bitwarden 用户名生成器的 **API 密钥**字段中。
 
 6、选择**重新生成用户名**以生成用户名并在 Fastmail 中自动创建相应的别名。
 {% endtab %}
@@ -329,7 +329,7 @@ bw generate -uln --length 14
 
 <div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5Rj9xrPrgp13Pl9KGuap7Z/855fa2f0defc41a68b512b92027bf540/DDG_generate_private_address.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>生成 DuckDuckGo 电子邮箱别名</p></figcaption></figure></div>
 
-4、复制 API 授权令牌的值然后将其粘贴到 Bitwarden 生成器的 **API 密钥**字段中。
+4、复制 API 授权令牌的值然后将其粘贴到 Bitwarden 用户名生成器的 **API 密钥**字段中。
 
 5、选择**重新生成用户名**以生成一个用户名并在 DuckDuckGo 中自动创建对应的别名。
 {% endtab %}
