@@ -1,10 +1,10 @@
-# 成员角色
+# =成员角色
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/user-types-access-control/)
 {% endhint %}
 
-成员角色控制着用户的权限，例如配置单点登录 (SSO) 或管理设备审批。您可以在邀请用户时或在之后随时分配[默认角色](member-roles.md#default-roles)或[自定义角色](member-roles.md#custom-roles)。企业组织中的管理员和所有者可以管理角色，并可以创建自定义角色。
+成员角色控制着用户的权限，例如配置单点登录 (SSO) 或管理设备审批。您可以在邀请用户时或在之后随时分配[默认角色](member-roles.md#default-roles)或[自定义角色](member-roles.md#custom-roles)。企业版组织的管理员和所有者可以管理角色，并可以创建自定义角色。
 
 ## 分配成员角色 <a href="#assign-member-roles" id="assign-member-roles"></a>
 
@@ -13,9 +13,7 @@
 * [邀请新成员](user-management.md#invite)时，选择一个**成员角色**。
 * 要更改现有成员的角色，请转到**成员**然后选择该成员的名称。从出现的选项中选择一个**成员角色**：
 
-{% embed url="https://bitwarden.com/assets/73zJ6ZvMNNLU8TyH0Xdhow/a96f23b972fc9e954ac4860d3fb044d6/Edit_member_role.png?w=1200&fm=avif" %}
-编辑成员角色
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/73zJ6ZvMNNLU8TyH0Xdhow/a96f23b972fc9e954ac4860d3fb044d6/Edit_member_role.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>编辑成员角色</p></figcaption></figure></div>
 
 ## 默认角色 <a href="#default-roles" id="default-roles"></a>
 
