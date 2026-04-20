@@ -20,9 +20,7 @@
 
 1、从左侧边栏选择 **🚀Advanced Options** 选项。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5uCdlKvfGTjYIEJvKtpbQw/14cd0e6bfb36a53b1f1d6f88d3808a90/lastpassadvancedoptions.png?fm=webp&h=864&q=50&w=1272" %}
-从网页密码库导出
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5uCdlKvfGTjYIEJvKtpbQw/14cd0e6bfb36a53b1f1d6f88d3808a90/lastpassadvancedoptions.png?w=1272&#x26;fm=avif" alt=""><figcaption><p>从网页密码库导出</p></figcaption></figure></div>
 
 2、从管理您的密码库部分，选择 **Export** 选项。此时，LastPass 将向您发送一封电子邮件以确认导出。
 
@@ -30,16 +28,14 @@
 
 根据您的浏览器，您的密码库数据将自动保存为 `.csv` 文件或以 `.csv` 格式显示在屏幕上：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6TIRhpByBC4coLrP58zG8a/fb2da8df01a2e0f56e87f45612182e86/lastpass-copy.png?fm=webp&h=320&q=50&w=749" %}
-LastPass 导出
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6TIRhpByBC4coLrP58zG8a/fb2da8df01a2e0f56e87f45612182e86/lastpass-copy.png?w=749&#x26;fm=avif" alt=""><figcaption><p>LastPass 导出</p></figcaption></figure></div>
 
 4、如果您的密码库数据显示在屏幕上，全选显示的数据，将其复制并粘帖到一个新的 `export.csv` 文件中。
 
 {% hint style="danger" %}
 一些用户报告了一个 bug：密码中的特殊字符（`&`、`<`、`>` 等）在导出时，被更改成了 HTML 编码的值（例如 `&amp;`）。
 
-如果您在导出的数据中发现了这个 bug，请使用文本编辑器查找并替换所有被更改的值，然后再导入到 Bitwarden 中。
+如果您在导出的数据中发现了这个 bug，请使用文本编辑器查找并替换所有被更改的值，然后再导入到 Bitwarden。
 {% endhint %}
 {% endtab %}
 
@@ -56,9 +52,7 @@ LastPass 导出
 
 根据您的浏览器，您的密码库数据将自动保存为 `.csv` 文件或以 `.csv` 格式显示在屏幕上：
 
-{% embed url="https://bitwarden.com/assets/6TIRhpByBC4coLrP58zG8a/fb2da8df01a2e0f56e87f45612182e86/lastpass-copy.png?w=749&fm=avif" %}
-LastPass 导出
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6TIRhpByBC4coLrP58zG8a/fb2da8df01a2e0f56e87f45612182e86/lastpass-copy.png?w=749&#x26;fm=avif" alt=""><figcaption><p>LastPass 导出</p></figcaption></figure></div>
 
 3、如果您的密码库数据显示在屏幕上，全选显示的文本数据，然后将其复制并粘帖到一个新的 `export.csv` 文件中。
 {% endtab %}
@@ -113,9 +107,7 @@ LastPass 导出
 
 2、从导航选择**工具** → **导入**：
 
-{% embed url="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&fm=avif" %}
-导入项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导入项目</p></figcaption></figure></div>
 
 3、从下拉菜单中完成以下字段：
 
