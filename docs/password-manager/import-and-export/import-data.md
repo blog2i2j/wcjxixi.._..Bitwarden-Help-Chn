@@ -42,9 +42,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 2、选择**导入**：
 
-{% embed url="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&fm=avif" %}
-导入项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导入项目</p></figcaption></figure></div>
 
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
@@ -69,7 +67,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 6、选择**导入**。如果您要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-7、数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。
+7、数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。如果您从其他密码管理器或浏览器导入到 Bitwarden，您也应该从该工具中删除数据。
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -101,7 +99,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 7、选择**导入数据**。如果您要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-8、数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。
+8、数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。如果您从其他密码管理器或浏览器导入到 Bitwarden，您也应该从该工具中删除数据。
 {% endtab %}
 
 {% tab title="移动端" %}
@@ -137,7 +135,7 @@ Bitwarden 兼容来自其他密码管理器的[其他文件类型](import-and-ex
 
 5、选择**导入数据**。如果您要导入受密码保护的 `.json` 文件，请在出现的**确认密码库导入**窗口中输入密码。
 
-6、数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。
+6、数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。如果您从其他密码管理器或浏览器导入到 Bitwarden，您也应该从该工具中删除数据。
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -153,7 +151,7 @@ bw import <format> <path>
 bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 
-数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。
+数据导入后，从您的计算机中删除导出的数据文件。这将在您的计算机受到入侵时保护您的数据安全。如果您从其他密码管理器或浏览器导入到 Bitwarden，您也应该从该工具中删除数据。
 {% endtab %}
 {% endtabs %}
 
@@ -163,9 +161,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 
 在**导入**页面，选择您组织的**密码库**然后选择**集合**：
 
-{% embed url="https://bitwarden.com/assets/5i5K8TyWXdbpJLNlsfyd3v/ff5bd0dedb26341e355c8537faafee2e/2025-12-17_11-28-45.png?w=1156&fm=avif" %}
-导入到集合
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5i5K8TyWXdbpJLNlsfyd3v/ff5bd0dedb26341e355c8537faafee2e/2025-12-17_11-28-45.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导入到集合</p></figcaption></figure></div>
 
 ## 导入错误故障排除 <a href="#troubleshoot-import-errors" id="troubleshoot-import-errors"></a>
 
