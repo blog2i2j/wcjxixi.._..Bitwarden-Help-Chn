@@ -75,13 +75,13 @@
 
 要为您的组织可自动扩展到的席位数量设置限制：
 
-1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理员控制台：
+1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
 
 2、前往**计费** → **订阅**。
 
-3、检查限制订阅（可选）。
+3、检查**限制订阅（可选）**。
 
 4、在**席位限制（可选）**&#x4E2D;输入您所需的最大用户席位数量：
 
