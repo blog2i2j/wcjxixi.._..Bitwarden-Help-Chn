@@ -12,9 +12,7 @@
 
 如果只有一个有匹配 URI 的登录项目，则凭据将在后台自动填充，并且不会显示验证提示。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6rUtQ8FzPTPuKM0sXZ4iyc/3fc116ce5eba8bc70f8dbebfac0eafa6/basic-auth-prompt.png?fm=webp&h=368&q=50&w=1192" %}
-基本验证提示
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6rUtQ8FzPTPuKM0sXZ4iyc/3fc116ce5eba8bc70f8dbebfac0eafa6/basic-auth-prompt.png?w=1192&#x26;fm=avif" alt=""><figcaption><p>基本验证提示</p></figcaption></figure></div>
 
 {% hint style="info" %}
 由于基本验证提示的设计方式，自动填充必须是非交互式的。这意味着您不能使用**密码库**视图、上下文菜单或键盘快捷键在基本验证提示上进行自动填充。

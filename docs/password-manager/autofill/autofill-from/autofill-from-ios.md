@@ -40,9 +40,7 @@ iOS 上有几种不同的自动填充方式：
 
 3、打开**自动填充密码和通行密钥**开关，然后从**自动填充自：**&#x5217;表中打开 **Bitwarden**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5jxVP3WslH4ppIdFq9viqX/613fbbb9eacbb14f56c0fbcee17bc9a1/2025-01-22_11-00-15.png?_a=DAJCwlWIZAAB" %}
-设置 iOS 的自动填充
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5jxVP3WslH4ppIdFq9viqX/613fbbb9eacbb14f56c0fbcee17bc9a1/2025-01-22_11-00-15.png?w=352&#x26;fm=avif" alt=""><figcaption><p>iOS 上设置自动填充</p></figcaption></figure></div>
 
 {% hint style="success" %}
 我们强烈建议在**自动填充自：**&#x5217;表中禁用任何其他自动填充服务（例如钥匙串）。
@@ -54,9 +52,7 @@ iOS 上有几种不同的自动填充方式：
 
 2、在登录界面点击用户名或密码字段。键盘将上滑出一个匹配的登录 (`my_username`) 或 **🔑密码**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/vQG8BTWlHg2AQxBlXe4S3/63f2a5e9c32c2f38b29ec0ab0af24d57/autofill-ios.jpeg?_a=BAJFJtWIB" %}
-iOS 上的自动填充
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/vQG8BTWlHg2AQxBlXe4S3/63f2a5e9c32c2f38b29ec0ab0af24d57/autofill-ios.jpeg?w=932&#x26;fm=avif" alt=""><figcaption><p>iOS 上的自动填充</p></figcaption></figure></div>
 
 3、如果显示一个[匹配的登录](../troubleshoot-autofill/forming-uris-for-autofill.md)，请点击以自动填充。如果显示 **🔑密码**按钮，请点击它浏览您的密码库以搜索要使用的登录项目。如果显示 **🔑密码**按钮，可能是因为您的密码库中没有具有[匹配 URI](../troubleshoot-autofill/forming-uris-for-autofill.md) 的项目。
 
@@ -88,9 +84,7 @@ iOS 上的自动填充
 
 3、向下滚动并点击 **Bitwarden** 选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3Icxd3YqcXjBrjHVAeluwm/8be732b1ed2adebfd0a7af00f7150a97/extension.png?_a=BAJFJtWIB" %}
-共享菜单中的 Bitwarden
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3Icxd3YqcXjBrjHVAeluwm/8be732b1ed2adebfd0a7af00f7150a97/extension.png?w=311&#x26;fm=avif" alt=""><figcaption><p>共享菜单中的 Bitwarden</p></figcaption></figure></div>
 
 {% hint style="info" %}
 如果您启用了[使用生物识别解锁](../../../account/log-in-and-unlock/more-unlock-options/unlocking-with-biometrics.md)，则首次点击此选项时，将提示您验证您的主密码。
@@ -106,9 +100,7 @@ iOS 上的自动填充
 
 通过长按任何文本字段，可以从 Bitwarden 自动填充数据，前提是键盘自动填充选项已激活：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/77glhnjH87Z6PKscElWtZy/f9229264859577c0490cf423237f8502/2025-01-22_11-05-33.png?_a=DAJCwlWIZAAB" %}
-iOS 上长按文本字段
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/77glhnjH87Z6PKscElWtZy/f9229264859577c0490cf423237f8502/2025-01-22_11-05-33.png?w=359&#x26;fm=avif" alt=""><figcaption><p>iOS 上长按文本字段</p></figcaption></figure></div>
 
 ## 自动填充期间切换账户 <a href="#switch-accounts-during-autofill" id="switch-accounts-during-autofill"></a>
 
@@ -135,9 +127,7 @@ iOS 上长按文本字段
 
 在网站或 App 上创建新的通行密钥时，iOS App 将提示您存储此通行密钥：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6rccoaRtUBbEnUjQxfSTNi/d033196df75950bae5bd7a20e8a7edd2/passkey-ios-1__1_.png?_a=BAJFJtWIB" %}
-创建通行密钥
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6rccoaRtUBbEnUjQxfSTNi/d033196df75950bae5bd7a20e8a7edd2/passkey-ios-1__1_.png?w=500&#x26;fm=avif" alt=""><figcaption><p>创建通行密钥</p></figcaption></figure></div>
 
 选择**继续**。
 
@@ -147,9 +137,7 @@ iOS 上长按文本字段
 
 如果该服务已存在一个通行密钥，Bitwarden 将允许您通过选择 **➕**&#x56FE;标以创建一个新的项目来保存新的通行密钥，或覆盖现有的通行密钥：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6L5s6XBFjvaaEiDZ68m00Q/a130745c2276068fd0be066a47a34684/passkey-ios-2__1_.png?_a=BAJFJtWIB" %}
-保存或覆盖通行密钥
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6L5s6XBFjvaaEiDZ68m00Q/a130745c2276068fd0be066a47a34684/passkey-ios-2__1_.png?w=500&#x26;fm=avif" alt=""><figcaption><p>保存或覆盖通行密钥</p></figcaption></figure></div>
 
 {% hint style="info" %}
 每个登录项目只能保存一个通行密钥。如果一个凭证保存在多个地方，例如作为两个登录项目分别保存在个人密码库和组织密码库中，则每个登录项目都可以保存不同的通行密钥。
@@ -159,9 +147,7 @@ iOS 上长按文本字段
 
 要使用 Bitwarden 中存储的密钥，请在网站上启动通行密钥登录。移动 App 将提供使用存储在 Bitwarden 密码库中的通行密钥登录的选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/b6fY5o4CBxhW4ZjDIpanR/56ffdbf1ff93b7387be273bc7df15e6b/passkey-ios-3__1_.png?_a=BAJFJtWIB" %}
-使用通行密钥登录
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/b6fY5o4CBxhW4ZjDIpanR/56ffdbf1ff93b7387be273bc7df15e6b/passkey-ios-3__1_.png?w=500&#x26;fm=avif" alt=""><figcaption><p>使用通行密钥登录</p></figcaption></figure></div>
 
 选择**继续**。
 

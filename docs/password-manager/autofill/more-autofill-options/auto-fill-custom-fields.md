@@ -18,9 +18,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 2、在包含要自动填充的自定义字段的项目上，选择**填充**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4ExHyb45ZapKssCpRl6Uro/b8e686e8a58e0ed24f8aa58dd746253e/2024-12-03_09-55-22.png?_a=DAJCwlWIZAAB" %}
-带有自定义字段的项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4ExHyb45ZapKssCpRl6Uro/b8e686e8a58e0ed24f8aa58dd746253e/2024-12-03_09-55-22.png?w=889&#x26;fm=avif" alt=""><figcaption><p>带有自定义字段的项目</p></figcaption></figure></div>
 
 浏览器扩展将查找与[自定义字段名称](../../your-vault/vault-items/custom-fields.md#custom-field-names)匹配的任何字段，并自动填充该字段的值。
 
@@ -35,7 +33,9 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 {% hint style="success" %}
 您可以通过右键单击表单元素然后使用**复制自定义字段名称**上下文菜单选项来获取其正确的值：
 
-<img src="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5nnPLqyzgAhDCinQNB0uUC/a721194f39f0a8fa919066d73ff9e2c8/2024-10-29_10-50-34.png?_a=DAJCwlWIZAAB" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/5nnPLqyzgAhDCinQNB0uUC/a721194f39f0a8fa919066d73ff9e2c8/2024-10-29_10-50-34.png?w=980&#x26;fm=avif" alt="" data-size="original">
+
+
 {% endhint %}
 
 3、选择**添加**。

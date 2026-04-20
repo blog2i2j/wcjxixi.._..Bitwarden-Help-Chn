@@ -12,9 +12,7 @@
 
 您可以将多个 URI 添加到单个登录项目。要重新排序，请在网页 App 或浏览器扩展中编辑项目，然后将 URI 拖放到您的首选顺序中：
 
-{% embed url="https://bitwarden.com/assets/aDbOEJ6x8G44gkDYcuHJ6/dfef7ac49894805dd0e1e718452e6a60/2025-03-25_09-45-56.png?w=967&fm=avif&q=80" %}
-网页 App 中登录项目的 URI 字段
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/aDbOEJ6x8G44gkDYcuHJ6/dfef7ac49894805dd0e1e718452e6a60/2025-03-25_09-45-56.png?w=967&#x26;fm=avif" alt=""><figcaption><p>编辑网站 (URI) 字段</p></figcaption></figure></div>
 
 ### 将 URI 保存到现有登录项目 <a href="#save-uri-to-existing-login-item" id="save-uri-to-existing-login-item"></a>
 
@@ -22,7 +20,7 @@
 
 1、打开浏览器扩展并找到您要填充的登录项目。该项目可以被搜索，或位于**所有项目**列表中。选择 **≡**&#x83DC;单然后选择**自动填充**。确认自动填充界面将显示在浏览器中。此界面将显示保存到登录项目的所有 URI，以及您当前所在网站的 URI。
 
-{% embed url="https://bitwarden.com/assets/67h2UzB5cit1oVpEKTUcVs/dfeadfd6749961b76fb9746a36cc9085/2025-12-04_09-37-06.png?w=1200&fm=avif" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/67h2UzB5cit1oVpEKTUcVs/dfeadfd6749961b76fb9746a36cc9085/2025-12-04_09-37-06.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>确认自动填充</p></figcaption></figure></div>
 
 2、选择您想要执行的操作。
 
@@ -96,9 +94,7 @@ Android 版本 13 及更高版本支持启动应用程序。
 
 分配给登录项目的每一个 URI 都有一个关联的匹配检测选项。该选项决定了 Bitwarden 何时将此登录作为自动填充，这通常是通过与具体的组成部分的匹配来确定的。下图对 URI 的组成部分进行了分解：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/2J7AdBKH3DLQwoyGhNAWJA/7fcfdc4cf80202d9c90a1350a75542e2/urlgraphic.png?fm=webp&h=150&q=50&w=930" %}
-URI 示意图
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2J7AdBKH3DLQwoyGhNAWJA/7fcfdc4cf80202d9c90a1350a75542e2/urlgraphic.png?w=930&#x26;fm=avif" alt=""><figcaption><p>URI 示意图</p></figcaption></figure></div>
 
 {% hint style="info" %}
 由于 Android API 提供的自动填充服务的限制，Android Password Manager 客户端当前无法基于**端口**或**路径**来匹配 URI。

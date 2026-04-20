@@ -33,9 +33,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 打开后，当您点击表单时，您存储的支付卡和身份信息就会显示出来。选择填充表格信息时希望使用的支付卡或身份信息：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2IZKkQJjPBvDgT3Z6IZMoR/2d00c6b6789b78addd486fd974720ddd/2024-08-13_13-10-20.png?_a=DAJAUVWIZAAB" %}
-内嵌自动填充支付卡
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2IZKkQJjPBvDgT3Z6IZMoR/2d00c6b6789b78addd486fd974720ddd/2024-08-13_13-10-20.png?w=1188&#x26;fm=avif" alt=""><figcaption><p>内嵌自动填充支付卡</p></figcaption></figure></div>
 
 {% hint style="info" %}
 如果您的 Bitwarden 密码库中没有已保存的支付卡或身份信息，您可以在填写信息后从内嵌菜单中选择 ✚**新增支付卡** / **新增身份**，以将新项目保存到您的 Bitwarden 密码库中。
@@ -47,9 +45,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 打开后，您的支付卡和身份信息将出现在**密码库**视图的**自动填充建议**部分。选择**填充**按钮即可自动填充：
 
-{% embed url="https://bitwarden.com/assets/78MbqVeoL6Juo7E5cMUUNh/57b31fd7fd315aa6334125bf168fb67d/Card___identity_fill.png?w=758&fm=avif&q=80" %}
-自动填充支付卡和身份
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/78MbqVeoL6Juo7E5cMUUNh/57b31fd7fd315aa6334125bf168fb67d/Card___identity_fill.png?w=758&#x26;fm=avif" alt=""><figcaption><p>自动填充支付卡和身份</p></figcaption></figure></div>
 
 浏览器扩展会查找网页上与支付卡或身份信息相对应的任何字段，并自动填充它们。
 
@@ -61,9 +57,7 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 
 无需打开浏览器扩展程序，您就可以通过右键点击输入字段然后使用 **Bitwarden** → **自动填充**选项来自动填充支付卡和身份。如果您在尝试执行此操作时密码库已锁定，则会打开一个窗口，提示您解锁。解锁后，浏览器扩展程序将自动继续自动填充您的信息。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6GKKvIe7GwwOBtp9gmh862/4d39f59a8a862bb83d53e50f9f68d107/2024-12-03_09-12-06.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展上下文菜单
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6GKKvIe7GwwOBtp9gmh862/4d39f59a8a862bb83d53e50f9f68d107/2024-12-03_09-12-06.png?w=823&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展上下文菜单</p></figcaption></figure></div>
 
 ### 使用键盘快捷键 <a href="#using-keyboard-shortcuts" id="using-keyboard-shortcuts"></a>
 
@@ -79,8 +73,6 @@ Bitwarden 不止于[自动填充用户名和密码](../autofill-from/autofill-fr
 {% tab title="Android App" %}
 在 Android 上，支付卡将自动以建议的形式内嵌（在您的键盘中），或以弹窗的形式出现在字段上反，具体取决于哪种自动填充方法处于激活状态。例如，以弹出形式显示：
 
-{% embed url="https://bitwarden.com/assets/2ekny75ulY7xoyqz80Kz1z/f3954ac976db5283aa064efc6a78cc5e/2025-08-12_10-32-44.png?w=727&fm=avif&q=80" %}
-Android 支付卡弹出
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2ekny75ulY7xoyqz80Kz1z/f3954ac976db5283aa064efc6a78cc5e/2025-08-12_10-32-44.png?w=727&#x26;fm=avif" alt=""><figcaption><p>Android 支付卡弹窗</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}

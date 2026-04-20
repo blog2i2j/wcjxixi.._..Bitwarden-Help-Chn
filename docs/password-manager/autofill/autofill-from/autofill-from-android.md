@@ -54,9 +54,7 @@ Bitwarden 可以自动填充您的密码，以便您可以无缝登录网站和 
 
 此方式在键盘中建议自动填充的凭据：
 
-{% embed url="https://bitwarden.com/assets/2LxDxR7KcVd68U9UydYxat/e02408654528f4262a293de61e1439bb/2025-07-30_10-56-55.png?w=771&fm=avif" %}
-Android 内嵌自动填充
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2LxDxR7KcVd68U9UydYxat/e02408654528f4262a293de61e1439bb/2025-07-30_10-56-55.png?w=771&#x26;fm=avif" alt=""><figcaption><p>Android 内嵌自动填充</p></figcaption></figure></div>
 
 如果您没有看到建议：
 
@@ -67,9 +65,7 @@ Android 内嵌自动填充
 
 当设备聚焦于包含匹配登录项的输入框时，此方法会叠加显示弹出菜单。若密码库处于解锁状态，您将获得立即自动填充或打开密码库的选项：
 
-{% embed url="https://bitwarden.com/assets/1fIoPhOLMcXzvd0Y8aw1pm/642f9f722291f2de3daf93f2fd9a6450/2025-07-30_10-59-13.png?w=705&fm=avif" %}
-Android 弹出自动填充
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1fIoPhOLMcXzvd0Y8aw1pm/642f9f722291f2de3daf93f2fd9a6450/2025-07-30_10-59-13.png?w=705&#x26;fm=avif" alt=""><figcaption><p>Android 弹出自动填充</p></figcaption></figure></div>
 
 \
 您将看到两个选项。第一个（上面的我的登录项目）将使用匹配的 URI 自动填充第一个登录（上面的 `my_username`）。第二个（上面的 **Bitwarden**）将允许您从具有匹配 URI 的登录列表中进行选择。
@@ -88,17 +84,13 @@ Bitwarden 会自动检测您是否正在使用 **Edge、Opera 或 Samsung Intern
 在使用 Edge、Opera 或 Samsung Internet 时，请务必仅自动填充受信任且合法的网站，因为存在一个可能导致凭据被自动填充到恶意网站的嵌入式或隐藏的 iframe 中的漏洞。
 {% endhint %}
 
-{% embed url="https://bitwarden.com/assets/1Qm4g428OlYOBvzAxKwUNU/77106f75d8f5af42bed8bde4db9dc325/2025-07-30_13-14-04.png?w=892&fm=avif" %}
-启用 Android 集成
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1Qm4g428OlYOBvzAxKwUNU/77106f75d8f5af42bed8bde4db9dc325/2025-07-30_13-14-04.png?w=892&#x26;fm=avif" alt=""><figcaption><p>启用 Android 集成</p></figcaption></figure></div>
 
 ### 快速操作磁贴 <a href="#quick-action-tiles" id="quick-action-tiles"></a>
 
 快速操作磁贴使用 Android 无障碍服务，让您能在通知下拉设置菜单中直接访问自动填充操作。快速操作磁贴不需要在 Bitwarden 中打开**自动填充服务**，但您需要使用 **✏️**图标编辑磁贴，以将 Bitwarden 磁贴选项放置在符合您使用习惯的位置：
 
-{% embed url="https://bitwarden.com/assets/7MHfjTUrRjdLtBoyL3Ukz2/7980adfc9de7b6b2659f1955d3d987fd/2025-07-30_11-07-51.png?w=745&fm=avif" %}
-Android 快速操作磁贴
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7MHfjTUrRjdLtBoyL3Ukz2/7980adfc9de7b6b2659f1955d3d987fd/2025-07-30_11-07-51.png?w=745&#x26;fm=avif" alt=""><figcaption><p>Android 快速操作自动填充</p></figcaption></figure></div>
 
 要使用快速操作磁贴，请导航至需要自动填充的页面或 App，向下滑动以访问磁贴，然后点击要使用的磁贴。
 
