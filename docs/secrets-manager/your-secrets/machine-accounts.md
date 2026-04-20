@@ -15,15 +15,11 @@
 
 您可以通过从导航中选择**机器账户**查看您的用户账户拥有访问权限的机器账户：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IQzFGc9f4OAoqvJSgrEBn/601542ce696652aac733e63b18cdffb0/2024-12-03_13-25-13.png?_a=DAJCwlWIZAAB" %}
-机器账户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3IQzFGc9f4OAoqvJSgrEBn/601542ce696652aac733e63b18cdffb0/2024-12-03_13-25-13.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>机器账户</p></figcaption></figure></div>
 
 打开机器账户将列出此机器账户拥有访问权限的**机密**和**人员**，以及任何已生成的**访问令牌**和**事件日志**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3L9EGMDn7gGAMi3uwD1MIP/74dd29c2c80c1d67ee3b27bd5160e8b7/2024-12-03_13-26-04.png?_a=DAJCwlWIZAAB" %}
-机器账户内部
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3L9EGMDn7gGAMi3uwD1MIP/74dd29c2c80c1d67ee3b27bd5160e8b7/2024-12-03_13-26-04.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>机器账户内部</p></figcaption></figure></div>
 
 ## 创建机器账户 <a href="#create-a-machine-account" id="create-a-machine-account"></a>
 
@@ -41,9 +37,7 @@
 
 1、使用**新增**下拉菜单选择**机器账户**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/LaVwicbqhvbliXPm6loOU/5559a5caf8ad70a95be3ea89f1b760ad/2024-12-03_11-29-17.png?_a=DAJCwlWIZAAB" %}
-新增机器账户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/LaVwicbqhvbliXPm6loOU/5559a5caf8ad70a95be3ea89f1b760ad/2024-12-03_11-29-17.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>新增机器账户</p></figcaption></figure></div>
 
 2、输入**机器账户名称**，然后选择**保存**。
 
@@ -64,9 +58,7 @@
 
 2、从「人员」下拉列表中，输入或选择要添加到工程的成员或群组。选择了合适的人员后，选择**添加**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3TrklnCquoynDHFX6nJ8w/2482453bf759525ccb6d23f8e9731a7d/2024-12-03_13-27-11.png?_a=DAJCwlWIZAAB" %}
-将人员添加到机器账户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3TrklnCquoynDHFX6nJ8w/2482453bf759525ccb6d23f8e9731a7d/2024-12-03_13-27-11.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>将人员添加到机器账户</p></figcaption></figure></div>
 
 ## 添加工程到机器账户 <a href="#add-projects-to-a-machine-account" id="add-projects-to-a-machine-account"></a>
 
@@ -78,9 +70,7 @@
 
 2、从「工程」下拉菜单中，键入或选择要添加到机器账户的工程。选择正确的工程后，选择**添加**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3XGkQt3MdNHmAoKLXXXMGh/2c68b9ea5a47885f35360a94d26f0442/2024-12-03_13-28-00.png?_a=DAJCwlWIZAAB" %}
-添加工程
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3XGkQt3MdNHmAoKLXXXMGh/2c68b9ea5a47885f35360a94d26f0442/2024-12-03_13-28-00.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>添加工程</p></figcaption></figure></div>
 
 3、对于每个已添加的工程，选择一个**权限**级别：
 
@@ -115,6 +105,4 @@
 
 **配置**选项卡提供了配置应用程序以使用机器账户时可能需要的信息的快速视图。将显示**身份服务器 URL**、**API 服务器 URL**、**组织 ID** 和**工程 ID**，并且可以通过选择每个字段各自的 **❐**&#x56FE;标来复制它们。有关 Secrets Manager 环境的更多信息，请参阅 Secrets Manager [SDK 文档](../developer-tools/secrets-manager-sdk.md)和 [CLI 文档](../developer-tools/secrets-manager-cli.md)。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4XRItVAnKy1iVtOM2DbDLg/97e60d73e9bf18823c98fa46c588f99e/2024-12-03_13-38-10.png?_a=DAJCwlWIZAAB" %}
-机器账户配置视图
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4XRItVAnKy1iVtOM2DbDLg/97e60d73e9bf18823c98fa46c588f99e/2024-12-03_13-38-10.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>机器账户配置视图</p></figcaption></figure></div>

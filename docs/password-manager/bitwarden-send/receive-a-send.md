@@ -9,9 +9,7 @@
 * `https://send.bitwarden.com/#...`，这会自动解析为 `https://vault.bitwarden/com/#/send/...`
 * `https://your.selfhosted.domain.com/#/send/...`，如果是自托管
 
-{% embed url="https://bitwarden.com/assets/LLnrgZwyr6IAJ0GImXLnj/da3e363db0474f4cd6a57a44a6f1bd8f/Receive_a_send.png?w=800&fm=avif" %}
-收到的 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/LLnrgZwyr6IAJ0GImXLnj/da3e363db0474f4cd6a57a44a6f1bd8f/Receive_a_send.png?w=564&#x26;fm=avif" alt=""><figcaption><p>收到的 Send</p></figcaption></figure></div>
 
 根据发送者[所配置的选项](create-a-send.md)，Send 的接收者可能需要：
 
@@ -25,29 +23,21 @@
 
 1、打开您从发送者处收到的 Send 链接然后输入您的电子邮箱地址：
 
-{% embed url="https://bitwarden.com/assets/6guff4hS04wXAcGp7DUMDo/5ba4409fd5fcf3171f665896fa17ca9f/2026-02-24_16-06-03.png?w=800&fm=avif" %}
-输入电子邮箱 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6guff4hS04wXAcGp7DUMDo/5ba4409fd5fcf3171f665896fa17ca9f/2026-02-24_16-06-03.png?w=450&#x26;fm=avif" alt=""><figcaption><p>输入电子邮箱 Send</p></figcaption></figure></div>
 
 2、如果输入的电子邮箱与发送者指定的电子邮箱地址匹配，您将在电子邮箱收件箱中收到一个授权码：
 
-{% embed url="https://bitwarden.com/assets/3f6f5IfMdXDqrR3cMwgoWN/65f8d6ffe2b3239049e7f76dfca33253/2026-02-24_16-06-56.png?w=800&fm=avif" %}
-Send 验证码
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3f6f5IfMdXDqrR3cMwgoWN/65f8d6ffe2b3239049e7f76dfca33253/2026-02-24_16-06-56.png?w=450&#x26;fm=avif" alt=""><figcaption><p>Send 验证码</p></figcaption></figure></div>
 
 3、输入授权码即可查看此 Send。
 
-{% embed url="https://bitwarden.com/assets/7qM22jPeoKCnGE6GS03wz7/4f959a8b1b7b9f13674bdda975af9a5d/2026-02-24_17-04-46.png?w=800&fm=avif" %}
-输入 Send 验证码
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7qM22jPeoKCnGE6GS03wz7/4f959a8b1b7b9f13674bdda975af9a5d/2026-02-24_17-04-46.png?w=493&#x26;fm=avif" alt=""><figcaption><p>输入 Send 验证码</p></figcaption></figure></div>
 
 ## 隐藏电子邮箱的 Send <a href="#hidden-email-sends" id="hidden-email-sends"></a>
 
 默认情况下，Send 对象将对接收者显示发送者的电子邮箱地址，如上面的屏幕截图所示。发送者可以为 Send 对象选择隐藏其电子邮箱地址，该电子邮箱地址将替换为警告消息：
 
-{% embed url="https://bitwarden.com/assets/47RPmr6xOowzjJbG6JxVG3/42ba660b4316b57c4857ed7f7fcd58e3/Hidden_email_send.png?w=800&fm=avif" %}
-隐藏电子邮箱的文件 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/47RPmr6xOowzjJbG6JxVG3/42ba660b4316b57c4857ed7f7fcd58e3/Hidden_email_send.png?w=516&#x26;fm=avif" alt=""><figcaption><p>隐藏电子邮箱的文件 Send</p></figcaption></figure></div>
 
 如果您收到一个带有这种警告信息的 Send，以下是您应该做的：
 
@@ -64,6 +54,4 @@ Send 验证码
 
 当一个 Send [被删除、已过期或被禁用](send-lifespan.md)时，将为试图使用已生成的 Send 链接的接收者显示一个界面指示该 Send 不存在或不再可用：
 
-{% embed url="https://bitwarden.com/assets/6sveEP7CK57cGvSa9zpdwe/8da52464833e2dbfab7ef228f38f77e6/A_deleted__expired__or_disabled_Send.png?w=800&fm=avif" %}
-已删除、已过期或已禁用的 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6sveEP7CK57cGvSa9zpdwe/8da52464833e2dbfab7ef228f38f77e6/A_deleted__expired__or_disabled_Send.png?w=488&#x26;fm=avif" alt=""><figcaption><p>已删除、已过期或已禁用的 Send</p></figcaption></figure></div>

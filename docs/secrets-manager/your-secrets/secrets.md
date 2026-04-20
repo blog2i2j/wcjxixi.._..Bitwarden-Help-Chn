@@ -13,9 +13,7 @@
 
 您的用户账户通过[已分配的工程](projects.md)可以访问的机密列在主要的 Secrets Manager 视图中，也可以通过从导航中选择**机密**来列出：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6a5Yuy6zL4ifepqTEwsHSL/d8c3db647c22e32c910c870ad5fef105/2024-12-03_11-37-29.png?_a=DAJCwlWIZAAB" %}
-机密
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6a5Yuy6zL4ifepqTEwsHSL/d8c3db647c22e32c910c870ad5fef105/2024-12-03_11-37-29.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>机密</p></figcaption></figure></div>
 
 ## 创建机密 <a href="#create-a-secret" id="create-a-secret"></a>
 
@@ -23,9 +21,7 @@
 
 1、使用**新增**下拉菜单选择**机密**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3uEcZ7G5L2TJM4QgMmFZ4H/24d73aa7121de9c77383f51de618db02/2024-12-03_11-29-17.png?_a=DAJCwlWIZAAB" %}
-新增机密
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3uEcZ7G5L2TJM4QgMmFZ4H/24d73aa7121de9c77383f51de618db02/2024-12-03_11-29-17.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>新增机密</p></figcaption></figure></div>
 
 2、在「新增机密」窗口的最顶部部分，输入**名称**和**值**。可选添加**备注**。
 
@@ -71,9 +67,7 @@
 
 3、选择**删除机密**：
 
-{% embed url="https://bitwarden.com/assets/mQdIhUsvlFy5YfC3d8G3p/62b16e096dbd7f2b60ad597b90807608/Delete_secret.png?w=1200&fm=avif" %}
-删除机密
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/mQdIhUsvlFy5YfC3d8G3p/62b16e096dbd7f2b60ad597b90807608/Delete_secret.png?w=1258&#x26;fm=avif" alt=""><figcaption><p>删除机密</p></figcaption></figure></div>
 
 要在 30 天之前撤消删除或永久删除机密：
 
@@ -83,8 +77,6 @@
 
 3、选择**恢复机密**或**永久删除**：
 
-{% embed url="https://bitwarden.com/assets/35KZdrj3ve0EHvOC0nbxTf/7b793940ffe2e9c0dfbf035ae6f33529/Permanently_delete_secret.png?w=1200&fm=avif" %}
-永久删除机密
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/35KZdrj3ve0EHvOC0nbxTf/7b793940ffe2e9c0dfbf035ae6f33529/Permanently_delete_secret.png?w=1263&#x26;fm=avif" alt=""><figcaption><p>永久删除机密</p></figcaption></figure></div>
 
 4、选择**删除机密**进行确认。

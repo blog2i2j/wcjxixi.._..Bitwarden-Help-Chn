@@ -23,9 +23,7 @@
 
 「**我的项目**」可作为密码库筛选器在任何 Bitwarden App 中使用，例如在网页 App 中：
 
-{% embed url="https://bitwarden.com/assets/7f20Jamu35GDGYF4sOmsgn/5e525f384e09aef4b22c0c7f7cf993cb/2026-01-27_09-27-31.png?w=800&fm=avif" %}
-网页 App 中的「我的项目」
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7f20Jamu35GDGYF4sOmsgn/5e525f384e09aef4b22c0c7f7cf993cb/2026-01-27_09-27-31.png?w=1016&#x26;fm=avif" alt=""><figcaption><p>网页 App 中的「我的项目」</p></figcaption></figure></div>
 
 注意在这个截图中，**所有者**列指示了该项目归企业组织拥有。
 
@@ -35,17 +33,13 @@
 
 对于拥有访问权限的组织成员，「**我的项目**」将是保存新项目的默认集合：
 
-{% embed url="https://bitwarden.com/assets/5Z9lis0vkv5MNSWWIy8XHW/f66a9a878e33a1dc4fc038c3d5bfd3ba/2026-01-27_09-30-50.png?w=800&fm=avif" %}
-保存到「我的项目」
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5Z9lis0vkv5MNSWWIy8XHW/f66a9a878e33a1dc4fc038c3d5bfd3ba/2026-01-27_09-30-50.png?w=1017&#x26;fm=avif" alt=""><figcaption><p>保存到「我的项目」</p></figcaption></figure></div>
 
 ### 导入到「我的项目」 <a href="#import-to-my-items" id="import-to-my-items"></a>
 
 对于拥有访问权限的组织成员，「**我的项目**」可以被选择作为集合来[导入数据](../import-and-export/import-data.md)到其中：
 
-{% embed url="https://bitwarden.com/assets/3PO3iAbypeTCIXsWCu2jQ2/a75eff626ca0bf19a12fca8b5cd50a1c/2026-01-27_09-38-30.png?w=800&fm=avif" %}
-导入到「我的项目」
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3PO3iAbypeTCIXsWCu2jQ2/a75eff626ca0bf19a12fca8b5cd50a1c/2026-01-27_09-38-30.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>导入到「我的项目」</p></figcaption></figure></div>
 
 在任何 Bitwarden 客户端上，组织成员可以通过从**集合**下拉菜单中选择「**我的项目**」来[导入项目](../import-and-export/import-data.md)到其中。
 

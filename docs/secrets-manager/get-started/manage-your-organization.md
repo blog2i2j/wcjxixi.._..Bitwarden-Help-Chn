@@ -59,9 +59,7 @@ Directory Connector 通过从一系列源目录服务中提取，自动在您的
 
 * 对于自托管组织，也必须在自托管实例中重复此步骤。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3IBNL6FdndgPeuXa7m3rlP/fd04ec9951123e5a0ccd5fe4f04fa4de/2024-12-03_11-18-52.png?_a=DAJCwlWIZAAB" %}
-添加 Secrets Manager 用户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3IBNL6FdndgPeuXa7m3rlP/fd04ec9951123e5a0ccd5fe4f04fa4de/2024-12-03_11-18-52.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>添加 Secrets Manager 用户</p></figcaption></figure></div>
 
 {% hint style="success" %}
 授予成员对 Secrets Manager 的访问权限不会自动授予他们对存储的工程或机密的访问权限。接下来，您需要[为人员或群组分配对工程的访问权限](../your-secrets/projects.md#add-people-to-a-project)。
@@ -69,7 +67,7 @@ Directory Connector 通过从一系列源目录服务中提取，自动在您的
 
 ### 成员角色 <a href="#member-roles" id="member-roles"></a>
 
-下表概述了每个成员角色可以在 Secrets Manager 中执行的操作~~。在 Beta 期间，用户在 Secrets Manager 的成员角色与他们在 Password Manager 中被分配的成员角色相同~~：
+下表概述了每个成员角色可以在 Secrets Manager 中执行的操作：
 
 | 成员角色 | 描述                                                                                                                                             |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

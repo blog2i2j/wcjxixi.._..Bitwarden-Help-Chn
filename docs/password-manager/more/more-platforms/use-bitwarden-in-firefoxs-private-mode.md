@@ -11,9 +11,7 @@
 1. 在浏览器中导航到 `about:addons`，然后从扩展列表中选择 Bitwarden。
 2. 在**详细信息**选项卡上，向下滚动到**在隐私窗口中运行**，然后切换为**允许**。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/1tdckgSp5yF97cp3Jk1nsw/41ae31a8c39b067edefb09a6236d9302/Screen_Shot_2022-03-10_at_11.56.20_AM.png?fm=webp&h=474&q=50&w=916" %}
-在隐私窗口中启用扩展
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1tdckgSp5yF97cp3Jk1nsw/41ae31a8c39b067edefb09a6236d9302/Screen_Shot_2022-03-10_at_11.56.20_AM.png?w=916&#x26;fm=avif" alt=""><figcaption><p>在隐私窗口中启用扩展</p></figcaption></figure></div>
 
 ## ~~隐私窗口的限制~~ <a href="#limitations-in-private-windows" id="limitations-in-private-windows"></a>
 

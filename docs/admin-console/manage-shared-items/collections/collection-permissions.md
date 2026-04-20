@@ -30,9 +30,7 @@
 
 3、选择**访问权限**：
 
-{% embed url="https://bitwarden.com/assets/6tRILg5xNTKEkrEKBmYrGZ/7bf2c7425a0ee905821e34e5c42fab7e/Edit_collection_permissions.png?w=1200&fm=avif" %}
-编辑集合权限
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6tRILg5xNTKEkrEKBmYrGZ/7bf2c7425a0ee905821e34e5c42fab7e/Edit_collection_permissions.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>编辑集合权限</p></figcaption></figure></div>
 
 4、从**权限**下拉菜单中，为群组或成员选择一个权限级别。
 

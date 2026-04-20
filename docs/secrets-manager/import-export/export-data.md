@@ -20,8 +20,6 @@
 
 1、从左侧导航中选择**设置** → **导出数据**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4UTBBbo0rrqRtsYSBmiCLy/0af1a1818c660f8baf24c46999a8a81d/2024-12-03_13-41-37.png?_a=DAJCwlWIZAAB" %}
-导出数据
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4UTBBbo0rrqRtsYSBmiCLy/0af1a1818c660f8baf24c46999a8a81d/2024-12-03_13-41-37.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>导出数据</p></figcaption></figure></div>
 
 2、选择**导出数据**按钮。提示时，输入您的主密码。

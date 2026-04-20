@@ -26,9 +26,7 @@
 
 2、转到**设置** → **导入**：
 
-{% embed url="https://bitwarden.com/assets/12fA17Iq9LdCXdhPsPYQyq/0adc6c4b7164022c4c3623339e41a662/2025-12-17_11-04-54.png?w=1156&fm=avif" %}
-导入组织项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12fA17Iq9LdCXdhPsPYQyq/0adc6c4b7164022c4c3623339e41a662/2025-12-17_11-04-54.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导入组织项目</p></figcaption></figure></div>
 
 3、（可选）要导入到指定集合中，请从**集合**下拉菜单中选择它。当一次为一组用户批量导入数据时，这会很有帮助。
 

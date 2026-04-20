@@ -6,9 +6,7 @@
 
 您的组织激活[集中化组织所有权](../../admin-console/oversight-visibility/enterprise-policies.md#centralize-organization-ownership)策略后，您可能会在 Bitwarden 浏览器扩展中被要求将您的项目转移到组织。通过此策略，您的组织要求所有项目都归组织拥有，以确保安全性和合规性。
 
-{% embed url="https://bitwarden.com/assets/1rhoCL30l2gE2FAPxmfbU4/d6c6cb82e7f8b2a163ef90d7219095f3/2026-01-27_12-24-48.png?w=901&fm=avif" %}
-将项目转移到组织
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1rhoCL30l2gE2FAPxmfbU4/4edb33dbe95f231924d6b69571eb8df4/2026-04-08_16-42-27.png?w=945&#x26;fm=avif" alt=""><figcaption><p>将项目转移到组织</p></figcaption></figure></div>
 
 如果您被提示转移项目，您拥有两个选择：
 

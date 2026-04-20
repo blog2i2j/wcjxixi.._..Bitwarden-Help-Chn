@@ -14,9 +14,7 @@
 
 2、选择要为其创建访问令牌的机器账户，然后打开**访问令牌**选项卡：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6EINDaXiPQp9qQcO6q1zt5/259e6c2c6e91e0df63c83d03a89ac4a2/2024-12-03_11-31-26.png?_a=DAJCwlWIZAAB" %}
-创建访问令牌
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6EINDaXiPQp9qQcO6q1zt5/259e6c2c6e91e0df63c83d03a89ac4a2/2024-12-03_11-31-26.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>创建访问令牌</p></figcaption></figure></div>
 
 3、选择**创建访问令牌**按钮。
 
@@ -29,9 +27,7 @@
 
 6、将出现一个显示访问令牌的窗口。关闭此窗口之前请将您的令牌复制到安全的地方，因为您的令牌**不会被存储并且以后无法获取**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3QfpdSQai2hFrWGdGSlQRN/a5a5483cfbbbf690a8436043be58cea7/2024-12-03_11-32-26.png?_a=DAJCwlWIZAAB" %}
-访问令牌示例
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3QfpdSQai2hFrWGdGSlQRN/a5a5483cfbbbf690a8436043be58cea7/2024-12-03_11-32-26.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>访问令牌示例</p></figcaption></figure></div>
 
 此访问令牌是身份验证工具，通过它您可以编写机密注入脚本到您的机器和应用程序中。
 
@@ -62,6 +58,4 @@
 
 2、对于要撤销的访问令牌，使用 (**≡**) 选项菜单选择**吊销访问令牌**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1rujDBqHJ6lYy26kqmTZw4/38b09b908992c91639a49012adbec93c/2024-12-03_13-40-17.png?_a=DAJCwlWIZAAB" %}
-吊销访问令牌
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1rujDBqHJ6lYy26kqmTZw4/38b09b908992c91639a49012adbec93c/2024-12-03_13-40-17.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>吊销访问令牌</p></figcaption></figure></div>

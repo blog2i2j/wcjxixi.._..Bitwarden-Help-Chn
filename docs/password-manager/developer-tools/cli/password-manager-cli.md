@@ -6,9 +6,7 @@
 
 Bitwarden 命令行界面 (CLI) 是一个强大且功能齐全的工具，用于访问和管理您的密码库。您在其他 Bitwarden 客户端应用程序（桌面、浏览器扩展等）能找到的许多功能也可以通过 CLI 实现。
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/269bjiuC0f18YVu0VYJO9V/e192e552baa3bfe2f2efba30161f4a70/cli.png?fm=webp&h=578&q=50&w=799" %}
-Bitwarden CLI
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/269bjiuC0f18YVu0VYJO9V/e192e552baa3bfe2f2efba30161f4a70/cli.png?w=799&#x26;fm=avif" alt=""><figcaption><p>Bitwarden CLI</p></figcaption></figure></div>
 
 Bitwarden CLI 是自带文档的。在命令行中，使用以下命令了解可用的命令：
 
@@ -222,7 +220,7 @@ bw unlock --passwordfile ~/Users/Me/Documents/mp.txt
 
 将查找文件 `~Users/Me/Documents/mp.txt`（必须将您的主密码作为第一行）。如果文件非空且具有正确的值，CLI 将成功解锁并返回一个会话密钥。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 如果您使用 `--passwordfile` 选项，请通过将访问权限锁定到仅需要运行 `bw unlock` 的用户并仅向该用户提供读取访问权限来保护您的密码文件。
 {% endhint %}
 

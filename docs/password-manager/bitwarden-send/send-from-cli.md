@@ -14,9 +14,7 @@
 
 Bitwarden Send 有一套功能齐全的 CLI 命令。本文介绍了 `bw send` 命令的范围，但是 Send 并不是一个独立于 Bitwarden 命令行界面 (CLI) 的工具。因此，[CLI 文档](../developer-tools/cli/password-manager-cli.md)中的许多命令、选项和概念与这里的都是相关联的。
 
-{% embed url="https://bitwarden.com/assets/6hWfoRgu1yoyrXEB6JqN6E/03d8c4b1f11582f8d9141c3f2e0f4bd2/2026-02-27_11-28-26.png?w=800&fm=avif" %}
-Send 的 --help
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6hWfoRgu1yoyrXEB6JqN6E/03d8c4b1f11582f8d9141c3f2e0f4bd2/2026-02-27_11-28-26.png?w=1370&#x26;fm=avif" alt=""><figcaption><p>Send 的 --help</p></figcaption></figure></div>
 
 ## send
 

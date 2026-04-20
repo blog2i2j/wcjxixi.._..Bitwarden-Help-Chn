@@ -12,17 +12,13 @@
 
 您的密码库集中了您有权访问的所有内容，例如集合、[共享项目](../../../password-manager/organization-members/sharing.md)和个人项目。要打开特定集合，请从密码库的筛选菜单中选择它：
 
-{% embed url="https://bitwarden.com/assets/3uvlVv4JZdBPVkC6yQtmlB/e27ac5ec3d8fe46dbefdae0377144505/Open_collection.png?w=1200&fm=avif" %}
-打开集合
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3uvlVv4JZdBPVkC6yQtmlB/e27ac5ec3d8fe46dbefdae0377144505/Open_collection.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>打开集合</p></figcaption></figure></div>
 
 ## 嵌套集合 <a href="#nested-collections" id="nested-collections"></a>
 
 当您嵌套一个集合时，它会按层次结构组织在另一个集合下。首次创建集合时或稍后转至**集合** → **≡**&#x56FE;标 → **编辑信息**，选择**集合的嵌套位置**：
 
-{% embed url="https://bitwarden.com/assets/4WE9iu5h5WwMh2hTbMV0Q6/f3cfc507b06de6e8243a76685d598066/Nested_collection.png?w=988&fm=avif" %}
-嵌套集合
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4WE9iu5h5WwMh2hTbMV0Q6/f3cfc507b06de6e8243a76685d598066/Nested_collection.png?w=988&#x26;fm=avif" alt=""><figcaption><p>嵌套集合</p></figcaption></figure></div>
 
 这只会更改您的集合列表在筛选列中的显示方式。嵌套的集合不会从其「父」集合中继承项目、访问权限或权限。
 

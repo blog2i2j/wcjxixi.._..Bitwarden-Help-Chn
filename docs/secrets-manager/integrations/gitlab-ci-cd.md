@@ -19,9 +19,7 @@ Bitwarden 提供了一种使用 Bitwarden [Secrets Manager CLI](../developer-too
 7. 返回 GitLab，将新创建的访问令牌粘贴到**值**字段中。
 8. 选择**添加变量**以保存。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5oaev7YcHn7ndLaofLb8Uw/2c653506fca3ca2300ce93e226e163e8/gitlab_variables.png?_a=BAJFJtWIB" %}
-在 GitLab 中添加一个变量
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5oaev7YcHn7ndLaofLb8Uw/2c653506fca3ca2300ce93e226e163e8/gitlab_variables.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>在 GitLab 中添加一个变量</p></figcaption></figure></div>
 
 ## 添加到您的工作流文件 <a href="#add-to-your-workflow-file" id="add-to-your-workflow-file"></a>
 

@@ -12,9 +12,7 @@ Jenkins 是一个开源的自动化服务器，用于自动化构建、测试和
 
 1、在 Jenkins 中，导航至 **Settings  → Credentials** 页面。
 
-{% embed url="https://bitwarden.com/assets/7BNSdUFjmu3LaVcywyKaOd/be6b83e5d2648bc3a26cabe7febbd90c/Setting_credentials.png?w=800&fm=avif" %}
-Settings Credentials
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7BNSdUFjmu3LaVcywyKaOd/be6b83e5d2648bc3a26cabe7febbd90c/Setting_credentials.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Settings Credentials</p></figcaption></figure></div>
 
 2、选择所需的凭据存储。
 
@@ -26,17 +24,13 @@ Settings Credentials
 
 6、在新标签页中，打开 Secrets Manager 网页 App 然后[创建访问令牌](../your-secrets/access-tokens.md)。
 
-{% embed url="https://bitwarden.com/assets/0X3dgYBEQpW9EOGWIHiUV/22aef7ea682198c0f42630cf7637bf63/new_access_token.png?w=800&fm=avif" %}
-创建访问令牌
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/0X3dgYBEQpW9EOGWIHiUV/22aef7ea682198c0f42630cf7637bf63/new_access_token.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>创建访问令牌</p></figcaption></figure></div>
 
 7、返回 Jenkins，将新创建的访问令牌粘贴到 **Secret** 字段中。
 
 8、完成后，选择 **Create**。
 
-{% embed url="https://bitwarden.com/assets/4HjU45wJZMlhuyhTLWEwpB/0bfb7ee75ed53c427927b5c99e45a6e4/2026-02-06_18-10-34.png?w=800&fm=avif" %}
-Jenkins credential
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4HjU45wJZMlhuyhTLWEwpB/0bfb7ee75ed53c427927b5c99e45a6e4/2026-02-06_18-10-34.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Jenkins 凭据</p></figcaption></figure></div>
 
 ## 添加到 Jenkins 流水线 <a href="#add-to-your-jenkins-pipeline" id="add-to-your-jenkins-pipeline"></a>
 
@@ -46,9 +40,7 @@ Jenkins credential
 
 2、为新建的项目输入一个名称。接下来，选择 **Pipeline** 项目类型，完成后点击 **OK**。
 
-{% embed url="https://bitwarden.com/assets/6FP4AFLnuLT7pamWPhhF56/034dc91dfb4632155f74f0daf7575074/2026-02-09_17-16-10.png?w=800&fm=avif" %}
-新增流水线
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6FP4AFLnuLT7pamWPhhF56/034dc91dfb4632155f74f0daf7575074/2026-02-09_17-16-10.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>新增流水线</p></figcaption></figure></div>
 
 3、在接下来的界面中，配置您所需的设置和触发器。在 Pipeline 部分，包含以下内容：
 

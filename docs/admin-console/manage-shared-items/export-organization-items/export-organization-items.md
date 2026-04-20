@@ -20,9 +20,7 @@
 
 2、从导航栏选择**导出** → **导出**：
 
-{% embed url="https://bitwarden.com/assets/2UQyeVwsMcc1f7vcJOnnUO/92b2bb7eee6bcf9e183f9b039aec5d33/2025-12-17_11-08-49.png?w=1156&fm=avif" %}
-导出组织数据
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2UQyeVwsMcc1f7vcJOnnUO/92b2bb7eee6bcf9e183f9b039aec5d33/2025-12-17_11-08-49.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导出组织数据</p></figcaption></figure></div>
 
 3、在导出密码库页面，选择一个**文件格式**（`.json`、`.csv` 或 `.json (Encrypted)`），然后选择**确认格式**按钮。
 

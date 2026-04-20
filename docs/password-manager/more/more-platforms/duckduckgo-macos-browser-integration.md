@@ -10,9 +10,7 @@
 
 Bitwarden 和 DuckDuckGo 合作，在 DuckDuckGo macOS 浏览器中提供 Bitwarden 功能！在 DuckDuckGo 中使用登录表单时，该集成允许无缝自动填充、创建和更新 Bitwarden 密码库中的凭据：
 
-{% embed url="https://bitwarden.com/assets/4bfRWX1qSH0NK9HG2bBDTb/bfe35d198efed114e64ef1b97d6f9508/ddg_macos.png?w=1200&fm=avif" %}
-DuckDuckGo 中的 Bitwarden
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4bfRWX1qSH0NK9HG2bBDTb/bfe35d198efed114e64ef1b97d6f9508/ddg_macos.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>DuckDuckGo 中的 Bitwarden</p></figcaption></figure></div>
 
 该集成要求在您的计算机上安装 Bitwarden [桌面 App](../../getting-started/getting-started-desktop.md) 并解锁，以便从 DuckDuckGo 访问密码库项目。
 
@@ -40,16 +38,12 @@ DuckDuckGo 中的 Bitwarden
 {% tab title="自动填充凭据" %}
 要从 Bitwarden 自动填充凭据，请选择登录表单输入框。如果检测到凭据，它们将被提供用于自动填充：
 
-{% embed url="https://bitwarden.com/assets/34RVEdeI6m5IiMXxEBmYJb/5fa66cccef09aed7ef03011a522ad3a3/Screen_Shot_2022-11-14_at_9.25.24_AM.png?w=958&fm=avif" %}
-DuckDuckGo 自动填充
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/34RVEdeI6m5IiMXxEBmYJb/5fa66cccef09aed7ef03011a522ad3a3/Screen_Shot_2022-11-14_at_9.25.24_AM.png?w=958&#x26;fm=avif" alt=""><figcaption><p>DuckDuckGo 自动填充</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="添加或更新凭据" %}
 如果您使用的一组凭据未在 Bitwarden 中检测到或与存储在 Bitwarden 中的凭据不同，将提示您添加或更新：
 
-{% embed url="https://bitwarden.com/assets/4YmcbgoaQ92Lhj2wBS8g0R/f74b7ead6f4711cf6a3dac46d73b3f71/ddg_macos_copy.png?w=907&fm=avif" %}
-DuckDuckGo 添加或更新
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4YmcbgoaQ92Lhj2wBS8g0R/f74b7ead6f4711cf6a3dac46d73b3f71/ddg_macos_copy.png?w=907&#x26;fm=avif" alt=""><figcaption><p>DuckDuckGo 添加或更新</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}

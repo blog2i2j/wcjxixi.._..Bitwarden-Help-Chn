@@ -6,9 +6,7 @@
 
 将 Authenticator 与 Password Manager 连接以同步您的验证码。激活后，Bitwarden App 将与您添加或编辑的任何代码（本地代码除外）保持同步。这可以帮助您从任一 App 快速查找和使用 TOTP：
 
-{% embed url="https://bitwarden.com/assets/1DcAOWrPp1qDkIILFUu1f9/59504e02563a5a6faac1635b7e2b843f/2025-05-21_10-33-42.png?w=779&fm=avif&q=80" %}
-在 Bitwarden Authenticator（左）和 Password Manager（右）之间同步
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1DcAOWrPp1qDkIILFUu1f9/59504e02563a5a6faac1635b7e2b843f/2025-05-21_10-33-42.png?w=779&#x26;fm=avif" alt=""><figcaption><p>在 Bitwarden Authenticator（左）和 Password Manager（右）之间同步</p></figcaption></figure></div>
 
 如果您有多个 Password Manager 账户，您可以选择要与 Authenticator 同步的账户。同样，存储在 Authenticator 中的本地代码可以保持独立，也可以将它们移动到 Password Manager 以便从两个 App 进行访问。
 

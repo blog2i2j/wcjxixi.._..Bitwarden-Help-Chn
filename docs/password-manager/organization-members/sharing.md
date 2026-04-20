@@ -79,9 +79,7 @@
 
 2、使用 **≡**&#x83DC;单，选择**分配到集合**选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/stm9byteqzZn9dvqonHrc/0da481b0cf1f54457d08ae02fd917377/2024-12-02_14-33-34.png?_a=DAJCwlWIZAAB" %}
-分配到集合
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/stm9byteqzZn9dvqonHrc/0da481b0cf1f54457d08ae02fd917377/2024-12-02_14-33-34.png?w=1038&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
 3、在**分配到集合**弹出窗口中：
 
@@ -96,15 +94,11 @@
 
 * **从管理控制台共享**：如前所述，组织所有者、管理员和某些自定义用户可以直接从管理控制台进行共享，从而简化共享过程：
 
-{% embed url="https://bitwarden.com/assets/1u6EPNgAlCnvC9DcmUIosQ/327c0c24e09dce687540499a8eaa5aac/2024-12-02_15-47-21.png?w=1200&fm=avif&q=80" %}
-批量分配到集合
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1u6EPNgAlCnvC9DcmUIosQ/327c0c24e09dce687540499a8eaa5aac/2024-12-02_15-47-21.png?w=1205&#x26;fm=avif" alt=""><figcaption><p>批量分配到集合</p></figcaption></figure></div>
 
 * **直接编辑项目**：如果您需要在共享某个项目之前对其进行更改，请打开该项目，然后在**编辑**视图中使用**所有者**和**集合**下拉菜单选择要与之共享的对象，同时进行必要的更改：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/34zUaUOVRSXEv90fQiq5mD/e1e41fb5b40e3efcd974c770b101ad55/2025-01-28_10-40-03.png?_a=DAJCwlWIZAAB" %}
-更改项目所有权
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/34zUaUOVRSXEv90fQiq5mD/e1e41fb5b40e3efcd974c770b101ad55/2025-01-28_10-40-03.png?w=1027&#x26;fm=avif" alt=""><figcaption><p>更改项目所有权</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -112,9 +106,7 @@
 
 1、在**密码库**视图中，使用 **≡**&#x9009;项菜单选择要共享的项目，然后选择**分配到集合**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7t3FoxPnpWGQAEzH1ERVDi/6c5622df8525848c0b4eb9bba330b70f/2024-12-02_15-32-47.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展分配到集合
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7t3FoxPnpWGQAEzH1ERVDi/6c5622df8525848c0b4eb9bba330b70f/2024-12-02_15-32-47.png?w=1016&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
 2、在**分配到集合**弹出窗口中：
 
@@ -129,9 +121,7 @@
 
 * **直接编辑项目**：如果您需要在共享某个项目之前对其进行更改，请打开该项目，然后在**编辑**视图中使用**所有者**和**集合**下拉菜单选择要与之共享的对象，同时进行必要的更改：
 
-{% embed url="https://bitwarden.com/assets/X73xPwnn5yKQtHhAC8U0H/480609793077866d21105593767d7448/2025-07-29_09-33-57.png?w=882&fm=avif&q=80" %}
-在浏览器上编辑共享
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/X73xPwnn5yKQtHhAC8U0H/480609793077866d21105593767d7448/2025-07-29_09-33-57.png?w=882&#x26;fm=avif" alt=""><figcaption><p>编辑共享</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
@@ -156,9 +146,7 @@
 
 1、在**密码库**视图中，右键单击要共享的项目，然后从菜单中选择**分配到集合**：
 
-{% embed url="https://bitwarden.com/assets/2RRhv9udtSa49Uxzv6rRAQ/e3d783e266bafd7a6fce76a8604fa15b/2026-01-28_11-27-36.png?w=988&fm=avif" %}
-从桌面端共享
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2RRhv9udtSa49Uxzv6rRAQ/e3d783e266bafd7a6fce76a8604fa15b/2026-01-28_11-27-36.png?w=988&#x26;fm=avif" alt=""><figcaption><p>分配到集合</p></figcaption></figure></div>
 
 2、在**分配到集合**弹出窗口中：
 
@@ -173,9 +161,7 @@
 
 * **直接编辑项目**：如果您需要在共享某个项目之前对其进行更改，请打开该项目，然后在**编辑**视图中使用**所有者**和**集合**下拉菜单选择要与之共享的对象，同时进行必要的更改：
 
-{% embed url="https://bitwarden.com/assets/4U6pHkqLgt3miuwFLJ9tkH/ac16f1456dd9884656aa275a2b7b6e76/2026-01-28_15-03-14.png?w=988&fm=avif" %}
-在桌面端编辑共享
-{% endembed %}
+<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4U6pHkqLgt3miuwFLJ9tkH/ac16f1456dd9884656aa275a2b7b6e76/2026-01-28_15-03-14.png?w=988&#x26;fm=avif" alt=""><figcaption><p>编辑共享</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="CLI" %}
@@ -199,7 +185,7 @@ bw move <itemid> <organizationid> [encodedJson]
 {% hint style="info" %}
 **提醒**：共享某个项目涉及将其所有权交给组织。管理团队应妥善管理[集合的权限](../../admin-console/manage-shared-items/collections/collection-permissions.md)，因为拥有正确权限级别的成员有能力更改或删除已共享的项目。您可以通过项目名称旁边的徽标来判断该项目是否为共享项目：
 
-<img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif&#x26;q=80" alt="" data-size="original">
+<img src="https://bitwarden.com/assets/6tnBV4hUxUNtWvGNAp8eua/215f54e0a26f5a1b2d41e18119fdcd71/2024-12-02_15-31-38.png?w=604&#x26;fm=avif" alt="" data-size="original">
 {% endhint %}
 
 ### 收回共享项目的所有权 <a href="#reclaimed-shared-item-ownership" id="reclaimed-shared-item-ownership"></a>

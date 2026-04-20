@@ -44,9 +44,7 @@
 
 对于所有 Send，**当前查看次数**计数器将跟踪 Send 链接被访问的次数：
 
-{% embed url="https://bitwarden.com/assets/0OzPRjLVfEDJ3EIZC90Cp/5f096d609bcd79b29d44c12f6073a2fa/send_limit.png?w=705&fm=avif" %}
-当前查看次数计数器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/0OzPRjLVfEDJ3EIZC90Cp/5f096d609bcd79b29d44c12f6073a2fa/send_limit.png?w=705&#x26;fm=avif" alt=""><figcaption><p>当前查看次数计数器</p></figcaption></figure></div>
 
 您可以使用**限制查看**字段来指定查看限制。
 
@@ -74,9 +72,7 @@
 
 要从网页 App 删除 Send，请使用 **≡选项**菜单然后选择 **🗑️删除**按钮：
 
-{% embed url="https://bitwarden.com/assets/1PiQrX748LtTFXChfAIbFP/0ff74124a0d215254c532fe79cff9012/2026-02-25_11-08-25.png?w=800&fm=avif" %}
-从网页 App 删除 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1PiQrX748LtTFXChfAIbFP/0ff74124a0d215254c532fe79cff9012/2026-02-25_11-08-25.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>从网页 App 删除 Send</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="浏览器扩展" %}
@@ -84,9 +80,7 @@
 
 要从浏览器扩展删除 Send，请选择在您要删除的 Send 旁边的 🗑️**回收站**图标：
 
-{% embed url="https://bitwarden.com/assets/74CotzsfAWKjUQkXfuu7zq/12d90886dbb9e6bd3a26b47efedeef4c/delete_browser.png?w=800&fm=avif" %}
-从浏览器扩展删除 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/74CotzsfAWKjUQkXfuu7zq/12d90886dbb9e6bd3a26b47efedeef4c/delete_browser.png?w=450&#x26;fm=avif" alt=""><figcaption><p>从浏览器扩展删除 Send</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="桌面端" %}
@@ -94,9 +88,7 @@
 
 要从桌面 App 删除 Send，请使用 **≡**&#x9009;项菜单然后选择 🗑️**删除**按钮：
 
-{% embed url="https://bitwarden.com/assets/12eLcz2aoBkcDRGS3U1jzP/66e1b7625ac1290f2d110d0d4e7086c8/delete_send_desktop.png?w=800&fm=avif" %}
-从桌面 App 删除 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/12eLcz2aoBkcDRGS3U1jzP/66e1b7625ac1290f2d110d0d4e7086c8/delete_send_desktop.png?w=1314&#x26;fm=avif" alt=""><figcaption><p>从桌面 App 删除 Send</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="移动端" %}
@@ -104,9 +96,7 @@
 
 要从移动 App 删除 Send，点击 **⋯**&#x9009;项菜单然后点击**删除**选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4jWcljHXWnKZcSZZmVNyQo/af2acd968efa16f42b75b04b875d666d/2025-01-22_10-05-07.png?_a=DAJCwlWIZAAB" %}
-从移动 App 删除 Send
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4jWcljHXWnKZcSZZmVNyQo/f460782cfec20a6246b9fcab1b4d9d1e/send-delete-mobile.png?w=650&#x26;fm=avif" alt=""><figcaption><p>从移动 App 删除 Send</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="CLI" %}

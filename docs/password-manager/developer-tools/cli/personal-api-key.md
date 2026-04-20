@@ -16,9 +16,7 @@
 
 1、在网页 App 中，导航到**设置** → **安全** → **密钥**：
 
-{% embed url="https://bitwarden.com/assets/3IHpaOpEB5a13TF3B3RqqB/fab175095404a90d9d372542745bb9bb/Keys_settings.png?w=1200&fm=avif" %}
-密钥设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3IHpaOpEB5a13TF3B3RqqB/fab175095404a90d9d372542745bb9bb/Keys_settings.png?w=1264&#x26;fm=avif" alt=""><figcaption><p>密钥设置</p></figcaption></figure></div>
 
 3、选择**查看 API 密钥**按钮然后输入主密码以验证访问权限。输入后，您将看到以下内容：
 

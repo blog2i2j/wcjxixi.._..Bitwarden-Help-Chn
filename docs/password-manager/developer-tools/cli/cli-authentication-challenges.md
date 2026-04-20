@@ -16,9 +16,7 @@
 
 1、在网页 App 中，导航到**设置** → **安全** → **密钥**：
 
-{% embed url="https://bitwarden.com/assets/3IHpaOpEB5a13TF3B3RqqB/fab175095404a90d9d372542745bb9bb/Keys_settings.png?w=1200&fm=avif" %}
-密钥设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3IHpaOpEB5a13TF3B3RqqB/fab175095404a90d9d372542745bb9bb/Keys_settings.png?w=1264&#x26;fm=avif" alt=""><figcaption><p>密钥设置</p></figcaption></figure></div>
 
 3、选择**查看 API 密钥**按钮然后输入主密码以验证访问权限。
 
@@ -52,9 +50,7 @@ env:BW_CLIENTSECRET="client_secret"
 
 当进行身份验证挑战并且未找到 `BW_CLIENTSECRET` 的值时，系统将提示您手动输入您的 `client_secret` 值：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/6YPFmH0ALYCuKcpOs6yf8X/e12166c2a561203f4605401b716f89e6/cli-captcha-1-markup.png?fm=webp&h=424&q=50&w=1638" %}
-带有身份验证挑战的登录提示
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6YPFmH0ALYCuKcpOs6yf8X/e12166c2a561203f4605401b716f89e6/cli-captcha-1-markup.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>带有身份验证挑战的登录提示</p></figcaption></figure></div>
 
 {% hint style="danger" %}
 如果您的 `client_secret` 不正确，您将收到错误消息。大多数时候，这是因为保存了变量以后您又[轮换了您的 API 密钥](personal-api-key.md#rotate-your-api-key)。使用[上面的步骤](cli-authentication-challenges.md#get-your-personal-api-key)获取正确的值。

@@ -38,7 +38,7 @@
 
 当发生这种情况时，所有者和管理员将通过**集合**视图的**添加访问权限**选项卡暂时获得这些集合的管理能力：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>为未管理的集合添加访问权限</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1Nqn29nNIkKtb5HfWkfcWK/64c3875f60d3d292837d0655ad3b146c/2024-12-05_09-56-43.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>为未管理的集合添加访问权限</p></figcaption></figure></div>
 
 按照本文前面描述的步骤，所有者和管理员应将新成员分配为具有[管理集合权限](collection-permissions.md)。完成后，所有者和管理员将失去对该集合的管理能力，并且**添加访问权限**标签将被移除。
 

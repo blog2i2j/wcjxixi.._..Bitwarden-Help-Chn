@@ -21,9 +21,7 @@ Secrets Manager 使用的核心范例是以下关系：
 
 Secrets Manager 旨在保护和管理您在特权开发人员环境中高度敏感的凭据。多向访问层和权限级别将确保只有经过身份验证的机器和具有正确权限的人员才能查看或操作存储在您的密码库中的机密：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2WA0BdPgACJHnR6H2SAf52/aa1572d76e0dae8cd955ae82094c4c81/Frame_178.png?_a=BAJFJtWI0" %}
-Secrets Manager 示意图
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2WA0BdPgACJHnR6H2SAf52/aa1572d76e0dae8cd955ae82094c4c81/Frame_178.png?w=720&#x26;fm=avif" alt=""><figcaption><p>Secrets Manager 示意图</p></figcaption></figure></div>
 
 ## 安全第一原则 <a href="#security-first-principles" id="security-first-principles"></a>
 

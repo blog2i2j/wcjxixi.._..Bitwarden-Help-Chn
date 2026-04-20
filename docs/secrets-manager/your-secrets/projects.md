@@ -6,15 +6,11 @@
 
 工程是按逻辑组合在一起的[机密](secrets.md)的集合，由您的 DevOps 和网络安全团队对其进行访问权限的管理。您的用户账户有权访问的工程列在主要的 Secrets Manager 视图中，也可以通过从导航中选择**工程**来列出：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/71lYVBOdFFIcautbuha9k1/65abe5b658360c4dc3402d8d4f1c815c/2024-12-03_11-34-34.png?_a=DAJCwlWIZAAB" %}
-工程
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/71lYVBOdFFIcautbuha9k1/65abe5b658360c4dc3402d8d4f1c815c/2024-12-03_11-34-34.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>工程</p></figcaption></figure></div>
 
 打开一个工程将列出与其相关联的**机密**、**人员**和**机器账户**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7IlJQx9yhxuO5ffABmKyqd/bef389322630e365c40e3dfa386bae4d/2024-12-03_11-35-19.png?_a=DAJCwlWIZAAB" %}
-工程内部
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7IlJQx9yhxuO5ffABmKyqd/bef389322630e365c40e3dfa386bae4d/2024-12-03_11-35-19.png?w=1042&#x26;fm=avif" alt=""><figcaption><p>工程内部</p></figcaption></figure></div>
 
 ## 创建工程 <a href="#create-a-project" id="create-a-project"></a>
 
@@ -29,9 +25,7 @@
 
 1、使用**新增**下拉菜单选择**工程**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3gGgCYT0CgS3MKAngKDooL/03bd6080e1f8c695c46fd23918f56951/2024-12-03_11-25-44.png?_a=DAJCwlWIZAAB" %}
-创建工程
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3gGgCYT0CgS3MKAngKDooL/03bd6080e1f8c695c46fd23918f56951/2024-12-03_11-25-44.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>创建工程</p></figcaption></figure></div>
 
 2、输入**工程名称**。您可以随时使用「工程」页面上的 (**≡**) 选项菜单更改工程名称。
 
@@ -55,9 +49,7 @@
 
 1、使用**新增**下拉菜单选择**机密**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3uEcZ7G5L2TJM4QgMmFZ4H/24d73aa7121de9c77383f51de618db02/2024-12-03_11-29-17.png?_a=DAJCwlWIZAAB" %}
-创建机密
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3uEcZ7G5L2TJM4QgMmFZ4H/24d73aa7121de9c77383f51de618db02/2024-12-03_11-29-17.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>创建机密</p></figcaption></figure></div>
 
 2、在「新增机密」窗口的名称/值对选项卡上，输入**名称**和**值**。可选添加**备注**。
 
@@ -79,9 +71,7 @@
 
 2、从「人员」下拉列表中，键入或选择要添加到工程的成员或群组。选择合适的人员后，选择**添加**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4Vu9wuBd8ceEz7ji7V2kHZ/2f11a06f3ed09a1cd64190ad8197e914/2024-12-03_11-27-19.png?_a=DAJCwlWIZAAB" %}
-将人员添加到工程
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4Vu9wuBd8ceEz7ji7V2kHZ/2f11a06f3ed09a1cd64190ad8197e914/2024-12-03_11-27-19.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>将人员添加到工程</p></figcaption></figure></div>
 
 3、将成员或群组添加到工程后，为这些成员或群组设置**权限**级别。成员和群组可以具有以下权限级别之一：
 
@@ -100,9 +90,7 @@
 
 2、从「机器账户」下拉列表中，键输入或选择要添加到工程的机器账户。选择正确的机器账户后，选择**添加**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1IJNE4LCOMqQsAMBYKN5pe/187a4d47245bfbd750e13aa052dc6fb3/2024-12-03_11-36-39.png?_a=DAJCwlWIZAAB" %}
-添加机器账户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1IJNE4LCOMqQsAMBYKN5pe/187a4d47245bfbd750e13aa052dc6fb3/2024-12-03_11-36-39.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>添加机器账户</p></figcaption></figure></div>
 
 对于每个已添加的工程，选择一个**权限**级别：
 
@@ -119,9 +107,7 @@
 
 1、使用新**新增**下拉菜单选择**机器账户**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/LaVwicbqhvbliXPm6loOU/5559a5caf8ad70a95be3ea89f1b760ad/2024-12-03_11-29-17.png?_a=DAJCwlWIZAAB" %}
-新增机器账户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/LaVwicbqhvbliXPm6loOU/5559a5caf8ad70a95be3ea89f1b760ad/2024-12-03_11-29-17.png?w=1043&#x26;fm=avif" alt=""><figcaption><p>新增机器账户</p></figcaption></figure></div>
 
 &#x20;2、输入**机器账户名称**，然后选择**保存**。
 
