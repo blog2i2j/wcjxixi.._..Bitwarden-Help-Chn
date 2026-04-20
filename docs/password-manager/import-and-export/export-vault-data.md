@@ -56,9 +56,7 @@
 
 2、选择**导出**：
 
-{% embed url="https://bitwarden.com/assets/5PUGzasNsQnABG9gtso4o3/4e4880193ff45c22f0474c129e68e4e3/2025-12-17_11-43-59.png?w=1156&fm=avif" %}
-导出项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5PUGzasNsQnABG9gtso4o3/4e4880193ff45c22f0474c129e68e4e3/2025-12-17_11-43-59.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导出项目</p></figcaption></figure></div>
 
 3、从**导出自**下拉菜单，中选择要下载的数据：
 
@@ -202,9 +200,7 @@
 
 4、选择一个**文件格式**：`.json`、`.csv` 或 `.json (Password protected)`。
 
-{% embed url="https://bitwarden.com/assets/6IvRA9oYfTvO9GxylX2MMh/528b65ca6d83f0f28c469b62078570d5/2025-01-22_09-51-29.png?w=715&fm=avif" %}
-在移动端导出密码库
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6IvRA9oYfTvO9GxylX2MMh/528b65ca6d83f0f28c469b62078570d5/2025-01-22_09-51-29.png?w=715&#x26;fm=avif" alt=""><figcaption><p>在移动端导出密码库</p></figcaption></figure></div>
 
 5、（可选）如果您选择 `.json (Password protected)`，请输入一个新密码。如果您将此文件导入回 Bitwarden，则需要输入该密码。
 

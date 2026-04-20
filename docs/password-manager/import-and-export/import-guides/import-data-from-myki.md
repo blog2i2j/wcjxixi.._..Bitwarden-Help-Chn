@@ -121,9 +121,7 @@ nickname,status,tags,authToken,additionalInfo
 
 2、选择**导入**：
 
-{% embed url="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&fm=avif" %}
-导入项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导入项目</p></figcaption></figure></div>
 
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
@@ -178,7 +176,7 @@ nickname,status,tags,authToken,additionalInfo
 8、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
 
-{% tab title="移动 App" %}
+{% tab title="移动端" %}
 在大多数情况下，在移动设备上导入数据需要您通过在移动浏览器中打开的网页 App 执行此操作。您可以通过导航到**设置** → **密码库** → **导入项目**，从 Password Manager 快速访问此位置。
 
 在 iOS 26 上，Bitwarden 支持通过 [Fido 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications) 实现凭证的直接导入，轻松迁移至您的密码库。导入源 App 也需支持 CXP 协议，具体操作步骤因 App 而异。
@@ -186,7 +184,7 @@ nickname,status,tags,authToken,additionalInfo
 例如，在 iOS 密码 App 中，请通过 **⋯**&#x9009;项菜单选择**导出数据至其他 App**，然后选择 Bitwarden。
 {% endtab %}
 
-{% tab title="桌面 App" %}
+{% tab title="桌面端" %}
 要将数据导入到您的密码库：
 
 1、选择**文件**。

@@ -17,7 +17,7 @@
 
 ## 从 Safari 或 macOS 导出 <a href="#export-from-safari-or-macos" id="export-from-safari-or-macos"></a>
 
-您可以直接从 Safari 或 macOS 系统偏好设置里导出密码：
+您可以直接从 Mac 计算机上的 Safari 或 macOS 密码导出密码：
 
 {% tabs %}
 {% tab title="Safari" %}
@@ -25,29 +25,23 @@
 
 1、从 macOS 菜单栏中选择**文件** → **导出浏览器数据到文件**，选择**密码**，然后选择**下载**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3j4W80s3G7wqFtVrbzKMO4/36308c2c647912bf204739f2bc5f80f2/2024-12-30_12-58-55.png?_a=DAJAUVWIZAAB" %}
-从 Safari 导出
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3j4W80s3G7wqFtVrbzKMO4/36308c2c647912bf204739f2bc5f80f2/2024-12-30_12-58-55.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>从 Safari 导出</p></figcaption></figure></div>
 
 2、将导出保存到任何位置，然后使用触控 ID 或您的 macOS 密码来完成导出。
 {% endtab %}
 
-{% tab title="macOS 系统偏好设置" %}
-要从 macOS 导出数据：
+{% tab title="macOS 密码 App" %}
+要从 macOS 密码 App 导出数据：
 
-1、打开 macOS 的**系统偏好设置** App。
+1、定位并打开 macOS **密码** App。系统会提示您使用触控 ID 或密码以继续。
 
-2、在系统偏好设置中，选择**密码**。系统会提示您使用触控 ID 或密码以继续。
+3、App 解锁后，选择**文件**，然后选择**将所有密码导出到文件...**：
 
-3、在密码对话框中，选择菜单图标 (**⋯**) 然后选择**导出密码...**：
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6r88eOsL7rY2f6KJj4U79x/3fbfbc41456deaf86a48e85173190405/2025-03-11_09-47-02.png?w=750&#x26;fm=avif" alt=""><figcaption><p>从 macOS 密码 App 导出</p></figcaption></figure></div>
 
-{% embed url="https://d33wubrfki0l68.cloudfront.net/63dc688ce144a4c7e8f4b438a19cd7b3f03926f4/6ba3a/help/images/importing/macos.png" %}
-从 macOS 系统偏好设置导出
-{% endembed %}
+3、系统会弹出一个对话框，以确认您想要导出已保存的密码。选择**导出密码...**&#x4EE5;继续。
 
-4、系统将弹出一个对话框，以确认您想要导出已保存的密码。选择**导出密码...**&#x4EE5;继续。
-
-5、将导出保存到任何位置，然后使用触控 ID 或您的 macOS 密码来完成导出。
+4、将导出保存到任何位置，然后使用触控 ID 或您的 macOS 密码来完成导出。
 {% endtab %}
 {% endtabs %}
 
@@ -70,9 +64,7 @@
 
 2、选择**导入**：
 
-{% embed url="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&fm=avif" %}
-导入项目
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1NbyPb9dN545ZqKGRZYB3x/e6b8f3f31aa82bb05cef12c5a5c4c193/2025-12-17_11-25-08.png?w=1156&#x26;fm=avif" alt=""><figcaption><p>导入项目</p></figcaption></figure></div>
 
 3、从**密码库**下拉菜单中，选择数据的保存目的地：
 
@@ -127,7 +119,7 @@
 8、成功导入后，从您的计算机中将导入源文件删除。这将在您的计算机受到威胁时为您提供保护。
 {% endtab %}
 
-{% tab title="移动 App" %}
+{% tab title="移动端" %}
 在大多数情况下，在移动设备上导入数据需要您通过在移动浏览器中打开的网页 App 执行此操作。您可以通过导航到**设置** → **密码库** → **导入项目**，从 Password Manager 快速访问此位置。
 
 在 iOS 26 上，Bitwarden 支持通过 [Fido 凭证交换协议 (CXP)](https://fidoalliance.org/specifications-credential-exchange-specifications) 实现凭证的直接导入，轻松迁移至您的密码库。导入源 App 也需支持 CXP 协议，具体操作步骤因 App 而异。
@@ -135,7 +127,7 @@
 例如，在 iOS 密码 App 中，请通过 **⋯**&#x9009;项菜单选择**导出数据至其他 App**，然后选择 Bitwarden。
 {% endtab %}
 
-{% tab title="桌面 App" %}
+{% tab title="桌面端" %}
 要将数据导入到您的密码库：
 
 1、选择**文件**。
