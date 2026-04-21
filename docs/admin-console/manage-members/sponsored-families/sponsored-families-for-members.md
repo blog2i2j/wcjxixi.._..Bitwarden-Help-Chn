@@ -28,9 +28,7 @@
 
 2、从导航栏，选择**设置** → **免费 Bitwarden 家庭版**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4N84OPFobJYDw7pr05Ls1W/caf30220fd12b3635f6c3e420645b9bf/2024-12-04_10-20-37.png?_a=DAJCwlWIZAAB" %}
-免费 Bitwarden 家庭
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4N84OPFobJYDw7pr05Ls1W/caf30220fd12b3635f6c3e420645b9bf/2024-12-04_10-20-37.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>免费 Bitwarden 家庭</p></figcaption></figure></div>
 
 3、在此界面：
 
@@ -47,11 +45,9 @@
 
 4、检查您的个人电子邮箱收件箱，当您收到一封邀请您激活免费家庭版订阅的电子邮件时，请选择**接受邀请**：
 
-{% embed url="https://bitwarden.com/assets/1G0VmQSY0lCTEgsetHc2cy/81347ce663fcfc717b6dd21295ada1a1/Screen_Shot_2022-05-23_at_9.38.42_AM.png?w=643&fm=avif" %}
-接受企业提供的家庭
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1G0VmQSY0lCTEgsetHc2cy/81347ce663fcfc717b6dd21295ada1a1/Screen_Shot_2022-05-23_at_9.38.42_AM.png?w=643&#x26;fm=avif" alt=""><figcaption><p>接受企业提供的家庭</p></figcaption></figure></div>
 
-5、按照屏幕上的提示使用您的个人 Bitwarden 账户登录或创建一个新的账户。
+5、按照屏幕上的提示，使用您的个人 Bitwarden 账户登录或创建一个新的账户。
 
 6、登录后，您将被定向到一个界面，在此界面您可以在其中兑换**新的家庭版组织**赞助或将赞助应用到**现有的家庭版组织**：
 
@@ -59,9 +55,7 @@
 {% tab title="新的家庭版组织" %}
 从下拉列表中选择**新增家庭组织**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3NnhjGPkYir4aMCLzvmJf1/db51c17a40db8d7a399ed49ec65d98f5/2024-12-04_10-24-32.png?_a=DAJCwlWIZAAB" %}
-新增免费 Bitwarden 家庭
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3NnhjGPkYir4aMCLzvmJf1/db51c17a40db8d7a399ed49ec65d98f5/2024-12-04_10-24-32.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>新增免费 Bitwarden 家庭</p></figcaption></figure></div>
 
 填写以下信息：
 
@@ -76,9 +70,7 @@
 {% tab title="现有的家庭版组织" %}
 从下拉列表中选择组织，然后选择**接受邀请**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/5HIpHzcAzTsBjE4UZhjCV0/1f3ce019f188b2a1be20cc1587534864/2024-12-04_10-24-53.png?_a=DAJCwlWIZAAB" %}
-现有的免费 Bitwarden 家庭
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5HIpHzcAzTsBjE4UZhjCV0/1f3ce019f188b2a1be20cc1587534864/2024-12-04_10-24-53.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>现有的免费 Bitwarden 家庭</p></figcaption></figure></div>
 
 接受邀请后，您的旧订阅将被企业赞助取代。只要您是赞助组织的活跃成员，您就不必为家庭版组织支付任何费用，除非您添加了**额外的存储空间**。
 
