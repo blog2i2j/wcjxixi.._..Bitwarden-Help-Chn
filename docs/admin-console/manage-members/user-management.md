@@ -11,7 +11,7 @@
 
 * 所有组织都可以[手动邀请用户](user-management.md)和更新[席位数量](../../plans-and-pricing/manage-subscription-seats-in-your-organization.md)。
 * 团队版和企业版组织可以使用 [SCIM](scim/about-scim.md)。
-* 团队版和企业版组织可以 [Directory Connector](directory-connector/about-directory-connector.md)。
+* 团队版和企业版组织可以使用 [Directory Connector](directory-connector/about-directory-connector.md)。
 * 企业版组织可以[使用 JIT](../login-with-sso/jit-provisioning.md)。
 {% endhint %}
 

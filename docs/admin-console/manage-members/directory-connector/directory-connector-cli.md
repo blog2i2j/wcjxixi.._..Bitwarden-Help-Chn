@@ -4,9 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/directory-sync-cli/)
 {% endhint %}
 
-Directory Connector CLI 适合在无法使用桌面 GUI 的环境中工作，或者如果您想要使用操作系统提供的工具（定时作业、计划任务等）对目录同步操作进行脚本编程时使用。Directory Connector CLI 可以在 Windows、macOS 和 Linux 发行版上跨平台使用。
+Directory Connector CLI 适合在无法使用桌面 GUI 的环境中，或者如果您想要使用操作系统提供的工具（定时作业、计划任务等）对目录同步操作进行脚本编程时使用。Directory Connector CLI 可以在 Windows、macOS 和 Linux 发行版上跨平台使用。
 
-## 入门 <a href="#getting-started" id="getting-started"></a>
+## 开始使用 <a href="#getting-started" id="getting-started"></a>
 
 {% hint style="success" %}
 桌面 App 和 CLI [共享数据库和配置](directory-connector-file-storage.md)，因此不建议在一台机器上**同时**使用。建议使用[桌面 App](directory-connector-desktop-app.md) 完成配置和测试，然后使用 [CLI](directory-connector-cli.md) [调度自动同步](schedule-a-sync.md)到生产组织。
@@ -16,9 +16,9 @@ Directory Connector CLI 适合在无法使用桌面 GUI 的环境中工作，或
 
 1、从以下链接之一下载 CLI：
 
-* <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> [Windows CLI](https://vault.bitwarden.com/download/?app=connector\&platform=windows\&variant=cli-zip)
-* <img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line">[ macOS CLI](https://vault.bitwarden.com/download/?app=connector\&platform=macos\&variant=cli-zip)
-* <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line">[ Linux CLI](https://vault.bitwarden.com/download/?app=connector\&platform=linux\&variant=cli-zip)
+* <img src="../../../../.gitbook/assets/os-windows-24.png" alt="" data-size="line"> [Windows CLI](https://bitwarden.com/download/?app=connector\&platform=windows\&variant=cli-zip)
+* <img src="../../../../.gitbook/assets/apple-24.png" alt="" data-size="line"> [macOS CLI](https://bitwarden.com/download/?app=connector\&platform=macos\&variant=cli-zip)
+* <img src="../../../../.gitbook/assets/linux-24.png" alt="" data-size="line"> [Linux CLI](https://bitwarden.com/download/?app=connector\&platform=linux\&variant=cli-zip)
 
 2、解压缩 `.zip` 并将其文件（`bwdc` 和 `keytar.node`）移动到您的  `$PATH` 中的 `/usr/local/bin` 或其他目录。请注意，`keytar.node` **必须**与主 `bwdc` 可执行文件位于同一目录中。
 
@@ -54,7 +54,7 @@ bwdc --help
 7、当正确配置了目录和同步选项，并且 `bwdc test` 产生了预期的结果，请运行 `bwdc sync` 命令以启动实时同步操作。
 
 {% hint style="info" %}
-可在 `bdwc` 命令中加入 --pretty 标志，以修改输出结果的可读性。
+可在 `bdwc` 命令中加入 --pretty 标志，以修改输出内容，使其更易于阅读。
 {% endhint %}
 
 ## 命令参考 <a href="#commands-reference" id="commands-reference"></a>
@@ -63,7 +63,7 @@ bwdc --help
 
 `login` 命令用于使用您的[组织 API 密钥](../../bitwarden-public-api.md#authentication)登录 Directory Connector。如果您没有 API 密钥，请联系[组织的所有者](../member-roles.md)。有以下几种使用 `login` 命令的方式：
 
-* 自身：
+* 单独使用：
 
 ```shell
 bwdc login
@@ -71,7 +71,7 @@ bwdc login
 
 通过 `bwdc login` 本身随后会提示您输入 `client_id` 和 `client_secret`。
 
-* 带参数：
+* 带参数使用：
 
 ```shell
 bwdc login organization.b5351047-89b6-820f-ad21016b6222 yUMB4trbqV1bavhEHGqbuGpz4AlHm9
@@ -138,9 +138,9 @@ bwdc sync
 同步的用户和群组将立即在您的 Bitwarden 组织中可用。新增加的用户将收到一封邀请加入您组织的电子邮件。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，Directory Connector 将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)方案，则成员数量限制为 10 人。如果您尝试同步超过 10 名成员，Directory Connector 将显示错误并停止同步。
 
-**该计划已不再提供购买**。此错误不适用于团队版计划。
+**该方案已不再提供购买**。此错误不适用于团队版方案。
 {% endhint %}
 
 ### last-sync <a href="#last-sync" id="last-sync"></a>
@@ -211,7 +211,7 @@ bwdc update
 
 如果发现新版本，此命令将返回新版本的下载 URL 地址。**Directory Connector CLI 不会自动更新**。您需要使用此 URL 手动下载新版本。
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 如果您同时使用 CLI 和桌面 App，确保它俩的版本是匹配的，这非常重要。运行两个不同版本的 Directory Connector，可能会导致意外问题。
 
 使用全局选项 `--version` 查看 Directory Connector CLI 的版本。
