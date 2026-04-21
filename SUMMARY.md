@@ -226,7 +226,7 @@
       * [使用 LDAP 或 AD 同步](docs/admin-console/manage-members/directory-connector/sync-with-ldap-or-ad.md)
       * [使用 Microsoft Entra ID 同步](docs/admin-console/manage-members/directory-connector/sync-with-microsoft-entra-id.md)
       * [使用 Google Workspace 同步](docs/admin-console/manage-members/directory-connector/sync-with-google-workspace.md)
-      * [使用 Okta 同步](docs/admin-console/manage-members/directory-connector/sync-with-okta.md)
+      * [=使用 Okta 同步](docs/admin-console/manage-members/directory-connector/sync-with-okta.md)
       * [使用 OneLogin 同步](docs/admin-console/manage-members/directory-connector/sync-with-onelogin.md)
     * [入职和继任指南](docs/admin-console/manage-members/onboarding-and-succession.md)
   * [监督 & 可见性](docs/admin-console/oversight-visibility/README.md)

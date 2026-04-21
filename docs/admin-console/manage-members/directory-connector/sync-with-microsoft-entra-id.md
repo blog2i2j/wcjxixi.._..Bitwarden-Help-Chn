@@ -95,7 +95,7 @@
 
 在 **User Filter** 字段中使用以下筛选语法：
 
-#### 根据电子邮箱包含/排除用户 <a href="#include-exclude-users-by-email" id="include-exclude-users-by-email"></a>
+**按电子邮箱包含/排除用户**
 
 要基于电子邮箱地址在同步中包含或排除特定用户：
 
@@ -107,7 +107,7 @@ include:joe@example.com,bill@example.com,tom@example.com
 exclude:jow@example.com,bill@example.com,tom@example.com
 ```
 
-#### 根据群组成员资格筛选用户 <a href="#user-by-group-membership" id="user-by-group-membership"></a>
+**按群组成员资格筛选用户**
 
 您可以使用 `includeGroup` 和 `excludeGroup` 关键词根据 Azure Active Directory 群组成员资格在同步中包含或排除用户。`includeGroup` 和 `excludeGroup` 使用群组对象 ID，此 ID 可从 [Azure 门户](https://portal.azure.com/)中的群组**概览**页面或通过 [Azure AD Powershell](https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureadgroup?view=azureadps-2.0) 获得：
 
@@ -119,7 +119,7 @@ includeGroup:963b5acd-9540-446c-8e99-29d68fcba8eb,9d05a51c-f173-4087-9741-a7543b
 excludeGroup:963b5acd-9540-446c-8e99-29d68fcba8eb,9d05a51c-f173-4087-9741-a7543b0fd3bc
 ```
 
-### 群组筛选器 <a href="#group-filters" id="group-filters"></a>
+#### 群组筛选器 <a href="#group-filters" id="group-filters"></a>
 
 {% hint style="info" %}
 嵌套的群组可以在 Directory Connector 中通过单一引用同步多个组对象。具体操作是创建一个包含所有列出的组的管理单元。
@@ -127,7 +127,7 @@ excludeGroup:963b5acd-9540-446c-8e99-29d68fcba8eb,9d05a51c-f173-4087-9741-a7543b
 
 在 **Group Filter** 字段中使用以下筛选语法：
 
-#### 包含/排除群组 <a href="#include-exclude-groups" id="include-exclude-groups"></a>
+**包含/排除群组**
 
 要基于群组名称在同步中包含或排除群组：
 
@@ -139,7 +139,7 @@ include:Group A,Group B
 exclude:Group A,Group B
 ```
 
-#### 根据管理单元 (AU) 筛选群组 <a href="#group-by-administrative-unit-au" id="group-by-administrative-unit-au"></a>
+**按管理单元 (AU) 筛选群组**
 
 您可以使用 `includeadministrativeunit` 和 `excludeadministrativeunit` 关键词根据已标记的 [Azure Active Directory 管理单元 (AU)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units) 在同步中包含或排除群组。`includeadministrativeunit`  和 `excludeadministrativeunit` 使用管理单元的 **Object ID**（对象 ID）：
 
@@ -157,33 +157,31 @@ excludeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 在测试或执行同步之前，请检查 Directory Connector 是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
 {% endhint %}
 
-要测试 Directory Connector 是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 标签页并选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)显示在 Directory Connector 窗口中。
+要测试 Directory Connector 是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 选项卡，然后选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)显示在 Directory Connector 窗口中。
 
-授予的权限最多可能需要 15 分钟才能正确传递到您的应用程序。这之前，您可能会收到 `Insufficient privileges to complete the operation`（权限不足，无法完成此操作）的错误。
+授予的权限最多可能需要 15 分钟才能正确传递到您的应用程序。在此期间，您可能会收到 `Insufficient privileges to complete the operation`（权限不足，无法完成此操作）的错误。
 
 {% hint style="info" %}
-如果你收到 `Resource <user id> does not exist or one of its queried reference-property objects are not present` 的错误信息，您需要永久删除或还原具有 `<user id>` 用户。**请注意**，这个问题在 Directory Connector 的最近版本中得到了修正。如果您仍然遇到此错误，请更新您的应用程序。
+如果您收到 `Resource <user id> does not exist or one of its queried reference-property objects are not present` 的错误信息，您需要永久删除或还原具有 `<user id>` 的用户。**请注意**，此问题已在最新版本的 Directory Connector 中修复。如果您仍遇到此错误，请更新您的应用程序。
 {% endhint %}
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/5QYMxvtCPhjbluuoLcCapD/96e9c630ead9ceba5124b55f9d2764a3/dc-okta-test.png?fm=webp&h=439&q=50&w=500" %}
-测试同步的结果
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5QYMxvtCPhjbluuoLcCapD/96e9c630ead9ceba5124b55f9d2764a3/dc-okta-test.png?w=500&#x26;fm=avif" alt=""><figcaption><p>测试同步的结果</p></figcaption></figure></div>
 
 ## 启动自动同步 <a href="#start-automatic-sync" id="start-automatic-sync"></a>
 
 配置并测试[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)后，就可以开始同步了。完成以下步骤以使用 Directory Connector 启动自动同步：
 
 1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
-2. 导航到 **Dashboard** 标签页。
-3. 在 **Sync** 部分选择 **Start Now** 按钮。\
-   或者你可以选择 **Sync Now** 按钮以运行一次性手动同步。
+2. 导航到 **Dashboard** 选项卡。
+3. 在 **Sync** 部分，选择 **Start Now** 按钮。\
+   或者您可以选择 **Sync Now** 按钮以运行一次性手动同步。
 
 Directory Connector 将根据配置的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)开始轮询目录。
 
 如果您退出或关闭了 Directory Connector，自动同步将停止。最小化或隐藏此程序到系统托盘，以保持后台运行。
 
 {% hint style="info" %}
-如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)计划，则只能同步 10 个成员。如果您尝试同步超过 10 名成员，Directory Connector 将显示错误并停止同步。
+如果您使用的是[团队入门版](../../../plans-and-pricing/password-manager/about-bitwarden-plans.md#teams-starter-organizations)方案，则成员数量限制为 10 人。如果您尝试同步超过 10 名成员，Directory Connector 将显示错误并停止同步。
 
-**该计划已不再提供购买**。此错误不适用于团队版计划。
+**该方案已不再提供购买**。此错误不适用于团队版方案。
 {% endhint %}
