@@ -6,15 +6,15 @@
 
 当同步更改到您的 Bitwarden 组织时，Directory Connector 将会保留本地缓存。此缓存允许 Directory Connector **仅在两个目录之间发送增量**（之前/之后）。
 
-如果遇到同步错误或某一具体的目录更改未预期同步，您应该清除此缓存。清除缓存将允许在下一个同步操作期间进行完全同步。
+如果特定目录更改未按预期同步，或者您遇到同步错误（例如「An unhandled server error has occurred」（发生未处理的服务器错误）），请尝试清除此缓存。清除缓存将在下一次同步操作时触发完全同步。
 
 要清除本地缓存：
 
 {% tabs %}
-{% tab title="桌面" %}
+{% tab title="桌面版" %}
 打开 [Directory Connector 桌面 App](directory-connector-desktop-app.md)：
 
-1. 导航到 **More** 选项卡。
+1. 选择 **More** 选项卡。
 2. 在 **Other** 部分，选择 **Clear Sync Cache** 按钮。
 {% endtab %}
 

@@ -220,7 +220,7 @@
       * [Directory Connector 桌面 App](docs/admin-console/manage-members/directory-connector/directory-connector-desktop-app.md)
       * [Directory Connector CLI](docs/admin-console/manage-members/directory-connector/directory-connector-cli.md)
       * [Directory Connector 文件存储](docs/admin-console/manage-members/directory-connector/directory-connector-file-storage.md)
-      * [=同步选项和筛选器](docs/admin-console/manage-members/directory-connector/sync-options-and-filters.md)
+      * [同步选项和筛选器](docs/admin-console/manage-members/directory-connector/sync-options-and-filters.md)
       * [清除同步缓存](docs/admin-console/manage-members/directory-connector/clear-sync-cache.md)
       * [调度同步](docs/admin-console/manage-members/directory-connector/schedule-a-sync.md)
       * [使用 LDAP 或 AD 同步](docs/admin-console/manage-members/directory-connector/sync-with-ldap-or-ad.md)

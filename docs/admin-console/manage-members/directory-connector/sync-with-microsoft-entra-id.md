@@ -6,17 +6,17 @@
 
 本文将帮助您使用 Directory Connector 将您的 Azure Entra ID 目录中的用户和群组同步到您的 Bitwarden 组织。
 
-## Azure AD 设置 <a href="#azure-ad-setup" id="azure-ad-setup"></a>
+## Microsoft Entra ID Directory 设置 <a href="#microsoft-entra-id-directory-setup" id="microsoft-entra-id-directory-setup"></a>
 
-在配置 Directory Connector 之前，请从 [Microsoft Azure 门户](https://portal.azure.com/)完成以下过程。Directory Connector 需要从这些过程中获得的信息才能正常运行。
+在配置 Directory Connector 之前，请从 [Microsoft Azure 门户](https://portal.azure.com/)完成以下流程。Directory Connector 需要从这些流程中获得的信息才能正常运行。
 
 ### 创建应用程序注册 <a href="#create-app-registration" id="create-app-registration"></a>
 
-完成以下步骤以为 Directory Connector 创建一个应用程序注册：
+完成以下步骤，为 Directory Connector 创建一个应用程序注册：
 
 1. 从您的 [Microsoft Azure 门户](https://portal.azure.com/)，导航到 **Azure Entra ID** 目录。
 2. 从左侧导航选择**应用程序注册**或在搜索栏中输入**应用程序注册**。
-3. 选择**新建注册**按钮并为您的注册指定一个 Bitwarden 专用名称（比如 `bitwarden-dc`）。
+3. 选择**新建注册**按钮并为您的注册指定一个专用于 Bitwarden 的名称（比如 `bitwarden-dc`）。
 4. 选择**注册**。
 
 ### 授予应用程序权限 <a href="#grant-app-permissions" id="grant-app-permissions"></a>
@@ -46,7 +46,7 @@
 3. 填写完成后选择**保存**。
 4. 将密码的**值**复制到安全的地方，稍后将使用它。
 
-> **\[译者注]**：注意客户端密码的值必须及时备份，退出此页面后你将无法再次查看。
+> **\[译者注]**：注意客户端密码的值必须及时备份，退出此页面后您将无法再次查看。
 
 ### 获取应用程序 ID <a href="#get-app-id" id="get-app-id"></a>
 
@@ -59,8 +59,9 @@
 
 完成以下步骤以获取 Directory Connector 要使用的租户主机名：
 
-1. 在 Microsoft Azure 门户的任何地方，从主导航选择**目录和订阅**筛选器按钮。
-2. 将**当前目录：**&#x7684;值复制到一个安全的地方，稍后将使用它。
+1. 在 Microsoft Azure 门户的任意页面，点击右上角导航栏的 **⚙️**图标。
+2. 从左侧菜单栏选择**目录和订阅**筛选器按钮。
+3. 将**当前目录：**&#x7684;值复制到安全位置以备后续使用。
 
 ## 连接到您的目录 <a href="#connect-to-your-directory" id="connect-to-your-directory"></a>
 
@@ -75,7 +76,7 @@
 ## 配置同步选项 <a href="#configure-sync-options" id="configure-sync-options"></a>
 
 {% hint style="success" %}
-完成配置后，请导航至 **More** 标签页，然后选择 **Clear Sync Cache** 按钮，以防止与先前的同步操作发生潜在冲突。有关更多信息，请参阅[清除同步缓存](clear-sync-cache.md)。
+完成配置后，请导航至 **More** 标签页，然后选择 **Clear Sync Cache** 按钮，以防止与先前的同步操作发生潜在的冲突。更多信息，请参阅[清除同步缓存](clear-sync-cache.md)。
 {% endhint %}
 
 完成以下步骤以配置当使用 Directory Connector 同步时要使用的设置：
@@ -90,7 +91,7 @@
 
 使用逗号分隔的列表可根据用户电子邮箱、群组名称或群组成员资格在同步中包含或排除：
 
-### 用户筛选器 <a href="#user-filters" id="user-filters"></a>
+#### 用户筛选器 <a href="#user-filters" id="user-filters"></a>
 
 在 **User Filter** 字段中使用以下筛选语法：
 
@@ -119,6 +120,10 @@ excludeGroup:963b5acd-9540-446c-8e99-29d68fcba8eb,9d05a51c-f173-4087-9741-a7543b
 ```
 
 ### 群组筛选器 <a href="#group-filters" id="group-filters"></a>
+
+{% hint style="info" %}
+嵌套的群组可以在 Directory Connector 中通过单一引用同步多个组对象。具体操作是创建一个包含所有列出的组的管理单元。
+{% endhint %}
 
 在 **Group Filter** 字段中使用以下筛选语法：
 
