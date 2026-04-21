@@ -32,9 +32,7 @@
 
 当 Bitwarden 为您的组织添加了该功能后，您还可以从管理控制台中的**设置** → **策略**菜单，通过[策略](../oversight-visibility/enterprise-policies.md#automatic-user-confirmation)来激活自动确认。无论哪种方式，选择**继续**即可为组织启用自动确认：
 
-{% embed url="https://bitwarden.com/assets/1ggo2uyCvldAlJcOxAmGdv/eabe1eb2c5a82731268d6b3486fbc3d5/2026-02-05_10-43-27.png?w=800&fm=avif" %}
-新用户的自动确认
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1ggo2uyCvldAlJcOxAmGdv/eabe1eb2c5a82731268d6b3486fbc3d5/2026-02-05_10-43-27.png?w=1134&#x26;fm=avif" alt=""><figcaption><p>新用户自动确认</p></figcaption></figure></div>
 
 ### 对于每位管理员 <a href="#for-each-administrator" id="for-each-administrator"></a>
 
@@ -42,9 +40,7 @@
 
 关闭了此对话框的管理员可以从浏览器扩展的**设置** → **管理员**菜单中启用或停用自动确认。无论哪种方式，选择**启用**以开始自动确认：
 
-{% embed url="https://bitwarden.com/assets/18MR4NrPqPFWRW7W5oqFzW/40422afa9db8a695213a80944d427589/2026-02-05_11-02-16.png?w=800&fm=avif" %}
-启用自动确认
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/18MR4NrPqPFWRW7W5oqFzW/40422afa9db8a695213a80944d427589/2026-02-05_11-02-16.png?w=867&#x26;fm=avif" alt=""><figcaption><p>启用自动确认</p></figcaption></figure></div>
 
 为了让成员能够自动确认，至少需要由一位[所有者、管理员或相关自定义角色成员](member-roles.md)启用此功能。自动确认进程会在每一个选择启用此功能的已解锁的浏览器扩展客户端的后台运行。
 

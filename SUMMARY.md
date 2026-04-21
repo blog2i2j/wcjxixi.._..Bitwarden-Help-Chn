@@ -194,7 +194,7 @@
     * [邀请 & 管理成员](docs/admin-console/manage-members/user-management.md)
     * [成员角色](docs/admin-console/manage-members/member-roles.md)
     * [群组](docs/admin-console/manage-members/groups.md)
-    * [=自动确认](docs/admin-console/manage-members/automatic-confirmation.md)
+    * [自动确认](docs/admin-console/manage-members/automatic-confirmation.md)
     * [撤销 & 移除](docs/admin-console/manage-members/revoke-remove/README.md)
       * [临时撤销访问权限](docs/admin-console/manage-members/revoke-remove/temporarily-revoke-access.md)
       * [永久移除访问权限](docs/admin-console/manage-members/revoke-remove/permanently-remove-access.md)

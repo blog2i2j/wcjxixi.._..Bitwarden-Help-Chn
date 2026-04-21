@@ -20,9 +20,7 @@
 
 3、选择 **✘移除**：
 
-{% embed url="https://bitwarden.com/assets/5hTYQXah4C90KJcZnWwnqs/83372c5f7e37a9ea27cb14cc78b3b93e/2024-12-03_15-06-01.png?w=1197&fm=avif&q=80" %}
-移除成员
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5hTYQXah4C90KJcZnWwnqs/83372c5f7e37a9ea27cb14cc78b3b93e/2024-12-03_15-06-01.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>移除成员</p></figcaption></figure></div>
 
 4、选择**移除成员**进行确认。
 
@@ -53,7 +51,7 @@
 相比之下，使用[强制组织所有权策略](../../oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)的组织在成员移除后仍可访问数据。此策略会将个人拥有的「我的密码库」替换为组织拥有的「[我的项目](../../../password-manager/organization-members/my-items.md)」。当「我的项目」中包含数据的成员被移除时，其「我的项目」会自动转换为以该用户电子邮件地址命名的集合。然后，所有者和管理员可以[分配对该集合的访问权限](../../manage-shared-items/collections/assign-users-to-collections.md#assign-access-to-un-managed-collections)。现有成员获得[管理集合权限](../../manage-shared-items/collections/collection-permissions.md)后，即可像访问标准 Bitwarden 集合一样访问、编辑和重新分配项目。
 
 {% hint style="danger" %}
-Bitwarden 目前仅建议对尚未开始推广的组织启用[强制组织数据所有权策略](../../oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)。
+~~Bitwarden 目前仅建议对尚未开始推广的组织启用~~[~~强制组织数据所有权策略~~](../../oversight-visibility/enterprise-policies.md#enforce-organization-data-ownership)~~。~~
 
-如果您的组织在 2025.11.0 版本之前激活了该策略，将为自该版本以后确认的成员创建**我的项目**。现有成员将不会拥有**我的项目**，并且可以继续使用他们的**我的密码库**。未来版本将允许已开始成员入职并使用个人密码库的组织，将所有凭据迁移至组织所有权。
+~~如果您的组织在 2025.11.0 版本之前激活了该策略，将为自该版本以后确认的成员创建**我的项目**。现有成员将不会拥有**我的项目**，并且可以继续使用他们的**我的密码库**。未来版本将允许已开始成员入职并使用个人密码库的组织，将所有凭据迁移至组织所有权。~~
 {% endhint %}

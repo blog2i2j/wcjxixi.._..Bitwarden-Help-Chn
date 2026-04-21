@@ -14,17 +14,14 @@
 
 您可以使用以下方法之一删除成员账户：
 
-1、如果您有一个[已声明的域名](../../oversight-visibility/claimed-domains/claimed-domains.md)，那么任何账户电子邮箱地址与域名（例如：`jdoe@mycompany.com`）相匹配的用户都可以被组织管理员直接删除：
+* 如果您有一个[已声明的域名](../../oversight-visibility/claimed-domains/claimed-domains.md)，那么任何账户电子邮箱地址与域名（例如：`jdoe@mycompany.com`）相匹配的用户都可以被组织管理员直接删除：
 
-{% embed url="https://bitwarden.com/assets/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?w=1117&fm=avif&q=80" %}
-删除已声明的账户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6HUnGTfMstF4IasZcKBfdi/0d2dbd328ba4a006611576e7d91c70df/2025-01-14_10-45-56.png?w=1117&#x26;fm=avif" alt=""><figcaption><p>删除已声明的账户</p></figcaption></figure></div>
 
-2、如果您是自托管 Bitwarden，已授权的管理员可以从[系统管理员门户](../../../self-hosting/system-administrator-portal.md)中删除该账户。
+* 如果您是自托管 Bitwarden，已授权的管理员可以从[系统管理员门户](../../../self-hosting/system-administrator-portal.md)中删除该账户。
+* 如果该账户拥有一个您公司控制的 `@yourcompany.com` 电子邮箱地址，您可以使用[此流程](../../../plans-and-pricing/delete-an-account-or-organization.md#wu-xu-deng-lu)在 `@yourcompany.com` 收件箱中发起和确认删除。
 
-3、如果该账户拥有一个您公司控制的 `@yourcompany.com` 电子邮箱地址，您可以使用[此流程](../../../plans-and-pricing/delete-an-account-or-organization.md#wu-xu-deng-lu)在 `@yourcompany.com` 收件箱中发起和确认删除。
-
-如果这些方法都不适合您组织的 Bitwarden 配置，请从您的组织中[移除该成员](permanently-remove-access.md)。然后他们可以[删除他们的个人账户](../../../plans-and-pricing/delete-an-account-or-organization.md)。
+如果这些方法都不适合您组织的 Bitwarden 配置，请从您的组织中[移除该成员](permanently-remove-access.md)。然后他们可以自行[删除他们的个人账户](../../../plans-and-pricing/delete-an-account-or-organization.md)。
 
 ## 移除账户 <a href="#remove-an-account" id="remove-an-account"></a>
 

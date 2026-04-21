@@ -5,17 +5,17 @@
 {% endhint %}
 
 {% hint style="info" %}
-账户恢复适用于**企业组织**。
+账户恢复适用于**企业版组织**。
 {% endhint %}
 
 账户恢复功能允许[所有者、管理员和某些自定义角色成员](../member-roles.md)在成员忘记[主密码](../../../account/log-in-and-unlock/your-master-password.md)或丢失[受信任信设备](../../login-with-sso/trusted-devices/about-trusted-devices.md)时恢复成员账户。账户恢复：
 
 * 可以通过启用[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)为组织激活。
-* 要求成员通过自动注册或自行注册的方式注册，以获得账户恢复资格。注册会触发密钥交换，从而确保账户恢复的安全性。
+* 要求成员通过自动注册或自行注册的方式[注册](account-recovery-enrollment.md)，才能获得账户恢复资格。注册会触发密钥交换，从而确保账户恢复的安全性。
 * **不会绕过成员的两步登录或 SSO**。如果为账户启用了[两步登录方式](../../../account/two-step-login/setup-two-step-login/two-step-login-methods.md)，或者如果组织[要求 SSO 身份验证](../../oversight-visibility/enterprise-policies.md#single-sign-on-authentication)，则成员在恢复后仍需使用这些方法访问他们的账户。
 
 {% hint style="info" %}
-账户恢复不会恢复已删除的账户。[删除账户](../revoke-remove/delete-member-accounts.md)是永久性的且无法撤消。
+账户恢复不会恢复已删除的账户。[删除账户](../revoke-remove/delete-member-accounts.md)是永久性的，无法撤消。
 {% endhint %}
 
 ## 谁可以恢复账户 <a href="#who-can-recover-accounts" id="who-can-recover-accounts"></a>
@@ -43,14 +43,14 @@
 
 以下情况会记录[事件](../../oversight-visibility/event-logging/event-logs.md)：
 
-* 使用账户恢复重置了主密码。
+* 用户使用账户恢复重置了主密码。
 * 用户更新了通过账户恢复颁发的密码。
 * 用户注册了账户恢复。
 * 用户撤销了账户恢复。
 
 ## 下一步 <a href="#next-steps" id="next-steps"></a>
 
-* 通过开启[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)来设置账户恢复。
-* 如果用户在策略开启前加入或您没有开启自动注册，请指导用户[注册账户恢复](account-recovery-enrollment.md)。
+* 通过启用[账户恢复管理策略](../../oversight-visibility/enterprise-policies.md#account-recovery-administration)来设置账户恢复。
+* 如果用户在策略开启前加入，或您没有启用自动注册，请指导用户[注册账户恢复](account-recovery-enrollment.md)。
 * 了解如何[恢复已注册成员的账户](recover-a-member-account.md)。
 * 向成员提供[账户恢复后的操作说明](my-account-was-recovered.md)。
