@@ -65,7 +65,7 @@ Directory Connector 可用于运行一次性[手动同步](directory-connector-d
 
 ### 手动同步 <a href="#manual-sync" id="manual-sync"></a>
 
-要运行从您的目录到 Bitwarden 组织的一次性手动同步，请打开 🎨**Dashboard** 选项卡然后选择 **🔄Sync Now** 按钮。
+要运行从您的目录到 Bitwarden 组织的一次性手动同步，请打开 🎨**Dashboard** 选项卡，然后选择 **🔄Sync Now** 按钮。
 
 已同步的用户将被邀请加入您的组织，并且将立即创建群组。
 

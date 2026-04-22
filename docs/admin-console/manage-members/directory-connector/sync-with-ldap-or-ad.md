@@ -50,7 +50,7 @@
 {% endhint %}
 
 1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
-2. 导航到 **Setting** 标签页。
+2. 导航到 **Setting** 选项卡。
 3. 在 **Sync** 部分，根据需要配置如下选项：
 
 | 选项                                                                                             | 描述                                                                                                                                                                                               |
@@ -124,7 +124,7 @@
 在测试或执行同步之前，请检查 Directory Connector 是否连接到正确的云服务器（如 US 或 EU）或自托管服务器。了解如何使用[桌面 App](directory-connector-desktop-app.md) 或 [CLI](directory-connector-cli.md) 进行检查。
 {% endhint %}
 
-要测试 Directory Connector 是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 标签页并选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)显示在 Directory Connector 窗口中：
+要测试 Directory Connector 是否成功连接到您的目录并返回所需的用户和群组，导航到 **Dashboard** 选项卡，然后选择 **Test Now** 按钮。如果成功，则用户和群组将根据指定的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)显示在 Directory Connector 窗口中：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5QYMxvtCPhjbluuoLcCapD/96e9c630ead9ceba5124b55f9d2764a3/dc-okta-test.png?w=500&#x26;fm=avif" alt=""><figcaption><p>测试同步的结果</p></figcaption></figure></div>
 
@@ -134,7 +134,7 @@
 
 1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
 2. 导航到 **Dashboard** 选项卡。
-3. 在 **Sync** 部分,选择 **Start Now** 按钮。\
+3. 在 **Sync** 部分，选择 **Start Now** 按钮。\
    或者您可以选择 **Sync Now** 按钮以运行一次性手动同步。
 
 Directory Connector 将根据配置的[同步选项](sync-with-ldap-or-ad.md#configure-sync-options)和[筛选器](sync-with-ldap-or-ad.md#specify-sync-filters)开始轮询您的目录。

@@ -68,8 +68,8 @@
 完成以下步骤以配置 Directory Connector 使用您的 Azure Active Directory。如果尚未准备好，请执行适当的 [Azure AD 设置](sync-with-microsoft-entra-id.md#azure-ad-setup)步骤，然后继续：
 
 1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
-2. 导航到 **Setting** 标签页。
-3. 从 **Type** 下拉列表中选择 **Azure Active Directory**。\
+2. 导航到 **Setting** 选项卡。
+3. 从 **Type** 下拉菜单中，选择 **Azure Active Directory**。\
    此部分中的可用字段将根据您选择的类型而变化。
 4. 输入收集到的[**租户主机名**](sync-with-microsoft-entra-id.md#get-tenant-hostname)、[**应用程序 ID**](sync-with-microsoft-entra-id.md#get-app-id) 以及[**安全密钥**](sync-with-microsoft-entra-id.md#create-app-secret-key)。
 
@@ -82,7 +82,7 @@
 完成以下步骤以配置当使用 Directory Connector 同步时要使用的设置：
 
 1. 打开 Directory Connector [桌面 App](directory-connector-desktop-app.md)。
-2. 导航到 **Setting** 标签页。
+2. 导航到 **Setting** 选项卡。
 3. 在 **Sync** 部分，根据需要配置如下选项：
 
 <table><thead><tr><th width="332.75477397414636">选项</th><th>描述</th></tr></thead><tbody><tr><td>Interval</td><td>自动同步检查的时间间隔（分钟为单位）。</td></tr><tr><td>Remove disabled users during sync</td><td>选中此框以从 Bitwarden 组织中删除已在您的组织中禁用的用户。</td></tr><tr><td>Overwrite existing organization users based on current sync settings</td><td>选中此框以始终执行完全同步，如果任何用户不在同步用户集中，则将其从 Bitwarden 组织中移除。</td></tr><tr><td>More than 2000 users or groups are expected to sync</td><td>如果预计同步 2000 个以上用户或群组，请选中此框。如果不勾选此框，Directory Connector 会将同步限制在 2000 个用户或群组。</td></tr><tr><td>Sync Users</td><td><p>选中此框以将用户同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>用户筛选器</strong>。</p></td></tr><tr><td>User Filter</td><td>参阅<a href="sync-with-microsoft-entra-id.md#specify-sync-filters">指定同步筛选器</a>。</td></tr><tr><td>Sync Groups</td><td><p>选中此框以将群组同步到您的组织。</p><p></p><p>选中此框将允许您指定<strong>群组筛选器</strong>。</p></td></tr><tr><td>Group Filter</td><td>参阅<a href="sync-with-microsoft-entra-id.md#specify-sync-filters">指定同步筛选器</a>。</td></tr></tbody></table>
