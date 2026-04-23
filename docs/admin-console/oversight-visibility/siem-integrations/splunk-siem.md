@@ -4,13 +4,13 @@
 对应的[官方文档地址](https://bitwarden.com/help/splunk-siem/)
 {% endhint %}
 
-Splunk Enterprise 是一个安全信息和事件管理 (SIEM) 平台，可与 Bitwarden 组织一起使用。组织可以使用 Splunk Enterprise 仪表板上的 [Bitwarden Event Logs](https://splunkbase.splunk.com/app/6592) App 监控[事件](../event-logging/event-logs.md)活动。
+Splunk Enterprise 是一个安全信息和事件管理 (SIEM) 平台，可与 Bitwarden 组织配合使用。组织可以使用 Splunk Enterprise 仪表板上的 [Bitwarden Event Logs](https://splunkbase.splunk.com/app/6592) App 来监控[事件](../event-logging/event-logs.md)活动。
 
 ## 设置 <a href="#setup" id="setup"></a>
 
 ### 创建 Splunk 账户 <a href="#create-a-splunk-account" id="create-a-splunk-account"></a>
 
-在 Splunk 上安装 Bitwarden App 要求 Splunk Enterprise 账户。Bitwarden 事件监控支持以下 Splunk 平台：
+在 Splunk 上安装 Bitwarden App 需要一个 Splunk Enterprise 账户。Bitwarden 事件监控支持以下 Splunk 平台：
 
 * Splunk Enterprise
 * Spunk Cloud Classic
@@ -34,15 +34,11 @@ Bitwarden 支持 Splunk Enterprise 9.3、9.4 和 10.0 版本。Splunk Enterprise
 
 {% tabs %}
 {% tab title="Splunk Cloud" %}
-{% embed url="https://bitwarden.com/assets/j3k8D4EBEEFPv7le82mFS/7cae447085492faf80f61898b7c4f0cf/new_index.png?w=1200&fm=avif" %}
-新增索引
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/j3k8D4EBEEFPv7le82mFS/7cae447085492faf80f61898b7c4f0cf/new_index.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>新增索引</p></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="Splunk Enterprise" %}
-{% embed url="https://bitwarden.com/assets/3yYEP61PqzSEl9tOBuwWIl/c452955bbba510d972d1584c5416fe13/new_index_sh.png?w=838&fm=avif" %}
-新增 Enterprise 索引
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3yYEP61PqzSEl9tOBuwWIl/c452955bbba510d972d1584c5416fe13/new_index_sh.png?w=838&#x26;fm=avif" alt=""><figcaption><p>新增 Enterprise 索引</p></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -56,25 +52,19 @@ Bitwarden 支持 Splunk Enterprise 9.3、9.4 和 10.0 版本。Splunk Enterprise
 
 创建 Bitwarden 索引后，导航到 Splunk 仪表板。
 
-1、打开 **Apps** 下拉菜单然后选择 **Find More Apps**。
+1、打开 **Apps** 下拉菜单，然后选择 **Find More Apps**。
 
-{% embed url="https://bitwarden.com/assets/IsbH3oo9FYomh0InDjVwt/fc2aca538dedd4d56820e8da236d8278/more_apps.png?w=1200&fm=avif" %}
-Splunk App 仪表板
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/IsbH3oo9FYomh0InDjVwt/fc2aca538dedd4d56820e8da236d8278/more_apps.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Splunk App 仪表板</p></figcaption></figure></div>
 
 2、选择 **Browse more apps**。
 
 3、在 App 目录中搜索 **Bitwarden Event Logs**。为 **Bitwarden Event Logs** App 选择 **Install**。
 
-{% embed url="https://bitwarden.com/assets/5IzRtDgpykBPZ21AUJnxbJ/c70ffa253781789cbeb200932edc0554/Bitwarden_event_logs.png?w=450&fm=avif" %}
-**Bitwarden Event Logs** App
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5IzRtDgpykBPZ21AUJnxbJ/c70ffa253781789cbeb200932edc0554/Bitwarden_event_logs.png?w=450&#x26;fm=avif" alt=""><figcaption><p><strong>Bitwarden Event Logs</strong> App</p></figcaption></figure></div>
 
 4、为了完成安装，您需要输入您的 [Splunk](https://splunkbase.splunk.com/) 账户。您的 Splunk 账户可能与用于访问 Splunk 门户的凭据不同。
 
-{% embed url="https://bitwarden.com/assets/1Ko0eUuBz2AYIo0kNuxDoQ/2bb4b832236780509e6667e3c325a72f/2024-04-16_11-04-51.png?w=750&fm=avif" %}
-在 Splunk 上登录并安装 Bitwarden App
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1Ko0eUuBz2AYIo0kNuxDoQ/2bb4b832236780509e6667e3c325a72f/2024-04-16_11-04-51.png?w=750&#x26;fm=avif" alt=""><figcaption><p>在 Splunk 上登录并安装 Bitwarden App</p></figcaption></figure></div>
 
 5、输入信息后，选择 **Agree and Install**。
 
@@ -84,42 +74,36 @@ Splunk App 仪表板
 
 ### 连接您的 Bitwarden 组织 <a href="#connect-your-bitwarden-organization" id="connect-your-bitwarden-organization"></a>
 
-在您的 Splunk Enterprise 实例中安装 Bitwarden 事件日志 App 后，您可以使用您的 Bitwarden [API 密钥](../../bitwarden-public-api.md#authentication)连接您的 Bitwarden 组织。
+在您的 Splunk Enterprise 实例中安装 Bitwarden 事件日志 App 后，您即可使用您的 Bitwarden [API 密钥](../../bitwarden-public-api.md#authentication)连接您的 Bitwarden 组织。
 
-1、转到仪表板主页然后选择 **Bitwarden Event Logs** App：
+1、转到仪表板主页，然后选择 **Bitwarden Event Logs** App：
 
-{% embed url="https://bitwarden.com/assets/4XFuwwljpBglow8GsaYTcP/08af521d324c76fea00937617a7fe19d/2024-05-06_16-09-59.png?w=750&fm=avif" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4XFuwwljpBglow8GsaYTcP/08af521d324c76fea00937617a7fe19d/2024-05-06_16-09-59.png?w=750&#x26;fm=avif" alt=""><figcaption><p>Splunk 仪表板上的 Bitwarden</p></figcaption></figure></div>
 
-2、接下来，在 App 配置页面上，选择 **Continue to app setup page**。您可以在此处添加 Bitwarden 组织的信息。
+2、接下来，在 App 配置页面上，选择 **Continue to app setup page**。您可以在此处添加您的 Bitwarden 组织信息。
 
-{% embed url="https://bitwarden.com/assets/4c0008B7jTVp0PQtp97p0h/e725995706475b44b8726db6fbf066c1/SplunkSetupFull_edited.png?w=674&fm=avif" %}
-设置 Bitwarden 菜单
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4c0008B7jTVp0PQtp97p0h/e725995706475b44b8726db6fbf066c1/SplunkSetupFull_edited.png?w=674&#x26;fm=avif" alt=""><figcaption><p>设置 Bitwarden 菜单</p></figcaption></figure></div>
 
-3、保持此界面打开，在另一个选项卡上，登录 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+3、保持此界面打开，在另一个标签页上，登录 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
-{% embed url="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&fm=avif" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-4、导航至您的组织的**设置** → **组织信息**，然后选择**查看 API 密钥**。将要求您重新输入主密码，以访问 API 密钥信息。
+4、导航至您的组织的**设置** → **组织信息**，然后选择**查看 API 密钥**。将要求您重新输入主密码，以访问您的 API 密钥信息。
 
-{% embed url="https://bitwarden.com/assets/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?w=1175&fm=avif" %}
-组织 API 信息
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>组织 API 信息</p></figcaption></figure></div>
 
 5、将 `client_id` 和 `client_secret` 值复制并粘贴到 Splunk 设置页面上的相应位置。
 
-也请完成以下附加字段：
+同时完成以下附加字段：
 
 | 字段                    | 值                                                                                                                                                                                      |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Index                 | 选择之前在指南中创建的索引：`bitwarden_events`。                                                                                                                                                      |
 | Server URL            | <p>对于自托管 Bitwarden 用户，请输入您的自托管 URL。请确保该 URL 在末尾不包含正斜杠 「<code>/</code>」。<br><br>对于云托管组织，请使用 URL <code>https://vault.bitwarden.com</code> 或 <code>https://vault.bitwarden.eu</code>。</p> |
-| Start date (optional) | <p>设置数据监控的开始日期。如果未设置，默认日期将设置为 1 年。<br>这是一次性配置，设置后无法更改。</p>                                                                                                                            |
+| Start date (optional) | <p>设置数据监控的开始日期。如果未设置，默认日期将设置为 1 年。<br>此为一次性配置，设置后<strong>无法</strong>更改。</p>                                                                                                           |
 
 {% hint style="info" %}
-您的组织 API 密钥信息属于敏感数据。请勿在非安全位置共享这些值。
+您的组织 API 密钥信息是敏感数据。不要在不安全的位置分享这些值。
 {% endhint %}
 
 6、完成后，选择 **Submit**。
@@ -128,7 +112,7 @@ Splunk App 仪表板
 
 `bitwarden_event_logs_index` 搜索宏将在初始 Bitwarden 事件日志安装后创建。要访问宏并调整设置：
 
-1. 打开顶部导航栏上的 **Settings**。然后，选择 **Advanced Search**。
+1. 打开顶部导航栏上的 **Settings**，然后，选择 **Advanced Search**。
 2. 选择 **Search Macros** 以打开搜索宏列表。
 
 ### 搜索宏权限 <a href="#search-macro-permissions" id="search-macro-permissions"></a>
@@ -137,11 +121,9 @@ Splunk App 仪表板
 
 1、通过选择 **Settings** → **Advanced Search** → **Search macros** 来查看宏。
 
-2、选择 `bitwarden_events_logs_index` 的**权限**。编辑以下权限并在完成后选择**保存**：
+2、选择 `bitwarden_events_logs_index` 的**权限**。编辑以下权限，完成后选择**保存**：
 
-{% embed url="https://bitwarden.com/assets/69xCHcmqFE8CLp7kGJJkdJ/4faffad91633090dd5709b32e4cb7bc0/2024-05-14_08-44-55.png?w=1200&fm=avif" %}
-搜索宏权限
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/69xCHcmqFE8CLp7kGJJkdJ/4faffad91633090dd5709b32e4cb7bc0/2024-05-14_08-44-55.png?w=1200&#x26;fm=avif" alt=""><figcaption><p>搜索宏权限</p></figcaption></figure></div>
 
 | 字段                      | 描述                                                              |
 | ----------------------- | --------------------------------------------------------------- |
@@ -170,21 +152,19 @@ Splunk App 仪表板
 
 从 **Search** 页面或 **Dashboards** 进行搜索时，可以将搜索指定为特定的时间范围。
 
-{% embed url="https://bitwarden.com/assets/zizTsxjCMKlD4TXLmi2UZ/86807e58f3de67b9b51c10924f594069/2024-03-06_16-56-03.png?w=1200&fm=avif" %}
-Splunk timeframe 搜索
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/zizTsxjCMKlD4TXLmi2UZ/86807e58f3de67b9b51c10924f594069/2024-03-06_16-56-03.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Splunk 时间范围搜索</p></figcaption></figure></div>
 
 {% hint style="info" %}
 对于本地托管用户，Bitwarden 事件日志搜索支持以下时间范围：
 
-* Month to date
-* Year to date
-* Previous week
-* Previous business week
-* Previous month
-* Previous year
-* Last 30 days
-* All time
+* Month to date（本月至今）
+* Year to date（年初至今）
+* Previous week（上周）
+* Previous business week（上一工作周）
+* Previous month（上个月）
+* Previous year（去年）
+* Last 30 days（最近 30 天）
+* All time（所有时间）
 {% endhint %}
 
 ## 查询参数 <a href="#query-parameters" id="query-parameters"></a>
@@ -199,11 +179,9 @@ search | commands1 arguments1 | commands2 arguments2 | ...
 
 标准搜索结果对象的示例：
 
-{% embed url="https://bitwarden.com/assets/620J7a17eXWhkgkCOzpixU/a75acef6074ca30a014811363cb36c8a/query_data.png?w=500&fm=avif" %}
-Spunk 搜索结果对象
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/620J7a17eXWhkgkCOzpixU/a75acef6074ca30a014811363cb36c8a/query_data.png?w=500&#x26;fm=avif" alt=""><figcaption><p>Spunk 搜索结果对象</p></figcaption></figure></div>
 
-标准搜索对象中显示的字段可以包含在任何特定搜索中。包括以下所有值：
+标准搜索对象中显示的字段可以包含在任何特定搜索中。这包括以下所有值：
 
 ### Bitwarden 字段 <a href="#bitwarden-fields" id="bitwarden-fields"></a>
 
@@ -254,7 +232,7 @@ Spunk 搜索结果对象
 与事件类型无关的属性将报告为 `null`。
 {% endhint %}
 
-**搜索所有**：
+**搜索全部**：
 
 ```shellscript
 sourcetype="bitwarden:events" type=*
@@ -292,9 +270,7 @@ sourcetype="bitwarden:events" type=1115 actingUserName="John Doe" | top ipAddres
 
 3、在用户界面，找到您要为其编辑权限的用户并选择 **Edit**。
 
-{% embed url="https://bitwarden.com/assets/5CnTzwphqVenaRu638uVoI/151e295ab1e06fad53698b648accf500/Screenshot_2023-04-13_at_9.48.48_AM__2_.png?w=450&fm=avif" %}
-Splunk 编辑用户权限
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5CnTzwphqVenaRu638uVoI/151e295ab1e06fad53698b648accf500/Screenshot_2023-04-13_at_9.48.48_AM__2_.png?w=450&#x26;fm=avif" alt=""><figcaption><p>Splunk 编辑用户权限</p></figcaption></figure></div>
 
 在此界面，可以填写用户的详细信息。`admin`、`power` 以及 `can_delete` 等权限也可以在此处单独分配。
 
@@ -302,7 +278,7 @@ Splunk 编辑用户权限
 
 通过使用 SSH 访问清除索引来删除 Bitwarden 搜索数据。在某些情况下，例如更改被监控的组织，可能需要清除数据。
 
-1、访问 Splunk 目录然后 `stop` Splunk 进程。
+1、访问 Splunk 目录，然后 `stop` Splunk 进程。
 
 2、使用 `-index` 标志清除 `bitwarden_events` 索引。例如：
 

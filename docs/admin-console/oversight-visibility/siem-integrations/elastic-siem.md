@@ -40,7 +40,7 @@ Elastic 是一种可提供搜索和可观察性选项的解决方案，用于监
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-导航到组织的**设置** → **组织信息**界面，然后选择**查看 API 密钥**按钮。系统会要求您重新输入主密码，以访问 API 密钥信息。
+导航到组织的**设置** → **组织信息**界面，然后选择**查看 API 密钥**按钮。将要求您重新输入主密码，以访问您的 API 密钥信息。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>组织 API 信息</p></figcaption></figure></div>
 
@@ -53,7 +53,7 @@ Elastic 是一种可提供搜索和可观察性选项的解决方案，用于监
 | Client Secret | 输入从 Bitwarden 组织 API 密钥窗口获取的 `client_secret` 值。                                                                                                           |
 
 {% hint style="info" %}
-您的组织 API 密钥信息是敏感数据。不要在不安全的位置共分享这些值。
+您的组织 API 密钥信息是敏感数据。不要在不安全的位置分享这些值。
 {% endhint %}
 
 完成必填字段后，继续向下滚动页面以应用所需的数据收集设置。完成后选择 **Confirm incoming data**。

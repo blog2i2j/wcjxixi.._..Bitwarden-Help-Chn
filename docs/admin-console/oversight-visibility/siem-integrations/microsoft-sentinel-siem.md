@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/microsoft-sentinel-siem/)
 {% endhint %}
 
-Microsoft Sentinel 是一个安全信息和事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。组织可通过 Microsoft Sentinel 上的 Bitwarden Event Logs App 监控[事件](../event-logging/event-logs.md)活动。
+Microsoft Sentinel 是一个安全信息和事件管理 (SIEM) 平台，可用于监控 Bitwarden 组织。组织可通过 Microsoft Sentinel 上的 Bitwarden Event Logs App 来监控[事件](../event-logging/event-logs.md)活动。
 
 ## 设置 <a href="#setup" id="setup"></a>
 
@@ -34,7 +34,7 @@ Bitwarden Event Logs App 位于 [Microsoft Azure Marketplace](https://azuremarke
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-3、导航到组织的**设置** → **组织信息**界面，然后选择**查看 API 密钥**按钮。系统会要求您重新输入主密码，以访问 API 密钥信息。
+3、导航到组织的**设置** → **组织信息**界面，然后选择**查看 API 密钥**按钮。将要求您重新输入主密码，以访问您的 API 密钥信息。
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6gHjAyqgeqDj6UPT6agsBK/3a614e043cb3836a41bd68f226835e53/2024-12-04_09-51-07.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>组织 API 信息</p></figcaption></figure></div>
 
@@ -50,7 +50,7 @@ Bitwarden Event Logs App 位于 [Microsoft Azure Marketplace](https://azuremarke
 5、完成必填字段后，选择**连接**。
 
 {% hint style="info" %}
-您的组织 API 密钥信息是敏感数据。不要在不安全的位置共分享这些值。
+您的组织 API 密钥信息是敏感数据。不要在不安全的位置分享这些值。
 {% endhint %}
 
 ## 开始监控事件日志 <a href="#start-monitoring-event-logs" id="start-monitoring-event-logs"></a>
