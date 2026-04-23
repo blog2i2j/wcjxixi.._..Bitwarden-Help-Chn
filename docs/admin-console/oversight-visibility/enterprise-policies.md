@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/policies/)
 {% endhint %}
 
-企业策略允许企业组织为所有成员强制实施安全规则和默认设置，例如强制使用两步登录。
+企业策略允许企业版组织为所有成员强制实施安全规则和默认设置，例如强制要求使用两步登录。
 
 {% hint style="danger" %}
 我们强烈建议在邀请用户加入您的组织之前先设置好企业策略。某些策略会在启用时撤销不符合要求的用户，而某些策略无法追溯性地执行。
@@ -22,9 +22,7 @@
 
 4、选择您要更改的策略的名称：
 
-{% embed url="https://bitwarden.com/assets/2flohk6BsRKvazjztwvzsJ/66bdf4f937a1d37646207c79e6ec24be/Set_Enterprise_policies.png?w=1370&fm=avif" %}
-设置企业策略
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2flohk6BsRKvazjztwvzsJ/66bdf4f937a1d37646207c79e6ec24be/Set_Enterprise_policies.png?w=1370&#x26;fm=avif" alt=""><figcaption><p>设置企业策略</p></figcaption></figure></div>
 
 5、选中或取消选中**启用**。
 
@@ -94,9 +92,7 @@
 
 在网页 App 和 CLI 中，会向用户显示一条消息，以表明某个策略正在影响他们的选项。在其他客户端中，该选项将被简单地禁用：
 
-{% embed url="https://bitwarden.com/assets/5E2871D2vZBzveBmVyv9lO/b89f979980566dda40928db1ce450507/2024-10-14_08-50-45.png?w=1015&fm=avif" %}
-密码库导出已禁用
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5E2871D2vZBzveBmVyv9lO/b89f979980566dda40928db1ce450507/2024-10-14_08-50-45.png?w=1015&#x26;fm=avif" alt=""><figcaption><p>密码库导出已禁用</p></figcaption></figure></div>
 
 ## 身份验证 <a href="#authentication" id="authentication"></a>
 
@@ -176,10 +172,6 @@
 {% endhint %}
 
 {% hint style="info" %}
-[~~版本 2025.11.0~~](../../release-notes.md#id-2025.11.0) ~~中添加了新的超时选项，以下超时选项目前仅在 Android App 中被支持：**系统锁定时**、**App 重新启动时**和**从不**。在以后的版本中，更多客户端将支持这些超时选项。~~
-{% endhint %}
-
-{% hint style="info" %}
 在激活此策略之前，必须启用[**单一组织**](enterprise-policies.md#single-organization)策略。
 {% endhint %}
 
@@ -249,9 +241,7 @@
 
 1、要启用**使用 SSO 自动登录**策略，请选中**启用**复选框，并输入**身份提供程序主机** URL。此 URL 应包含 `protocol://domain`。
 
-{% embed url="https://bitwarden.com/assets/2qHW4T4CDwpQJmPK6oDDn8/e25f021aa609e6072ffa664ae757ea7f/2025-11-19_09-34-16.png?w=543&fm=avif" %}
-为允许的应用程序自动登录用户
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2qHW4T4CDwpQJmPK6oDDn8/e25f021aa609e6072ffa664ae757ea7f/2025-11-19_09-34-16.png?w=543&#x26;fm=avif" alt=""><figcaption><p>为允许的应用程序自动登录用户</p></figcaption></figure></div>
 
 2、作为 IdP 的管理员，请在终端用户仪表板上添加一个应用程序或 App 快捷方式，其中包含具有附加参数 `?autofill=1` 的目标 URL。
 

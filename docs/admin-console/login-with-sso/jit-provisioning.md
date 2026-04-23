@@ -1,10 +1,19 @@
-# JIT 配置
+# 使用 JIT 添加成员
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/jit-provisioning/)
 {% endhint %}
 
-使用 [SSO](about-sso.md) 的企业组织支持即时 (JIT) 配置成员。除 **SSO 指南**中记载的 SAML 或 OIDC 配置流程外，无需额外设置即可实现 JIT 功能。
+使用 [SSO](about-sso.md) 的企业版组织支持即时 (JIT) 配置成员。除 **SSO 指南**中记录的 SAML 或 OIDC 配置流程外，无需额外设置即可支持 JIT 功能。
+
+{% hint style="info" %}
+本文仅讨论邀请用户和管理您的订阅席位数量的可用方法之一：
+
+* 所有组织都可以[手动邀请用户](../manage-members/user-management.md)和更新[席位数量](../../plans-and-pricing/manage-subscription-seats-in-your-organization.md)。
+* 团队版和企业版组织可以使用 [SCIM](../manage-members/scim/about-scim.md)。
+* 团队版和企业版组织可以使用 [Directory Connector](../manage-members/directory-connector/about-directory-connector.md)。
+* 企业版组织可以[使用 JIT](jit-provisioning.md)。
+{% endhint %}
 
 ## 推荐的 JIT 策略 <a href="#recommended-jit-strategy" id="recommended-jit-strategy"></a>
 
@@ -15,7 +24,7 @@
 * **不应**允许成员在被邀请加入组织之前预先创建 Bitwarden 账户。
 
 {% hint style="success" %}
-通过邀请发起的新账户 JIT 配置可以绕过管理员或成员通常需要执行的几个步骤（请参阅[**非标准注册**](jit-provisioning.md#non-standard-signup)）。该策略还可以确保由于[受信任设备](trusted-devices/about-trusted-devices.md)或 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 实施结果而不应拥有主密码的成员不会在其账户上设置主密码。
+通过邀请发起的新账户 JIT 配置，省去了管理员或成员可能需要执行的几个步骤（请参阅[**非标准注册**](jit-provisioning.md#non-standard-signup)）。该策略还可以确保由于[受信任设备](trusted-devices/about-trusted-devices.md)或 [Key Connector](../../self-hosting/key-connector/about-key-connector.md) 实施结果而不应拥有主密码的成员不会在其账户上设置主密码。
 {% endhint %}
 
 ### 成员注册流程 <a href="#member-signup-process" id="member-signup-process"></a>

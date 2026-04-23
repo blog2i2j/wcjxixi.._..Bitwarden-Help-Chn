@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/monitoring-event-logs/)
 {% endhint %}
 
-与 SIEM（系统信息和事件管理）集成的事件监控是监控您的组织以维护最佳安全实践和确保合规性的重要工具。以下章节重点介绍多项监控参考指标，这些指标将增强您对 Bitwarden 解决方案的可观测性，包括洞察用户在密码库中的操作行为，并提供自动化告警目标的示例。
+通过 SIEM（系统信息与事件管理）集成进行事件监控，是监控您的组织以维护最佳安全实践和确保合规性的重要工具。以下章节重点介绍多项监控参考指标，这些指标将增强您对 Bitwarden 解决方案的可观测性，包括洞察用户在密码库中的操作行为，并提供自动化告警目标的示例。
 
 这些事件选自 [Bitwarden 事件日志](event-logs.md)。通过针对关键业务事件配置实时告警与时段累积告警策略，您将能根据自身独特的安全态势，对组织使用 Bitwarden 的情况进行全面审计。
 
@@ -12,34 +12,32 @@
 
 通过多种 SIEM 平台与 Bitwarden 集成，以审查密码库日常使用情况的关键信息。
 
-{% embed url="https://bitwarden.com/assets/1wHDe1snFJ4NB1G13VBUBC/71def83a275e8bf25e25488b872a02f0/Header_object.png?w=700&fm=avif" %}
-Panther JSON 对象
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1wHDe1snFJ4NB1G13VBUBC/71def83a275e8bf25e25488b872a02f0/Header_object.png?w=700&#x26;fm=avif" alt=""><figcaption><p>Panther JSON 对象</p></figcaption></figure></div>
 
 SIEM 事件监控平台提供了很多特定的字段，这些字段用于监控以维持高标准的安全性：
 
-| 值                 | 描述                                                                                                                                          |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `actingUserEmail` | 执行操作的用户电子邮箱地址。                                                                                                                              |
-| `actingUserId`    | 执行操作的用户唯一 ID。                                                                                                                               |
-| `actingUserName`  | 执行操作的用户名称。                                                                                                                                  |
-| `collectionId`    | 组织集合 ID。                                                                                                                                    |
-| `device`          | 设备的数值 ID。精确的映射可以在[这里](https://github.com/bitwarden/server/blob/d50ad97e6eeb733af9c069a949939b0567ba936d/src/Core/Enums/DeviceType.cs#L4)找到。 |
-| `ipAddress`       | 执行事件的 IP 地址。                                                                                                                                |
-| `itemId`          | 组织密码库的项目（密码、安全笔记等）。                                                                                                                         |
-| `policyId`        | 组织策略更新。在[这里](event-logs.md#organization-events)查看组织事件。                                                                                      |
+| 值                 | 描述                                                                                                                                           |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `actingUserEmail` | 执行操作的用户电子邮箱地址。                                                                                                                               |
+| `actingUserId`    | 执行操作的用户唯一 ID。                                                                                                                                |
+| `actingUserName`  | 执行操作的用户名称。                                                                                                                                   |
+| `collectionId`    | 组织集合 ID。                                                                                                                                     |
+| `device`          | 设备的数值 ID。具体映射关系可以在[这里](https://github.com/bitwarden/server/blob/d50ad97e6eeb733af9c069a949939b0567ba936d/src/Core/Enums/DeviceType.cs#L4)找到。 |
+| `ipAddress`       | 执行事件的 IP 地址。                                                                                                                                 |
+| `itemId`          | 组织密码库的密码库项目（密码、安全笔记等）。                                                                                                                       |
+| `policyId`        | 组织策略更新。在[这里](event-logs.md#organization-events)查看组织事件。                                                                                       |
 
-## 关注趋势 <a href="#concerning-trends" id="concerning-trends"></a>
+## 相关趋势 <a href="#concerning-trends" id="concerning-trends"></a>
 
-跟踪 Bitwarden 使用趋势可以识别可疑活动或潜在的安全威胁：
+跟踪 Bitwarden 使用趋势，可以识别可疑活动或潜在的安全威胁：
 
-### 登录尝试失败异常等级 <a href="#abnormal-rate-of-failed-login-attempts" id="abnormal-rate-of-failed-login-attempts"></a>
+### 登录尝试失败异常**频率** <a href="#abnormal-rate-of-failed-login-attempts" id="abnormal-rate-of-failed-login-attempts"></a>
 
 * 失败的登录尝试
   * `1005` 登录尝试因密码错误而失败
   * `1006` 登录尝试因两步登录错误而失败
 
-### 查看敏感或隐藏字段的异常等级 <a href="#abnormal-rate-of-viewing-sensitive-or-hidden-fields" id="abnormal-rate-of-viewing-sensitive-or-hidden-fields"></a>
+### 查看敏感或隐藏字段的异常**频率** <a href="#abnormal-rate-of-viewing-sensitive-or-hidden-fields" id="abnormal-rate-of-viewing-sensitive-or-hidden-fields"></a>
 
 * 查看项目
   * `1107` 查看了项目 `item-identifier`

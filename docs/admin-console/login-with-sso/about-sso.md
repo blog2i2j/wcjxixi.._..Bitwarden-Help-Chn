@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/about-sso/)
 {% endhint %}
 
-通过单点登录 (SSO) 功能，[企业组织](../organizations-overview.md#types-of-organizations)可以利用现有身份提供程序 (IdP) 对成员进行 Bitwarden 身份验证。企业组织的 SSO 功能包括：
+通过单点登录 (SSO) 功能，[企业版组织](../organizations-overview.md#types-of-organizations)可以利用现有身份提供程序 (IdP) 对成员进行 Bitwarden 身份验证。企业版组织的 SSO 功能包括：
 
 * 支持与多种身份提供程序集成的 [SAML 2.0](sso-guides/generic-saml.md) 和 [OIDC](sso-guides/generic-oidc.md) 配置选项。
 * 一项[企业策略](../oversight-visibility/enterprise-policies.md#require-single-sign-on-authentication)，可选择要求非管理成员使用 SSO 登录 Bitwarden。
@@ -18,9 +18,7 @@
 虽然身份验证是由您的 IdP 处理，但数据的解密由多种[解密方式](sso-decryption-options.md)之一进行控制。
 {% endhint %}
 
-{% embed url="https://bitwarden.com/assets/76IOpVRQv886zcUYIM2HF0/36300f14123231d0da18081adcc9962b/sso-workflow-3.png?w=856&fm=avif" %}
-SSO 和主密码解密
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/76IOpVRQv886zcUYIM2HF0/36300f14123231d0da18081adcc9962b/sso-workflow-3.png?w=856&#x26;fm=avif" alt=""><figcaption><p>SSO 和主密码解密</p></figcaption></figure></div>
 
 如果您是 Bitwarden 的新手，请[开始 7 天企业版免费试用](../../plans-and-pricing/start-an-enterprise-trial-with-your-bitwarden-account.md)以开始测试 SSO。我们建议在测试 SSO 时执行以下步骤：
 
