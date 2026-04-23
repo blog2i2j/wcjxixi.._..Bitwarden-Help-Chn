@@ -104,8 +104,8 @@ Assign users and groups
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
@@ -117,7 +117,7 @@ Assign users and groups
 | Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                 |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                          |
 | Minimum Incoming Signing Algorithm | 默认，IAM Identity Center 将使用 SHA-256 签名。除非您进行了更改，否则请从下拉菜单中选择 `sha256`。                       |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。                                                                 |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 断言被签名。                                                                 |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。 |
 
 完成服务提供程序配置部分后，**保存**您的工作。

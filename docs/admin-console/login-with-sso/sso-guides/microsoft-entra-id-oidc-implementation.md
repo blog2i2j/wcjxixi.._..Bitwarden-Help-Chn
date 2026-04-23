@@ -89,7 +89,7 @@ SAML 2.0 配置
 您可以通过激活单点登录身份验证策略来要求用户使用 SSO 登录。请注意，这需要先激活单一组织策略。[了解更多](../../oversight-visibility/enterprise-policies.md)。
 {% endhint %}
 
-### 额外的自定义申请类型 <a href="#additional-custom-claim-types" id="additional-custom-claim-types"></a>
+### 额外的自定义声明类型 <a href="#additional-custom-claim-types" id="additional-custom-claim-types"></a>
 
 如果您的 SSO 配置需要自定义声明类型，则需要额外的步骤才能让 Microsoft Entra ID 识别非标准声明。
 

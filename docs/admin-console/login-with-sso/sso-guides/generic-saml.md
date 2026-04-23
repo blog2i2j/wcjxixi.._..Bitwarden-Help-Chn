@@ -6,19 +6,15 @@
 
 ## 第 1 步：设置 SSO 标识符 <a href="#step-1-set-an-sso-identifier" id="step-1-set-an-sso-identifier"></a>
 
-[使用 SSO 验证身份](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个 **SSO 标识符**，该标识符指示了要验证的组织（即 SSO 集成）。要设置唯一的SSO 标识符：
+[使用 SSO 验证身份](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个 **SSO 标识符**，该标识符指示了要验证的组织（即 SSO 集成）。要设置唯一的 SSO 标识符：
 
-1、登录 Bitwarden 网页 App，使用产品切换器打开管理控制台：
+1、登录 Bitwarden [网页 App](https://bitwarden.com/help/getting-started-webvault/)，然后使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 2、导航到 **设置** → **单点登录**，然后为您的组织输入一个唯一的 **SSO 标识符**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6pr4tqMnrLCvwDBMlba5x7/7ef7563f7017f58adffff5d15ac68512/2024-12-04_09-39-25.png?_a=DAJCwlWIZAAB" %}
-输入标识符
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6pr4tqMnrLCvwDBMlba5x7/7ef7563f7017f58adffff5d15ac68512/2024-12-04_09-39-25.png?w=1036&#x26;fm=avif" alt=""><figcaption><p>输入标识符</p></figcaption></figure></div>
 
 3、继续执行**第 2 步：启用 SSO 登录**。
 
@@ -32,16 +28,14 @@
 
 1、在 **设置** → **单点登录**视图中，勾选**允许 SSO 身份验证**复选框：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/20720mRAluo6crSdTiYJrn/1175889d7f6ab42fe7614f34cdd1dcdd/2024-12-04_09-41-15.png?_a=DAJCwlWIZAAB" %}
-SAML 2.0 配置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/20720mRAluo6crSdTiYJrn/1175889d7f6ab42fe7614f34cdd1dcdd/2024-12-04_09-41-15.png?w=1036&#x26;fm=avif" alt=""><figcaption><p>SAML 2.0 配置</p></figcaption></figure></div>
 
 2、从**类型**下拉菜单中，选择 **SAML 2.0** 选项。如果您打算改用 OIDC，请切换到 [OIDC 配置指南](generic-oidc.md)。
 
 如果您愿意，可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做将从 SP 实体 ID 值中移除您的组织 ID，但在几乎所有情况下，建议保留此选项。
 
 {% hint style="success" %}
-还有其他**成员解密选项**。了解[受信任的设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 使用入门。
+还有可选的**成员解密选项**。了解[受信任的设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 使用入门。
 {% endhint %}
 
 ## 第 3 步：配置 <a href="#step-3-configuration" id="step-3-configuration"></a>
@@ -70,8 +64,8 @@ SAML 2.0 配置
 
 单点登录界面将配置分为两个部分：
 
-* &#x20;**SAML 服务提供程序配置**将确定 SAML 请求的格式。
-* &#x20;**SAML 身份提供程序配置**将确定 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 

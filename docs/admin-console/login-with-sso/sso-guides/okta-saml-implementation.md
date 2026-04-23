@@ -64,7 +64,7 @@ SAML 2.0 单选按钮将此字段设置为预先生成的**断言消费者服务
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Single sign on URL          | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
 | Audience URI (SP Entity ID) | <p>将此字段设置为预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>            |
-| Name ID format              | 选择在 SAML 声明中使用的 [SAML NameID format](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。默认为 **Unspecified**。                     |
+| Name ID format              | 选择在 SAML 断言中使用的 [SAML NameID format](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。默认为 **Unspecified**。                     |
 | Application username        | 选择用户用于登录 Bitwarden 的 Okta 属性。                                                                                                                 |
 
 ### 高级设置 <a href="#advanced-settings" id="advanced-settings"></a>
@@ -78,9 +78,9 @@ SAML 2.0 单选按钮将此字段设置为预先生成的**断言消费者服务
 | 字段                  | 描述                                                                                 |
 | ------------------- | ---------------------------------------------------------------------------------- |
 | Response            | SAML 响应是否由 Okta 签名。                                                                |
-| Assertion Signature | SAML 声明是否由 Okta 签名。                                                                |
-| Signature Algorithm | 用于对响应和/或声明进行签名的签名算法，具体取决于设置为 **Signed** 的算法。默认为 `rsa-sha256`。                      |
-| Digest Algorithm    | 用于对响应和/或声明进行签名的摘要算法，具体取决于设置为 **Signed** 的算法。此字段必须与已选择的 **Signature Algorithm** 匹配。 |
+| Assertion Signature | SAML 断言是否由 Okta 签名。                                                                |
+| Signature Algorithm | 用于对响应和/或断言进行签名的签名算法，具体取决于设置为 **Signed** 的算法。默认为 `rsa-sha256`。                      |
+| Digest Algorithm    | 用于对响应和/或断言进行签名的摘要算法，具体取决于设置为 **Signed** 的算法。此字段必须与已选择的 **Signature Algorithm** 匹配。 |
 
 ### 属性声明 <a href="#attribute-statements" id="attribute-statements"></a>
 
@@ -122,8 +122,8 @@ IdP 值
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 

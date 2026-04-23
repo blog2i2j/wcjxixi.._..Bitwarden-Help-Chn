@@ -1,4 +1,4 @@
-# ADFS SAML
+# =ADFS SAML
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/saml-adfs/)
@@ -128,8 +128,8 @@ ADFS 规则 3
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
@@ -141,7 +141,7 @@ ADFS 规则 3
 | Outbound Signing Algorithm         | Bitwarden 用来签署 SAML 请求的算法。                                                                                         |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                                                  |
 | Minimum Incoming Signing Algorithm | 默认，AD FS 将使用 **SHA-256** 签名。从下拉列表中选择 SHA-256，除非您已[将 AD FS 配置为使用不同的算法](adfs-saml-implementation.md#hash-algorithm)。 |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。                                                                                         |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 断言被签名。                                                                                         |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                         |
 
 完成服务提供程序配置部分后，**保存**您的工作。

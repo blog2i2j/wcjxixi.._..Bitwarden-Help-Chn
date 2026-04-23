@@ -6,45 +6,39 @@
 
 ## 第 1 步：设置 SSO 标识符 <a href="#step-1-set-an-sso-identifier" id="step-1-set-an-sso-identifier"></a>
 
-[使用 SSO 验证身份](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个**组织标识符**，该标识符指示要进行身份验证的组织（以及 SSO 集成）。要设置唯一的组织标识符：
+[使用 SSO 验证身份](../../../account/log-in-and-unlock/using-single-sign-on/using-login-with-sso.md#login-using-sso)的用户将被要求输入一个 **SSO 标识符**，该标识符指示了要验证的组织（即 SSO 集成）。要设置唯一的 SSO 标识符：
 
-1、登录 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+1、登录 Bitwarden [网页 App](https://bitwarden.com/help/getting-started-webvault/)，然后使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
-2、导航到 **设置** → **单点登录**，然后为您的组织输入一个唯一的**标识符**：
+2、导航到 **设置** → **单点登录**，然后为您的组织输入一个唯一的 **SSO 标识符**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6pr4tqMnrLCvwDBMlba5x7/7ef7563f7017f58adffff5d15ac68512/2024-12-04_09-39-25.png?_a=DAJCwlWIZAAB" %}
-输入标识符
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6pr4tqMnrLCvwDBMlba5x7/7ef7563f7017f58adffff5d15ac68512/2024-12-04_09-39-25.png?w=1036&#x26;fm=avif" alt=""><figcaption><p>输入标识符</p></figcaption></figure></div>
 
-3、继续执行**步骤 2：启用 SSO 登录**。
+3、继续执行**第 2 步：启用 SSO 登录**。
 
 {% hint style="success" %}
-此配置准备好使用后，您需要将这个值分享给用户。
+配置完成后，您需要将这个值分享给用户。
 {% endhint %}
 
 ## 第 2 步：启用 SSO 登录 <a href="#step-2-enable-login-with-sso" id="step-2-enable-login-with-sso"></a>
 
 拥有 SSO 标识符后，您就可以继续启用和配置您的集成了。要启用 SSO 登录：
 
-1、在 **设置** → **单点登录** 视图中，勾选**允许 SSO 身份验证**复选框：
+1、在 **设置** → **单点登录**视图中，勾选**允许 SSO 身份验证**复选框：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/20720mRAluo6crSdTiYJrn/1175889d7f6ab42fe7614f34cdd1dcdd/2024-12-04_09-41-15.png?_a=DAJCwlWIZAAB" %}
-SAML 2.0 配置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/51wSToXTHHVmBCrLrE8T0E/85aa432ea19eadf0195317f4f233e973/2024-12-04_09-41-46.png?w=1036&#x26;fm=avif" alt=""><figcaption><p>OIDC 配置</p></figcaption></figure></div>
 
 2、从**类型**下拉菜单中，选择 **OpenID Connect** 选项。如果您打算改用 SAML，请切换到 [SAML 配置指南](generic-saml.md)。
 
 {% hint style="success" %}
-还有其他**成员解密选项**。了解[受信任的设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 使用入门。
+还有可选的**成员解密选项**。了解[受信任的设备 SSO](../trusted-devices/about-trusted-devices.md) 或 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md) 使用入门。
 {% endhint %}
 
 ## 第 3 步：配置 <a href="#step-3-configuration" id="step-3-configuration"></a>
 
-从这一步开始，**实施将因提供程序的不同而不同**。跳转到我们的特定**实施指南**之一，以帮助您完成配置过程：
+从这一步开始，具体实施方式会因提供程序而异。跳转到我们的具体**实施指南**之一，以帮助完成配置过程：
 
 | 提供程序  | 指南                                                      |
 | ----- | ------------------------------------------------------- |

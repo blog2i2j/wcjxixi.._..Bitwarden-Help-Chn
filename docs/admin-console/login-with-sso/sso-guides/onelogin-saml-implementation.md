@@ -66,8 +66,8 @@ SAML Test Connector App
 | Recipient                    | 将此字段设置为同样也用于 **Audience (Entity ID)** 设置的预先生成的 **SP 实体 ID**。                                                                                  |
 | ACS (Consumer) URL Validator | 尽管被 OneLogin 标记为**必需**，但您实际上并不需要在此字段中输入信息以与 Bitwarden 集成。跳到下一个字段 **ACS (Consumer) URL**。                                                      |
 | ACS (Consumer) URL           | <p>将此字段设置为预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br></p><p>此自动生成的值可以从组织的<strong>设置</strong> → 单<strong>点登录</strong>界面复制，并且会根据您的设置而有所不同。</p> |
-| SAML initiator               | 选择 **Service Provider**。SSO 登录当前不支持 IdP 发起的 SAML 声明。                                                                                          |
-| SAML nameID Format           | 将此字段设置您希望用于 SAML 声明的 [SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。                                        |
+| SAML initiator               | 选择 **Service Provider**。SSO 登录当前不支持 IdP 发起的 SAML 断言。                                                                                          |
+| SAML nameID Format           | 将此字段设置您希望用于 SAML 断言的 [SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。                                        |
 | SAML signature element       | 默认，OneLogin 将签名 SAML 响应。您可以将其设置为 **Assertion** 或 **Both**。                                                                                    |
 
 完成配置设置后，选择 **Save** 按钮。
@@ -114,8 +114,8 @@ SAML Test Connector App
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 

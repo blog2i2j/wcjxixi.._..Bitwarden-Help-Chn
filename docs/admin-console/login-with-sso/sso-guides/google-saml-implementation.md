@@ -67,7 +67,7 @@ IdP 详细信息
 | ACS URL         | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的<strong>断言消费者服务 (ACS) URL</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>                                                                                                                                                                                          |
 | Entity ID       | <p>将此字段设置为从 Bitwarden SSO 配置界面中预先生成的 <strong>SP 实体 ID</strong>。<br><br>此自动生成的值可以从组织的<strong>设置</strong> → <strong>单点登录</strong>界面复制，并且会根据您的设置而有所不同。</p>                                                                                                                                                                                                  |
 | Start URL       | <p>可选。将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">已配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
-| Signed response | 如果您希望 Workspace 签名 SAML 响应，请选中此框。如果未选中，Workspace 将仅签名 SAML 声明。                                                                                                                                                                                                                                                                                           |
+| Signed response | 如果您希望 Workspace 签名 SAML 响应，请选中此框。如果未选中，Workspace 将仅签名 SAML 断言。                                                                                                                                                                                                                                                                                           |
 | Name ID format  | 将此字段设置为 **Persistent**。                                                                                                                                                                                                                                                                                                                                  |
 | Name ID         | 选择 Workspace 用户属性，以填充 NameID。                                                                                                                                                                                                                                                                                                                            |
 
@@ -99,8 +99,8 @@ IdP 详细信息
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
@@ -112,7 +112,7 @@ IdP 详细信息
 | Outbound Signing Algorithm         | Bitwarden 用于签名 SAML 请求的算法。                                                                   |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                            |
 | Minimum Incoming Signing Algorithm | 默认，Workplace 使用 SHA-256 进行签名。请从下拉菜单中选择 `sha-256`。                                            |
-| Expect signed assertions           | Bitwarden 是否要求 SAML 声明被签名。此设置应**取消勾选**。                                                      |
+| Expect signed assertions           | Bitwarden 是否要求 SAML 断言被签名。此设置应**取消勾选**。                                                      |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。   |
 
 完成服务提供程序配置部分后，**保存**您的工作。
@@ -121,17 +121,16 @@ IdP 详细信息
 
 身份提供程序配置通常需要您返回 Workplace 管理控制台以获取应用程序的值：
 
-| 字段                                        | 描述                                                                                                                                                                                                                                               |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Entity ID                                 | 将此字段设置为 Workplace 的 **Entity ID**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                                     |
-| Binding Type                              | 将此字段设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                                            |
-| Single Sign On Service URL                | 将此字段设置为 Workplace 的 **SSO URL**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                                       |
-| Single Log Out Service URL                | SSO 登录当前还**不支持** SLO。该选项计划未来开发，但是您可以根据需要预先配置它。                                                                                                                                                                                                   |
-| X509 Public Certificate                   | <p>黏贴<a href="google-saml-implementation.md#google-identity-provider-details">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm                | 默认，Google Workspace 将使用 RSA SHA-256 进行签名。从下拉菜单中选择 `sha-256`。                                                                                                                                                                                     |
-| Allow Unsolicited Authentication Response | SSO 登录当前**不支持**未经请求（由 IdP 发起）的 SAML 声明。该选项计划用于将来的开发。                                                                                                                                                                                             |
-| Disable Outbound Logout Requests          | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                                  |
-| Want Authentication Requests Signed       | Google Workspace 是否要求 SAML 请求被签名。                                                                                                                                                                                                                |
+| 字段                                  | 描述                                                                                                                                                                                                                                               |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Entity ID                           | 将此字段设置为 Workplace 的 **Entity ID**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                                     |
+| Binding Type                        | 将此字段设置为 **HTTP POST** 或 **Redirect**。                                                                                                                                                                                                            |
+| Single Sign On Service URL          | 将此字段设置为 Workplace 的 **SSO URL**，这可以从 [Google 身份提供程序详细信息部分](google-saml-implementation.md#google-identity-provider-details)或使用 **Download Metadata** 按钮来获取。                                                                                       |
+| Single Log Out Service URL          | SSO 登录当前还**不支持** SLO。该选项计划未来开发，但是您可以根据需要预先配置它。                                                                                                                                                                                                   |
+| X509 Public Certificate             | <p>黏贴<a href="google-saml-implementation.md#google-identity-provider-details">已获取的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
+| Outbound Signing Algorithm          | 默认，Google Workspace 将使用 RSA SHA-256 进行签名。从下拉菜单中选择 `sha-256`。                                                                                                                                                                                     |
+| Disable Outbound Logout Requests    | SSO 登录当前还**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                                  |
+| Want Authentication Requests Signed | Google Workspace 是否要求 SAML 请求被签名。                                                                                                                                                                                                                |
 
 {% hint style="info" %}
 填写 X509 证书时，请注意到期日期。必须续签证书，以防止向 SSO 最终用户提供的服务中断。如果证书已过期，管理员和所有者账户将始终可以使用电子邮箱地址和主密码登录。

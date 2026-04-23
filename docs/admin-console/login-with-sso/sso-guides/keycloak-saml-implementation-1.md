@@ -82,8 +82,8 @@ Keycloak RS256 证书
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 在 **SAML 服务提供程序配置**部分完成以下字段：
 
@@ -92,8 +92,8 @@ Keycloak RS256 证书
 | Name ID Format                     | 选择 **Email Address**。                                                                                                                  |
 | Outbound Signing Algorithm         | Bitwarden 用来签署 SAML 请求的算法。                                                                                                             |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。                                                                                                                      |
-| Minimum Incoming Signing Algorithm | 选择 Keycloak 客户端[被配置为用于](keycloak-saml-implementation-1.md#additional-keycloak-settings)签署 SAML 文档或声明的算法。                               |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。如果开启，请确保配置了 Keycloak 客户端的 [Sign Assertions](keycloak-saml-implementation-1.md#additional-keycloak-settings)。 |
+| Minimum Incoming Signing Algorithm | 选择 Keycloak 客户端[被配置为用于](keycloak-saml-implementation-1.md#additional-keycloak-settings)签署 SAML 文档或断言的算法。                               |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 断言被签名。如果开启，请确保配置了 Keycloak 客户端的 [Sign Assertions](keycloak-saml-implementation-1.md#additional-keycloak-settings)。 |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                             |
 
 在 **SAML 身份提供程序配置**部分完成以下字段：
@@ -105,7 +105,7 @@ Keycloak RS256 证书
 | Single Sign On Service URL          | 输入您的主 SAML 处理 URL，例如 `https://<keycloak_domain>/realms/<realm_name>/protocol/saml`。                                                                                                                                                           |
 | Single Log Out Service URL          | SSO 登录当前**不支持** SLO。该选项计划未来开发，但是如果您愿意，可以将其预先配置为您的 **Logout URL**。                                                                                                                                                                             |
 | X509 Public Certificate             | <p>黏贴<a href="keycloak-saml-implementation-1.md#download-your-certificate">已下载的证书</a>，移除 <code>-----BEGIN CERTIFICATE-----</code>  和 <code>-----END CERTIFICATE-----</code>。<br><br>证书值区分大小写，多余的空格、回车符和其他多余的字符<strong>将导致证书验证失败</strong>。</p> |
-| Outbound Signing Algorithm          | 选择 Keycloak 客户端[被配置为用于](keycloak-saml-implementation-1.md#settings)签署 SAML 文档或声明的算法。                                                                                                                                                          |
+| Outbound Signing Algorithm          | 选择 Keycloak 客户端[被配置为用于](keycloak-saml-implementation-1.md#settings)签署 SAML 文档或断言的算法。                                                                                                                                                          |
 | Disable Outbound Logout Requests    | SSO 登录当前**不支持** SLO。该选项计划未来开发。                                                                                                                                                                                                                |
 | Want Authentication Requests Signed | Keycloak 是否要求 SAML 请求被签名。                                                                                                                                                                                                                     |
 

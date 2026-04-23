@@ -88,8 +88,8 @@ JumpCloud SSO 配置
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SAMLSubject NameID        | 指定将在 SAML 响应中作为 NameID 发送的 JumpCloud 属性。                                                                                                                                                                                                                                                                                                              |
 | SAMLSubject NameID Format | 指定在 SAML 响应中发送的 NameID 的格式。                                                                                                                                                                                                                                                                                                                           |
-| Signature Algoritm        | 选择用于签名 SAML 声明或响应的算法。                                                                                                                                                                                                                                                                                                                                 |
-| Sign Assertion            | 默认，JumpCloud 将对 SAML 响应进行签名。选中此框以签名 SAML 声明。                                                                                                                                                                                                                                                                                                          |
+| Signature Algoritm        | 选择用于签名 SAML 断言或响应的算法。                                                                                                                                                                                                                                                                                                                                 |
+| Sign Assertion            | 默认，JumpCloud 将对 SAML 响应进行签名。选中此框以签名 SAML 断言。                                                                                                                                                                                                                                                                                                          |
 | Login URL                 | <p>将此字段设置为用户访问 Bitwarden 的登录 URL。<br><br>对于云托管客户，其始终为 <code>https://vault.bitwarden.com/#/sso</code> 或 <code>https://vault.bitwarden.eu/#/sso</code>。对于自托管实例，这由您<a href="../../../self-hosting/deploy-and-configure/docker/linux-standard-deployment.md#configure-your-domain">已配置的服务器 URL</a> 决定，例如为 <code>https://your.domain.com/#/sso</code>。</p> |
 
 ### 属性 <a href="#attributes" id="attributes"></a>
@@ -134,8 +134,8 @@ JumpCloud SSO 配置
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 

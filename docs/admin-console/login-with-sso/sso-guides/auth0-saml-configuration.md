@@ -89,9 +89,9 @@ Auth0 设置
 
 | 键                      | 描述                                                                                                                                                                                                                                                                                                  |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `signatureAlgorithm`   | <p>Auth0 使用此算法对 SAML 声明或响应进行签名。默认为 <code>rsa-sha1</code>，您也可以将值设置为 <code>rsa-sha256</code>。</p><p></p><p>如果您更改了这个值，您必须：</p><p>-将 <code>digestAlgorithm</code> 设置为 <code>sha256</code>。</p><p>-（在 Bitwarden 中）将 <strong>Minimum Incoming Signing Algorithm</strong> 设置为 <code>rsa-sha256</code>。</p> |
-| `digestAlgorithm`      | 此算法用于计算 SAML 声明或响应的摘要。默认为 `sha-1`。如果您更改了 `signatureAlgorithm` 的值，您还应该将此值设置为 `sha256`.                                                                                                                                                                                                               |
-| `signResponse`         | 默认，Auth0 将仅对 SAML 声明进行签名。将此属性设置为 `true` 可对 SAML 响应（而不是声明）进行签名。                                                                                                                                                                                                                                      |
+| `signatureAlgorithm`   | <p>Auth0 使用此算法对 SAML 断言或响应进行签名。默认为 <code>rsa-sha1</code>，您也可以将值设置为 <code>rsa-sha256</code>。</p><p></p><p>如果您更改了这个值，您必须：</p><p>-将 <code>digestAlgorithm</code> 设置为 <code>sha256</code>。</p><p>-（在 Bitwarden 中）将 <strong>Minimum Incoming Signing Algorithm</strong> 设置为 <code>rsa-sha256</code>。</p> |
+| `digestAlgorithm`      | 此算法用于计算 SAML 断言或响应的摘要。默认为 `sha-1`。如果您更改了 `signatureAlgorithm` 的值，您还应该将此值设置为 `sha256`.                                                                                                                                                                                                               |
+| `signResponse`         | 默认，Auth0 将仅对 SAML 断言进行签名。将此属性设置为 `true` 可对 SAML 响应（而不是断言）进行签名。                                                                                                                                                                                                                                      |
 | `nameIdentifierFormat` | 默认为 `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`。您可以将值设置为[任一 SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。如果这样做了，请将 SP **Name ID Format** 字段更改为相应的选项（参阅[这里](auth0-saml-configuration.md#service-provider-configuration)）。                             |
 
 ~~使用像下面这样的 **Script**（脚本）来实现这些规则。如需帮助，请参阅~~ [~~Auth0 文档~~](https://auth0.com/docs/protocols/saml-protocol/customize-saml-assertions#customize-saml-assertions-with-rules)~~。~~
@@ -142,9 +142,9 @@ exports.onExecutePostLogin = async (event, api) => {
 
 | 键                      | 描述                                                                                                                                                                                                                                                                                       |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `signatureAlgorithm`   | <p>Auth0 使用此算法对 SAML 声明或响应进行签名。默认为 <code>rsa-sha1</code>，您也可以将值设置为 <code>rsa-sha256</code>。<br><br>如果您更改了这个值，您必须：<br>-将 <code>digestAlgorithm</code>  设置为 <code>sha256</code>。<br>-（在 Bitwarden 中）将 <strong>Minimum Incoming Signing Algorithm</strong> 设置为 <code>rsa-sha256</code>。</p> |
-| `digestAlgorithm`      | 此算法用于计算 SAML 声明或响应的摘要。将此值设置为 `sha-256`.                                                                                                                                                                                                                                                  |
-| `signResponse`         | 默认，Auth0 将仅对 SAML 声明进行签名。将此属性设置为 `true` 可对 SAML 响应（而不是声明）进行签名。                                                                                                                                                                                                                           |
+| `signatureAlgorithm`   | <p>Auth0 使用此算法对 SAML 断言或响应进行签名。默认为 <code>rsa-sha1</code>，您也可以将值设置为 <code>rsa-sha256</code>。<br><br>如果您更改了这个值，您必须：<br>-将 <code>digestAlgorithm</code>  设置为 <code>sha256</code>。<br>-（在 Bitwarden 中）将 <strong>Minimum Incoming Signing Algorithm</strong> 设置为 <code>rsa-sha256</code>。</p> |
+| `digestAlgorithm`      | 此算法用于计算 SAML 断言或响应的摘要。将此值设置为 `sha-256`.                                                                                                                                                                                                                                                  |
+| `signResponse`         | 默认，Auth0 将仅对 SAML 断言进行签名。将此属性设置为 `true` 可对 SAML 响应（而不是断言）进行签名。                                                                                                                                                                                                                           |
 | `nameIdentifierFormat` | 默认为 `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`。您可以将值设置为[任一 SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)。如果这样做了，请将 SP **Name ID Format** 字段更改为相应的选项（参阅[这里](auth0-saml-configuration.md#service-provider-configuration)）。                  |
 
 ### 从规则迁移到操作 <a href="#migrate-from-rules-to-actions" id="migrate-from-rules-to-actions"></a>
@@ -160,8 +160,8 @@ exports.onExecutePostLogin = async (event, api) => {
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
@@ -173,7 +173,7 @@ exports.onExecutePostLogin = async (event, api) => {
 | Outbound Signing Algorithm         | 用于签名 SAML 请求的算法，默认为 `rsa-sha256`。                                                                                                            |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。默认，Auth0 不要求对请求进行签名。                                                                                                        |
 | Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。选择 `rsa-sha256` 除非您配置了[自定义签名操作](auth0-saml-configuration.md#configure-auth0-actions)。                          |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。默认，Auth0 对 SAML 声明进行签名，因此请选中此框，除非您配置了[自定义签名操作](auth0-saml-configuration.md#configure-auth0-actions)。               |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 断言被签名。默认，Auth0 对 SAML 断言进行签名，因此请选中此框，除非您配置了[自定义签名操作](auth0-saml-configuration.md#configure-auth0-actions)。               |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                   |
 
 完成服务提供程序配置部分后，**保存**您的工作。

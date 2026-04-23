@@ -88,7 +88,7 @@ DUO SAML 身份提供程序配置
 | ------------------- | ------------------------------------------------------------------------------------------------------------- |
 | NameID format       | 将此字段设置为 [SAML NameID 格式](https://docs.oracle.com/cd/E19316-01/820-3886/ggwbz/index.html)，以便 Duo 在 SAML 响应中发送。 |
 | NameID attribute    | 将此字段设置为 Duo 属性，该属性用于在响应中填充 NameID。                                                                            |
-| Signature algorithm | 将此字段设置为用于 SAML 声明和响应的加密算法。                                                                                    |
+| Signature algorithm | 将此字段设置为用于 SAML 断言和响应的加密算法。                                                                                    |
 | Signing options     | 设置为 **Sign response** 或 **Sign assertion**,，或同时设置。                                                            |
 | Map attributes      | 使用这些字段将 IdP 属性映射到 SAML 响应属性。无论您配置了哪个 NameID 属性，请将 IdP `Email Address` 属性映射到 `Email`，如下面的屏幕截图所示：               |
 
@@ -104,8 +104,8 @@ DUO SAML 身份提供程序配置
 
 单点登录界面将配置分为两个部分：
 
-* **SAML 服务提供程序配置**将决定 SAML 请求的格式。
-* **SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
+* &#x20;**SAML 服务提供程序配置**将决定 SAML 请求的格式。
+* &#x20;**SAML 身份提供程序配置**将决定用于 SAML 响应的预期格式。
 
 ### 服务提供程序配置 <a href="#service-provider-configuration" id="service-provider-configuration"></a>
 
@@ -117,7 +117,7 @@ DUO SAML 身份提供程序配置
 | Outbound Signing Algorithm         | 用于签名 SAML 请求的算法，默认为 `rsa-sha256`。                                                                                                                                               |
 | Signing Behavior                   | SAML 请求是否/何时将被签名。默认，Duo 不要求对请求进行签名。                                                                                                                                             |
 | Minimum Incoming Signing Algorithm | Bitwarden 在 SAML 响应中接受的最小签名算法。默认，Duo 使用 `rsa-sha256` 进行签名，因此请从下拉列表中选择该选项，除非您[选择了不同的选项](duo-saml-implementation.md#saml-response)。                                               |
-| Want Assertions Signed             | Bitwarden 是否要求 SAML 声明被签名。如果您[选择了 **Sign assertion** 选项](duo-saml-implementation.md#saml-response)，请选中此框。                                                                       |
+| Want Assertions Signed             | Bitwarden 是否要求 SAML 断言被签名。如果您[选择了 **Sign assertion** 选项](duo-saml-implementation.md#saml-response)，请选中此框。                                                                       |
 | Validate Certificates              | 通过受信任的 CA 使用来自 IdP 的受信任和有效证书时，请选中此框。除非在 Bitwarden SSO 登录 docker 镜像中配置了适当的信任链，否则自签名证书可能会失败。                                                                                      |
 
 完成服务提供程序配置部分后，**保存**您的工作。
