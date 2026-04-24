@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/deactivate-browser-password-managers/)
 {% endhint %}
 
-本文将指导您如何使用组策略禁用各种网页浏览器的内置密码管理器。这些步骤将有助于防止公司登录信息被保存并同步到个人账户。您还可以考虑[将 Bitwarden 浏览器扩展部署到所有浏览器](deploy-browser-extensions/browserext-deploy.md)，以作为同一策略的一部分。
+本文将指导您如何使用组策略禁用各种网页浏览器的内置密码管理器。这些步骤将有助于防止公司登录信息被保存并同步到个人账户。您也可以考虑在同一策略中，[将 Bitwarden 浏览器扩展部署到所有浏览器](browserext-deploy.md)。
 
 ## 使用 Windows GPO 禁用 <a href="#disable-with-windows-gpo" id="disable-with-windows-gpo"></a>
 
@@ -24,16 +24,14 @@
 
 7、设置以下设置：
 
-* 打开「」密码管理器和保护」，禁用**启用将密码保存到密码管理器**策略 。
+* 打开「密码管理器和保护」，禁用**启用将密码保存到密码管理器**策略 。
 * 禁用**启用地址自动填充**策略。
 * 禁用**启用支付工具自动填充**策略。
 * （可选）启用**禁用使用 Microsoft 同步服务同步数据**策略。
 
 8、完成后，GPO **设置**应显示如下：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7JYNg4j0ETWUYqxvC1aA35/b2330512b7ccfd0c2371d14349f6f91d/image.png?_a=DAJCwlWIZAAB" %}
-Edge 设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7JYNg4j0ETWUYqxvC1aA35/b2330512b7ccfd0c2371d14349f6f91d/image.png?w=1354&#x26;fm=avif" alt=""><figcaption><p>Edge 设置</p></figcaption></figure></div>
 
 9、确保 GPO 链接已启用。
 {% endtab %}
@@ -63,9 +61,7 @@ Edge 设置
 
 10、完成后，GPO **设置**应显示如下：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4g4UFkO53OhzFhZlnSPoKY/000e4a638d423783c6e1c94c10b13395/chrome_gpo.png?_a=DAJCwlWIZAAB" %}
-Chrome 设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4g4UFkO53OhzFhZlnSPoKY/000e4a638d423783c6e1c94c10b13395/chrome_gpo.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Chrome 设置</p></figcaption></figure></div>
 
 11、确保 GPO 链接已启用。
 {% endtab %}
@@ -96,9 +92,7 @@ Chrome 设置
 
 10、完成后，GPO **设置**应显示如下：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/75Do1uQgOThyyIfdXU3ti7/6f27e19aaf0917d779fe6e1035339d05/FireFox_Settings.png?_a=DAJCwlWIZAAB" %}
-Firefox 设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/75Do1uQgOThyyIfdXU3ti7/5ab03c79118217b0fdd6485ad8c71527/image.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Firefox 设置</p></figcaption></figure></div>
 
 11、确保 GPO 链接已启用。
 {% endtab %}
@@ -117,7 +111,7 @@ Firefox 设置
 3、确保「提供保存密码」已关闭并由组织管理。
 
 {% hint style="info" %}
-自动登录仍会被选中，因为没有策略设置可将其关闭。
+**自动登录**仍会被选中，因为没有策略设置可将其关闭。
 
 之前在 Edge 中保存的任何登录信息都不会被删除，尽管自动填充功能已禁用，但仍会继续显示给用户。在从 Edge 中删除任何已保存的登录信息之前，请务必指示用户[将任何已保存的登录信息导入 Bitwarden](../../password-manager/import-and-export/import-guides/import-data-from-chrome.md)。
 {% endhint %}

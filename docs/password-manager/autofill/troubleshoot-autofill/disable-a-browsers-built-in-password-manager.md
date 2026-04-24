@@ -7,7 +7,7 @@
 如果您是 Bitwarden 的新手，很可能您使用的网页浏览器一直在保存和自动填充您的密码。大多数网页浏览器默认启用了这一功能，但专家们普遍认为，[内置的密码管理器比 Bitwarden 这样的专业解决方案要脆弱](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/)。我们建议停用浏览器的内置密码管理器，以提高您的安全性并防止干扰您的 Bitwarden 体验。
 
 {% hint style="info" %}
-Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](../../../admin-console/deploy-client-apps/deploy-browser-extensions/)的更多信息。
+Bitwarden 浏览器扩展可在托管终端上部署。了解有关[在托管设备上部署 Bitwarden 浏览器扩展](/broken/pages/SPPHBR9CJhd64rLkL80y)的更多信息。
 {% endhint %}
 
 ## 手动禁用浏览器的内置密码管理器 <a href="#manually-disable-a-browsers-built-in-password-manager" id="manually-disable-a-browsers-built-in-password-manager"></a>

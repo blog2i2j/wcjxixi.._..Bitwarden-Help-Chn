@@ -9,13 +9,13 @@
 > * [MDM](https://zh.wikipedia.org/zh-cn/%E8%A1%8C%E5%8B%95%E8%A3%9D%E7%BD%AE%E7%AE%A1%E7%90%86)：Mobile Device Management（移动设备管理）。
 > * [EMM](https://zh.wikipedia.org/wiki/%E4%BC%81%E6%A5%AD%E8%A1%8C%E5%8B%95%E7%AE%A1%E7%90%86)：Enterprise Mobility Management（企业移动管理）。
 
-在业务环境中操作自托管 Bitwarden 服务器时，管理员可能希望先集中配置客户端应用程序的设置（尤其是服务器 URL），然后再通过端点管理平台部署给用户。设置会在安装客户端应用程序时应用。如果您使用的是 [Bitwarden Cloud EU 服务器](../../security/server-geographies.md)，这些流程可能也会有所帮助。&#x20;
+在业务环境中操作自托管 Bitwarden 服务器时，管理员可能希望先集中配置客户端应用程序的设置（尤其是服务器 URL），然后再通过端点管理平台部署给用户。设置会在安装客户端应用程序时应用。如果您使用的是 [Bitwarden Cloud EU 服务器](../../security/server-geographies.md)，这些流程同样适用。
 
 {% hint style="info" %}
 配置自托管服务器 URL 时，URL 中必须包含 `https://`。不包含 `https://` 的地址（例如 `my.server.com` 或 `http://my.server.com`）将导致错误消息。
 {% endhint %}
 
-执行此操作的过程，对于每个客户端应用程序将有所不一样：
+对于每种客户端应用程序，执行此操作的过程将有所不一样：
 
 ## 浏览器扩展 <a href="#browser-extensions" id="browser-extensions"></a>
 
@@ -73,7 +73,7 @@
 ```
 
 {% hint style="info" %}
-如果您要使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，可以按照[这些说明](deploy-browser-extensions/browserext-deploy.md#chrome-1)在分发托管策略时在最终用户机器上强制安装 Bitwarden。您可以跳过重叠的步骤，比如创建所需的目录。
+如果您将要使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，可以按照[这些说明](browserext-deploy.md#chrome-1)在分发托管策略时在最终用户机器上强制安装 Bitwarden。您可以跳过重复的步骤，比如创建所需的目录。
 {% endhint %}
 
 3、由于需要将这些文件部署到用户的机器上，我们建议确保只有管理员才能在 `/policies` 目录中写入文件。
@@ -131,7 +131,7 @@ Microsoft Edge 是基于 Chromium 的浏览器，其**键路径**位置与 Googl
 * 值名称：`events`
 
 {% hint style="info" %}
-您还可以使用 GPO 强制安装浏览器扩展。[了解更多](deploy-browser-extensions/browserext-deploy.md#windows)。
+您还可以使用 GPO 强制安装浏览器扩展。[了解更多](browserext-deploy.md#windows)。
 {% endhint %}
 {% endtab %}
 
@@ -189,7 +189,7 @@ Microsoft Edge 是基于 Chromium 的浏览器，其**键路径**位置与 Googl
 3、将 `.plist` 文件转换为 `.mobileconfig` 配置文件。
 
 {% hint style="info" %}
-如果您要使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，可以按照[这些说明](deploy-browser-extensions/browserext-deploy.md#macos)，通过创建另一个配置文件在最终用户机器上强制安装 Bitwarden，该配置文件可在下一步中分发。
+如果您将要使用 Chrome 或 Chromium Web Store 版本的 Bitwarden，可以按照[这些说明](browserext-deploy.md#macos)，通过创建另一个配置文件在最终用户机器上强制安装 Bitwarden，该配置文件可在下一步中分发。
 {% endhint %}
 
 4、使用您首选的软件发布或 MDM 工具，将以下内容安装到用户的机器上：
@@ -354,7 +354,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 {% endtabs %}
 
 {% hint style="info" %}
-为了将 Bitwarden 浏览器扩展集中部署到 EU 服务器，必须将 `base` 和 `notifications` 设置到 EU 云。例如：
+为了将 Bitwarden 浏览器扩展集中部署到 EU 服务器，必须将 `base` 和 `notifications` 设置为 EU 云。例如：
 
 ```json
 "base": "https://vault.bitwarden.eu"
@@ -368,7 +368,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 
 要集中配置用于部署的桌面 App，请首先在单个工作站上完成以下步骤：：
 
-1、安装桌面 App。如果您使用的是 Windows 系统，请使用 `installer.exe /allusers /S` 以管理员身份静默安装 Bitwarden（请参阅 [NSIS 文档](https://nsis.sourceforge.io/Docs/Chapter4.html#silent)）。
+1、安装桌面 App。如果您使用的是 Windows 系统，请使用 `installer.exe /allusers /S` 以管理员身份静默安装 Bitwarden（参阅 [NSIS 文档](https://nsis.sourceforge.io/Docs/Chapter4.html#silent)）。
 
 > **\[译者注]**：[NSIS](https://zh.wikipedia.org/zh-cn/Nullsoft%E8%85%B3%E6%9C%AC%E5%AE%89%E8%A3%9D%E7%B3%BB%E7%B5%B1)：Nullsoft Scriptable Install System（Nullsoft 脚本安装系统）。是 Windows下，制作安装包的一种工具，也是现在非常流行的一种脚本语言。
 
@@ -403,9 +403,7 @@ xattr -r -d com.apple.quarantine /Applications/Firefox.app
 
 大多数移动设备管理 (MDM) 或企业移动管理 (EMM) 解决方案都允许管理员在部署前以标准方式预配置应用程序。要预配置 Bitwarden 移动 App 以使用自托管服务器 URL，请构建以下应用程序配置：
 
-| 配置键                  | 值类型    | 配置值                                                 |
-| -------------------- | ------ | --------------------------------------------------- |
-| `baseEnvironmentUrl` | string | 您的自托管服务器 URL，例如  `https://my.bitwarden.server.com`。 |
+<table><thead><tr><th width="257.39996337890625">配置键</th><th width="157">值类型</th><th>配置值</th></tr></thead><tbody><tr><td><code>baseEnvironmentUrl</code></td><td>string</td><td>您的自托管服务器 URL，例如  <code>https://my.bitwarden.server.com</code>。</td></tr></tbody></table>
 
 ## 网页 App <a href="#web-app" id="web-app"></a>
 
