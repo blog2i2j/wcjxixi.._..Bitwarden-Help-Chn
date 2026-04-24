@@ -4,11 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/browserext-deploy/)
 {% endhint %}
 
-在业务环境中操作 Bitwarden 时，管理员可能希望通过端点管理平台或组策略向用户自动部署 Bitwarden 浏览器扩展。本文将介绍如何使用 GPO 和其他模板通过端点管理平台向用户自动部署 Bitwarden 浏览器扩展。
+在业务环境中操作 Bitwarden 时，管理员可能希望借助端点管理平台或组策略，自动向用户部署 Bitwarden 浏览器扩展。本文将介绍如何使用 GPO 和其他模板，通过端点管理平台自动向用户部署 Bitwarden 浏览器扩展。
 
 ## Windows
 
-要在 Windows 浏览器上部署 Bitwarden 浏览器扩展，通常需要使用 Windows 组策略，将受管计算机作为 ADMX 策略模板的目标。每种浏览器的步骤略有不同：
+在 Windows 浏览器上部署 Bitwarden 浏览器扩展，通常需要使用 Windows 组策略，针对受管计算机应用 ADMX 策略模板。每种浏览器的步骤略有不同：
 
 {% tabs %}
 {% tab title="Chrome" %}
@@ -21,9 +21,9 @@
 * 将 `\Configuration\admx\chrome.admx` 复制到 `C:\Windows\PolicyDefinitions`
 * 将 `\Configuration\admx\en-US\chrome.adml` 复制到 `C:\Windows\PolicyDefinitions\en-US`
 
-3、打开 Windows 组策略管理器并为 Bitwarden 浏览器扩展安装创建一个新的 GPO。
+3、打开 Windows 组策略管理器，为 Bitwarden 浏览器扩展安装创建一个新的 GPO。
 
-4、右键单击新 GPO 并选择**编辑...**，然后继续导航到**计算机配置** → **策略** → **管理模板** → **Google Chrome** → **扩展程序**。
+4、右键单击新 GPO，选择**编辑...**，然后继续导航到**计算机配置** → **策略** → **管理模板** → **Google Chrome** → **扩展程序**。
 
 5、在右侧的设置区域中，选择**配置强制安装的应用程序和扩展程序列表**。在对话框中，切换为**启用**选项。
 
@@ -54,9 +54,9 @@ nngceckbapebfimnlniiiahkandclblb;https://clients2.google.com/service/update2/crx
 * 将 `\policy_templates_\windows\firefox.admx` 复制到 `C:\Windows\PolicyDefinitions`
 * 将 `\policy_templates_<version>\windows\en-US\firefox.adml` 复制到 `C:\Windows\PolicyDefinitions\en-US`
 
-3、打开 Windows 组策略管理器并为 Bitwarden 浏览器扩展安装创建一个新的 GPO。
+3、打开 Windows 组策略管理器，为 Bitwarden 浏览器扩展安装创建一个新的 GPO。
 
-4、右键单击新 GPO 并选择**编辑...**，然后继续导航到**计算机配置** → **策略** → **管理模板** → **Firefox** → **扩展程序**。
+4、右键单击新 GPO，选择**编辑...**，然后继续导航到**计算机配置** → **策略** → **管理模板** → **Firefox** → **扩展程序**。
 
 5、在右侧的设置区域中，选择要安装的扩展。在对话框中，切换为**启用**选项。
 
@@ -83,9 +83,9 @@ https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/l
 * 将 `\windows\admx\msedge.admx` 复制到 `C:\Windows\PolicyDefinitions`
 * 将 `\windows\admx\en-US\msedge.adml` 复制到 `C:\Windows\PolicyDefinitions\en-US`
 
-3、打开 Windows 组策略管理器并为 Bitwarden 浏览器扩展安装创建一个新的 GPO。
+3、打开 Windows 组策略管理器，为 Bitwarden 浏览器扩展安装创建一个新的 GPO。
 
-4、右键单击新 GPO 并选择**编辑...**，然后继续导航到**计算机配置** → **策略** → **管理模板** → **Microsoft Edge** → **扩展程序**。
+4、右键单击新 GPO，选择**编辑...**，然后继续导航到**计算机配置** → **策略** → **管理模板** → **Microsoft Edge** → **扩展程序**。
 
 5、在右侧的设置区域中，选择**控制静默安装的扩展程序**。在对话框中，切换为**启用**选项。
 
@@ -107,6 +107,158 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 {% endtab %}
 {% endtabs %}
 
+## macOS
+
+要在 macOS 浏览器上部署 Bitwarden 浏览器扩展，通常涉及使用属性列表（`.plist`）文件。每种浏览器的步骤略有不同：
+
+{% tabs %}
+{% tab title="Chrome" %}
+要在 macOS Google Chrome 上部署浏览器扩展：
+
+1、下载适用于 macOS 的 [Google Chrome .dmg 或 .pkg](https://chromeenterprise.google/intl/zh_cn/download/)。
+
+2、下载 [Chrome Enterprise Bundle](https://chromeenterprise.google/intl/zh_cn/download/)。
+
+3、解压缩 Enterprise Bundle（`GoogleChromeEnterpriseBundle64.zip` 或 `GoogleChromeEnterpriseBundle32.zip`）。
+
+4、使用任何文本编辑器打开 `/Configuration/com.Google.Chrome.plist` 文件。
+
+5、将以下内容添加到 `.plist` 文件中：
+
+```html
+<key>ExtensionSettings</key>
+<dict>
+  <key>nngceckbapebfimnlniiiahkandclblb</key>
+  <dict>
+    <key>installation_mode</key>
+    <string>force_installed</string>
+    <key>update_url</key>
+    <string>https://clients2.google.com/service/update2/crx</string>
+  </dict>
+ </dict>
+```
+
+在此代码块中，`nngceckbapebfimnlniiiahkandclblb` 是 Bitwarden 浏览器扩展的应用程序标识符。类似地，`https://clients2.google.com/service/update2/crx` 指示 Chrome 使用 Chrome Web Store 来获取所标识的应用程序。
+
+{% hint style="info" %}
+您也可以使用 [ExtensionInstallForcelist](https://chromeenterprise.google/policies/?policy=ExtensionInstallForcelist) 策略来配置强制安装，但是 [ExtensionSettings](https://support.google.com/chrome/a/answer/7517525#getID\&zippy=%2Cset-custom-message-for-blocked-apps-and-extensions%2Cprevent-apps-and-extensions-from-altering-webpages) 方法将取代 ExtensionInstallForceList。
+{% endhint %}
+
+6、（**推荐**）要[禁用](https://chromeenterprise.google/policies/#PasswordManagerEnabled) Chrome 的内置密码管理器，请将以下内容添加到 `com.Google.Chrome.plist`：
+
+```html
+<key>PasswordManagerEnabled</key>
+<false />
+```
+
+7、使用 [mcxToProfile](https://github.com/timsutton/mcxToProfile) 等转换工具将 `com.Google.Chrome.plist` 文件转换为配置文件。
+
+8、使用您的软件分发或 MDM 工具将 Chrome `.dmg` 或 `.pkg` 和配置文件部署到所有托管计算机。
+
+{% hint style="success" %}
+如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans\&sjid=18069515108639844992-NC) 指南。
+{% endhint %}
+{% endtab %}
+
+{% tab title="Firefox" %}
+要在 macOS Firefox 上部署浏览器扩展：
+
+1、下载并安装适用于 macOS 的[企业版 Firefox](https://www.mozilla.org/zh-CN/firefox/enterprise/#download)。
+
+2、在 `Firefox.app/Contents/Resources/` 中创建一个 `distribution` 目录。
+
+3、在已创建的 `/distribution` 目录中，创建一个新的 `org.mozilla.firefox.plist` 文件。
+
+{% hint style="success" %}
+使用 [Firefox .plist 模板](https://github.com/mozilla/policy-templates/blob/master/mac/org.mozilla.firefox.plist)和[策略自述文件](https://github.com/mozilla/policy-templates/blob/master/README.md)作为参考。
+{% endhint %}
+
+4、将以下内容添加到 `org.mozilla.firefox.plist`：
+
+```html
+<key>ExtensionSettings</key>
+<dict>
+   <key>446900e4-71c2-419f-a6a7-df9c091e268b</key>
+   <dict>
+     <key>installation_mode</key>
+     <string>force_installed</string>
+     <key>update_url</key>
+     <string>https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi</string>
+   </dict>
+ </dict>
+```
+
+在此代码块中，`446900e4-71c2-419f-a6a7-df9c091e268b` 是 Bitwarden 浏览器扩展的扩展 ID。同样，`https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi` 指示 Firefox 使用扩展商店获取该应用程序。
+
+5、（**推荐**）要[禁用](https://github.com/mozilla/policy-templates/blob/master/README.md#passwordmanagerenabled) Firefox 的内置密码管理器，请将以下内容添加到 `org.mozilla.firefox.plist`：
+
+```html
+<dict>
+  <key>PasswordManagerEnabled</key>
+  <false/>
+</dict>
+```
+
+6、使用 [mcxToProfile](https://github.com/timsutton/mcxToProfile) 等转换工具将 `org.mozilla.firefox.plist` 文件转换为配置文件。
+
+7、使用您的软件分发或 MDM 工具将 Firefox `.dmg` 和配置文件部署到所有托管计算机。
+{% endtab %}
+
+{% tab title="Edge" %}
+要在 macOS Edge 上部署浏览器扩展：
+
+1、下载适用于 macOS 的 [Microsoft Edge .pkg](https://www.microsoft.com/zh-cn/edge/) 文件。
+
+2、在终端中，使用以下命令为 Microsoft Edge 创建 `.plist` 文件：
+
+```yaml
+/usr/bin/defaults write ~/Desktop/com.microsoft.Edge.plist RestoreOnStartup -int 1
+```
+
+3、使用以下命令将 `.plist` 从二进制转换为纯文本：
+
+```yaml
+//usr/bin/plutil -convert xml1 ~/Desktop/com.microsoft.Edge.plist
+```
+
+4、打开 `com.microsoft.Edge.plist` 并添加以下内容：
+
+```html
+<key>ExtensionSettings</key>
+<dict>
+  <key>jbkfoedolllekgbhcbcoahefnbanhhlh</key>
+  <dict>
+    <key>installation_mode</key>
+    <string>force_installed</string>
+    <key>update_url</key>
+    <string>https://edge.microsoft.com/extensionwebstorebase/v1/crx</string>
+  </dict>
+</dict>
+```
+
+在此代码块中，`jbkfoedolllekgbhcbcoahefnbanhhlh` 是 Bitwarden 浏览器扩展的应用程序标识符。同样，`https://edge.microsoft.com/extensionwebstorebase/v1/crx` 指示 Edge 使用 Edge Add-On Store 来获取所标识的应用程序。
+
+{% hint style="info" %}
+您也可以使用 [ExtensionInstallForceList](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensioninstallforcelist) 来配置强制性安装，但是 [ExtensionSettings](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensionsettings) 方法将取代 ExtensionInstallForceList。
+{% endhint %}
+
+5、（**推荐**）要[禁用](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#passwordmanagerenabled) Edge 的内置密码管理器，请将以下内容添加到 `com.microsoft.Edge.plist`：
+
+```html
+<key>PasswordManagerEnabled</key>
+<false/>
+```
+
+6、使用 [mcxToProfile](https://github.com/timsutton/mcxToProfile) 等转换工具将 `com.microsoft.Edge.plist` 文件转换为配置文件。
+
+7、使用您的软件分发或 MDM 工具将 Edge `.pkg` 和配置文件部署到所有托管计算机。
+
+{% hint style="success" %}
+有关**专用于 Jamf** 的帮助，请参阅 Microsoft 文档：[使用 Jamf 在 macOS 上配置 Microsoft Edge 策略设置](https://docs.microsoft.com/zh-cn/deployedge/configure-microsoft-edge-on-mac-jamf)。
+{% endhint %}
+{% endtab %}
+{% endtabs %}
+
 ## Linux
 
 要在 Linux 浏览器上部署 Bitwarden 浏览器扩展，通常涉及使用 `.json` 文件来设置配置属性。每种浏览器的步骤略有不同：
@@ -119,7 +271,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 
 2、下载 [Chrome Enterprise Bundle](https://chromeenterprise.google/intl/zh_cn/download/)。
 
-3、解压缩 Enterprise Bundle（`GoogleChromeEnterpriseBundle64.zip` 或 `GoogleChromeEnterpriseBundle32.zip`）并打开 `/Configuration` 文件夹。
+3、解压缩 Enterprise Bundle（`GoogleChromeEnterpriseBundle64.zip` 或 `GoogleChromeEnterpriseBundle32.zip`），然后打开 `/Configuration` 文件夹。
 
 4、创建 `master_preferences.json`（在 Chrome 91+ 中为 `initial_preferences.json`）副本并将其重命名为 `managed_preferences.json`。
 
@@ -139,7 +291,7 @@ jbkfoedolllekgbhcbcoahefnbanhhlh;https://edge.microsoft.com/extensionwebstorebas
 }
 ```
 
-在这个 JSON 对象中，`"nngceckbapebfimnlniiiahkandclblb"` 是 Bitwarden 浏览器扩展的应用程序标识符。类似地，`"https://clients2.google.com/service/update2/crx"` 示意 Chrome 让其使用 Chrome 网上应用商店检索已识别的应用程序。
+在这个 JSON 对象中，`"nngceckbapebfimnlniiiahkandclblb"` 是 Bitwarden 浏览器扩展的应用程序标识符。类似地，`"https://clients2.google.com/service/update2/crx"` 指示 Chrome 使用 Chrome Web Store 来获取所标识的应用程序。
 
 {% hint style="info" %}
 您也可以使用 [ExtensionInstallForcelist](https://chromeenterprise.google/policies/?policy=ExtensionInstallForcelist) 策略来配置强制性安装，但是 [ExtensionSettings](https://support.google.com/chrome/a/answer/7517525#getID\&zippy=%2Cset-custom-message-for-blocked-apps-and-extensions%2Cprevent-apps-and-extensions-from-altering-webpages) 方法将取代 ExtensionInstallForceList。
@@ -202,7 +354,7 @@ chmod -R 755 /etc/opt/chrome/policies
 }
 ```
 
-在这个 JSON 对象中，`"446900e4-71c2-419f-a6a7-df9c091e268b"` 是 Bitwarden 浏览器扩展的扩展 ID。类似地，`"https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi"` 示意 Firefox 让其使用扩展商店来检索扩展。
+在这个 JSON 对象中，`"446900e4-71c2-419f-a6a7-df9c091e268b"` 是 Bitwarden 浏览器扩展的扩展 ID。类似地，`"https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi"` 指示 Firefox 使用扩展商店获取该应用程序。
 
 5、（**推荐**）要[禁用](https://github.com/mozilla/policy-templates/blob/master/README.md#passwordmanagerenabled) Firefox 的内置密码管理器，请将以下内容添加到 `managed_preferences.json` 的 `"policies": { }` 内部：
 
@@ -219,158 +371,6 @@ chmod -R 755 /etc/opt/chrome/policies
 
 {% hint style="success" %}
 如需更多帮助，请参阅 Firefox 的 [policies.json 概述](https://support.mozilla.org/en-US/kb/customizing-firefox-macos-using-configuration-prof)或 Github 上的[策略自述文件](https://github.com/mozilla/policy-templates/blob/master/README.md)。
-{% endhint %}
-{% endtab %}
-{% endtabs %}
-
-## macOS
-
-要在 macOS 浏览器上部署 Bitwarden 浏览器扩展，通常涉及使用属性列表（`.plist`）文件。每种浏览器的步骤略有不同：
-
-{% tabs %}
-{% tab title="Chrome" %}
-要在 macOS Google Chrome 上部署浏览器扩展：
-
-1、下载适用于 macOS 的 [Google Chrome .dmg 或 .pkg](https://chromeenterprise.google/intl/zh_cn/download/)。
-
-2、下载 [Chrome Enterprise Bundle](https://chromeenterprise.google/intl/zh_cn/download/)。
-
-3、解压缩 Enterprise Bundle（`GoogleChromeEnterpriseBundle64.zip` 或 `GoogleChromeEnterpriseBundle32.zip`）。
-
-4、使用任何文本编辑器打开 `/Configuration/com.Google.Chrome.plist` 文件。
-
-5、将以下内容添加到 `.plist` 文件中：
-
-```html
-<key>ExtensionSettings</key>
-<dict>
-  <key>nngceckbapebfimnlniiiahkandclblb</key>
-  <dict>
-    <key>installation_mode</key>
-    <string>force_installed</string>
-    <key>update_url</key>
-    <string>https://clients2.google.com/service/update2/crx</string>
-  </dict>
- </dict>
-```
-
-在此代码块中，`nngceckbapebfimnlniiiahkandclblb` 是 Bitwarden 浏览器扩展的应用程序标识符。类似地，`https://clients2.google.com/service/update2/crx` 示意 Chrome 让其使用 Chrome 网上应用商店检索已识别的应用程序。
-
-{% hint style="info" %}
-您也可以使用 [ExtensionInstallForcelist](https://chromeenterprise.google/policies/?policy=ExtensionInstallForcelist) 策略来配置强制性安装，但是 [ExtensionSettings](https://support.google.com/chrome/a/answer/7517525#getID\&zippy=%2Cset-custom-message-for-blocked-apps-and-extensions%2Cprevent-apps-and-extensions-from-altering-webpages) 方法将取代 ExtensionInstallForceList。
-{% endhint %}
-
-6、（**推荐**）要[禁用](https://chromeenterprise.google/policies/#PasswordManagerEnabled) Chrome 的内置密码管理器，请将以下内容添加到 `com.Google.Chrome.plist`：
-
-```html
-<key>PasswordManagerEnabled</key>
-<false />
-```
-
-7、使用 [mcxToProfile](https://github.com/timsutton/mcxToProfile) 等转换工具将 `com.Google.Chrome.plist` 文件转换为配置文件。
-
-8、使用您的软件分发或 MDM 工具将 Chrome `.dmg` 或 `.pkg` 和配置文件部署到所有托管计算机。
-
-{% hint style="success" %}
-如需更多帮助，请参阅 Google 的 [Chrome 浏览器快速入门 (Mac)](https://support.google.com/chrome/a/answer/7550274?hl=zh-Hans\&sjid=18069515108639844992-NC) 指南。
-{% endhint %}
-{% endtab %}
-
-{% tab title="Firefox" %}
-要在 macOS Firefox 上部署浏览器扩展：
-
-1、下载并安装适用于 macOS 的[企业版 Firefox](https://www.mozilla.org/zh-CN/firefox/enterprise/#download)。
-
-2、在 `Firefox.app/Contents/Resources/` 中创建一个 `distribution` 目录。
-
-3、在已创建的 `/distribution` 目录中，创建一个新的 `org.mozilla.firefox.plist` 文件。
-
-{% hint style="success" %}
-使用 [Firefox .plist 模板](https://github.com/mozilla/policy-templates/blob/master/mac/org.mozilla.firefox.plist)和[策略自述文件](https://github.com/mozilla/policy-templates/blob/master/README.md)作为参考。
-{% endhint %}
-
-4、将以下内容添加到 `org.mozilla.firefox.plist`：
-
-```html
-<key>ExtensionSettings</key>
-<dict>
-   <key>446900e4-71c2-419f-a6a7-df9c091e268b</key>
-   <dict>
-     <key>installation_mode</key>
-     <string>force_installed</string>
-     <key>update_url</key>
-     <string>https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi</string>
-   </dict>
- </dict>
-```
-
-在此代码块中，`446900e4-71c2-419f-a6a7-df9c091e268b` 是 Bitwarden 浏览器扩展的扩展 ID。同样，`https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi` 示意 Firefox 让其使用扩展商店来检索应用程序。
-
-5、（**推荐**）要[禁用](https://github.com/mozilla/policy-templates/blob/master/README.md#passwordmanagerenabled) Firefox 的内置密码管理器，请将以下内容添加到 `org.mozilla.firefox.plist`：
-
-```html
-<dict>
-  <key>PasswordManagerEnabled</key>
-  <false/>
-</dict>
-```
-
-6、使用 [mcxToProfile](https://github.com/timsutton/mcxToProfile) 等转换工具将 `org.mozilla.firefox.plist` 文件转换为配置文件。
-
-7、使用您的软件分发或 MDM 工具将 Firefox `.dmg` 和配置文件部署到所有托管计算机。
-{% endtab %}
-
-{% tab title="Edge" %}
-要在 macOS Edge 上部署浏览器扩展：
-
-1、下载适用于 macOS 的 [Microsoft Edge .pkg](https://www.microsoft.com/zh-cn/edge/) 文件。
-
-2、在终端中，使用以下命令为 Microsoft Edge 创建 `.plist` 文件：
-
-```yaml
-/usr/bin/defaults write ~/Desktop/com.microsoft.Edge.plist RestoreOnStartup -int 1
-```
-
-3、使用以下命令将 `.plist` 从二进制转换为纯文本：
-
-```yaml
-//usr/bin/plutil -convert xml1 ~/Desktop/com.microsoft.Edge.plist
-```
-
-4、打开 `com.microsoft.Edge.plist` 并添加以下内容：
-
-```html
-<key>ExtensionSettings</key>
-<dict>
-  <key>jbkfoedolllekgbhcbcoahefnbanhhlh</key>
-  <dict>
-    <key>installation_mode</key>
-    <string>force_installed</string>
-    <key>update_url</key>
-    <string>https://edge.microsoft.com/extensionwebstorebase/v1/crx</string>
-  </dict>
-</dict>
-```
-
-在此代码块中，`jbkfoedolllekgbhcbcoahefnbanhhlh` 是 Bitwarden 浏览器扩展的应用程序标识符。同样，`https://edge.microsoft.com/extensionwebstorebase/v1/crx` 示意 Edge 让其使用 Edge 外接程序商店来检索已识别的应用程序。
-
-{% hint style="info" %}
-您也可以使用 [ExtensionInstallForceList](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensioninstallforcelist) 来配置强制性安装，但是 [ExtensionSettings](https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensionsettings) 方法将取代 ExtensionInstallForceList。
-{% endhint %}
-
-5、（**推荐**）要[禁用](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#passwordmanagerenabled) Edge 的内置密码管理器，请将以下内容添加到 `com.microsoft.Edge.plist`：
-
-```html
-<key>PasswordManagerEnabled</key>
-<false/>
-```
-
-6、使用 [mcxToProfile](https://github.com/timsutton/mcxToProfile) 等转换工具将 `com.microsoft.Edge.plist` 文件转换为配置文件。
-
-7、使用您的软件分发或 MDM 工具将 Edge `.pkg` 和配置文件部署到所有托管计算机。
-
-{% hint style="success" %}
-有关**专用于 Jamf** 的帮助，请参阅 Microsoft 文档：[使用 Jamf 在 macOS 上配置 Microsoft Edge 策略设置](https://docs.microsoft.com/zh-cn/deployedge/configure-microsoft-edge-on-mac-jamf)。
 {% endhint %}
 {% endtab %}
 {% endtabs %}

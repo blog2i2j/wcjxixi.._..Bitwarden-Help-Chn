@@ -291,7 +291,7 @@
   * [=部署客户端 App](docs/admin-console/deploy-client-apps/README.md)
     * [部署浏览器扩展](docs/admin-console/deploy-client-apps/deploy-browser-extensions/README.md)
       * [使用 GPO、Linux 策略和 .plist 文件部署浏览器扩展](docs/admin-console/deploy-client-apps/deploy-browser-extensions/browserext-deploy.md)
-      * [使用 Intune 部署浏览器扩展](docs/admin-console/deploy-client-apps/deploy-browser-extensions/deploy-browser-extensions-with-intune.md)
+      * [=使用 Intune 部署浏览器扩展](docs/admin-console/deploy-client-apps/deploy-browser-extensions/deploy-browser-extensions-with-intune.md)
     * [部署桌面端 App](docs/admin-console/deploy-client-apps/deploy-desktop-apps/README.md)
       * [使用 Intune 部署桌面端 App](docs/admin-console/deploy-client-apps/deploy-desktop-apps/deploy-desktop-apps-with-intune.md)
     * [部署移动端 App](docs/admin-console/deploy-client-apps/deploy-mobile-apps/README.md)
