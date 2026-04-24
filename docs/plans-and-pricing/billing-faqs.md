@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/billing-faqs/)
 {% endhint %}
 
-本文包含有关**方案和定价**的常见问题 (FAQ)。
+本文包含有关**方案和定价**的常见问题解答 (FAQ)。
 
 如需帮助选择适合您的 Bitwarden 方案，请参阅[哪种方案适合我？](what-plan-is-right-for-me.md)以及[关于 Bitwarden 方案](password-manager/about-bitwarden-plans.md)。
 

@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/sso-faqs/)
 {% endhint %}
 
-本文包含了关于 **SSO** 的常见问题 (FAQ)。有关 SSO 的更多高级信息，请参考[关于 SSO](about-sso.md)。
+本文包含有关 **SSO** 的常见问题解答 (FAQ)。有关 SSO 的更多高级信息，请参考[关于 SSO](about-sso.md)。
 
 ## 日常使用 <a href="#everyday-use" id="everyday-use"></a>
 

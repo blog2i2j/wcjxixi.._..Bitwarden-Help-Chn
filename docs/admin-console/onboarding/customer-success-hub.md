@@ -1,16 +1,12 @@
-# 客户成功中心
+# =客户成功中心
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/customer-success-hub/)
 {% endhint %}
 
-该资源中心为 IT 和安全领导人提供了一条行之有效的密码安全成功之路，提供了一套精选的指南、清单、资源和里程碑。
+为 IT 和安全领导人提供经过验证的密码管理成功之路，涵盖指南、清单、资源和里程碑。
 
-{% embed url="https://bitwarden.com/assets/7M9VtPT5qIOVXVYGRfnoPw/3fcb1643e0ab11fec200dd90b0d0754a/Screenshot_2025-07-23_at_6.24.51%C3%A2__PM.png?w=1200&fm=avif" %}
-客户成功中心图片
-{% endembed %}
-
-## 认知：发现与验证 <a href="#awareness-discovery-and-validation" id="awareness-discovery-and-validation"></a>
+## &#x20;<a href="#awareness-discovery-and-validation" id="awareness-discovery-and-validation"></a>
 
 您是刚开始接触企业级密码管理的新人，并认识到组织内部需要更好的密码安全。这些资料将帮助您了解您的选择并做出明智的决策。
 
@@ -40,7 +36,7 @@
 * [说服您的领导团队](https://bitwarden.com/resources/bitwarden-business-insights-report/)：为您的高管利益相关者提供基于各行业安全和 IT 专业人士的企业客户调查结果，包括与密码相关的风险、用户行为和 IT 优先事项的数据。
 * [建立全公司范围的共识](https://bitwarden.com/resources/successful-top-down-approach-with-your-password-manager/)：了解安全意识强的组织如何获得高管的认可，并倡导以安全为先的文化，从高层开始。
 
-## 入职：培训、设置和推广 <a href="#onboarding-training-setup-and-rollout" id="onboarding-training-setup-and-rollout"></a>
+## 入职：设置、推广与培训 <a href="#onboarding-setup-rollout-and-training" id="onboarding-setup-rollout-and-training"></a>
 
 恭喜！您已选择 Bitwarden 作为您的密码管理器。现在，是时候将 Bitwarden 集成到您现有的系统中，培训您的团队，为成功的部署做准备，并向公司全体用户推广密码管理了。
 
@@ -59,7 +55,7 @@
 * [入职工作流程](onboarding-workflows.md)：针对不同组织设置的跨用户入职指导，无论您使用 SSO、SCIM、手动配置还是目录同步。
 * [入职清单](onboarding-checklist.md)：为 IT 和安全团队提供实用、即用型清单，帮助用户自信地入职 Bitwarden。
 
-## 采用：培训、参与和建立势头 <a href="#adoption-training-engagement-and-building-momentum" id="adoption-training-engagement-and-building-momentum"></a>
+## 采用 & 成功：参与度、影响力与领导力 <a href="#adoption-success-engagement-impact-and-leadership" id="adoption-success-engagement-impact-and-leadership"></a>
 
 如何确保您的投资获得回报，让每个人都使用 Bitwarden 并接受新的密码安全习惯？这些材料将帮助您提高参与度和使用率，同时为您的团队采用高级功能做准备。
 
@@ -76,7 +72,7 @@
 * [Bitwarden 社区](https://community.bitwarden.com/?_gl=1*1ase63s*_gcl_au*NTk2NzU2MTQ2LjE3NTY5MTUxMzguMzM3NzkwNDk5LjE3NTkxMjg4OTMuMTc1OTEzMjE5NQ..*_ga*MTk5NzU0OTg5My4xNzU2OTg5NjI5*_ga_QBRN562QQQ*czE3NjAzMjMwMTAkbzM4JGcxJHQxNzYwMzIzOTg1JGo2MCRsMCRoMA..)：安全爱好者们在此聚集，提出功能请求、分享最佳实践和技巧。
 * **定制培训**：通过专门为部分客户举办的培训课程，深入了解高级功能。请联系您的客户代表了解详细信息。
 
-## 成功：影响、领导力和创新 <a href="#success-impact-leadership-and-innovation" id="success-impact-leadership-and-innovation"></a>
+## &#x20;<a href="#success-impact-leadership-and-innovation" id="success-impact-leadership-and-innovation"></a>
 
 **证明 Bitwarden 的价值**
 

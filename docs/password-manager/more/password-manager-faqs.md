@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/article/product-faqs/)
 {% endhint %}
 
-本文包含有关一般的密码库管理和 Bitwarden 功能的常见问题 (FAQ)。
+本文包含有关 **Bitwarden Password Manager** 常规功能的常见问题解答 (FAQ)。
 
 ## 最常问的问题 <a href="#most-asked-questions" id="most-asked-questions"></a>
 
