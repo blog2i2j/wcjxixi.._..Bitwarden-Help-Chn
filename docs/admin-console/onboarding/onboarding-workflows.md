@@ -4,13 +4,11 @@
 对应的[官方文档地址](https://bitwarden.com/help/onboarding-workflows/)
 {% endhint %}
 
-本文档用于指导用户注册加入组织。有许多不同的因素会影响用户需要采取的具体步骤。使用此决策树帮助为您的组织用户选择正确的选项：
+本文档用于向您的用户提供注册组织的操作说明。有许多不同的因素会影响用户需要采取的具体步骤，使用以下决策树为您的组织用户选择正确的选项：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/6Mjrxky33gwmWzhhF85QgG/523d7421e9dd0aa72a6b9119f50043fb/Final.png?_a=BAJFJtWIB" %}
-入职决策树
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6Mjrxky33gwmWzhhF85QgG/523d7421e9dd0aa72a6b9119f50043fb/Final.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>入职决策树</p></figcaption></figure></div>
 
-以下选项卡记录了您可以向用户提供的入职指导。每个选项卡的编号对应上面决策树中的选项的编号：
+以下选项卡记录了您可以向用户提供的入职说明。每个选项卡的编号对应上面决策树中的选项的编号：
 
 {% tabs %}
 {% tab title="1" %}

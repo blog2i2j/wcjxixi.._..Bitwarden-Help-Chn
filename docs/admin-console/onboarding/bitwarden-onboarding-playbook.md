@@ -4,22 +4,22 @@
 对应的[官方文档地址](https://bitwarden.com/help/bitwarden-onboarding-playbook/)
 {% endhint %}
 
-该手册为 IT 管理员提供了一个灵活的路线图，帮助用户跨五个关键阶段使用 Bitwarden Password Manager。虽然各阶段按顺序呈现，但并非严格线性。根据团队需求和时间表，许多步骤可以并行进行。
+此手册为 IT 管理员提供了一个灵活的路线图，帮助其在五个关键阶段将用户引入 Bitwarden Password Manager。虽然各阶段按顺序呈现，但并非严格线性。根据团队需求和时间表，许多步骤可以并行推进。
 
-在本指南中，您将在代码框中找到操作项，这些操作项可以直接复制并粘贴到项目管理工具、内部文档或团队沟通平台中。这使得您可以在 Bitwarden 推出期间轻松跟踪进度、分配任务和维护责任。使用本指南作为基础并对其进行调整以适应您的环境。
+在本指南中，您将在代码框中找到操作项，这些操作项可以直接复制并粘贴到项目管理工具、内部文档或团队沟通平台中。这使得您可以在 Bitwarden 推广期间轻松跟踪进度、分配任务及保持责任明确。请以本指南为基础，并根据您的实际环境进行调整。
 
 {% tabs %}
 {% tab title="1：培训" %}
 {% hint style="success" %}
-第 1 阶段专注于培养利益相关者、准备系统，并建立成功设置的知识库。Bitwarden 建议在推广前或推广期间为每个群组或团队安排培训课程。
+第 1 阶段侧重于教育利益相关者、准备系统，并建立成功设置的知识库。Bitwarden 建议在推广之前或推广期间为每个小组或团队安排培训课程。
 {% endhint %}
 
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
 
 * 为所有用户级别建立培训计划
 * 准备技术基础设施和需求
-* 创建组织和集合管理策略和程序
-* 建立内部专业知识和支持能力
+* 创建组织和集合管理策略和流程
+* 构建内部专业知识和支持能力
 
 ## 活动 <a href="#activities" id="activities"></a>
 
@@ -29,12 +29,12 @@
 
 **培训主题：**
 
-* Bitwarden 架构和企业级功能
+* Bitwarden 架构和企业功能
 * 可扩展的共享功能
-  * 集合设置；组织和分组相关的凭据、密钥或其他密码库项目
+  * 集合设置；整理和分组相关的凭据、密钥或其他密码库项目
   * 将用户添加到 Bitwarden 组织
   * 为每个集合的成员或群组分配适当的权限
-  * 将某些项目分配到多个集合，以便合适的人可以无重复地访问
+  * 将某些项目分配到多个集合，以便合适的人员能够访问，同时避免重复
 * 设置和策略
   * SSO 设置和集成工作流程
   * 双重验证设置和策略
@@ -44,7 +44,7 @@
   * 用户和群组管理最佳实践
   * 事件日志记录和报告功能
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Schedule administrator training sessions
@@ -68,7 +68,7 @@
 * 账户恢复流程
 * 复杂问题的升级流程
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Train support staff on Bitwarden functionality
@@ -95,7 +95,7 @@
 * 用于安全共享的 Bitwarden Send
 * 通过集合协作
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Schedule organization-wide training sessions by functions; recommend starting with more technical teams (ie. tech team, data team)
@@ -106,23 +106,23 @@
 
 ### 步骤 4：领导层培训 <a href="#step-4-leadership-training" id="step-4-leadership-training"></a>
 
-**关键人员：** 部门主管、高管领导
+**关键人员：** 部门负责人、高管领导
 
 **培训主题：**
 
 * Bitwarden 对保障组织安全的重要性
 * 如适用，密码导入流程和最佳实践
-* 识别存在风险的密码（使用密码库健康报告）
-* 跨平台 Bitwarden 使用（桌面、移动、网页、浏览器）
+* 使用密码库健康报告识别存在风险的密码
+* 跨平台使用 Bitwarden（桌面端、移动端、网页端、浏览器）
 * 账户创建和主密码指南
 * 密码库导航和组织功能
 * 如何保存新的登录
 * 自动填充选项
 * 密码生成器
-* 用于安全共享的 Bitwarden Send
-* 通过集合协作
+* 用于安全分享的 Bitwarden Send
+* 通过集合进行协作
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Get leadership buy-in and identify advocates. Bitwarden research shows that company-wide password management mandates more than doubles regular usage. 
@@ -145,42 +145,45 @@
 
 ## 选项 A：Bitwarden 云（推荐） <a href="#option-a-bitwarden-cloud" id="option-a-bitwarden-cloud"></a>
 
-对于大多数组织，推荐使用 Bitwarden 托管的服务。享受易于扩展、自动更新以及由 Bitwarden 管理的安全可靠服务器上的最小维护。
+对于大多数组织，推荐使用 Bitwarden 托管的服务。享受易于扩展、自动更新以及由 Bitwarden 管理的安全可靠服务器，带来极低维护成本。
 
 ### 步骤 1：预先规划 <a href="#step-1-pre-setup-planning" id="step-1-pre-setup-planning"></a>
 
-在深入技术设置之前，建立您的组织策略和方法非常重要。以下是一些需要考虑的关键建议。
+在深入技术设置之前，建立您的组织策略和方法非常重要。以下是一些关键建议供参考。
 
 #### 选择 US 或 EU 云服务器区域 <a href="#choose-between-us-or-eu-cloud-server-regions" id="choose-between-us-or-eu-cloud-server-regions"></a>
 
 组织必须根据数据驻留要求，在 [US 或 EU 云服务器区域](../../security/server-geographies.md)之间进行选择。Bitwarden 无法将客户账户从一个区域迁移到另一个区域。组织可以使用脚本来帮助促进迁移。通过联系支持，可以将订阅从一个区域转移到另一个区域。
 
-#### 为集中所有权和可见性奠定基础 <a href="#set-the-foundation-for-centralized-ownership-and-visibility" id="set-the-foundation-for-centralized-ownership-and-visibility"></a>
+#### 为集中化所有权和凭据**生命周期管理**奠定基础 <a href="#set-the-foundation-for-centralized-ownership-and-visibility" id="set-the-foundation-for-centralized-ownership-and-visibility"></a>
 
-* 通过集中报告，获得组织范围内的凭证健康状况和使用情况控制及洞察。
-* 通过安全地重新分配或删除凭据，确保员工过渡的无缝衔接。
+**新客户**
+
+* 从第一天起启用**强制组织数据所有权**策略，以集中化所有权为起点，开始管理跨应用程序的整个凭据生命周期。
+* 每位用户（目前管理员和所有者除外）都会获得一个组织拥有的**我的项目**空间，用于实现无缝的日常工作。
+* 所有凭据均归组织所有，并内置报告功能。
+* 简化员工交接流程，使凭据随岗位变动流转，并在职责调整时实现无缝重新分配。
+
+**现有客户**
+
+* 在 Bitwarden 为之前个人持有的凭据准备无缝过渡至集中化所有权方案期间，您可继续使用现有配置。
+* 您很快就能将所有凭据纳入公司密码库，使所有用户统一归入单一所有权模式。
+* 联系您的客户团队以获取更多关于时间安排的信息。
+* 通过集中式报告，获得对整个组织的凭据健康状况和使用情况的控制与洞察。
+* 通过安全地重新分配或删除凭据，确保员工交接无缝进行，避免中断。
 * 通过分配角色、按部门或功能将凭据划分为集合，强制执行最小权限原则，仅授予用户和群组访问他们所需的集合。
 * 强化良好密码实践，并借助企业策略开始洞察凭据生命周期 - 创建、访问、转移和删除。
 
-{% hint style="info" %}
-**提前规划**
-
-* Bitwarden 将很快允许组织自动将所有员工凭据统一到组织密码库下，确保一致的所有权和控制权。
-* 一旦可用，启用强制组织数据所有权策略，以便所有项目都是组织拥有的，从而实现集中控制、报告、凭证健康洞察和简化的入职流程。
-* 用户仍然可以在「我的项目」中为他们的工作凭据预留空间。
-* 通过组织拥有的集合来共享和管理项目。
-{% endhint %}
-
 #### Bitwarden 推荐使用受信任设备 SSO <a href="#bitwarden-recommends-sso-with-trusted-devices" id="bitwarden-recommends-sso-with-trusted-devices"></a>
 
-为获得最佳用户体验，Bitwarden 推荐使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md)。这允许员工通过单步登录并解密他们的密码库，尽管它需要额外的 IT 管理员设置时间。以下是采用这种方法时需要考虑的事项：
+为获得最佳用户体验，Bitwarden 推荐使用[受信任设备 SSO](../login-with-sso/trusted-devices/about-trusted-devices.md)。这允许员工通过单一步骤登录并解密他们的密码库，但需要额外的 IT 管理员设置时间。以下是采用这种方法时需要考虑的事项：
 
 * 强制执行「注销」的密码库超时策略，提供一致的用户体验：超时后，员工只需通过 SSO 重新认证，而无需输入主密码。
-* 在受信任的设备环境中，「解锁」行为与「注销」相同，除非用户配置了 PIN 码或生物识别
-* 如果您的组织积极推广 PIN 码或生物识别，管理员可以选择「解锁」，但前提是用户沟通必须明确这一预期。
-* 密码库超时：Bitwarden 建议大多数用例设置为 4-10 小时，以平衡生产力和安全性。
+* 在受信任的设备环境中，「解锁」行为与「注销」相同，除非用户配置了 PIN 码或生物识别。
+* 如果您的组织积极推广 PIN 码或生物识别，管理员可以选择「解锁」，但前提是用户沟通中已明确传达这一预期。
+* 密码库超时：Bitwarden 建议大多数用使用场景设置为 4-10 小时，以平衡工作效率和安全性。
 
-将此列表直接复制安徽粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Determine cloud server region (US, EU)
@@ -206,7 +209,7 @@
 
 ### 步骤 2：组织创建 <a href="#step-2-organization-creation" id="step-2-organization-creation"></a>
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Create new Bitwarden organization account
@@ -218,7 +221,7 @@
 
 遵循以下建议，确保 Bitwarden 设置顺利进行。
 
-#### 声明所有企业邮箱域名 <a href="#claim-all-corporate-email-domains" id="claim-all-corporate-email-domains"></a>
+#### 声明所有企业电子邮箱域名 <a href="#claim-all-corporate-email-domains" id="claim-all-corporate-email-domains"></a>
 
 为了限制某些用户操作，授予管理员更大的控制权，并简化用户的登录体验。
 
@@ -228,7 +231,7 @@
 
 #### 建立强大的安全基线 <a href="#establish-strong-security-baselines" id="establish-strong-security-baselines"></a>
 
-使用至少 14-16 个字符的[主密码](../oversight-visibility/enterprise-policies.md#master-password-requirements) （包括大写字母、小写字母、数字和符号），并设置密码生成器的最小长度为至少 14 个字符，包含符号和数字。
+使用至少 14-16 个字符（包括大写字母、小写字母、数字和符号）的[主密码](../oversight-visibility/enterprise-policies.md#master-password-requirements)，并设置密码生成器的最小长度为至少 14 个字符，包含符号和数字。
 
 #### 启用单一组织限制 <a href="#enable-single-organization-restriction" id="enable-single-organization-restriction"></a>
 
@@ -236,9 +239,9 @@
 
 #### 设置您的组织密码库 <a href="#set-up-your-organization-vault" id="set-up-your-organization-vault"></a>
 
-如果你已经在你的 IdP 或目录中使用了群组和对象，为了保持一致性，请在 Bitwarden 中镜像该框架。在导入过程中，类似文件夹的对象将自动转换为集合。
+如果您已经在您的 IdP 或目录中使用了群组和对象，为了保持一致性，请在 Bitwarden 中镜像该框架。在导入过程中，类似文件夹的对象将自动转换为集合。
 
-记住：Bitwarden 与传统应用程序不同。对于 Bitwarden，所有内容都通过端到端加密进行保护，访问策略在客户端级别强制执行。这意味着：
+请记住：Bitwarden 与传统应用程序不同。对于 Bitwarden，所有内容都通过端到端加密进行保护，访问策略在客户端级别强制执行。这意味着：
 
 * 管理员可以定义和分配访问权限，但他们自己看不到凭据。
 * 集合和群组是 Bitwarden 在保持零知识的同时强制执行访问权限的方式。
@@ -253,7 +256,7 @@
 **记住** ：Bitwarden 的可扩展共享模型意味着项目可以同时存在于多个集合中，而不会影响安全性。团队可以访问他们需要的凭据，而无需暴露整个密码库。
 {% endhint %}
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Configure domain claiming
@@ -266,7 +269,7 @@
 
 ### 步骤 4：集成设置 <a href="#step-4-integration-setup" id="step-4-integration-setup"></a>
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 SSO integration (if applicable):
@@ -284,7 +287,7 @@ Directory Integration (if applicable):
 
 ### 步骤 5：安全控制 <a href="#step-5-security-controls" id="step-5-security-controls"></a>
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Set up event logging and SIEM integration
@@ -299,7 +302,7 @@ Directory Integration (if applicable):
 
 要评估是否适合自托管：
 
-* 您目前是否已经自托管了其他任何东西？
+* 您目前是否已经自托管了其他任何服务？
 * 您是否有专门的硬件来运行服务器？
 * 是否有 IT 或 DevOps 团队负责服务器？
 * 您是否熟悉 Docker，或者 Kubernetes 和 Helm 图表？
@@ -309,7 +312,7 @@ Directory Integration (if applicable):
 
 ### 步骤 1：预先规划 <a href="#step-1-pre-setup-planning" id="step-1-pre-setup-planning"></a>
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Choose self hosted deployment method (Linux standard/manual/offline, Windows standard/offline, or Kubernetes)
@@ -339,7 +342,7 @@ Directory Integration (if applicable):
 
 为您的 Bitwarden 服务器设置专用环境。具体要求因操作系统而异。请参阅[帮助中心](../../self-hosting/plan-for-deployment/self-host-bitwarden.md)获取详细说明。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Provision hardware that meets minimum requirements 
@@ -356,7 +359,7 @@ Directory Integration (if applicable):
 
 ### 步骤 4：组织设置 <a href="#step-4-organization-setup" id="step-4-organization-setup"></a>
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Create cloud organization for billing purposes
@@ -368,7 +371,7 @@ Directory Integration (if applicable):
 
 ### 步骤 5：维护计划 <a href="#step-5-maintenance-planning" id="step-5-maintenance-planning"></a>
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Create server update and maintenance schedule
@@ -380,9 +383,9 @@ Directory Integration (if applicable):
 ```
 {% endtab %}
 
-{% tab title="3：计划" %}
+{% tab title="3：规划" %}
 {% hint style="success" %}
-第 3 阶段侧重于用户入职开始前的组织准备和沟通。此阶段通过设定适当预期、解决顾虑以及为变革创造组织动力，确保用户顺利采用。
+第 3 阶段侧重于用户入职开始前的组织准备和沟通工作。此阶段通过设定适当预期、解决顾虑以及为变革造组织动力，确保用户顺利采用。
 {% endhint %}
 
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
@@ -403,7 +406,7 @@ Directory Integration (if applicable):
 
 **关键人员：** 行政领导层、IT 领导层、沟通团队、部门负责人。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Prepare leadership talking points about security benefits
@@ -420,7 +423,7 @@ Directory Integration (if applicable):
 
 **关键人员：** 沟通团队、人力资源、IT 支持。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Communication strategy:
@@ -457,7 +460,7 @@ Pre-rollout communications:
 
 **变更管理活动**
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
  [ ]  Identify and engage change champions in each department
@@ -472,7 +475,7 @@ Pre-rollout communications:
 {% hint style="success" %}
 第 4 阶段确保用户开始使用 Bitwarden，通过向用户介绍 Bitwarden，确保正确设置账户和初始使用。
 
-提醒管理员所有 Bitwarden 入职流程：**流程**：邀请 → 接受 → 确认
+提醒管理员，所有 Bitwarden 入职**流程为**：邀请 → 接受 → 确认
 {% endhint %}
 
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
@@ -480,7 +483,7 @@ Pre-rollout communications:
 * 分阶段或一次性将所有用户入职到平台
 * 确保正确的账户设置和安全管理设置
 * 促进密码迁移和初始密码库填充
-* 建立用户对核心功能的专业性
+* 帮助用户掌握核心功能的使用
 
 ## 选择您的推广路径 <a href="#choose-your-rollout-path" id="choose-your-rollout-path"></a>
 
@@ -525,7 +528,7 @@ Pre-rollout communications:
 
 **关键人员：** 所有受邀用户、组织管理员
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 User actions:
@@ -547,7 +550,7 @@ Administrator actions:
 
 **关键人员：** 所有用户
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Installations:
@@ -569,7 +572,7 @@ Setup tasks:
 
 **关键人员：** 所有用户
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Navigation training:
@@ -589,7 +592,7 @@ Collection and organization understanding:
 
 **关键人员：** 所有用户
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Core functionality:
@@ -611,7 +614,7 @@ Advanced features:
 
 **关键人员：** 所有用户，包括 IT 支持
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Migration process:
@@ -631,7 +634,7 @@ Quality assurance:
 
 {% tab title="5：采用" %}
 {% hint style="success" %}
-第 5 阶段侧重于推广、最大化价值、确保安全合规以及维护长期成功。
+第 5 阶段侧重于采用、最大化价值、确保安全合规以及维护长期成功。
 {% endhint %}
 
 ## 主要目标 <a href="#key-objectives" id="key-objectives"></a>
@@ -648,7 +651,7 @@ Quality assurance:
 
 **关键利益相关者：** 所有用户、组织管理员。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 User verification:
@@ -672,7 +675,7 @@ Administrative verification:
 
 **关键利益相关者：** 安全团队、组织管理员。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Security review:
@@ -694,7 +697,7 @@ Compliance activities:
 
 **关键利益相关者：** 高级用户、组织管理员。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Advanced capabilities:
@@ -709,7 +712,7 @@ Advanced capabilities:
 
 **关键利益相关者：**&#x49;T 支持、组织管理员。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Support structure:
@@ -724,7 +727,7 @@ Support structure:
 
 **关键利益相关者：** 所有用户、组织管理员。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 Regular reviews:
@@ -748,7 +751,7 @@ Success metrics:
 
 **关键利益相关者：** 新员工、人力资源、组织管理员。
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] Document Bitwarden best practices in onboarding resources or new hire checklist
@@ -758,11 +761,11 @@ Success metrics:
 {% endtab %}
 
 {% tab title="资源" %}
-使用这些额外资源来帮助您在 Bitwarden 旅程的各个阶段进行指导：
+使用这些额外资源，帮助您在 Bitwarden 旅程的各个阶段获得指导：
 
 ## 成功检查清单 <a href="#success-checklist" id="success-checklist"></a>
 
-将此列表直接复制然后粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
+将此列表直接复制并粘贴到您的项目管理工具、内部文档或团队沟通平台中，以便轻松跟踪进度、分配任务并保持责任明确：
 
 ```
 [ ] 100% user adoption of all purchased Bitwarden seats 
@@ -782,19 +785,19 @@ Success metrics:
 ## Bitwarden 支持 <a href="#bitwarden-support" id="bitwarden-support"></a>
 
 * **计费支持：** 联系客户成功团队以获得加急计费协助
-* **技术支持：** 为所有用户提供全面的技术故障排除服务
+* **技术支持：** 为所有用户提供全面的故障排查支持
 * **企业客户：** 与全球账户经理进行持续会议
-* **高管访问权限：** 企业客户定期与 Bitwarden 高管会面
+* **高管对接：** 为企业客户安排与 Bitwarden 高管定期会面
 
 ## 模板 <a href="#templates" id="templates"></a>
 
 [推广电子邮件模板](welcome-email-templates.md)：用于向最终用户、管理员和 IT 团队宣布 Bitwarden 密码管理器的推广的电子邮件模板。将这些电子邮件附上您的品牌标识，并根据需要进行调整。
 
-[最终用户入职电子邮件模板](end-user-onboarding-emails.md)：由 care@bitwarden.com 向新 Bitwarden 企业版和团队版用户发送的引导电子邮件。
+[最终用户入职电子邮件模板](end-user-onboarding-emails.md)：由 care@bitwarden.com 发送给 Bitwarden 企业版和团队版新用户的入职电子邮件。
 
-[客户激活套件](customer-activation-kit.md)：包括单页宣传册、培训视频、海报、电子邮件模板和促销资源的现成沟通材料，以支持您的推广。
+[客户激活套件](customer-activation-kit.md)：包含单页宣传册、培训视频、海报、电子邮件模板和促销资源的现成沟通材料，以阻力您的推广。
 
-[幻灯片演示公告模板](https://docs.google.com/presentation/d/1zK8NDB6E8ID_ok_yxn5x5qjO7mzeI5CZ-kqcOsfcQcU/edit?usp=sharing)：向整个公司或组织介绍 Bitwarden 密码管理器的幻灯片演示模板。根据需要附上公司品牌标识和推广详情。
+[幻灯片演示公告模板](https://docs.google.com/presentation/d/1zK8NDB6E8ID_ok_yxn5x5qjO7mzeI5CZ-kqcOsfcQcU/edit?usp=sharing)：向整个公司或组织介绍 Bitwarden Password Manager 的幻灯片演示模板。根据需要附上您的公司品牌标识和推广详情。
 
 ## 深入了解 <a href="#go-deeper" id="go-deeper"></a>
 

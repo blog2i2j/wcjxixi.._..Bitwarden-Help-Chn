@@ -52,9 +52,9 @@
 
 **支持链接：**
 
-* [确定你的 Bitwarden 倡导者](https://bitwarden.com/blog/deployment-strategies-for-password-managers/#champion-opt-in-first)
+* [确定您的 Bitwarden 倡导者](https://bitwarden.com/blog/deployment-strategies-for-password-managers/#champion-opt-in-first)
 
-## 倡导和成功案例 <a href="#advocacy-and-success-stories" id="advocacy-and-success-stories"></a>
+## 宣传和成功案例 <a href="#advocacy-and-success-stories" id="advocacy-and-success-stories"></a>
 
 **通过已证明的影响力建立内部动力和信任**
 

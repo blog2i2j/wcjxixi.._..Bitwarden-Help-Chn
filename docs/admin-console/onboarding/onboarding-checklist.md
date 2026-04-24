@@ -4,7 +4,7 @@
 对应的[官方文档地址](https://bitwarden.com/help/onboarding-checklist/)
 {% endhint %}
 
-使用此检查清单来来跟踪进度，并确保在入职过程中没有遗漏任何事项。
+使用此检查清单来跟踪进度，并确保在入职过程中没有遗漏任何事项。
 
 ## 账户设置 <a href="#account-setup" id="account-setup"></a>
 
