@@ -17,46 +17,58 @@
 
 在您进行关于采用 Bitwarden 的首次主要沟通时，使用这些模板。
 
+<i class="fa-lightbulb">:lightbulb:</i>
+
+<details>
+
+<summary> 示例</summary>
+
+
+
+</details>
+
 ### 模板 1A：IT 管理员公告 <a href="#template-1a-it-administrator-announcement" id="template-1a-it-administrator-announcement"></a>
 
-> 💡**示例**
->
-> **When**: Use to inform your IT team about their role in the rollout
->
-> **Subject**: URGENT: New security initiative - Your role in protecting \[company] from credential attacks
->
-> Hello \[company] IT administrators,
->
-> **The situation**\
-> \
-> This year, businesses like ours are losing an average of $6 million a year to credential stuffing attacks - where attackers use compromised passwords to break into systems. Scan the news on what happened at Levi’s, Amtrak, 23andMe – in each case, employees through their passwords were secure, having no idea that reusing credentials was the equivalent of giving attackers access to everything.&#x20;
->
-> **Our solution**\
-> \
-> We're implementing Bitwarden Password Manager company-wide to transform how we handle our most vulnerable security layer: credentials.
->
-> **Your critical role**\
-> \
-> You'll be our security champions, helping colleagues move from password chaos to password confidence. This isn't just a software rollout. You're enabling every employee to work securely without the daily frustration of forgotten passwords and locked accounts.
->
-> **What makes this different**\
-> \
-> Bitwarden doesn't just store passwords. It generates strong and unique ones, makes secure login faster than insecure login, enables secure sharing, and helps us keep \[company name] more secure.&#x20;
->
-> **Your next steps**
->
-> 1. \[Insert company-preferred onboarding workflow]
-> 2. Join our admin training sessions (you'll see firsthand how this transforms the user experience)
->
-> **Admin training sessions:**
->
-> * Option 1: \[event details]
-> * Option 2: \[event details]
->
-> You're not just implementing a tool. You're giving every employee superpowers against cyber threats.
->
-> Thank you, \
-> \[Sender's name and title]
+{% hint style="info" icon="lightbulb" %}
+**示例**
+
+**When**: Use to inform your IT team about their role in the rollout
+
+**Subject**: URGENT: New security initiative - Your role in protecting \[company] from credential attacks
+
+Hello \[company] IT administrators,
+
+**The situation**\
+\
+This year, businesses like ours are losing an average of $6 million a year to credential stuffing attacks - where attackers use compromised passwords to break into systems. Scan the news on what happened at Levi’s, Amtrak, 23andMe – in each case, employees through their passwords were secure, having no idea that reusing credentials was the equivalent of giving attackers access to everything.&#x20;
+
+**Our solution**\
+\
+We're implementing Bitwarden Password Manager company-wide to transform how we handle our most vulnerable security layer: credentials.
+
+**Your critical role**\
+\
+You'll be our security champions, helping colleagues move from password chaos to password confidence. This isn't just a software rollout. You're enabling every employee to work securely without the daily frustration of forgotten passwords and locked accounts.
+
+**What makes this different**\
+\
+Bitwarden doesn't just store passwords. It generates strong and unique ones, makes secure login faster than insecure login, enables secure sharing, and helps us keep \[company name] more secure.&#x20;
+
+**Your next steps**
+
+1. \[Insert company-preferred onboarding workflow]
+2. Join our admin training sessions (you'll see firsthand how this transforms the user experience)
+
+**Admin training sessions:**
+
+* Option 1: \[event details]
+* Option 2: \[event details]
+
+You're not just implementing a tool. You're giving every employee superpowers against cyber threats.
+
+Thank you, \
+\[Sender's name and title]
+{% endhint %}
 
 ### 模板 1B：领导团队公告 <a href="#template-1b-leadership-team-announcement" id="template-1b-leadership-team-announcement"></a>
 
