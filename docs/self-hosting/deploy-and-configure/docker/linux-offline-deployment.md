@@ -210,7 +210,7 @@ docker-compose -f ./docker/docker-compose.yml up -d
 docker ps
 ```
 
-{% embed url="https://bitwarden.com/assets/3Sq7MaJZ1jaEJUCW44wmwj/008be5ee5e43c20c8c840e71617e57eb/2025-05-05_15-34-44.png?w=1200&fm=avif" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3Sq7MaJZ1jaEJUCW44wmwj/008be5ee5e43c20c8c840e71617e57eb/2025-05-05_15-34-44.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>Docker 健康</p></figcaption></figure></div>
 
 恭喜！Bitwarden 现在已启动并运行在您指定的域名（如上面的示例 `https://bitwarden.example.com`）上了。在网页浏览器中访问网页密码库以确认它是否已经正常工作。
 

@@ -16,9 +16,7 @@
 
 1、在登录或注册界面，选择**登录到**下拉菜单，然后选择**自托管**选项。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/1Pq95ZZLLySxwjLr7eul5W/326732e7943499236adf16e6a16378b6/2024-12-04_10-05-14.png?_a=DAJCwlWIZAAB" %}
-浏览器扩展自托管服务器选择
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/1Pq95ZZLLySxwjLr7eul5W/326732e7943499236adf16e6a16378b6/2024-12-04_10-05-14.png?w=1064&#x26;fm=avif" alt=""><figcaption><p>浏览器扩展自托管服务器选择</p></figcaption></figure></div>
 
 2、在**服务器 URL** 字段中，输入以 `https://` 开头的您的服务器的域名（例如，`https://my.bitwarden.domain.com`）。
 
@@ -34,9 +32,7 @@
 
 1、在登录或注册界面，选择**登录到**下拉菜单，然后选择**自托管**选项。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/0mBtygWpIfx8MLtcPwxwD/0041c5a129a88b9fb5dd021a07a6da4e/2025-01-22_10-17-39.png?_a=DAJCwlWIZAAB" %}
-移动端自托管服务器选择
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/0mBtygWpIfx8MLtcPwxwD/0041c5a129a88b9fb5dd021a07a6da4e/2025-01-22_10-17-39.png?w=715&#x26;fm=avif" alt=""><figcaption><p>移动端自托管服务器选择</p></figcaption></figure></div>
 
 2、在**服务器 URL** 字段中，输入以 `https://` 开头的您的服务器的域名（例如，`https://my.bitwarden.domain.com`）。
 
@@ -52,9 +48,7 @@
 
 1、在登录或注册界面，选择**登录到**下拉菜单，然后选择**自托管**选项。
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/4KVc44Osl3K38W0dxdCl3M/53ad13b8f456e8d92594c29c54091bd0/desktop.png?_a=DAJCwlWIZAAB" %}
-桌面端自托管服务器选择
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4KVc44Osl3K38W0dxdCl3M/53ad13b8f456e8d92594c29c54091bd0/desktop.png?w=250&#x26;fm=avif" alt=""><figcaption><p>桌面端自托管服务器选择</p></figcaption></figure></div>
 
 2、在**服务器 URL** 字段中，输入以 `https://` 开头的您的服务器的域名（例如，`https://my.bitwarden.domain.com`）。
 

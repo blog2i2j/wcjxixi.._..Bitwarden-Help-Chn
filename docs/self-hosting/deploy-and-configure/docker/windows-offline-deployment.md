@@ -178,9 +178,7 @@ docker-compose -f ./docker/docker-compose.yml up -d
 docker ps
 ```
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/3kcV9CFkWJrw5qCmKZsyBg/5cd5030d96352e6b1f5f20d1ffb79654/docker-ps-win.png?_a=DAJCwlWIZAAB" %}
-显示健康容器的列表
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3kcV9CFkWJrw5qCmKZsyBg/5cd5030d96352e6b1f5f20d1ffb79654/docker-ps-win.png?w=1391&#x26;fm=avif" alt=""><figcaption><p>显示健康容器的列表</p></figcaption></figure></div>
 
 恭喜！Bitwarden 现已启动并运行在 `https://your.domain.com` 了。在您的浏览器中访问网络密码库以确认其正常工作。
 

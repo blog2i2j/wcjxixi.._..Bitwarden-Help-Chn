@@ -114,9 +114,7 @@ sha256sum dist-chrome-2025.6.1.zip
 
 3、将打印的哈​​希值与紧邻从 GitHub 下载的可执行文件或软件包列出的 `sha:...` 值进行比较：
 
-{% embed url="https://bitwarden.com/assets/7cQREpmZBt3SlvzM5QctoN/dbaa58a9e378e7ad62c09f8ff6942105/2025-07-10_10-05-30.png?w=846&fm=avif" %}
-比较校验和
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7cQREpmZBt3SlvzM5QctoN/dbaa58a9e378e7ad62c09f8ff6942105/2025-07-10_10-05-30.png?w=846&#x26;fm=avif" alt=""><figcaption><p>比较校验和</p></figcaption></figure></div>
 
 ### 问：如何向 Bitwarden 进行安全披露或报告？ <a href="#q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden" id="q-how-do-i-make-a-security-disclosure-or-report-to-bitwarden"></a>
 

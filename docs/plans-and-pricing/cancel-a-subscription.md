@@ -14,9 +14,7 @@
 
 1、在网页 App 中，导航到**设置** → **订阅**：
 
-{% embed url="https://bitwarden.com/assets/3Ru9TSLguhRNYtLe2TLwXk/bec6794eb58efa8780504720d4acb250/2026-03-03_10-24-17.png?w=1180&fm=avif" %}
-订阅页面
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3Ru9TSLguhRNYtLe2TLwXk/bec6794eb58efa8780504720d4acb250/2026-03-03_10-24-17.png?w=1180&#x26;fm=avif" alt=""><figcaption><p>订阅页面</p></figcaption></figure></div>
 
 2、注意**下一次收费**日期。订阅取消后，当到达订阅到期日期时，您将失去对付费功能的访问权限。
 
@@ -34,15 +32,11 @@
 
 1、在网页 App 中，使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 2、导航到**计费** → **订阅**：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/7MT9lfZZDTOQOBmnrLGceN/1ac8c615153e35250d15ce3921148cfe/2024-12-04_10-33-12.png?_a=DAJCwlWIZAAB" %}
-组织订阅视图
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7MT9lfZZDTOQOBmnrLGceN/1ac8c615153e35250d15ce3921148cfe/2024-12-04_10-33-12.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>组织订阅视图</p></figcaption></figure></div>
 
 {% hint style="info" %}
 只有组织所有者可以访问组织的订阅页面。

@@ -23,9 +23,7 @@
 1. 登录，然后从导航中选择**设置** → **订阅**。
 2. 选择**下载许可证**按钮：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/bXoVGOMEI1d8iCVoy5fmI/af545e3c083aeebaf12c751fc38a59ea/2024-12-04_10-02-56.png?_a=DAJCwlWIZAAB" %}
-下载个人许可证
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/bXoVGOMEI1d8iCVoy5fmI/af545e3c083aeebaf12c751fc38a59ea/2024-12-04_10-02-56.png?w=1175&#x26;fm=avif" alt=""><figcaption><p>下载个人许可证</p></figcaption></figure></div>
 
 ### 应用个人许可证 <a href="#apply-individual-license" id="apply-individual-license"></a>
 
@@ -53,9 +51,7 @@
 
 1、在 Bitwarden 网页 App 中，使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-管理控制台
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 2、导航到**计费** → **订阅**。
 

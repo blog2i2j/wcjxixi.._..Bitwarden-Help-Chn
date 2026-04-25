@@ -61,7 +61,7 @@
 
 3、在**订阅席位**中输入您所需的用户席位总数：
 
-<figure><img src="https://bitwarden.com/assets/6IiAvwCX2KbCTUAbAnY4yV/81614bb5a44c64cdc387ba9cee5663eb/Set_Subscription_seats.png?w=1400&#x26;fm=avif" alt=""><figcaption></figcaption></figure>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6IiAvwCX2KbCTUAbAnY4yV/81614bb5a44c64cdc387ba9cee5663eb/Set_Subscription_seats.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>设置订阅席位</p></figcaption></figure></div>
 
 4、选择**保存**。
 
@@ -77,7 +77,7 @@
 
 1、登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 2、前往**计费** → **订阅**。
 

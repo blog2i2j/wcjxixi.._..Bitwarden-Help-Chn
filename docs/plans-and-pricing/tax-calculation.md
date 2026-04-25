@@ -1,4 +1,4 @@
-# Bitwarden 购买时的税费
+# Bitwarden 购物税
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/tax-calculation/)
@@ -39,7 +39,7 @@
 
 3、在 **VAT/GST 税务 ID** 中添加或编辑现有号码：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/R4dZ2RT4aA3Qli29vSGz2/54b99a3132aa27a0b1a1cd3bd0eda397/2025-01-21_10-42-28.png?_a=DAJAUVWIZAAB" %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/R4dZ2RT4aA3Qli29vSGz2/54b99a3132aa27a0b1a1cd3bd0eda397/2025-01-21_10-42-28.png?w=984&#x26;fm=avif" alt=""><figcaption><p>组织的税务信息</p></figcaption></figure></div>
 
 4、选择**提交**。
 
