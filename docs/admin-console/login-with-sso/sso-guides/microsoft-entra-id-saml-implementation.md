@@ -6,7 +6,7 @@
 
 本文是**专门针对 Azure** 用于配置 SAML 2.0 方式的 SSO 登录的帮助。有关其他 IdP 方式配置 SSO 登录的帮助，请参阅 [SAML 2.0 配置](generic-saml.md)。
 
-配置需要在 Bitwarden 网页 App 和 Azure 控制台中同时进行。在您继续进行操作时，我们建议您准备好这两样东西，并按照文档中的顺序完成这些步骤。
+配置需要在 Bitwarden 网页 App 和 Azure 控制台中同时进行。操作过程中，我们建议同时打开这两个界面，并按照文档记录的步骤顺序完成操作。
 
 {% hint style="success" %}
 **已经是 SSO 专家了吗？**&#x8DF3;过本文中的说明，然后下载快速配置指南以使用 Entra ID 设置 SSO 和 SCIM。
@@ -16,21 +16,17 @@
 
 ## 在网页 App 中打开 SSO <a href="#open-sso-in-the-web-app" id="open-sso-in-the-web-app"></a>
 
-登录到 Bitwarden 网页 App，然后使用产品切换器打开管理控制台：
+登录到 Bitwarden [网页 App](https://bitwarden.com/help/getting-started-webvault/)，然后使用产品切换器打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJAUVWIZAAB" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 打开组织的**设置** → **单点登录**界面：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/20720mRAluo6crSdTiYJrn/1175889d7f6ab42fe7614f34cdd1dcdd/2024-12-04_09-41-15.png?_a=DAJAUVWIZAAB" %}
-SAML 2.0 配置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/20720mRAluo6crSdTiYJrn/1175889d7f6ab42fe7614f34cdd1dcdd/2024-12-04_09-41-15.png?w=1036&#x26;fm=avif" alt=""><figcaption><p>SAML 2.0 配置</p></figcaption></figure></div>
 
 如果还没有为您的组织创建唯一的 **SSO 标识符**，请创建一个，然后从**类型**下拉菜单中选择 **SAML**。保持此界面打开，以方便参考。
 
-如果愿意，您可以在此阶段关闭**设置专属的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
+如果愿意，您可以在此阶段关闭**设置唯一的 SP 实体 ID** 选项。这样做会从 SP 实体 ID 值中移除组织 ID，但大多数情况下都建议打开该选项。
 
 {% hint style="success" %}
 您可以选择性使用**成员解密选项**。了解如何开始使用[受信任设备 SSO](../trusted-devices/about-trusted-devices.md) 和 [Key Connector](../../../self-hosting/key-connector/about-key-connector.md)。
@@ -169,31 +165,27 @@ Azure URL
 
 ## 测试配置 <a href="#test-the-configuration" id="test-the-configuration"></a>
 
-配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，选择**继续**，然后选择**使用单点登录**按钮来进行测试：
+配置完成后，通过导航到 [https://vault.bitwarden.com](https://vault.bitwarden.com) 或 [https://vault.bitwarden.eu](https://vault.bitwarden.eu/)，输入您的电子邮箱地址，然后选择**使用单点登录**按钮进行测试：
 
-{% embed url="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&fm=avif" %}
-登录选项界面
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/3BdlHeogd42LEoG06qROyQ/c68021df4bf45d72e9d37b1fbf5a6040/login.png?w=517&#x26;fm=avif" alt=""><figcaption><p>登录选项界面</p></figcaption></figure></div>
 
-输入[已配置的组织标识符](generic-saml.md#step-1-set-an-organization-identifier)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 的登录界面：
+输入[已配置的组织标识符](microsoft-entra-id-saml-implementation.md#open-sso-in-the-web-app)，然后选择**登录**。如果您的实施已成功配置，您将被重定向到 Microsoft 的登录界面：
 
-{% embed url="https://images.ctfassets.net/7rncvj1f8mw7/j1YuXioPGFIwxsqfxCrpm/d0185848b3812c22940c6c5956e0b2be/az-login.png?fm=webp&h=433&q=50&w=464" %}
-Azure 登录界面
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/j1YuXioPGFIwxsqfxCrpm/d0185848b3812c22940c6c5956e0b2be/az-login.png?w=464&#x26;fm=avif" alt=""><figcaption><p>Azure 登录界面</p></figcaption></figure></div>
 
-使用您的 Azure 凭据进行身份验证后，输入您的 Bitwarden 主密码来解密您的密码库！
+使用您的 Azure 凭据进行身份验证后，输入您的 Bitwarden 主密码以解密您的密码库！
 
 {% hint style="info" %}
-Bitwarden 不支持非请求响应，因此从您的 IdP 发起登录会导致错误。SSO 登录流程必须从 Bitwarden 发起。Entra ID SAML 管理员可以为用户设置一个企业应用程序，将其引导到 Bitwarden SSO 登录页面：
+Bitwarden 不支持未经请求的响应，因此从您的 IdP 发起登录将导致错误。SSO 登录流程必须从 Bitwarden 发起。Entra ID SAML 管理员可以为用户设置一个企业应用程序，将其引导到 Bitwarden SSO 登录页面：
 
-1. 通过导航到当前的 Bitwarden 企业应用程序，选择 **Properties** 并将 **Visible to users** 选项设置为 **No**，禁用 **All Applications** 页面中现有的 Bitwarden 按钮。
-2. 通过导航到 **Enterprise applications** 然后选择 **New application** 来创建新的应用程序注册。
+1. 通过导航到当前的 Bitwarden 企业应用程序，选择 **Properties** 并将 **Visible to users** 选项设置为 **No**，以禁用 **All Applications** 页面中现有的 Bitwarden 按钮。
+2. 通过导航到 **Enterprise applications**，然后选择 **New application** 来创建新的应用程序注册。
 3. 选择 **Create your own application**。
-4. 为应用程序提供一个名称，如 **Bitwarden**，然后选择 **Integrate any other application you don't find in the gallery (Non-gallery)**。完成后，选择 **Create**。
+4. 为应用程序提供一个名称，例如 **Bitwarden**，然后选择 **Integrate any other application you don't find in the gallery (Non-gallery)**。完成后，选择 **Create**。
 5. 应用程序创建完成后，导航至导航菜单上的 **Single sign-on**，选择 **Linked**。
 6. 向应用程序添加以下设置：
-   1. 将 **Sign on URL** 设置为 Bitwarden 客户端登录页面，例如 `https://vault.bitwarden.com/#/sso`。然后，选择 **Save**。
+   1. 将 **Sign on URL** 设置为 Bitwarden 客户端登录页面，例如 `https://vault.bitwarden.com/#/sso`。然后选择 **Save**。
    2. 您可以在 **Properties** 中更改用于最终用户识别的 Logo。Bitwarden Logo 可以从[此处](https://github.com/bitwarden/brand)获取。
 
-完成此过程后，分配的用户将拥有一个直接链接到 Bitwarden SSO 登录页面的 Bitwarden 应用程序。
+完成此过程后，已分配的用户将拥有一个直接链接到 Bitwarden SSO 登录页面的 Bitwarden 应用程序。
 {% endhint %}

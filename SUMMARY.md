@@ -275,7 +275,7 @@
       * [关于受信任设备](docs/admin-console/login-with-sso/trusted-devices/about-trusted-devices.md)
       * [设置受信任设备 SSO](docs/admin-console/login-with-sso/trusted-devices/setup-sso-with-trusted-devices.md)
       * [批准受信任设备](docs/admin-console/login-with-sso/trusted-devices/approve-a-trusted-device.md)
-    * [\*在您的 IdP 上配置 Bitwarden（SAML 2.0）](docs/admin-console/login-with-sso/configuring-bitwarden-at-your-idp-saml-2.0.md)
+    * [\*在您的 IdP 上配置 Bitwarden (SAML 2.0)](docs/admin-console/login-with-sso/configuring-bitwarden-at-your-idp-saml-2.0.md)
     * [SSO FAQ](docs/admin-console/login-with-sso/login-with-sso-faqs.md)
   * [入职](docs/admin-console/onboarding/README.md)
     * [客户成功中心](docs/admin-console/onboarding/customer-success-hub.md)
