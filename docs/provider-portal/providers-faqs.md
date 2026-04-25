@@ -18,13 +18,13 @@
 
 ### 问：有哪些部署选项可用？ <a href="#q-what-deployment-options-are-available" id="q-what-deployment-options-are-available"></a>
 
-**答：**&#x53EF;以通过 Bitwarden 云服务访问 Bitwarden 提供商门户。目前，自托管环境不支持提供商门户功能。
+**答：**&#x53EF;以通过 Bitwarden 云服务访问 Bitwarden 提供商门户。目前，提供商门户不支持自托管环境。
 
 ## 客户管理 <a href="#client-management" id="client-management"></a>
 
 ### 问：对于新客户入职，是否有推荐的工作流程？ <a href="#q-is-there-a-recommended-workflow-for-onboarding-new-clients" id="q-is-there-a-recommended-workflow-for-onboarding-new-clients"></a>
 
-**答：**&#x6709;！我们[在这里](start-a-client-organization.md)概述了一种推荐的工作流程。
+**答：**&#x6709;的！我们推荐使用此 [MSP 部署工作流程](../../courses/password-manager/partners/managed-service-provider/service-user.md)。
 
 ### 问：MSP 如何访问客户组织？ <a href="#q-how-does-an-msp-access-client-organizations" id="q-how-does-an-msp-access-client-organizations"></a>
 
@@ -32,7 +32,7 @@
 
 ### 问：MSP 管理员能否查看或管理所有客户的凭据？ <a href="#q-can-an-msp-administrator-see-or-manage-credentials-for-all-clients" id="q-can-an-msp-administrator-see-or-manage-credentials-for-all-clients"></a>
 
-**答：**&#x63D0;供商管理员和服务用户与客户组织中的所有者具有相同的权限。他们可以管理组织内的密码库项目、集合、用户、群组和其他功能。提供商管理员和服务用户无法访问或查看用户私有的密码库项目。
+**答：**&#x4E0D;可以。自 2024.7.0 版本起，提供商管理员和服务用户无法在其客户组织内查看、管理或创建凭据。但他们可以管理组织内的集合、用户、群组及其他功能，以及直接将数据导入其客户组织。
 
 ### 问：我们可以设置适用于所有客户的默认企业策略吗？ <a href="#q-can-we-set-default-enterprise-policies-that-apply-to-all-clients" id="q-can-we-set-default-enterprise-policies-that-apply-to-all-clients"></a>
 
