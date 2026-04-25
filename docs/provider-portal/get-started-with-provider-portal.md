@@ -45,7 +45,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>添加提供商用户</p></figcaption></figure></div>
 
-2、**指导用户接受邀请**。受邀用户将收到一封来自 Bitwarden 的电子邮件，邀请他们加入提供商。告知用户他们将会收到邀请，并且他们需要使用现有的 Bitwarden 账户**登录**或**创建账户**以继续：
+2、**指导用户接受邀请**。被邀请的用户将收到一封来自 Bitwarden 的电子邮件，邀请他们加入提供商。请告知用户他们应该已收到邀请，并且他们需要使用现有的 Bitwarden 账户**登录**或**创建账户**以继续：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/0FRQnrWufrfnbc8Q2GymX/ffcb260e1d90ff1a25d0f67ac9bc6c7a/provider-accept-invite.png?w=344&#x26;fm=avif" alt=""><figcaption><p>提供商邀请</p></figcaption></figure></div>
 
@@ -53,7 +53,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/IxUeScxNYYmI4y8jceC5v/ebdf3fa89abbd69fbb028e0cff8c99aa/2024-12-05_09-29-04.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>确认已邀请的提供商用户</p></figcaption></figure></div>
 
-有了服务用户组成的团队，您就可以开始设置[客户组织](get-started-with-provider-portal.md#client-organizations)了。
+组建好服务用户团队后，您就可以开始设置[客户组织](get-started-with-provider-portal.md#client-organizations)了。
 
 ## 客户组织 <a href="#client-organizations" id="client-organizations"></a>
 
@@ -65,7 +65,7 @@
 
 客户组织的成员（即您客户的最终用户）将在他们的**密码库**视图中找到已共享的项目以及个人拥有的项目，还可以使用多种方法筛选项目列表，使其只显示组织项目或特定[集合](../admin-console/manage-shared-items/collections/about-collections.md)中的项目：
 
-<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>启用组织的密码库</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>启用了组织的密码库</p></figcaption></figure></div>
 
 ### 创建客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
 
@@ -89,7 +89,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/19Ugi6eUIMQgcliZvxwuf3/9992b070d0dab4defa04639bef8baf01/2025-02-25_15-45-02.png?w=500&#x26;fm=avif" alt=""><figcaption><p>选择现有组织</p></figcaption></figure></div>
 
-3、将提示您确认对提供商订阅的订阅和计费更改。完成后，选择**添加组织**。
+3、将提示您确认对提供商订阅的订阅和计费变更。完成后，选择**添加组织**。
 
 ### 设置客户组织 <a href="#setup-the-client-organization" id="setup-the-client-organization"></a>
 
@@ -113,9 +113,9 @@
 企业策略**仅适用于企业组织**。
 {% endhint %}
 
-4、**设置 SSO 登录**。如果您的客户使用单点登录 (SSO) 为其他应用程序进行身份验证，请[将 Bitwarden 与他们的 IdP 连接](../admin-console/login-with-sso/about-sso.md)，以允许使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。
+4、**设置 SSO 登录**。如果您的客户使用单点登录 (SSO) 为其他应用程序提供身份验证，请[将 Bitwarden 与他们的 IdP 连接](../admin-console/login-with-sso/about-sso.md)，以允许使用最终用户的 SSO 凭据与 Bitwarden 进行身份验证。
 
-5、**创建用户群组**。对于团队版和企业版组织，创建一组群组以实现可扩展的权限分配。当您开始添加用户时，将他们添加到群组，以让每个用户自动继承群组的配置权限（例如可以访问哪些集合）。
+5、**创建用户群组**。对于团队版和企业版组织，[创建一组群组](../admin-console/manage-members/groups.md#create-a-group)以进行可扩展的权限分配。当您开始添加用户时，将他们添加到群组中，以使每个用户自动继承群组配置的权限（例如，可以访问哪些集合）。
 
 一种常见的群组 - 集合模式是创建**按部门的群组**和**按功能的集合**，例如：
 
