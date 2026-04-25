@@ -1,10 +1,10 @@
-# 团队版和企业版迁移指南
+# =团队版和企业版迁移指南
 
 {% hint style="success" %}
 对应的[官方文档地址](https://bitwarden.com/help/article/teams-enterprise-migration-guide/)
 {% endhint %}
 
-使用 Bitwarden 安全迁移您的组织，这既简单又安全。简单地遵循本指南中的步骤从您现有的密码管理器中迁移数据和用户：
+使用 Bitwarden 安全迁移您的组织，这既简单又安全。简单地遵循本指南中的步骤，即可从您现有的密码管理器中迁移数据和用户：
 
 1. [导出数据](teams-and-enterprise-migration-guide.md#step-1-export-your-data)
 2. [创建和配置您的 Bitwarden 组织](teams-and-enterprise-migration-guide.md#step-2-setup-your-bitwarden-organization)
