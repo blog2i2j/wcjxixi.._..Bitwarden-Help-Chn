@@ -320,7 +320,7 @@
   * [业务单元门户](docs/provider-portal/business-unit-portal/README.md)
     * [业务单元门户](docs/provider-portal/business-unit-portal/business-unit-portal.md)
     * [业务单元门户快速入门](docs/provider-portal/business-unit-portal/business-unit-portal-quick-start.md)
-* [自托管](docs/self-hosting/README.md)
+* [=自托管](docs/self-hosting/README.md)
   * [部署计划](docs/self-hosting/plan-for-deployment/README.md)
     * [自托管 Bitwarden](docs/self-hosting/plan-for-deployment/self-host-bitwarden.md)
     * [自托管检查清单](docs/self-hosting/plan-for-deployment/self-host-checklist.md)

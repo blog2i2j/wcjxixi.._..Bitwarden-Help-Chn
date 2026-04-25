@@ -22,7 +22,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4p9XEQjOB8nd1beMrTUo0z/2eef7bcb01b850d8544caea5703f5821/Screenshot_2025-03-27_151609.png?w=542&#x26;fm=avif" alt=""><figcaption><p>业务单元邀请</p></figcaption></figure></div>
 
-3、**确认已接受的邀请**。要完成用户的安全入职，请**确认**业务单元门户**人员**选项卡上已接受的邀请：
+3、**确认已接受的邀请**。要完成用户的安全入职，请从业务单元门户的**人员**选项卡**确认**已接受的邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/40cMs63Aj1g3xrZ8SwHqMX/615ed6f09ba10c9ef3cba9d858742c3f/2025-04-23_09-08-12.png?w=1019&#x26;fm=avif" alt=""><figcaption><p>确认业务单元邀请</p></figcaption></figure></div>
 
@@ -48,7 +48,7 @@
 
 ## 添加现有组织 <a href="#add-an-existing-organization" id="add-an-existing-organization"></a>
 
-要将现有组织添加到业务单元，您必须是活跃的业务单元管理员以及要添加的组织的所有者。
+要将现有组织添加到业务单元，您必须是活跃的业务单元管理员以及是要添加的组织的所有者。
 
 1、使用产品切换器导航到业务单元门户，然后选择 ✚**添加**按钮 → **现有组织**：
 
@@ -90,9 +90,9 @@
 
 ## 邀请客户用户 <a href="#invite-client-users" id="invite-client-users"></a>
 
-建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的业务单元规模，有三种方式可以将用户加入 Bitwarden：
+建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的业务单元规模，可以通过三种方式将用户加入 Bitwarden：
 
-1、**对于小型单元**，您可以从管理员控制台的 **☷成员**视图中向用户发送电子邮件邀请：
+1、**对于小型单元**，通过从管理员控制台的 **☷成员**视图向用户发送电子邮件邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/7AJjR4oqEnCH3A89YYoWpH/498d594fa9703bee9c5f49e2af9f83d0/Invite_member_to_an_organization.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>邀请成员加入组织</p></figcaption></figure></div>
 
@@ -100,7 +100,7 @@
 
 3、**对于大型单元**，例如使用目录服务（Active Directory、LDAP、Okta 等）的单元，请使用 [Directory Connector](../../admin-console/manage-members/directory-connector/about-directory-connector.md) 从源目录同步组织用户并自动发起邀请。
 
-无论您是通过组织密码库、使用 SCIM 还是使用 Directory Connector 邀请用户，您在[注册服务用户](../get-started-with-provider-portal.md#onboard-users)时遵循的相同的 3 流程（邀请 → 接受 → 确认）也适用于这里。
+无论您是通过组织密码库、使用 SCIM 还是使用 Directory Connector 邀请用户，在[注册服务用户](../get-started-with-provider-portal.md#onboard-users)时遵循的相同的 3 流程（邀请 → 接受 → 确认）也适用于这里。
 
 ## 管理自托管组织 <a href="#managing-self-hosted-organizations" id="managing-self-hosted-organizations"></a>
 

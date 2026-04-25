@@ -41,7 +41,7 @@
 
 现在，开始将您的员工添加为[服务用户](provider-users.md#provider-user-types)，这将使他们能够全面管理所有客户组织、创建新的组织或管理提供商本身：
 
-1、**邀请用户**。从提供商门户 **☷管理** → **成员**选项卡中，邀请用户作为服务用户（或邀请其他提供商管理员）：
+1、**邀请用户**。从提供商门户的 **☷管理** → **成员**选项卡中，邀请用户作为服务用户（或邀请其他提供商管理员）：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/6E5GA111xdiHHkA0gb5LtG/5e5b5fddb5911e1b2ed468c1d49134ad/2024-12-05_09-27-45.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>添加提供商用户</p></figcaption></figure></div>
 
@@ -49,7 +49,7 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/0FRQnrWufrfnbc8Q2GymX/ffcb260e1d90ff1a25d0f67ac9bc6c7a/provider-accept-invite.png?w=344&#x26;fm=avif" alt=""><figcaption><p>提供商邀请</p></figcaption></figure></div>
 
-3、**确认已接受的邀请**。要完成提供商用户的安全入职，请从提供商门户的**人员**选项卡确认已接受的邀请：
+3、**确认已接受的邀请**。要完成提供商用户的安全入职，请从提供商门户的**人员**选项卡**确认**已接受的邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/IxUeScxNYYmI4y8jceC5v/ebdf3fa89abbd69fbb028e0cff8c99aa/2024-12-05_09-29-04.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>确认已邀请的提供商用户</p></figcaption></figure></div>
 
@@ -63,19 +63,19 @@
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5fXREt9aHmnVgLLRPBs8yg/dbecd580231e8ea2f4eec2be224a1e64/2025-02-25_15-20-08.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>客户组织密码库</p></figcaption></figure></div>
 
-客户组织的成员（即您客户的最终用户）将在他们的**密码库**视图中找到已共享的项目以及个人拥有的项目，还可以使用多种方法筛选项目列表，使其只显示组织项目或特定[集合](../admin-console/manage-shared-items/collections/about-collections.md)中的项目：
+客户组织的成员（即您客户的最终用户）将在他们的**密码库**视图中找到已共享的项目，以及个人拥有的项目，还可以使用多种方式筛选项目列表，以只显示组织项目或特定[集合](../admin-console/manage-shared-items/collections/about-collections.md)中的项目：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4D2tlh9YKPzDY20SYGVKcG/dff56b66549d29405b1af211860f698e/2024-12-03_14-07-28.png?w=1197&#x26;fm=avif" alt=""><figcaption><p>启用了组织的密码库</p></figcaption></figure></div>
 
 ### 创建客户组织 <a href="#create-a-client-organization" id="create-a-client-organization"></a>
 
-要创建新的客户组织，您必须是提[供商管理员](provider-users.md#provider-user-types)。导航到提供商门户的**客户**选项卡，然后选择 ✚**添加**按钮 → **新增客户**：
+要创建新的客户组织，您必须是[提供商管理员](provider-users.md)。导航到提供商门户的**客户**选项卡，然后选择 ✚**添加**按钮 → **新增客户**：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/5WjBETB0YFm7TS1zpIHeSC/a22563b9172036b1c90bfb61d9ab310b/new_client_org_1.png?w=1050&#x26;fm=avif" alt=""><figcaption><p>新增客户组织</p></figcaption></figure></div>
 
 ### 添加现有组织 <a href="#add-an-existing-organization" id="add-an-existing-organization"></a>
 
-要添加现有组织，您必须是活跃的提供商用户，并且是要添加的组织的所有者。
+要添加现有组织，您必须是活跃的提供商用户以及是要添加的组织的所有者。
 
 {% hint style="info" %}
 只要添加的用户数量在提供商的最低席位限制内，服务用户即可向客户组织添加成员，或将客户组织添加到提供商。只有提供商管理员才能增加最低席位限制。
@@ -93,7 +93,7 @@
 
 ### 设置客户组织 <a href="#setup-the-client-organization" id="setup-the-client-organization"></a>
 
-使用您新创建的客户组织，开始为您的客户构建完美的解决方案。根据客户的需求，每个客户组织的确切设置会有所不同，但通常包括：
+使用您新创建的客户组织，开始为您的客户构建完美的解决方案。每个客户组织的具体设置将根据客户需求而有所不同，但通常包括：
 
 1、**创建集合**。一个好的第一步是[创建一组集合](../admin-console/manage-shared-items/collections/about-collections.md#create-a-collection)，它为您在下一步中添加到密码库的项目提供组织结构。
 
@@ -123,21 +123,21 @@
 
 ### 邀请客户用户 <a href="#invite-client-users" id="invite-client-users"></a>
 
-在建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。可以通过两种方式让用户加入 Bitwarden，具体取决于您的客户规模：
+在建立了安全且可扩展的凭据共享基础设施后，您就可以开始邀请用户加入组织了。根据您的客户规模，可以通过三种方式将用户加入 Bitwarden：
 
-1、**对于小型客户**，您可以从管理员控制台的 **☷成员**视图向用户发送电子邮件邀请：
+1、**对于小型客户**，通过从管理员控制台的 **☷成员**视图向用户发送电子邮件邀请：
 
 <div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4wUO7i6w8y4sqAvwuMVZyd/070a5b36b242b1e4871cc0f58e0b8f83/2024-12-05_09-31-35.png?w=1031&#x26;fm=avif" alt=""><figcaption><p>邀请成员作为提供者</p></figcaption></figure></div>
 
-2、**对于大型客户**（使用 Azure AD、Okta、OneLogin 或 JumpCloud 等 IdP），请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 自动配置用户。
+2、**对于大型客户**，例如使用 Azure AD、Okta、OneLogin 或 JumpCloud 等 IdP 的客户，请使用 [SCIM](../admin-console/manage-members/scim/about-scim.md) 自动配置用户。
 
-3、**对于大型客户**（使用活动目录、LDAP、Okta 等目录服务），请使用 [Directory Connector](../self-hosting/key-connector/about-key-connector.md) 从源目录同步组织用户并自动发送邀请。
+3、**对于大型客户**，例如使用目录服务（Active Directory、LDAP、Okta 等）的客户，请使用 [Directory Connector](../self-hosting/key-connector/about-key-connector.md) 从源目录同步组织用户并自动发送邀请。
 
-无论您是从组织密码库邀请用户，还是使用 SCIM 或使用 Directory Connector，在[入职提供商用户](get-started-with-provider-portal.md#onboard-users)时遵循的 3 步流程（邀请 → 接受 → 确认）也适用于这里。
+无论您是通过组织密码库、使用 SCIM 还是使用 Directory Connector 邀请用户，在[入职提供商用户](get-started-with-provider-portal.md#onboard-users)时遵循的相同的 3 步流程（邀请 → 接受 → 确认）也适用于这里。
 
 ## 管理自托管组织 <a href="#managing-self-hosted-organizations" id="managing-self-hosted-organizations"></a>
 
-MSP 还可以为 Bitwarden 自托管实例提供管理支持。目前，提供商门户对托管客户的访问权限仅适用于云托管环境。若需为自托管实例提供管理服务，则需要购买额外的服务席位来管理该自托管实例。
+MSP 还可以为 Bitwarden 自托管实例提供管理支持。目前，提供商门户对托管客户的访问仅适用于云托管环境。要为自托管实例提供管理服务，需要购买附加服务席位来管理自托管实例。
 
 ### 启用自托管实例 <a href="#enabling-the-self-hosted-instances" id="enabling-the-self-hosted-instances"></a>
 
