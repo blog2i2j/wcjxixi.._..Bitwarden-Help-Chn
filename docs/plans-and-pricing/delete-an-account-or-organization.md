@@ -45,9 +45,7 @@
 
 2、向下滚动到**危险区域**然后选择**删除账户**：
 
-{% embed url="https://bitwarden.com/assets/74BqYDU6qE9evz6wEz8K7Y/2cd5b482c2dd160f47ec330464a43c11/My_account_settings.png?w=1200&fm=avif" %}
-我的账户设置
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/74BqYDU6qE9evz6wEz8K7Y/2cd5b482c2dd160f47ec330464a43c11/My_account_settings.png?w=1257&#x26;fm=avif" alt=""><figcaption><p>我的账户设置</p></figcaption></figure></div>
 
 将提示您输入主密码，以确认您有权执行此操作。
 {% endtab %}
@@ -79,9 +77,7 @@
 
 1、打开管理控制台：
 
-{% embed url="https://res.cloudinary.com/bw-com/image/upload/f_auto/v1/ctf/7rncvj1f8mw7/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?_a=DAJCwlWIZAAB" %}
-产品切换器
-{% endembed %}
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/2uxBDdQa6lu0IgIEfcwMPP/e3de3361749b6496155e25edcfdcf08b/2024-12-02_11-19-56.png?w=1013&#x26;fm=avif" alt=""><figcaption><p>产品切换器</p></figcaption></figure></div>
 
 2、转到**设置** → **组织信息**。
 

@@ -6,7 +6,7 @@
 
 我们很高兴能成为您安全信息管理之旅的一部分！要创建 Bitwarden 账户，请转到我们的[注册页面](https://bitwarden.com/go/start-free/)或在我们的主页上选择 **Get Started Free**。输入您的**电子邮箱**地址并选择您的首选服务器位置：**bitwarden.com**（美国）或 **bitwarden.eu**（欧盟）：
 
-<div data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4eNMfYMnwsCtN9UsYextW1/a7a8993752b25c8112600b6bccfda06b/Create_account.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>创建账户并选择服务器位置</p></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="https://bitwarden.com/assets/4eNMfYMnwsCtN9UsYextW1/a7a8993752b25c8112600b6bccfda06b/Create_account.png?w=1400&#x26;fm=avif" alt=""><figcaption><p>创建账户并选择服务器位置</p></figcaption></figure></div>
 
 选择**注册**或**继续**。Bitwarden 将通过电子邮件向您发送验证链接。要完成新账户的创建：
 

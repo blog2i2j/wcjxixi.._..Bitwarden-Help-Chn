@@ -172,7 +172,7 @@
     * [Terraform 提供程序](docs/secrets-manager/integrations/terraform-provider.md)
   * [更多](docs/secrets-manager/more/README.md)
     * [Secrets Manager FAQ](docs/secrets-manager/more/secrets-manager-faqs.md)
-* [管理控制台](docs/admin-console/README.md)
+* [=管理控制台](docs/admin-console/README.md)
   * [组织概览](docs/admin-console/organizations-overview.md)
   * [组织快速入门](docs/admin-console/organizations-quick-start.md)
   * [管理共享项目](docs/admin-console/manage-shared-items/README.md)
