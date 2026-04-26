@@ -4,7 +4,9 @@
 对应的[官方文档地址](https://bitwarden.com/help/kubernetes-service-accounts/)
 {% endhint %}
 
-Kubernetes 服务账户可用于将特定的安全上下文应用于特定的 Pod。例如，在您需要以无根模式运行 BitWarden 服务器的场景中，这非常有用，因为包含的 SQL 容器需要提升权限。
+Kubernetes 服务账户可用于将特定的安全上下文应用到特定的 Pod。例如，在您需要以无根模式运行 BitWarden 服务器的场景中，这非常有用，因为包含的 SQL 容器需要提升权限。
+
+> **\[译者注]**：Pod，是 Kubernetes 的基本调度单位。一个 Pod 里面通常运行一个或多个容器，这些容器共享网络、存储卷、运行上下文等。可以理解为「容器组」。
 
 您创建并配置了具有所需权限的服务账户后，请更改 `my-values.yaml` 文件中的任何 Pod 服务账户名称（例如，`database.podServiceAccount`）。例如，为 `component.admin.podServiceAccount` 分配了名为 `bitwarden-sa` 服务账户的 `my-values.yaml` 文件应如下所示：
 
