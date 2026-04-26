@@ -300,17 +300,17 @@ docker compose up -d
 
 使用这些变量来更改证书设置：
 
-| 变量                  | 描述                                                                                                                                                                            |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BW\_ENABLE\_SSL     | <p>使用 SSL/TLS。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</p><p></p><p>Bitwarden 需要 SSL 才能正常运行。如果您没有使用在 Bitwarden 容器中配置的 SSL，您应该在 Bitwarden 前面使用 SSL 代理。</p> |
-| BW\_SSL\_CERT       | SSL 证书文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.crt`。 如果您希望使用现有证书，在[此处](../configuration-options/certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。         |
-| BW\_SSL\_KEY        | SSL 密钥文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.key`。 如果您希望使用现有证书，在[此处](../configuration-options/certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。         |
-| BW\_ENABLE\_SSL\_CA | 使用具有证书颁发机构 (CA) 支持服务 的 SSL。`true`/`false`。默认为 `false`。                                                                                                                        |
-| BW\_SSL\_CA\_CERT   | SSL CA 证书的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ca.crt`。                                                                                                                   |
-| BW\_ENABLE\_SSL\_DH | 使用具有Diffie-Hellman 密钥交换的 SSL。`true`/`false`。默认为 `false`。                                                                                                                      |
-| BW\_SSL\_DH\_CERT   | Diffie-Hellman 参数文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `dh.pem`。                                                                                                         |
-| BW\_SSL\_PROTOCOLS  | NGINX 使用的 SSL 版本。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                            |
-| BW\_SSL\_CIPHERS    | NGINX 使用的 SSL 密码套件。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                          |
+| 变量                  | 描述                                                                                                                                                                         |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BW\_ENABLE\_SSL     | <p>使用 SSL/TLS。<code>true</code>/<code>false</code>。默认为 <code>false</code>。</p><p></p><p>Bitwarden 需要 SSL 才能正常运行。如果您没有在 Bitwarden 容器中配置 SSL，您应该在 Bitwarden 前面使用 SSL 代理。</p> |
+| BW\_SSL\_CERT       | SSL 证书文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.crt`。 如果您希望使用现有证书，在[此处](../configuration-options/certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。      |
+| BW\_SSL\_KEY        | SSL 密钥文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ssl.key`。 如果您希望使用现有证书，在[此处](../configuration-options/certificate-options.md#use-an-existing-ssl-certificate)了解更多信息。      |
+| BW\_ENABLE\_SSL\_CA | 使用具有证书颁发机构 (CA) 支持服务 的 SSL。`true`/`false`。默认为 `false`。                                                                                                                     |
+| BW\_SSL\_CA\_CERT   | SSL CA 证书的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `ca.crt`。                                                                                                                |
+| BW\_ENABLE\_SSL\_DH | 使用具有Diffie-Hellman 密钥交换的 SSL。`true`/`false`。默认为 `false`。                                                                                                                   |
+| BW\_SSL\_DH\_CERT   | Diffie-Hellman 参数文件的名称。该文件必须位于容器内的 `/etc/bitwarden` 目录中。默认为 `dh.pem`。                                                                                                      |
+| BW\_SSL\_PROTOCOLS  | NGINX 使用的 SSL 版本。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                         |
+| BW\_SSL\_CIPHERS    | NGINX 使用的 SSL 密码套件。建议默认留空。[了解更多](https://wiki.mozilla.org/Security/Server_Side_TLS)。                                                                                       |
 
 {% hint style="info" %}
 如果您使用的是现有的 SSL 证书，则必须在 `settings.env` 中启用相应的 SSL 选项。SSL 文件必须存储在 `/etc/bitwarden` 中，可以在 `docker-compose.yml` 文件中引用。这些文件必须与 `settings.env` 中配置的名称一致。
@@ -344,10 +344,10 @@ docker compose up -d
 
 使用这些变量连接 Yubico Web 服务：
 
-| 变量                               | 描述                                                                                                                |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| globalSettings\_yubico\_clientId | <p>替换从 Yubico Key 获取的 ID 值。</p><p></p><p>在<a href="https://upgrade.yubico.com/getapikey/">此处</a>注册 Yubico 密钥。</p> |
-| globalSettings\_yubico\_key      | 输入从 Yubico 获取的密钥值。                                                                                                |
+| 变量                               | 描述                                                                          |
+| -------------------------------- | --------------------------------------------------------------------------- |
+| globalSettings\_yubico\_clientId | 替换从 Yubico Key 获取的 ID 值。                                                    |
+| globalSettings\_yubico\_key      | 输入从 Yubico 获取的密钥值。在[此处](https://upgrade.yubico.com/getapikey/)注册 Yubico 密钥。 |
 
 ### 其他 <a href="#miscellaneous" id="miscellaneous"></a>
 
@@ -368,9 +368,9 @@ docker compose up -d
 
 默认情况下，Bitwarden 容器消耗的内存，通常超过运行所需的最低内存。对于内存敏感的环境，您可以使用 docker `-m` 或 `--memory=` 来限制 Bitwarden 容器的内存使用。
 
-| 名称，缩写         | 描述                                                                                                                                                              |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| --memory=, -m | 容器可以使用的最大内存量。Bitwarden 至少需要 200 MB。请参阅 [Docker 文档](https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory)以了解更多信息。 |
+| 名称，缩写         | 描述                                                                                                                                                             |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --memory=, -m | 容器可以使用的最大内存。Bitwarden 至少需要 200 MB。请参阅 [Docker 文档](https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory)以了解更多信息。 |
 
 要使用 Docker Compose 控制内存使用，请使用 `mem_limit` 键：
 
