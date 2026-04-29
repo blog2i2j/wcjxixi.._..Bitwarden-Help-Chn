@@ -14,13 +14,13 @@ Bitwarden 桌面 App 可通过多种渠道或安装方式在 Windows、macOS 和
 
 > 下载桌面 App：
 >
-> * Windows：[Installer (.exe)](https://bitwarden.com/download/#downloads-desktop)、[Microsoft Store](https://apps.microsoft.com/detail/9pjsdv0vpk04?hl=en-US\&gl=US)、[Portable App (.exe)](https://bitwarden.com/download/#downloads-desktop)
-> * macOS：[Installer (.dmg)](https://bitwarden.com/download/#downloads-desktop)、[App Store](https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12)
+> * Windows：[安装包 (.exe)](https://bitwarden.com/download/#downloads-desktop)、[Microsoft Store](https://apps.microsoft.com/detail/9pjsdv0vpk04?hl=en-US\&gl=US)、[便携版 App (.exe)](https://bitwarden.com/download/#downloads-desktop)
+> * macOS：[安装包 (.dmg)](https://bitwarden.com/download/#downloads-desktop)、[App Store](https://apps.apple.com/us/app/bitwarden/id1352778147?mt=12)
 > * Linux：[AppImage](https://bitwarden.com/download/#downloads-desktop)、[Snap](https://snapcraft.io/bitwarden)、[Flatpak](https://flathub.org/apps/com.bitwarden.desktop)、[.deb](https://bitwarden.com/download/#downloads-desktop)、[.rpm](https://bitwarden.com/download/#downloads-desktop)
 
 ### Windows
 
-| 功能      | Installer (.exe)       | Microsoft Store      | Portable App (.exe)  |
+| 功能      | 安装包 (.exe)             | Microsoft Store      | 便携版 App (.exe)       |
 | ------- | ---------------------- | -------------------- | -------------------- |
 | 自动更新    | :white\_check\_mark:更改 | :white\_check\_mark: |                      |
 | 桌面生物识别  | :white\_check\_mark:   |                      | :white\_check\_mark: |
@@ -33,7 +33,7 @@ Bitwarden 桌面 App 可通过多种渠道或安装方式在 Windows、macOS 和
 
 ### macOS
 
-| 功能      | Installer (.dmg)     | App Store            |
+| 功能      | 安装包 (.dmg)           | App Store            |
 | ------- | -------------------- | -------------------- |
 | 自动更新    | :white\_check\_mark: | :white\_check\_mark: |
 | 桌面生物识别  |                      | :white\_check\_mark: |
